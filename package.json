@@ -1,0 +1,21 @@
+{
+  "name": "userstyles",
+  "description": "A collection of userstyles for simple and boring dark themes",
+  "author": "Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)",
+  "license": "MIT",
+  "keywords": [
+    "userstyles",
+    "stylus",
+    "dark-theme"
+  ],
+  "scripts": {
+    "compile": "stylus **/*.user.styl",
+    "lint": "stylelint **/*.user.styl",
+    "lint:fix": "stylelint **/*.user.styl --fix"
+  },
+  "devDependencies": {
+    "stylelint": "16.6.0",
+    "stylelint-stylus": "1.0.0",
+    "stylus": "0.63.0"
+  }
+}

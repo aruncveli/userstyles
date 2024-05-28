@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "sysoev.language-stylus",
+        "stylelint.vscode-stylelint"
+    ]
+}
