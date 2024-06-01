@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name           Hacker News Dark
+@namespace      github.com/aruncveli/userstyles
+@version        24.06.01
+@description    Dark theme for Hacker News
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/hackernews/hackernews.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var  color fg1         "Foreground darkened"     #bbbbbb
+@var	color	bg	        "Background"	            black
+==/UserStyle== */
+
+@-moz-document domain("news.ycombinator.com")
+  :root
+    color-scheme dark
+
+  #hnmain
+    background bg
+
+  tr:not(:first-child)
+    a:visited
+    a:link
+    td
+    .c00
+    .c73
+    .comhead
+    .subtext
+    .title
+      color fg
+
+    .subtext
+    .comhead
+      a:link
+        color fg1
