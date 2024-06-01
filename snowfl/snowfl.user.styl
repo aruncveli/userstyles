@@ -1,0 +1,85 @@
+/* ==UserStyle==
+@name           snowfl dark
+@namespace      github.com/aruncveli/userstyles
+@version        24.06.01
+@description    Dark theme for snowfl
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/snowfl/snowfl.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	bg2	        "Background lightened 2"	#222222
+@var	color	link-color	"Link"                    #0b84ff
+==/UserStyle== */
+
+set-bg()
+  background bg
+
+set-bg2()
+  background bg2
+
+set-fg()
+  color fg
+
+unset-fg-bg()
+  color unset
+  background unset
+
+set-border()
+  border-color fg
+
+btn-lightened()
+  color unset()
+  set-border()
+
+@-moz-document domain("snowfl.com")
+  :root
+    color-scheme dark
+
+  a
+  a:hover
+    color link-color
+
+  body
+    set-bg()
+    set-fg()
+
+  .navbar
+    set-bg()
+    border none
+
+  .form-control
+    unset-fg-bg()
+    &::placeholder
+      color unset
+    &:focus
+      border-color unset
+    &[disabled]
+      set-bg2()
+
+  .btn-default
+    unset-fg-bg()
+    set-border()
+    &:hover
+    &:focus
+    &:active
+    &:active:hover
+      btn-lightened()
+      background bg1
+    &[disabled]
+    &[disabled]:hover
+      btn-lightened()
+      set-bg2()
+
+  img.spinner
+    filter invert(1)
+
+  #newsfeed
+    background bg !important
+    color fg !important
+    a
+      color fg !important

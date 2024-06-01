@@ -4,5 +4,6 @@
         "postcss",
         "stylus"
     ],
-    "stylelint.packageManager": "pnpm"
+    "stylelint.packageManager": "pnpm",
+    "editor.tabSize": 2
 }
