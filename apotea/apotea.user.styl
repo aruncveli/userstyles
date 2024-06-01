@@ -1,0 +1,206 @@
+/* ==UserStyle==
+@name           Apotea Dark
+@namespace      github.com/aruncveli/userstyles
+@version        24.06.02
+@description    Dark theme for snowfl
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/apotea/apotea.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	bg2	        "Background lightened 2"	#222222
+==/UserStyle== */
+
+set-bg()
+  background bg
+
+set-bg1()
+  background bg1
+
+set-fg()
+  color fg
+
+set-fg-imp()
+  color fg !important
+
+@-moz-document domain("www.apotea.se")
+  :root
+    --background-color bg
+    --bs-body-color fg
+    --bs-btn-hover-color fg
+    --bs-white-rgb bg
+    color-scheme dark
+
+  body
+  p
+  .search-facet-label
+  #product-subscription-details
+    set-bg()
+    set-fg()
+
+  #header
+  .header-container
+  #toplinks
+  #popular-links-container
+  #brands-left
+  .general-form-item
+  .premium .price-tag a
+  #toplist
+  .footer-logo-container
+  #footer-logos-new
+  .search-top
+  .description
+  #search-facets
+  .white-with-padding
+  .login-box
+  #product-facts-grid
+  #cart-header
+  #cart-item-container
+  #cart-parent
+    set-bg()
+
+  #product
+    &,
+    .row
+      set-bg()
+
+  #main-menu
+    &,
+    .rx
+    li
+      set-bg()
+
+  #sidebar-categories
+    &
+    .category-container
+      set-bg()
+    .lvl-1.collapsed
+      set-bg()
+      set-fg()
+
+  #left-bottom-panel
+    &
+    ul
+      set-bg()
+
+  .facet-dropdown
+  .btn:hover
+  .table
+    set-bg1()
+
+  #suggest-container
+    border 1px solid bg1
+    set-bg1()
+    div.hit
+      for side in top bottom
+        border-{side} 1px solid bg2
+      &.selected
+        set-bg1()
+      &:hover
+      &.selected:hover
+        background-color bg2
+
+  #backToTop
+    background-color bg2
+
+  #last-sold
+  #home-right-banners
+    background bg !important
+
+  div
+  .lvl-1.sidebar-categories-go
+  #left-bottom-panel li
+  h1
+  h2
+  h3
+  h4
+  h5
+  h6
+  #suggest-container a
+  .toggle-element.collapsed h5
+  .btn-info
+  #cart-parent .name a
+    set-fg()
+
+  #cart-content
+    set-bg()
+    .cart-item
+    .footer
+      set-bg()
+    .ord-price
+    .sum h4 #cart-header-sum
+      set-fg()
+
+  .apotea-responsive-footer
+    set-bg()
+    h4
+    a
+    > div
+      set-fg-imp()
+
+  .form-control
+    set-bg()
+    set-fg()
+    &:focus
+      set-bg1()
+
+  .product-block
+    set-bg()
+    a:not(:hover)
+    .is-med-div
+      set-fg()
+
+  #cart-quantity-full
+    set-fg-imp()
+
+  .first-page-container
+  #search
+    .fadeout
+      background linear-gradient(rgba(0 0 0 0), rgba(0 0 0 1))
+
+  .offcanvas
+    --bs-offcanvas-bg bg
+
+@-moz-document url-prefix("https://widget-launcher.imbox.io/index")
+  #root
+    background-color bg
+
+@-moz-document url-prefix("https://www.apotea.se/nyakassan")
+
+  #checkout .checkout-form-title
+  #cart-item-container
+  input
+  .checkout-charity-item
+  .offer-item
+    set-bg()
+
+  .checkout-shipping-method
+    set-bg()
+    &.active
+      set-bg1()
+
+  #checkout-offers .offer-item-text
+    set-fg()
+
+  #cart-parent
+    set-bg()
+    .name a
+      set-fg()
+
+  #cart-content
+    .cart-item
+      set-bg()
+    .sum h4 #cart-header-sum
+      set-fg()
+
+  #checkout-top
+    .checkout-top-info
+      set-bg()
+    .toggle-element
+      set-bg1()
+      svg
+        stroke fg

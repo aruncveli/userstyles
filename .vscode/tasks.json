@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "pnpm stylelint ${file} --fix",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "Fix current file's lint issues"
+		},
+		{
+			"type": "shell",
+			"command": "pnpm stylus ${file}",
+			"group": {
+				"kind": "build"
+			},
+			"label": "Compile current file"
+		}
+	]
+}
