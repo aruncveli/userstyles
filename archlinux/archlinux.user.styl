@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.06.01
+@version        24.06.02
 @description    Dark theme for some (simpler) Arch Linux pages: Home, Packages, AUR and Download.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -46,33 +46,40 @@ link()
   dark-scheme()
 
   body
-  dl dt,
-  .pkgsearch-typeahead li a
-  #pkgsearch input
+  dl dt
     text()
 
   body
     background()
 
   div.box
-  #pkgsearch
   #news h3 a
   code
   pre
-  #pkgsearch input
+    background1()
+
+  #pkgsearch
+    background1()
+    input
+      text()
+      background1()
+
   .pkgsearch-typeahead
     background1()
+    li a
+      text()
 
   h3 span.arrow
     border-top-color bg1
 
 @-moz-document url-prefix("https://archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages")
   .results
+    th
+      background()
     tr:nth-child(odd)
     tr:nth-child(even)
       background1()
 
-  .results th
   #pkglist-results tr:hover
     background()
 
@@ -211,14 +218,12 @@ link()
 
   body
     text()
-
-  body
-  table.styled-table
     background()
 
   code
     background1()
   table.styled-table
+    background()
     th
     tr:hover
       background1()

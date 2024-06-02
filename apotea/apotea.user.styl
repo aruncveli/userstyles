@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.06.02
+@version        24.06.02.1
 @description    Dark theme for snowfl
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -17,6 +17,9 @@
 
 set-bg()
   background bg
+
+set-bg-imp()
+  background bg !important
 
 set-bg1()
   background bg1
@@ -109,7 +112,7 @@ set-fg-imp()
 
   #last-sold
   #home-right-banners
-    background bg !important
+    set-bg-imp()
 
   div
   .lvl-1.sidebar-categories-go
@@ -140,6 +143,7 @@ set-fg-imp()
     h4
     a
     > div
+      set-bg-imp()
       set-fg-imp()
 
   .form-control

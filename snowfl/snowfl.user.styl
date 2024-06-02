@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           snowfl dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.06.01
+@version        24.06.02
 @description    Dark theme for snowfl
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -18,6 +18,9 @@
 
 set-bg()
   background bg
+
+set-bg1()
+  background bg1
 
 set-bg2()
   background bg2
@@ -61,19 +64,25 @@ btn-lightened()
     &[disabled]
       set-bg2()
 
+  btn-combi()
+    btn-lightened()
+    set-bg1()
+
   .btn-default
     unset-fg-bg()
     set-border()
     &:hover
     &:focus
+      btn-combi()
     &:active
-    &:active:hover
-      btn-lightened()
-      background bg1
+      &,
+      &:hover
+        btn-combi()
     &[disabled]
-    &[disabled]:hover
-      btn-lightened()
-      set-bg2()
+      &
+      &:hover
+        btn-lightened()
+        set-bg2()
 
   img.spinner
     filter invert(1)
