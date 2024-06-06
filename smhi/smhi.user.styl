@@ -1,0 +1,169 @@
+/* ==UserStyle==
+@name           SMHI Dark (Ten day forecast)
+@namespace      github.com/aruncveli/userstyles
+@version        24.06.06
+@description    Dark theme for SMHI's ten day forecast page
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/smhi/smhi.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	bg2	        "Background lightened 2"	#222222
+==/UserStyle== */
+
+set-bg(var = bg)
+  background var
+
+set-bg1()
+  set-bg(bg1)
+
+set-bg2()
+  set-bg(bg2)
+
+set-fg()
+  color fg
+
+@-moz-document url-prefix("https://www.smhi.se/en/weather/forecasts/ten-day-forecast/")
+  :root
+    color-scheme dark
+
+  a:hover
+    set-fg()
+
+  .nextgen
+    set-fg()
+    &
+    #headcontent
+    .smhialternating
+      set-bg()
+    .breadcrumbs ul a
+      color #0c6bc4
+
+  #mainLogo
+    filter invert(1)
+
+  a._warningTextContainer_2n9on_1._warningTextContainer_2n9on_1
+    span
+    svg
+      set-fg()
+
+  #top-menu .nav-drop
+    &:hover
+      set-bg()
+    &.active-page
+      &
+      &:hover
+        set-bg()
+
+  #leftmenu.leftnav-nextgen
+    set-bg()
+    a
+      set-fg()
+    .next-nav-main li
+      border-bottom none
+      &:first-of-type
+      li:first-of-type
+        border-top none
+    .overview-link
+    .navigation-heading-wrapper
+      set-bg()
+      &:hover
+        set-bg1()
+      .expand-button-symbol svg
+        fill fg
+    .active-page.active-page
+      set-bg1()
+      a
+        set-fg()
+    .active-page-leaf a:hover
+      set-bg1()
+    .leaf .leaf
+      set-bg()
+      set-fg()
+
+  // search and select location
+  ._autocomplete_1sluo_126
+    set-bg()
+    &:hover
+    &:focus-within
+      set-bg1()
+  ._eosMenuItem_13wan_1
+    set-bg1()
+    set-fg()
+    &:hover
+      set-bg2()
+    &:active
+      set-bg1()
+  ._list_1sluo_219 ._favoritesHeader_1sluo_222
+    set-bg1()
+    set-fg()
+
+  ._card_1en0v_1 // day
+    set-bg()
+    set-fg()
+    &._largeCard_1en0v_200 ._cardContent_1en0v_140 ._block_1en0v_153 ._valueCol_1en0v_161 > :first-child
+      set-fg()
+    ._windDirection_1en0v_92 img
+      filter invert(1)
+    &:hover
+      set-bg1()
+
+  .aurora-root-module_root__QHlfl
+    --color10 #022440
+    --colorCloud100 fg
+    --colorCloud70 fg
+    --colorCloud10 bg1
+    --colorSky10 bg1
+    --colorZenith bg
+    --hoverFillColor bg1
+    --selectedHoverFillColor bg1
+    --activeFillColor bg1
+    --selectedActiveFillColor bg1
+    --colorNadir fg
+
+  .tab-module_tab__dWFgU:hover:not(:disabled):not(.tab-module_selected__x8WYO)
+  .SimpleSelect-module_select__VWv7m .SimpleSelect-module_toggleButton__XNSud:hover:not([disabled]):not(.SimpleSelect-module_disabled__LDaMe)
+    set-bg1()
+
+  ._placeContainer_114oc_2
+  ._forecastContainer_114oc_1
+    ._markerContent_114oc_18 ._markerLabel_114oc_30
+      text-shadow none
+      color bg
+
+  // Charts
+  .highcharts-background
+    fill bg
+
+  ._label_
+    &y73h5
+    &et9mg
+      &_127
+        set-fg()
+  ._gale_
+    &et9mg_200
+    &y73h5_187
+      set-fg()
+  ._temperatureAxisTitle_
+    &y73h5_198
+    &et9mg_211
+      &::before
+        set-fg()
+  ._windAxisTitle_
+    &y73h5_213
+    &et9mg_226
+      &::before
+        set-fg()
+  ._precipitationAxisTitle_
+    &y73h5_206
+    &et9mg_219
+      &::before
+        set-fg()
+  ._tooltip_et9mg_234
+    span
+      set-bg()
+      color fg !important

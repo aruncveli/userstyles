@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.06.02.1
-@description    Dark theme for snowfl
+@version        24.06.06
+@description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
 @supportURL     https://github.com/aruncveli/userstyles/issues
@@ -15,14 +15,14 @@
 @var	color	bg2	        "Background lightened 2"	#222222
 ==/UserStyle== */
 
-set-bg()
-  background bg
+set-bg(var = bg)
+  background var
 
 set-bg-imp()
   background bg !important
 
 set-bg1()
-  background bg1
+  set-bg(bg1)
 
 set-fg()
   color fg

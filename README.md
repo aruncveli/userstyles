@@ -11,3 +11,4 @@ To install and use these, you will need a userstyles manager web extension like 
 - [snowfl](snowfl) [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/snowfl/snowfl.user.styl)
 - [Hacker News](hackernews) [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/hackernews/hackernews.user.styl)
 - [Apotea](apotea) [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/apotea/apotea.user.styl)
+- [SMHI](smhi) [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/smhi/smhi.user.styl)
