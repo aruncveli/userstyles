@@ -1,9 +1,5 @@
 {
-    "stylelint.validate": [
-        "css",
-        "postcss",
-        "stylus"
-    ],
-    "stylelint.packageManager": "pnpm",
-    "editor.tabSize": 2
+  "stylelint.validate": ["css", "postcss", "stylus"],
+  "stylelint.packageManager": "pnpm",
+  "editor.tabSize": 2
 }

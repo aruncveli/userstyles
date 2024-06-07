@@ -1,23 +1,23 @@
-name: 'Validate'
+name: "Validate styles"
 on:
-    push:
-      paths:
-        - '**.styl'
-    pull_request:
-      paths:
-        - '**.styl'
-    workflow_dispatch:
+  push:
+    paths:
+      - "**.styl"
+  pull_request:
+    paths:
+      - "**.styl"
+  workflow_dispatch:
 jobs:
-    run:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-            - uses: pnpm/action-setup@v4
-              with:
-                version: latest
-            - uses: actions/setup-node@v4
-              with:
-                cache: 'pnpm'
-            - run: pnpm install
-            - run: pnpm compile
-            - run: pnpm lint
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - uses: actions/setup-node@v4
+        with:
+          cache: "pnpm"
+      - run: pnpm install --prod
+      - run: pnpm compile
+      - run: pnpm lint

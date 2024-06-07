@@ -3,6 +3,7 @@
   "description": "A collection of userstyles for simple and boring dark themes",
   "author": "Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)",
   "license": "MIT",
+  "type": "module",
   "keywords": [
     "userstyles",
     "stylus",
@@ -10,10 +11,29 @@
   ],
   "scripts": {
     "compile": "stylus **/*.user.styl",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "generate": "node --import @swc-node/register/esm-register generate.ts",
     "lint": "stylelint **/*.user.styl",
     "lint:fix": "stylelint **/*.user.styl --fix"
   },
   "devDependencies": {
+    "@eslint/js": "9.4.0",
+    "@swc-node/register": "1.9.1",
+    "@tsconfig/strictest": "2.0.5",
+    "@types/ejs": "3.1.5",
+    "@types/eslint-config-prettier": "6.11.3",
+    "@types/eslint__js": "8.42.3",
+    "@types/node": "20.14.2",
+    "ejs": "3.1.10",
+    "eslint": "9.4.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-simple-import-sort": "12.1.0",
+    "prettier": "3.3.1",
+    "typescript": "5.4.5",
+    "typescript-eslint": "7.12.0"
+  },
+  "dependencies": {
     "stylelint": "16.6.0",
     "stylelint-stylus": "1.0.0",
     "stylus": "0.63.0"
