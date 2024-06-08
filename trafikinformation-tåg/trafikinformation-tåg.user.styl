@@ -1,0 +1,113 @@
+/* ==UserStyle==
+@name           Trafikinformation tåg
+@namespace      github.com/aruncveli/userstyles
+@version        24.05.06
+@description    description
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/trafikinformation-tåg/trafikinformation-tåg.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	fgv	        "Foreground variant"	    #ff6666
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	bg2	        "Background lightened 2"	#222222
+@var	text	link	      "Link"	                  255,102,102
+@var	text	link-hover	"Link hover"	            255,119,119
+==/UserStyle== */
+
+set-bg(var = bg)
+  background-color var
+
+set-bg1()
+  set-bg(bg1)
+
+set-bg2()
+  set-bg(bg2)
+
+set-fg()
+  color fg
+
+@-moz-document url-prefix("https://www.trafikverket.se/trafikinformation/tag")
+  :root
+    color-scheme dark
+    --bs-body-bg bg
+    --bs-secondary-bg bg
+    --bs-secondary-color fg
+    --bs-body-color fg
+    --bs-link-color-rgb link
+    --bs-link-hover-color-rgb link-hover
+
+  .btn-outline-primary
+    --bs-btn-color fg
+
+  .form-control
+    &
+      set-bg()
+    &:focus
+      set-bg1()
+
+  .c-autocomplete
+    li
+      &
+      &[aria-selected="true"]
+        a
+          set-fg()
+          &
+            set-bg1()
+          &:hover
+            set-fg()
+            set-bg2()
+
+  .nav-tabs > li > .nav-link
+    set-fg()
+    &:hover
+      set-fg()
+      set-bg1()
+
+  .group-list.traffic-accordion .panel-heading a
+    color fgv
+    &
+    &[aria-expanded="true"]
+      set-bg1()
+      color fgv
+      &:hover
+        set-bg2()
+        color fgv
+
+  .traffic-message
+    set-bg1()
+
+  .table
+    --bs-table-hover-color fg
+    --bs-table-hover-bg bg2
+    --bs-table-color-state fg
+
+  .time-table
+    .massage-badge.estimated-time > span
+      color bg
+    th
+      set-bg1()
+      set-fg()
+    > :not(caption) > * > *
+      set-bg1()
+    .station .passing
+      set-fg()
+    &.table-hover > tbody > tr:hover
+      set-bg2()
+    &.train.train-time-table tr.station-passed
+      > td:first-child .panel-heading
+        a
+          --bs-btn-active-bg bg2
+          color fgv
+          &:hover
+          &:focus
+            set-bg2()
+            set-bg2()
+      table tr
+        set-bg2()
+
+  .table-hover > tbody > tr:hover > *
+    set-bg2()
