@@ -1,5 +1,6 @@
+import { appendFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { argv } from "node:process";
-import { mkdirSync, writeFileSync, appendFileSync } from "node:fs";
+
 import { renderFile } from "ejs";
 
 const name = argv[2];
@@ -17,10 +18,12 @@ renderFile("readme.ejs", { name, smallName }, (err, str) => {
   writeFileSync(`${smallName}/README.md`, str);
 });
 
+const getPaddedString = (value: number) => value.toString().padStart(2, "0");
+
 const date = new Date();
 const year = date.getFullYear().toString().substring(2);
-const month = date.getMonth().toString().padStart(2, "0");
-const day = date.getDate().toString().padStart(2, "0");
+const month = getPaddedString(date.getMonth() + 1);
+const day = getPaddedString(date.getDate());
 const version = `${year}.${month}.${day}`;
 
 renderFile("user.styl.ejs", { name, smallName, version }, (err, str) => {
