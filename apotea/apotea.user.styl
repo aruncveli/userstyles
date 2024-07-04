@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.06.06
+@version        24.07.04
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -64,6 +64,7 @@ set-fg-imp()
   #cart-header
   #cart-item-container
   #cart-parent
+  #choose-auth-main
     set-bg()
 
   #product
@@ -151,6 +152,7 @@ set-fg-imp()
     set-fg()
     &:focus
       set-bg1()
+      set-fg()
 
   .product-block
     set-bg()
@@ -180,6 +182,8 @@ set-fg-imp()
   input
   .checkout-charity-item
   .offer-item
+  .counceling-question
+  #checkout-message-container
     set-bg()
 
   .checkout-shipping-method
@@ -208,3 +212,13 @@ set-fg-imp()
       set-bg1()
       svg
         stroke fg
+
+@-moz-document url-prefix("https://www.apotea.se/recept/hamta-ut")
+  .prescription-title
+    color fg !important
+
+  .prescriptionRow div
+    set-fg()
+
+  .rx-user-container
+    set-bg()
