@@ -14,3 +14,4 @@ To install and use these, you will need a userstyles manager web extension like 
 - [Apotea](apotea) [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/apotea/apotea.user.styl)
 - [SMHI](smhi) [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/smhi/smhi.user.styl)
 - [Trafikinformation tåg](trafikinformation-tåg) [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/trafikinformation-tåg/trafikinformation-tåg.user.styl)
+- [npm Docs](npm-docs) [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/npm-docs/npm-docs.user.styl)

@@ -1,0 +1,59 @@
+/* ==UserStyle==
+@name           npm Docs
+@namespace      github.com/aruncveli/userstyles
+@version        24.07.07
+@description    Dark theme for npm Docs
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/npm-docs/npm-docs.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	bg2	        "Background lightened 2"	#222222
+@var	color	link-color	"Link"                    #ff453a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://docs.npmjs.com")
+  :root
+    color-scheme dark
+    --fgColor-default fg
+    --bgColor-default bg
+    --bgColor-accent-muted bg1
+    --bgColor-neutral-muted bg1
+    --control-transparent-bgColor-hover bg1
+    --control-transparent-bgColor-active bg2
+    --control-transparent-bgColor-selected bg2
+    --button-default-bgColor-rest bg1
+    --button-default-bgColor-hover bg2
+    --button-default-bgColor-active bg2
+    --button-default-fgColor-rest fg
+    --overlay-bgColor bg1
+    --borderColor-muted bg1
+
+  // Various links
+  .kIxRcv
+  .bZAHvx
+  .dKiiRk
+    color link-color
+
+  .XtENT // copy to clipboard button
+  .dxAlC // CLI version selec
+    box-shadow none
+
+  .bRtvlF
+    color fg !important
+    background-color bg1 !important
+    border-color bg1 !important
+
+  .jqlDGj.token
+    &.function
+      color link-color !important
+    &.plain
+    &.builtin.class-name
+    &.operator
+    &.punctuation
+    &.keyword
+      color fg !important
