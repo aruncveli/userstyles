@@ -1,0 +1,165 @@
+/* ==UserStyle==
+@name           npm
+@namespace      github.com/aruncveli/userstyles
+@version        24.07.10
+@description    description
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/npm/npm.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	bg2	        "Background lightened 2"	#222222
+@var	color	link-color	"Link"                    #ff453a
+==/UserStyle== */
+
+set-bg(var = bg)
+  background-color var
+
+set-bg1()
+  set-bg(bg1)
+
+set-bg2()
+  set-bg(bg2)
+
+set-fg()
+  color fg
+
+@-moz-document url-prefix("https://www.npmjs.com")
+  :root
+    color-scheme dark
+    --header-color fg
+    --bg bg
+    --code-bg bg1
+    --wombat-red link-color
+    --background-color bg
+    --color-fg-subtle fg
+
+  .bg-white
+    set-bg()
+
+  ._2f299eeb // search box
+  .bg-black-05
+    set-bg1()
+
+  .dde91b96
+    border-color bg1
+
+  // Logos
+  .af43375d svg path // npm
+  a[aria-label=GitHub] svg path // Github
+    fill fg
+
+  .dark-gray
+  .black
+  .black-90
+  .black-80
+  .black-70
+  .black-60
+  ._1b8c0a9f // Headings in the footer
+  .cd2827bb a // Links in the footer
+  .a0dff0b1 // Keywords
+  ._390acbc5::placeholder
+  .hover-black:hover
+  .c84e15be // Right pane headings: Install, Repository, etc.
+    set-fg()
+
+@-moz-document url-prefix("https://www.npmjs.com/package")
+  // Tabs
+  ._8055e658.d9f99065:hover
+  ._8055e658._7aa1ee94:hover
+  ._8055e658.c1f85151:hover
+  ._8055e658._7cec0316:hover
+  ._8055e658.b4fcfd19:hover
+    set-bg1()
+
+  ._8055e658._7cec0316.ac5f7ef8
+    background-color rgba(137, 86, 255, 0.08)
+
+  a[aria-labelelledby=repository] svg g // repo
+  .fbd04dd1 > svg // Copy code
+  .lh-copy > svg // Copy code arrow
+  ._513426a8 > svg > g // Git
+  ._5cfc0900 > svg // Downloads
+    fill fg
+
+  ._6d9832ac h1 // Readme headings
+  ._6d9832ac h2
+  ._6d9832ac strong
+  ._704c034e p // Readme contents
+  ._704c034e .highlight
+  ._704c034e li
+  .a0dff0b1 // Keywords
+  .c84e15be // Right pane headings: Install, Repository, etc.
+    set-fg()
+
+  // File explorer - Code tab
+  ._5ae7dfec button
+    set-fg()
+    &:hover
+      set-fg()
+  .a2ab2737:hover // row
+    set-bg1()
+  ._450b46e9 // Back button
+    filter invert(1)
+
+  a[href^="/support"]
+    set-bg1()
+    background-image unset
+    border unset
+    &:hover
+      background-color var(--color-fg-danger)
+      set-fg()
+      border unset
+      background-image unset
+
+  a[href^="https://runkit.com"]
+    color rgb(75 173 58 / 50%)
+    set-bg1()
+    background-image unset
+    border unset
+    &:hover
+      background-color rgb(75 173 58 / 50%)
+      set-fg()
+      border unset
+      background-image unset
+
+@-moz-document url-prefix("https://www.npmjs.com/search")
+
+  // Search results
+  .a9b7335e // header
+    set-bg()
+  ._31dfe8f0 a // Pagination
+    set-fg()
+  .a0329937._31dfe8f0 a
+    set-bg1()
+  ._26391339 a
+    set-fg()
+    set-bg()
+    &:hover
+      set-bg1()
+
+  // Sort labels
+  ._9390ec46 label
+    set-fg()
+    &:hover
+      set-fg()
+
+  // Tag chips
+  ._39bb688c // Match
+    set-bg1()
+    &:hover
+      set-bg2()
+
+  // Quality stats
+  ._89d0b3e5
+    set-fg()
+
+  .hover-black:hover
+    set-bg2()
+
+  .b--black-10
+    border-color fg
