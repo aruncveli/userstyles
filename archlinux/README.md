@@ -1,6 +1,6 @@
 # Arch Linux Dark
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/archlinux/archlinux.user.styl)
+[![Install with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/aruncveli/userstyles/raw/main/archlinux/archlinux.user.styl)
 
 Dark theme for some (simpler) Arch Linux pages: Home, Packages, AUR and Download.
 
