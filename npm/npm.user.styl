@@ -153,8 +153,11 @@ unset-bg-img()
       fg-bg-border()
 
   // Author box
-  ._704c034e td
-    set-bg()
+  ._704c034e
+    td
+      set-bg()
+    blockquote
+      set-bg1()
 
   // Fund this package banner
   ._24a1e9c7
@@ -165,6 +168,138 @@ unset-bg-img()
       set-fg()
       set-bg2()
       unset-bg-img()
+
+  @css {
+    /*!
+    * GitHub Dark v0.5.0
+    * Copyright (c) 2012 - 2017 GitHub, Inc.
+    * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
+    */
+
+    .pl-c /* comment, punctuation.definition.comment, string.comment */ {
+      color: #959da5;
+    }
+
+    .pl-c1,
+    .pl-s .pl-v /* string variable */ {
+      color: #c8e1ff;
+    }
+
+    .pl-e,
+    .pl-en /* entity.name */ {
+      color: #b392f0;
+    }
+
+    .pl-smi,
+    .pl-s .pl-s1 /* string source */ {
+      color: #f6f8fa;
+    }
+
+    .pl-ent /* entity.name.tag */ {
+      color: #7bcc72;
+    }
+
+    .pl-k /* keyword, storage, storage.type */ {
+      color: #ea4a5a;
+    }
+
+    .pl-s,
+    .pl-pds,
+    .pl-s .pl-pse .pl-s1,
+    .pl-sr,
+    .pl-sr .pl-cce,
+    .pl-sr .pl-sre,
+    .pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
+      color: #79b8ff;
+    }
+
+    .pl-v,
+    .pl-ml /* markup.list, sublimelinter.mark.warning */ {
+      color: #fb8532;
+    }
+
+    .pl-bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */ {
+      color: #d73a49;
+    }
+
+    .pl-ii /* invalid.illegal */ {
+      color: #fafbfc;
+      background-color: #d73a49;
+    }
+
+    .pl-c2 /* carriage-return */ {
+      color: #fafbfc;
+      background-color: #d73a49;
+    }
+
+    .pl-c2::before /* carriage-return */ {
+      content: "^M";
+    }
+
+    .pl-sr .pl-cce /* string.regexp constant.character.escape */ {
+      font-weight: bold;
+      color: #7bcc72;
+    }
+
+    .pl-mh,
+    .pl-mh .pl-en,
+    .pl-ms /* meta.separator */ {
+      font-weight: bold;
+      color: #0366d6;
+    }
+
+    .pl-mi /* markup.italic */ {
+      font-style: italic;
+      color: #f6f8fa;
+    }
+
+    .pl-mb /* markup.bold */ {
+      font-weight: bold;
+      color: #f6f8fa;
+    }
+
+    .pl-md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */ {
+      color: #b31d28;
+      background-color: #ffeef0;
+    }
+
+    .pl-mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */ {
+      color: #176f2c;
+      background-color: #f0fff4;
+    }
+
+    .pl-mc /* markup.changed, punctuation.definition.changed */ {
+      color: #b08800;
+      background-color: #fffdef;
+    }
+
+    .pl-mi2 /* markup.ignored, markup.untracked */ {
+      color: #2f363d;
+      background-color: #959da5;
+    }
+
+    .pl-mdr /* meta.diff.range */ {
+      font-weight: bold;
+      color: #b392f0;
+    }
+
+    .pl-mo /* meta.output */ {
+      color: #0366d6;
+    }
+
+    .pl-ba /* brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote */ {
+      color: #ffeef0;
+    }
+
+    .pl-sg /* sublimelinter.gutter-mark */ {
+      color: #6a737d;
+    }
+
+    .pl-corl /* constant.other.reference.link, string.other.link */ {
+      text-decoration: underline;
+      color: #79b8ff;
+    }
+  }
 
 @-moz-document url-prefix("https://www.npmjs.com/search")
 
