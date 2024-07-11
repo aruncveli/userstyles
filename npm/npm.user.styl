@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name           npm
+@name           npm dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.07.10
-@description    description
+@version        24.07.11
+@description    Dark theme for npm
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
 @supportURL     https://github.com/aruncveli/userstyles/issues
@@ -27,6 +27,9 @@ set-bg2()
 
 set-fg()
   color fg
+
+unset-bg-img()
+  background-image unset
 
 @-moz-document url-prefix("https://www.npmjs.com")
   :root
@@ -54,11 +57,6 @@ set-fg()
     fill fg
 
   .dark-gray
-  .black
-  .black-90
-  .black-80
-  .black-70
-  .black-60
   ._1b8c0a9f // Headings in the footer
   .cd2827bb a // Links in the footer
   .a0dff0b1 // Keywords
@@ -67,31 +65,51 @@ set-fg()
   .c84e15be // Right pane headings: Install, Repository, etc.
     set-fg()
 
+  for variant in "" "-90" "-80" "-70" "-60"
+    .black{variant}
+      set-fg()
+
 @-moz-document url-prefix("https://www.npmjs.com/package")
   // Tabs
-  ._8055e658.d9f99065:hover
-  ._8055e658._7aa1ee94:hover
-  ._8055e658.c1f85151:hover
-  ._8055e658._7cec0316:hover
-  ._8055e658.b4fcfd19:hover
-    set-bg1()
+  ._8055e658
+    &.d9f99065
+    &._7aa1ee94
+    &.c1f85151
+    &._7cec0316
+    &.b4fcfd19
+      &:hover
+        set-bg1()
+    &._7cec0316.ac5f7ef8
+      background-color rgba(137, 86, 255, 0.08)
 
-  ._8055e658._7cec0316.ac5f7ef8
-    background-color rgba(137, 86, 255, 0.08)
+  // Logos
+  .fbd04dd1 // Copy code
+  .lh-copy // Copy code arrow
+  ._5cfc0900// Downloads
+    svg
+      fill fg
 
-  a[aria-labelelledby=repository] svg g // repo
-  .fbd04dd1 > svg // Copy code
-  .lh-copy > svg // Copy code arrow
-  ._513426a8 > svg > g // Git
-  ._5cfc0900 > svg // Downloads
-    fill fg
+  // Logos
+  a[aria-labelelledby=repository] // repo
+  ._513426a8// Git
+    svg g
+      fill fg
 
-  ._6d9832ac h1 // Readme headings
-  ._6d9832ac h2
-  ._6d9832ac strong
-  ._704c034e p // Readme contents
-  ._704c034e .highlight
-  ._704c034e li
+  // Readme
+  ._6d9832ac// Headings
+    h1
+    h2
+    h3
+    h4
+    h5
+    h6
+    strong
+      set-fg()
+  ._704c034e// Contents
+    p
+    .highlight
+    li
+      set-fg()
   .a0dff0b1 // Keywords
   .c84e15be // Right pane headings: Install, Repository, etc.
     set-fg()
@@ -106,26 +124,47 @@ set-fg()
   ._450b46e9 // Back button
     filter invert(1)
 
-  a[href^="/support"]
-    set-bg1()
+  // Misc buttons on the bottom right
+
+  unset-bg-border()
     background-image unset
     border unset
+
+  bg1-bg-border()
+    set-bg1()
+    unset-bg-border()
+
+  fg-bg-border()
+    set-fg()
+    unset-bg-border()
+
+  a[href^="/support"]
+    color var(--color-fg-danger)
+    bg1-bg-border()
     &:hover
       background-color var(--color-fg-danger)
-      set-fg()
-      border unset
-      background-image unset
+      fg-bg-border()
 
   a[href^="https://runkit.com"]
     color rgb(75 173 58 / 50%)
-    set-bg1()
-    background-image unset
-    border unset
+    bg1-bg-border()
     &:hover
       background-color rgb(75 173 58 / 50%)
+      fg-bg-border()
+
+  // Author box
+  ._704c034e td
+    set-bg()
+
+  // Fund this package banner
+  ._24a1e9c7
+    set-bg1()
+    set-fg()
+    unset-bg-img()
+    &:hover
       set-fg()
-      border unset
-      background-image unset
+      set-bg2()
+      unset-bg-img()
 
 @-moz-document url-prefix("https://www.npmjs.com/search")
 
