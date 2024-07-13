@@ -2,7 +2,7 @@
 
 A collection of simple and boring dark theme userstyles.
 
-No serious UX research done behind picking the default colors. Background and foreground colors were just checked for sufficient constrast.
+No UX research done behind picking the default colors. Background and foreground colors were just checked for sufficient constrast.
 
 To install and use these, you will need a userstyles manager web extension like [Stylus](https://github.com/openstyles/stylus).
 
