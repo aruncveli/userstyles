@@ -12,7 +12,7 @@ extension is [Stylus](https://github.com/openstyles/stylus), since that is the
 extension where these styles are developed and tested with. Also, Stylus enables
 installation of these styles by just clicking on the install links below.
 
-|                       |                                                                                                                   |                               |
+|         Name          |                                                                                                                   |                               |
 | :-------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------: |
 |      Arch Linux       |             [Install](https://github.com/aruncveli/userstyles/raw/main/archlinux/archlinux.user.styl)             |       [Info](archlinux)       |
 |        snowfl         |                [Install](https://github.com/aruncveli/userstyles/raw/main/snowfl/snowfl.user.styl)                |        [Info](snowfl)         |
