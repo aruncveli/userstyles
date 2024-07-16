@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.06.02
+@version        24.07.16
 @description    Dark theme for some (simpler) Arch Linux pages: Home, Packages, AUR and Download.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -210,6 +210,22 @@ link()
     div#cgit table.ssdiff td.head { border-top-color: #555; border-bottom-color: #555; }
     div#cgit table.ssdiff td.head div.head { color: #eee; }
     div#cgit table.ssdiff td.foot { border-top-color: #555; }
+
+    // These are modified as per https://gitlab.com/saalen/highlight/-/blob/master/themes/darkness.theme,    // of which the arch linux site uses the edit-kwrite.theme
+    div#cgit table.blob .num { color:#619de7; }
+    div#cgit table.blob .esc { color:#00abab; }
+    div#cgit table.blob .str { color:#abab00; }
+    div#cgit table.blob .pps { color:#abab00; }
+    div#cgit table.blob .slc { color:#008888; font-style:italic; }
+    div#cgit table.blob .com { color:#008888; font-style:italic; }
+    div#cgit table.blob .ppc { color:#1da3cf; }
+    div#cgit table.blob .opt { color:#ff00ff; }
+    div#cgit table.blob .ipl { color:#db70b8; }
+    div#cgit table.blob .lin { color:#888888; }
+    div#cgit table.blob .kwa { color:#ffff00; font-weight:bold; }
+    div#cgit table.blob .kwb { color:#00ff00; }
+    div#cgit table.blob .kwc { color:#26e0e7; font-weight:bold; }
+    div#cgit table.blob .kwd { color:#f34627; }
   }
 
 
