@@ -9,10 +9,12 @@
 @updateURL      https://github.com/aruncveli/userstyles/psarips/psarips.user.styl
 @license        MIT
 @preprocessor   stylus
-@var	color	fg	        "Foreground"	            white
-@var	color	bg	        "Background"	            black
-@var	color	bg1	        "Background lightened 1"	#111111
-@var	color	blue        "Blue"                    #0b84ff
+@var	color	fg	            "Foreground"	            white
+@var	color	bg	            "Background"	            black
+@var	color	bg1	            "Background lightened 1"	#111111
+@var	color	blue-override   "Blue"                    #0b84ff
+@var	color	green-override  "Green"                   #32d74b
+@var	color	link-color	    "Link"                    #0b84ff
 ==/UserStyle== */
 
 set-bg(var = bg)
@@ -29,7 +31,18 @@ set-fg()
     color-scheme dark
 
   body
+    set-bg()
+    set-fg()
+
+  a
+    color link-color
+
   .page-title
+    set-bg()
+    border-bottom unset
+    h1
+      color blue-override
+
   .hu-pad
   .sidebar .sidebar-content
   .main-inner
@@ -38,7 +51,6 @@ set-fg()
   .search-form input[type=search]
     set-bg()
 
-  .page-title
   .featured
   .post-list .post-row
     border-bottom unset
@@ -50,36 +62,35 @@ set-fg()
   .dropshadowboxes-rounded-corners
     background-color bg1 !important
 
-  .post-tags a
   .sp-wrap-steelblue
   #wpd-post-rating .wpd-rating-wrap .wpd-rating-value
   .entry code:not([lang])
     set-bg1()
 
   .post-tags a
+    set-bg1()
     set-fg()
 
-  .sp-wrap-steelblue .sp-head
-  body
+  .sp-wrap-steelblue
+    set-bg1()
+    .sp-head
+      set-fg()
+    .sp-body
+      set-bg1()
+      set-fg()
+
   .entry.excerpt
   h4
     set-fg()
 
-  .sp-wrap-steelblue .sp-body
-    set-bg1()
-    set-fg()
-
   .caption
-    color #32d74b !important
+    color green-override !important
 
-  .wp-pagenavi span.current
-    border-top unset
-
-  .wp-pagenavi a
-    &,
-    &:hover
+  .wp-pagenavi
+    span.current
       border-top unset
-      border-bottom unset
-
-  .page-title h1
-    color blue
+    a
+      &,
+      &:hover
+        border-top unset
+        border-bottom unset
