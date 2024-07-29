@@ -1,0 +1,85 @@
+/* ==UserStyle==
+@name           PSArips
+@namespace      github.com/aruncveli/userstyles
+@version        24.07.29
+@description    description
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/psarips/psarips.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	blue        "Blue"                    #0b84ff
+==/UserStyle== */
+
+set-bg(var = bg)
+  background-color var
+
+set-bg1()
+  set-bg(bg1)
+
+set-fg()
+  color fg
+
+@-moz-document url-prefix("https://psa.wf")
+  :root
+    color-scheme dark
+
+  body
+  .page-title
+  .hu-pad
+  .sidebar .sidebar-content
+  .main-inner
+  #page
+  #footer
+  .search-form input[type=search]
+    set-bg()
+
+  .page-title
+  .featured
+  .post-list .post-row
+    border-bottom unset
+
+  .search-form input[type=search]
+    border-color bg1
+    set-fg()
+
+  .dropshadowboxes-rounded-corners
+    background-color bg1 !important
+
+  .post-tags a
+  .sp-wrap-steelblue
+  #wpd-post-rating .wpd-rating-wrap .wpd-rating-value
+  .entry code:not([lang])
+    set-bg1()
+
+  .post-tags a
+    set-fg()
+
+  .sp-wrap-steelblue .sp-head
+  body
+  .entry.excerpt
+  h4
+    set-fg()
+
+  .sp-wrap-steelblue .sp-body
+    set-bg1()
+    set-fg()
+
+  .caption
+    color #32d74b !important
+
+  .wp-pagenavi span.current
+    border-top unset
+
+  .wp-pagenavi a
+    &,
+    &:hover
+      border-top unset
+      border-bottom unset
+
+  .page-title h1
+    color blue
