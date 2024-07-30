@@ -25,3 +25,4 @@ extension is [Stylus](https://github.com/openstyles/stylus), since:
 |       npm Docs        |              [Install](https://github.com/aruncveli/userstyles/raw/main/npm-docs/npm-docs.user.styl)              |       [Info](npm-docs)        |
 |          npm          |                   [Install](https://github.com/aruncveli/userstyles/raw/main/npm/npm.user.styl)                   |          [Info](npm)          |
 |        PSArips        |               [Install](https://github.com/aruncveli/userstyles/raw/main/psarips/psarips.user.styl)               |        [Info](psarips)        |
+|        YouGov         |                [Install](https://github.com/aruncveli/userstyles/raw/main/yougov/yougov.user.styl)                |        [Info](yougov)         |

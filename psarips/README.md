@@ -1,4 +1,4 @@
-# PSArips
+# PSArips Dark
 
 [Install](https://github.com/aruncveli/userstyles/raw/main/psarips/psarips.user.styl)
 

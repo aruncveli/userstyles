@@ -1,0 +1,98 @@
+/* ==UserStyle==
+@name           YouGov Dark
+@namespace      github.com/aruncveli/userstyles
+@version        24.07.30
+@description    description
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/yougov/yougov.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+==/UserStyle== */
+
+set-bg(var = bg)
+  background var
+
+set-bg1()
+  set-bg(bg1)
+
+set-bg2()
+  set-bg(bg2)
+
+set-fg()
+  color fg
+
+@-moz-document domain("survey2.yougov.com")
+  :root
+    color-scheme dark
+
+  body
+  select
+    set-fg()
+    set-bg()
+
+  .response-button
+    set-fg()
+    set-bg()
+    &:hover
+      set-bg1()
+
+  label:hover div.uniform-
+    &checker span
+      set-bg()
+    &radio span
+      set-bg1()
+
+  .response-label
+    &.selected
+      set-bg()
+    &:hover
+      background-color unset
+
+  .content-wrapper
+    set-bg()
+
+  #rankingWidget
+    .rank
+    .select
+      set-bg()
+
+  div.uniform-
+    &checker
+    &radio
+      span
+        set-fg()
+    &radio span.uniform-checked:not(.hidden-response)
+      set-bg1()
+
+  .question .question-text
+  .label-inner
+    set-fg()
+
+  .grid-layout
+    tr.grid-row th
+    .grid-item-text-left
+      set-fg()
+    tbody tr:hover > *
+      background-color unset
+
+  .rankSelectionBlock
+    set-bg1()
+
+  .grid-container-sticky-header .grid-layout thead
+    th
+    td
+      set-bg1()
+
+  select:hover
+    border-color #616e90
+
+  input
+  textarea
+    set-fg()
+    set-bg()
+    border-color fg

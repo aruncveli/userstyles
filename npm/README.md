@@ -1,4 +1,4 @@
-# npm
+# npm dark
 
 [Install](https://github.com/aruncveli/userstyles/raw/main/npm/npm.user.styl)
 

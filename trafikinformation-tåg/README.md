@@ -1,4 +1,4 @@
-# Trafikinformation tåg
+# Trafikinformation tåg Dark
 
 [Install](https://github.com/aruncveli/userstyles/raw/main/trafikinformation-tåg/trafikinformation-tåg.user.styl)
 
