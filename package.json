@@ -14,8 +14,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "generate": "node --import @swc-node/register/esm-register generate.ts",
-    "lint": "stylelint **/*.user.styl",
-    "lint:fix": "stylelint **/*.user.styl --fix"
+    "lint": "stylelint **/*.user.styl && eslint .",
+    "lint:fix": "stylelint **/*.user.styl --fix && eslint . --fix"
   },
   "devDependencies": {
     "@eslint/js": "9.4.0",
@@ -30,12 +30,10 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-simple-import-sort": "12.1.0",
     "prettier": "3.3.1",
-    "typescript": "5.4.5",
-    "typescript-eslint": "7.12.0"
-  },
-  "dependencies": {
     "stylelint": "16.6.1",
     "stylelint-stylus": "1.0.0",
-    "stylus": "0.63.0"
+    "stylus": "0.63.0",
+    "typescript": "5.4.5",
+    "typescript-eslint": "7.12.0"
   }
 }
