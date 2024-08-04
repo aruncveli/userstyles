@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           PSArips Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.07.30
+@version        24.08.04
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -12,7 +12,7 @@
 @var	color	fg	            "Foreground"	            white
 @var	color	bg	            "Background"	            black
 @var	color	bg1	            "Background lightened 1"	#111111
-@var	color	blue-override   "Blue"                    #0b84ff
+@var	color	bg2	            "Background lightened 2"	#222222
 @var	color	green-override  "Green"                   #32d74b
 @var	color	link-color	    "Link"                    #0b84ff
 ==/UserStyle== */
@@ -22,6 +22,9 @@ set-bg(var = bg)
 
 set-bg1()
   set-bg(bg1)
+
+set-bg2()
+  set-bg(bg2)
 
 set-fg()
   color fg
@@ -37,19 +40,43 @@ set-fg()
   a
     color link-color
 
+  .post-item-title a
+  .widget a
+    color link-color !important
+
   .page-title
     set-bg()
     border-bottom unset
     h1
-      color blue-override
+      color link-color
 
   .hu-pad
   .sidebar .sidebar-content
   .main-inner
   #page
   #footer
+    set-bg()
+
   .search-form input[type=search]
     set-bg()
+    &:focus
+      set-fg()
+
+  .notebox
+    set-bg1()
+    set-fg()
+
+  div.wpforms-container-full .wpforms-form
+    input[type=text]
+    input[type=email]
+    textarea
+      set-bg1()
+      set-fg()
+    button[type=submit]
+      set-bg1()
+      set-fg()
+      &:hover
+        set-bg2()
 
   .featured
   .post-list .post-row
@@ -81,6 +108,7 @@ set-fg()
 
   .entry.excerpt
   h4
+  .themeform label
     set-fg()
 
   .caption

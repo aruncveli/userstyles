@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.07.30
+@version        24.08.04
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -9,13 +9,15 @@
 @updateURL      https://github.com/aruncveli/userstyles/yougov/yougov.user.styl
 @license        MIT
 @preprocessor   stylus
-@var	color	fg	        "Foreground"	            white
-@var	color	bg	        "Background"	            black
-@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	fg	          "Foreground"	            white
+@var	color	bg	          "Background"	            black
+@var	color	bg1	          "Background lightened 1"	#111111
+@var	color	bg2	          "Background lightened 2"	#222222
+@var  color red-override  "Red"                     #ff3b44
 ==/UserStyle== */
 
 set-bg(var = bg)
-  background var
+  background-color var
 
 set-bg1()
   set-bg(bg1)
@@ -29,6 +31,8 @@ set-fg()
 @-moz-document domain("survey2.yougov.com")
   :root
     color-scheme dark
+    --color-grapefruit-300 '%s33' % red-override
+    --color-grapefruit-1200 red-override
 
   body
   select
@@ -44,8 +48,6 @@ set-fg()
   label:hover div.uniform-
     &checker span
       set-bg()
-    &radio span
-      set-bg1()
 
   .response-label
     &.selected
@@ -67,7 +69,7 @@ set-fg()
       span
         set-fg()
     &radio span.uniform-checked:not(.hidden-response)
-      set-bg1()
+      background-color fg
 
   .question .question-text
   .label-inner
@@ -77,8 +79,12 @@ set-fg()
     tr.grid-row th
     .grid-item-text-left
       set-fg()
-    tbody tr:hover > *
-      background-color unset
+    tbody tr:hover >
+      th
+      td
+        set-bg1()
+      td:hover
+        set-bg2()
 
   .rankSelectionBlock
     set-bg1()
@@ -91,8 +97,8 @@ set-fg()
   select:hover
     border-color #616e90
 
-  input
+  input[type='text']
   textarea
     set-fg()
-    set-bg()
+    set-bg1()
     border-color fg
