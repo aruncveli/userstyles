@@ -26,3 +26,4 @@ extension is [Stylus](https://github.com/openstyles/stylus), since:
 |          npm          |                   [Install](https://github.com/aruncveli/userstyles/raw/main/npm/npm.user.styl)                   |          [Info](npm)          |
 |        PSArips        |               [Install](https://github.com/aruncveli/userstyles/raw/main/psarips/psarips.user.styl)               |        [Info](psarips)        |
 |        YouGov         |                [Install](https://github.com/aruncveli/userstyles/raw/main/yougov/yougov.user.styl)                |        [Info](yougov)         |
+|        AWS CDK        |               [Install](https://github.com/aruncveli/userstyles/raw/main/aws-cdk/aws-cdk.user.styl)               |        [Info](aws-cdk)        |

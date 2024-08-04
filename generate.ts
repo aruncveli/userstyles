@@ -3,12 +3,17 @@ import { argv } from "node:process";
 
 import { renderFile } from "ejs";
 
-const name = argv[2];
-if (!name) {
+/**
+ * Usage: pnpm run generate Style Name
+ */
+
+const args = argv.slice(2);
+if (!args.length) {
   throw new Error("Name is required");
 }
 
-const smallName = name.toLocaleLowerCase().replaceAll(" ", "-");
+const name = args.join(" ");
+const smallName = args.join("-").toLocaleLowerCase();
 console.log(`Creating directory ${smallName}`);
 mkdirSync(smallName);
 
