@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.08.04
+@version        24.08.05
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -71,6 +71,9 @@ set-fg()
     &radio span.uniform-checked:not(.hidden-response)
       background-color fg
 
+  .grid-cell label div.uniform-radio > span
+    set-bg()
+
   .question .question-text
   .label-inner
     set-fg()
@@ -85,6 +88,8 @@ set-fg()
         set-bg1()
       td:hover
         set-bg2()
+    tr th.grid-item-text-right
+      set-fg()
 
   .rankSelectionBlock
     set-bg1()
@@ -98,6 +103,7 @@ set-fg()
     border-color #616e90
 
   input[type='text']
+  input[type='number']
   textarea
     set-fg()
     set-bg1()
