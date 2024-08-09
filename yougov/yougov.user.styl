@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.08.05
+@version        24.08.09
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -38,6 +38,17 @@ set-fg()
   select
     set-fg()
     set-bg()
+
+  body select
+    &.selected
+    &:focus:not(.nofocus)
+      set-fg()
+
+      @css {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogICAgPGRlZnM+DQogICAgICAgIDxwYXRoIGlkPSI5MGd4OXF3MGVhIiBkPSJNOS40MTQgMTAuNjY3IDggMTIuMDhsLTEuNDE0LTEuNDE0LTQuOTUtNC45NUwzLjA1IDQuMzAzIDggOS4yNTNsNC45NS00Ljk1IDEuNDE0IDEuNDE0eiIvPg0KICAgICAgICA8cGF0aCBpZD0iYmNwcDAweDMwYyIgZD0iTTkuNDE0IDEwLjY2NyA4IDEyLjA4bC0xLjQxNC0xLjQxNC00Ljk1LTQuOTVMMy4wNSA0LjMwMyA4IDkuMjUzbDQuOTUtNC45NSAxLjQxNCAxLjQxNHoiLz4NCiAgICA8L2RlZnM+DQogICAgPGcgZmlsbD0iI2ZmZiI+DQogICAgICAgIDxtYXNrIGlkPSJzdDJ1ZjVkaGpiIiBmaWxsPSIjZmZmIj4NCiAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iIzkwZ3g5cXcwZWEiLz4NCiAgICAgICAgPC9tYXNrPg0KICAgICAgICA8dXNlIGZpbGw9IiNmZmYiIHhsaW5rOmhyZWY9IiM5MGd4OXF3MGVhIi8+DQogICAgICAgIDxnIG1hc2s9InVybCgjc3QydWY1ZGhqYikiPg0KICAgICAgICAgICAgPG1hc2sgaWQ9Ijd4YTFqMTRwNWQiIGZpbGw9IiNmZmYiPg0KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2JjcHAwMHgzMGMiLz4NCiAgICAgICAgICAgIDwvbWFzaz4NCiAgICAgICAgICAgIDx1c2UgZmlsbD0iI2ZmZiIgeGxpbms6aHJlZj0iI2JjcHAwMHgzMGMiLz4NCiAgICAgICAgICAgIDxnIG1hc2s9InVybCgjN3hhMWoxNHA1ZCkiIGZpbGw9IiNmZmYiPg0KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wIDBoMTZ2MTZIMHoiLz4NCiAgICAgICAgICAgIDwvZz4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg0K)
+      }
+    &:hover
+      border-color #616e90
 
   .response-button
     set-fg()
@@ -108,3 +119,6 @@ set-fg()
     set-fg()
     set-bg1()
     border-color fg
+
+  textarea[readonly]
+    set-bg2()
