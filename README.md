@@ -7,12 +7,10 @@ foreground colors were just checked for sufficient constrast.
 
 ## Styles
 
-To use these, you will need a userstyles manager web extension. The recommended
-extension is [Stylus](https://github.com/openstyles/stylus), since:
-
-- these styles are developed using that.
-- it enables installation of these styles by clicking on the install links
-  below.
+These styles are developed using and targeting the userstyles manager web
+extension [Stylus](https://github.com/openstyles/stylus). After installing the
+extension, click on any of the below links to install the corresponding user
+style.
 
 |         Name          |                                                                                                                   |                               |
 | :-------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------: |
@@ -27,3 +25,4 @@ extension is [Stylus](https://github.com/openstyles/stylus), since:
 |        PSArips        |               [Install](https://github.com/aruncveli/userstyles/raw/main/psarips/psarips.user.styl)               |        [Info](psarips)        |
 |        YouGov         |                [Install](https://github.com/aruncveli/userstyles/raw/main/yougov/yougov.user.styl)                |        [Info](yougov)         |
 |        AWS CDK        |               [Install](https://github.com/aruncveli/userstyles/raw/main/aws-cdk/aws-cdk.user.styl)               |        [Info](aws-cdk)        |
+|      KTH Canvas       |            [Install](https://github.com/aruncveli/userstyles/raw/main/kth-canvas/kth-canvas.user.styl)            |      [Info](kth-canvas)       |
