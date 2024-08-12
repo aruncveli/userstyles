@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Trafikinformation tåg Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.08.09
+@version        24.08.12
 @description    Official live status of Swedish trains
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -14,8 +14,8 @@
 @var	color	bg	        "Background"	            black
 @var	color	bg1	        "Background lightened 1"	#111111
 @var	color	bg2	        "Background lightened 2"	#222222
-@var	text	link	      "Link"	                  255,102,102
-@var	text	link-hover	"Link hover"	            255,119,119
+@var	text	link	      "Link"	                  #ff443a
+@var	text	link-hover	"Link hover"	            #ff6961
 ==/UserStyle== */
 
 set-bg(var = bg)
@@ -35,19 +35,28 @@ set-fg()
     color-scheme dark
     --bs-body-bg bg
     --bs-secondary-bg bg
+    --bs-secondary-bg-subtle bg
     --bs-secondary-color fg
     --bs-body-color fg
-    --bs-link-color-rgb link
-    --bs-link-hover-color-rgb link-hover
+    --bs-link-color link
+    --bs-link-hover-color link-hover
+    --bs-link-color-rgb 255,69,58
+    --bs-link-hover-color-rgb 255,105,97
+    --bs-white-rgb 0,0,0
+    --bs-btn-color link
+
+  .btn-close
+  .toggle-direction .btn-check+.btn
+    --bs-btn-close-color link
+    --bs-btn-color link
 
   .btn-outline-primary
     --bs-btn-color fg
 
   .form-control
-    &
-      set-bg()
+    set-bg1()
     &:focus
-      set-bg1()
+      set-bg2()
 
   .c-autocomplete
     li
@@ -111,3 +120,35 @@ set-fg()
 
   .table-hover > tbody > tr:hover > *
     set-bg2()
+
+  .traffic-map-page .map-menu
+    set-bg()
+
+  .table-tm tbody
+    tr td
+      set-bg()
+    tr:hover td
+      set-bg1()
+
+  .c-autocomplete
+    set-bg1()
+    li button
+      set-fg()
+      &:hover
+        set-fg()
+        set-bg2()
+    li[aria-selected=true] button
+      set-bg1()
+      set-fg()
+      &:hover
+        set-fg()
+        set-bg2()
+
+  .btn-close
+    background-image url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f66' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3E%3C/svg%3E")
+
+  .train-panel__meta ul li.time-update .rounded-pill
+    set-bg1()
+
+  .table-tm--train tbody tr td:first-child:before
+    background-color fg
