@@ -15,7 +15,8 @@
     "format:check": "prettier --check .",
     "generate": "node --import @swc-node/register/esm-register generate.ts",
     "lint": "stylelint **/*.user.styl && eslint .",
-    "lint:fix": "stylelint **/*.user.styl --fix && eslint . --fix"
+    "lint:fix": "stylelint **/*.user.styl --fix && eslint . --fix",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "9.9.0",
@@ -24,13 +25,14 @@
     "@types/ejs": "3.1.5",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
-    "@types/node": "22.2.0",
+    "@types/node": "22.4.0",
     "ejs": "3.1.10",
     "eslint": "9.9.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
+    "husky": "9.1.4",
     "prettier": "3.3.3",
-    "stylelint": "16.8.1",
+    "stylelint": "16.8.2",
     "stylelint-stylus": "1.0.0",
     "stylus": "0.63.0",
     "typescript": "5.5.4",

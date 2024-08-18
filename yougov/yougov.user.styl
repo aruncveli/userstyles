@@ -9,11 +9,12 @@
 @updateURL      https://github.com/aruncveli/userstyles/raw/main/yougov/yougov.user.styl
 @license        MIT
 @preprocessor   stylus
-@var	color	fg	          "Foreground"	            white
-@var	color	bg	          "Background"	            black
-@var	color	bg1	          "Background lightened 1"	#111111
-@var	color	bg2	          "Background lightened 2"	#222222
-@var  color red-override  "Red"                     #ff3b44
+@var	color	fg    "Foreground"	            white
+@var	color	bg	  "Background"	            black
+@var	color	bg1	  "Background lightened 1"	#111111
+@var	color	bg2	  "Background lightened 2"	#222222
+@var  color error "Red"                     #ff3b44
+@var  color alert "Yellow"                  #ffd60a
 ==/UserStyle== */
 
 set-bg(var = bg)
@@ -31,8 +32,8 @@ set-fg()
 @-moz-document domain("survey2.yougov.com")
   :root
     color-scheme dark
-    --color-grapefruit-300 '%s33' % red-override
-    --color-grapefruit-1200 red-override
+    --color-grapefruit-300 '%s33' % error
+    --color-grapefruit-1200 error
 
   body
   select
@@ -121,3 +122,13 @@ set-fg()
 
   textarea[readonly]
     set-bg2()
+
+  .scale-options
+    background-image linear-gradient(bg1 100%, transparent 90%)
+
+  .scale_button span
+    set-bg1()
+
+  .alert
+    color alert
+    background-color '%s33' % alert
