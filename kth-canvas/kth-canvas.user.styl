@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           KTH Canvas Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.08.20
+@version        24.08.26
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -95,7 +95,7 @@ set-bg-fg()
         li
           &:hover
             set-bg()
-          .ui-tabs-active
+          &.ui-tabs-active
             &
             &:hover
               set-bg-fg()
@@ -146,6 +146,8 @@ set-bg-fg()
   .ig-list .ig-row:hover
   .ic-Dashboard-header__layout
   .alert-info
+  .module-sequence-footer .module-sequence-footer-content
+  .student-groups.show-body .student-group-header
     set-bg()
 
   .ig-header
@@ -171,7 +173,6 @@ set-bg-fg()
     tgd = -toggleDetails
     bbc = -baseButton__content
     &1gto5tw-tray
-    &xu75ed{ti}:is(input)[type]
     &1ss9wov{ti}{fc}
     &ouw8ib{ti}{fc}
     &x7u86u{tgd}__details
@@ -179,6 +180,7 @@ set-bg-fg()
     &1nbdyko-view-listItem
       set-bg-fg()
     &1eaecfq{bbc}
+    &12w1q2i{bbc}
       set-fg()
     &p3olqp{bbc}
       set-bg-fg()
@@ -199,6 +201,16 @@ set-bg-fg()
       color link-color
       &:hover
         color link-hover
+    &xu75ed{ti}
+      &:i\s
+      &:-webkit-any
+        &(input)[type]
+          set-bg-fg()
+    &tpuo6v-text
+      set-fg()
+    &qk7dyq-view-alert
+      set-bg1()
+      set-fg()
 
   st = -styles__
   .Planner
@@ -214,7 +226,12 @@ set-bg-fg()
       set-bg()
 
   .pages.show .course-title
+  .student-groups .student-group-students
     set-fg()
+
+  #syllabus tr.date.related td
+  .ic-notification__content
+    set-bg1()
 
 @-moz-document url-prefix("https://canvas.kth.se/calendar")
   #calendar-app
