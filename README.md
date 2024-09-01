@@ -26,3 +26,4 @@ style.
 |        YouGov         |                [Install](https://github.com/aruncveli/userstyles/raw/main/yougov/yougov.user.styl)                |        [Info](yougov)         |
 |        AWS CDK        |               [Install](https://github.com/aruncveli/userstyles/raw/main/aws-cdk/aws-cdk.user.styl)               |        [Info](aws-cdk)        |
 |      KTH Canvas       |            [Install](https://github.com/aruncveli/userstyles/raw/main/kth-canvas/kth-canvas.user.styl)            |      [Info](kth-canvas)       |
+|       Grammarly       |             [Install](https://github.com/aruncveli/userstyles/raw/main/grammarly/grammarly.user.styl)             |       [Info](grammarly)       |

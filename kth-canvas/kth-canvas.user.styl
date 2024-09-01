@@ -6,7 +6,7 @@
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
 @supportURL     https://github.com/aruncveli/userstyles/issues
-@updateURL      https://github.com/aruncveli/userstyles/raw/main/raw/main/kth-canvas/kth-canvas.user.styl
+@updateURL      https://github.com/aruncveli/userstyles/raw/main/kth-canvas/kth-canvas.user.styl
 @license        MIT
 @preprocessor   stylus
 @var	color	fg	        "Foreground"	            white
@@ -186,9 +186,9 @@ set-bg-fg()
       set-bg-fg()
     &10f5v0f-pill
       set-bg-fg()
-    &qbjizl-text
-    &zlfjpm-text
-      set-fg()
+    &m38476
+      &-text
+        set-fg()
     &hrgp63-view
       set-bg()
     &1rpus1y{bbc}
@@ -206,8 +206,6 @@ set-bg-fg()
       &:-webkit-any
         &(input)[type]
           set-bg-fg()
-    &tpuo6v-text
-      set-fg()
     &qk7dyq-view-alert
       set-bg1()
       set-fg()
@@ -225,13 +223,26 @@ set-bg-fg()
     &unpublished-course-row
       set-bg()
 
-  .pages.show .course-title
+  .pages.show
+    .course-
+    .page-
+      &title
+        set-fg()
+
   .student-groups .student-group-students
     set-fg()
 
   #syllabus tr.date.related td
   .ic-notification__content
     set-bg1()
+
+  #syllabus tr.date.date_passed td
+    set-bg()
+
+  .ef-item-row:hover
+    set-bg1()
+  .ef-item-row.ef-item-selected
+    set-bg2()
 
 @-moz-document url-prefix("https://canvas.kth.se/calendar")
   #calendar-app

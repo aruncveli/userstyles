@@ -1,0 +1,157 @@
+/* ==UserStyle==
+@name           Grammarly Dark
+@namespace      github.com/aruncveli/userstyles
+@version        24.09.01
+@description    description
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/raw/main/raw/main/grammarly/grammarly.user.styl
+@license        MIT
+@preprocessor   stylus
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	bg2	        "Background lightened 2"	#222222
+==/UserStyle== */
+
+set-bg(var = bg)
+  background var
+
+set-bg1()
+  set-bg(bg1)
+
+set-bg2()
+  set-bg(bg2)
+
+set-fg()
+  color fg
+
+@-moz-document url-prefix("https://app.grammarly.com/ddocs")
+  :root
+    color-scheme dark
+
+    c = --color-
+    bb = background-base-
+    tb = text-base-
+    ib = icon-base-
+    d = default
+    s = subdued
+    {c}{bb}{d} bg
+    {c}{bb}{s} bg
+    {c}{tb}{d} fg
+    {c}{tb}{s} fg
+    {c}{ib}{d} fg
+
+    bt = --button-tertiary-
+    h = hover
+    bgh = background- + h
+    t = text-
+    {bt}{bgh} bg2
+    {bt}border-{h} unset
+    {bt}{t}{d} fg
+    {bt}{t}{h} fg
+    {bt}background-active bg1
+    {bt}{t}active fg
+
+  .fqelrj5 // text content
+    set-fg()
+
+  .toolbar-
+    &toolbarTitleContainer_f1v3u1nf
+    &wordCounter_ftobdvv
+      set-bg()
+    &headerTitleHighlight_f11ekwp8:before
+      set-bg1()
+
+  .fal6plv // Name
+  .f1riuydc // Score/performance modal texts
+  .fq061rn
+  .f10buadf
+  .f1vn8v6g
+  .fhsusol
+  ._b08aac52-footer-footerLabel
+  .f1rx9jzm
+  .fjlhwhm
+    set-fg()
+
+  .f1aunnt9
+    set-fg()
+    &:not([data-disabled='true'])[data-hovered='true'] // weird buttons
+      set-bg1()
+
+  ._8dab8e44-document_settings-separator
+    set-bg1()
+
+  ._8bbcd63e-formatting-toolbar-item
+    &[data-active=false][data-hovered=false]>i[data-role=icon]>svg
+    &[data-active=false][data-hovered=true]>i[data-role=icon]>svg
+      fill fg
+    &:hover
+      set-bg1()
+
+  ._70c2ea48-document_settings-documentSettings
+    set-bg()
+  .modal-
+    &body_f1orqs7k
+    &footer_f1v9ogc7
+      set-bg()
+  .modalHeader_ffbp2bq
+    set-bg()
+
+  ._f0f464d7-footer-footerWrapper
+  ._de72bac6-footer-fContainer
+  .fkhz08q
+  main
+  .f10wkw6u .f113r6od:not([data-active='true'])
+  .f113r6od
+    set-bg()
+
+  // weird buttons
+  .f1u0d4ph:not([data-disabled='true']):not([aria-disabled='true']):hover
+  :not([data-disabled='true'])[data-hovered='true'] > .cheetah_button-buttonContent_fq5jbwy
+  .triggerButton_f1l4zisq[data-active="true"]
+    set-bg1()
+
+  .menuItem_ffsq1m9
+    &:hover
+    &:focus-visible
+    &:focus
+      set-bg1()
+
+  ._f564a3b5-document_settings-menuHead
+    box-shadow unset
+
+  .oggyWrapper_f16zfgaf
+    set-bg()
+    box-shadow unset
+
+  .f115rtmw
+    border-bottom unset
+
+  // Assistant
+  .oggy-oggyWrapper_f1y9tgv0 > div
+    border unset
+    box-shadow unset
+
+  // Plagiarism and AI text
+  .fk78ga
+    border-top-width 0px
+
+  .header-
+    &performanceBtnHigh_f1h0pymt
+    &headerBtn_f6q89uo
+      border unset
+
+  ._1d9f2970-document_actions-outcomeDocumentActionsFull:before
+    background unset
+
+  .cheetah_button-button
+    &Content_fq5jbwy
+      set-bg()
+      set-fg()
+    &_f1ncib7
+      border unset
+
+  .toolbarIcon_f1qxzied
+    stroke fg
