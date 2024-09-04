@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           KTH Canvas Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.08.26
+@version        24.09.04
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -32,6 +32,12 @@ set-fg()
 set-bg-fg()
   set-bg()
   set-fg()
+
+bu()
+  border unset
+
+bbu()
+  border-bottom unset
 
 @-moz-document domain("canvas.kth.se")
   :root
@@ -104,7 +110,11 @@ set-bg-fg()
 
   .btn
     set-bg-fg()
+    border unset
     &:hover
+      set-bg1()
+      set-fg()
+    &:focus
       set-bg1()
       set-fg()
 
@@ -123,8 +133,10 @@ set-bg-fg()
     &densed
       .ig-header
         set-bg-fg()
+        bu()
       .ig-row
         set-bg()
+        bu()
 
   .list-view a.active
     color link-color
@@ -144,13 +156,17 @@ set-bg-fg()
       set-bg-fg()
 
   .ig-list .ig-row:hover
-  .ic-Dashboard-header__layout
   .alert-info
   .module-sequence-footer .module-sequence-footer-content
   .student-groups.show-body .student-group-header
     set-bg()
 
+  .ic-Dashboard-header__layout
+    set-bg()
+    bbu()
+
   .ig-header
+    bu()
     .name
       text-shadow unset
       color unset
@@ -181,23 +197,34 @@ set-bg-fg()
       set-bg-fg()
     &1eaecfq{bbc}
     &12w1q2i{bbc}
+    &zlfjpm-text
+    &19bvnq4{bbc}
+    &1gojmgl-menuItem__label
+    &qbjizl-text
+    &tpuo6v-text
       set-fg()
-    &p3olqp{bbc}
-      set-bg-fg()
     &10f5v0f-pill
       set-bg-fg()
+    &p3olqp{bbc}
+      set-bg-fg()
+      border unset
     &m38476
       &-text
         set-fg()
     &hrgp63-view
+    &1dndbkc-menu
+    &18dmyj-menuItem
+    &tfc09q-pill
       set-bg()
     &1rpus1y{bbc}
       set-bg-fg()
     &w4688r
     &w2vn1u
-      &-view--inlineBlock-baseButton:hover > [class$="{bbc}"]
-        set-bg1()
+      &-view--inlineBlock-baseButton:hover >
+        [class$="{bbc}"]
+          set-bg1()
     &1szthj9-view-link:-webkit-any(a)
+    &1u4b9g0-view-link:-webkit-any(a)
       color link-color
       &:hover
         color link-hover
@@ -209,12 +236,17 @@ set-bg-fg()
     &qk7dyq-view-alert
       set-bg1()
       set-fg()
+    &18dmyj-menuItem:focus
+      set-bg1()
+    &1ns2r3i-view-heading
+      bbu()
 
   st = -styles__
   .Planner
     &Header{st}root
       set-bg()
     &Item{st}due
+    &Item{st}score
       set-fg()
 
   .course-list-
@@ -231,6 +263,25 @@ set-bg-fg()
 
   .student-groups .student-group-students
     set-fg()
+
+  #right-side
+    .events_list .event-details:after
+      background unset
+    h2
+      &
+      .&
+        bbu()
+
+  .PlannerItem
+  .CompletedItemsFacade
+    &-styles__root
+      bbu()
+
+  .Grouping-styles__items
+    border-top unset
+
+  hr
+    border-top unset
 
   #syllabus tr.date.related td
   .ic-notification__content
