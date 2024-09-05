@@ -25,7 +25,7 @@
     "@types/ejs": "3.1.5",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
-    "@types/node": "22.5.3",
+    "@types/node": "22.5.4",
     "ejs": "3.1.10",
     "eslint": "9.9.1",
     "eslint-config-prettier": "9.1.0",
