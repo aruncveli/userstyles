@@ -33,18 +33,24 @@ set-fg()
     color-scheme dark
 
   a:hover
+  ._expandedData_1en0v_57
+  ._labelDate_et9mg_152
+  ._forecastIssued_1tq7k_1
     set-fg()
 
   .nextgen
     set-fg()
     &
     #headcontent
+      set-bg()
+      border-bottom unset
     .smhialternating
       set-bg()
     .breadcrumbs ul a
       color #0c6bc4
 
   #mainLogo
+  ._legendSwatch_et9mg_264 img
     filter invert(1)
 
   a._warningTextContainer_2n9on_1._warningTextContainer_2n9on_1
@@ -143,8 +149,12 @@ set-fg()
       color bg
 
   // Charts
-  .highcharts-background
-    fill bg
+  .highcharts-
+    &background
+      fill bg
+    &root image
+      filter invert(1)
+
 
   ._label_
     &y73h5
@@ -174,3 +184,15 @@ set-fg()
     span
       set-bg()
       color fg !important
+
+  .tabs-module_tabs__4BiXZ .tabs-module_tabsHeader__g7zIj .tabs-module_tabsWrapper__tN17g:not(.tabs-module_noBottomBorder__CBn3H):before
+  ._tableContainer_u7j8u_140 table tr
+    border-bottom unset
+
+  .button-module_button__V-oN8.button-module_buttonSecondary__csP-q
+  .card-module_card__CJdzk .card-module_cardWrapper__iNImr
+    border unset
+
+  ._card_1en0v_1._largeCard_1en0v_200 ._cardContent_1en0v_140 ._block_1en0v_153._dayCell_1en0v_1
+  ._card_1en0v_1._largeCard_1en0v_200:hover ._cardContent_1en0v_140 ._block_1en0v_153._dayCell_1en0v_1
+    border-right unset

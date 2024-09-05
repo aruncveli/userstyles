@@ -29,8 +29,8 @@ set-bg2()
 set-fg()
   color fg
 
-set-bg-fg()
-  set-bg()
+set-bg-fg(var = bg)
+  set-bg(var)
   set-fg()
 
 bu()
@@ -121,6 +121,7 @@ bbu()
   .accessible-toggler
     set-bg-fg()
     &:hover
+    &:focus
       set-fg()
 
   .Grouping-styles__title
@@ -132,7 +133,7 @@ bbu()
     &tainer
     &densed
       .ig-header
-        set-bg-fg()
+        set-bg-fg(bg1)
         bu()
       .ig-row
         set-bg()
