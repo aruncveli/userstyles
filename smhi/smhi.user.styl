@@ -43,7 +43,7 @@ set-fg()
     &
     #headcontent
       set-bg()
-      border-bottom unset
+      border-bottom-color bg
     .smhialternating
       set-bg()
     .breadcrumbs ul a
@@ -71,10 +71,10 @@ set-fg()
     a
       set-fg()
     .next-nav-main li
-      border-bottom none
+      border-bottom-color bg
       &:first-of-type
       li:first-of-type
-        border-top none
+        border-top-color bg
     .overview-link
     .navigation-heading-wrapper
       set-bg()
@@ -137,6 +137,8 @@ set-fg()
     --activeFillColor bg1
     --selectedActiveFillColor bg1
     --colorNadir fg
+    --borderColor bg
+    --borderColorSecondary bg
 
   .tab-module_tab__dWFgU:hover:not(:disabled):not(.tab-module_selected__x8WYO)
   .SimpleSelect-module_select__VWv7m .SimpleSelect-module_toggleButton__XNSud:hover:not([disabled]):not(.SimpleSelect-module_disabled__LDaMe)
@@ -152,7 +154,7 @@ set-fg()
   .highcharts-
     &background
       fill bg
-    &root image
+    &root image[width="16"]
       filter invert(1)
 
 
@@ -187,12 +189,17 @@ set-fg()
 
   .tabs-module_tabs__4BiXZ .tabs-module_tabsHeader__g7zIj .tabs-module_tabsWrapper__tN17g:not(.tabs-module_noBottomBorder__CBn3H):before
   ._tableContainer_u7j8u_140 table tr
-    border-bottom unset
+    border-bottom-color bg
 
   .button-module_button__V-oN8.button-module_buttonSecondary__csP-q
   .card-module_card__CJdzk .card-module_cardWrapper__iNImr
-    border unset
+  .badge-module_badge__FqSIG.badge-module_badgeInformative__cL3rv
+    border-color bg
 
-  ._card_1en0v_1._largeCard_1en0v_200 ._cardContent_1en0v_140 ._block_1en0v_153._dayCell_1en0v_1
-  ._card_1en0v_1._largeCard_1en0v_200:hover ._cardContent_1en0v_140 ._block_1en0v_153._dayCell_1en0v_1
-    border-right unset
+  temp = "._cardContent_1en0v_140 ._block_1en0v_153._dayCell_1en0v_1"
+  ._card_1en0v_1._largeCard_1en0v_200
+    & {temp}
+      border-right-color bg
+    &:hover
+      {temp}
+        border-right-color bg1

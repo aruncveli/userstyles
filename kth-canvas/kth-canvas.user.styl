@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           KTH Canvas Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.09.04
+@version        24.09.08
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -112,8 +112,6 @@ bbu()
     set-bg-fg()
     border unset
     &:hover
-      set-bg1()
-      set-fg()
     &:focus
       set-bg1()
       set-fg()
@@ -161,6 +159,25 @@ bbu()
   .module-sequence-footer .module-sequence-footer-content
   .student-groups.show-body .student-group-header
     set-bg()
+
+  .question
+    &
+    & .header
+      set-bg()
+      .question_points_holder
+        set-fg()
+
+  #questions.assess
+    &ing
+    &ment_results .question .header
+      set-bg()
+
+  .quiz
+    &_comment
+    &-submission
+      set-bg()
+    &_score .score_value
+      set-fg()
 
   .ic-Dashboard-header__layout
     set-bg()
@@ -228,6 +245,7 @@ bbu()
     &1u4b9g0-view-link:-webkit-any(a)
       color link-color
       &:hover
+      &:focus
         color link-hover
     &xu75ed{ti}
       &:i\s
@@ -284,12 +302,14 @@ bbu()
   hr
     border-top unset
 
-  #syllabus tr.date.related td
   .ic-notification__content
     set-bg1()
 
-  #syllabus tr.date.date_passed td
-    set-bg()
+  #syllabus tr.date.
+    &.related td
+      set-bg1()
+    &.date_passed td
+      set-bg()
 
   .ef-item-row:hover
     set-bg1()
