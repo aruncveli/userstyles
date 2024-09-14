@@ -72,11 +72,20 @@ bbu()
   .ic-discussion-row
   .ic-unread-badge__total-count
   .closed-for-comments-discussions-v2__wrapper
-  .Button
   .file-upload-submission
   .submission-details-comments .comments
   #right-side .details .header
     set-bg-fg()
+
+  .ig-list .ig-row:hover
+  .alert-info
+  .module-sequence-footer .module-sequence-footer-content
+  .student-groups.show-body .student-group-header
+  input[type=search].ic-Input
+    set-bg()
+
+  .student-groups .student-group-students
+    set-fg()
 
   body
     &
@@ -113,6 +122,14 @@ bbu()
     border unset
     &:hover
     &:focus
+      set-bg1()
+      set-fg()
+
+  .Button
+  .ui-button
+    set-bg-fg()
+    &:focus
+    &:hover
       set-bg1()
       set-fg()
 
@@ -153,12 +170,6 @@ bbu()
     &-entries .entry
     &s-v2__container-image
       set-bg-fg()
-
-  .ig-list .ig-row:hover
-  .alert-info
-  .module-sequence-footer .module-sequence-footer-content
-  .student-groups.show-body .student-group-header
-    set-bg()
 
   .question
     &
@@ -232,8 +243,11 @@ bbu()
     &hrgp63-view
     &1dndbkc-menu
     &18dmyj-menuItem
-    &tfc09q-pill
       set-bg()
+    &tfc09q
+    &1jxucsm
+      &-pill
+        set-bg()
     &1rpus1y{bbc}
       set-bg-fg()
     &w4688r
@@ -280,9 +294,6 @@ bbu()
       &title
         set-fg()
 
-  .student-groups .student-group-students
-    set-fg()
-
   #right-side
     .events_list .event-details:after
       background unset
@@ -311,10 +322,11 @@ bbu()
     &.date_passed td
       set-bg()
 
-  .ef-item-row:hover
-    set-bg1()
-  .ef-item-row.ef-item-selected
-    set-bg2()
+  .ef-item-row
+    &:hover
+      set-bg1()
+    &.ef-item-selected
+      set-bg2()
 
 @-moz-document url-prefix("https://canvas.kth.se/calendar")
   #calendar-app
@@ -343,3 +355,13 @@ bbu()
       set-bg()
     &s-context-list .context_list_context:hover
       set-bg1()
+
+@-moz-document url-prefix("https://canvas.kth.se/conversations")
+  .css-1x3owfq-view--inlineBlock
+    set-bg()
+
+  .css-f88gdg-baseButton__content
+    set-bg-fg()
+
+  .css-16l1ovi-view--inlineBlock-baseButton:hover > [class$="-baseButton__content"]
+    set-bg1()

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.09.01
+@version        24.09.14
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -39,6 +39,8 @@ set-fg()
     s = subdued
     {c}{bb}{d} bg
     {c}{bb}{s} bg
+    {c}background-neutral-{d} bg
+    {c}border-base-{s} bg
     {c}{tb}{d} fg
     {c}{tb}{s} fg
     {c}{ib}{d} fg
@@ -54,9 +56,6 @@ set-fg()
     {bt}background-active bg1
     {bt}{t}active fg
 
-  .fqelrj5 // text content
-    set-fg()
-
   .toolbar-
     &toolbarTitleContainer_f1v3u1nf
     &wordCounter_ftobdvv
@@ -64,6 +63,7 @@ set-fg()
     &headerTitleHighlight_f11ekwp8:before
       set-bg1()
 
+  .fqelrj5
   .fal6plv // Name
   .f1riuydc // Score/performance modal texts
   .fq061rn
@@ -73,12 +73,51 @@ set-fg()
   ._b08aac52-footer-footerLabel
   .f1rx9jzm
   .fjlhwhm
+  .fc6omth
+  .feu4lv1
     set-fg()
+
+  ._f0f464d7-footer-footerWrapper
+  ._de72bac6-footer-fContainer
+  .fkhz08q
+  main
+  .f10wkw6u .f113r6od:not([data-active='true'])
+  .f113r6od
+  .fe88rpf
+  .fqa53j6
+  .f1dyakn9
+    set-bg()
 
   .f1aunnt9
     set-fg()
     &:not([data-disabled='true'])[data-hovered='true'] // weird buttons
       set-bg1()
+
+  dataIds2 = ":not([data-disabled='true']):not([aria-disabled='true'])"
+  dataIds3 = dataIds2 + "[data-hovered='true']"
+
+  .fvnnys1{dataIds3}
+    set-bg1()
+    set-fg()
+
+  .f1u61vn1
+    set-fg()
+    &{dataIds3}
+      set-bg1()
+
+  .fsk4xi
+    &{dataIds3}
+      set-bg1()
+    &{dataIds2}[data-active='true']
+      set-bg2()
+    > i
+      fill fg !important
+
+  .f1todjtg
+    &:hover
+    &:focus
+      set-bg1()
+
 
   ._8dab8e44-document_settings-separator
     set-bg1()
@@ -97,14 +136,6 @@ set-fg()
     &footer_f1v9ogc7
       set-bg()
   .modalHeader_ffbp2bq
-    set-bg()
-
-  ._f0f464d7-footer-footerWrapper
-  ._de72bac6-footer-fContainer
-  .fkhz08q
-  main
-  .f10wkw6u .f113r6od:not([data-active='true'])
-  .f113r6od
     set-bg()
 
   // weird buttons
@@ -155,3 +186,8 @@ set-fg()
 
   .toolbarIcon_f1qxzied
     stroke fg
+
+  for frame in fd4lfih f14nvp94
+    @keyframes frame
+      100%
+        set-bg1()
