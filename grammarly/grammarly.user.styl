@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.09.14
+@version        24.09.15
 @description    description
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -32,15 +32,18 @@ set-fg()
     color-scheme dark
 
     c = --color-
-    bb = background-base-
-    tb = text-base-
-    ib = icon-base-
+    b = -base-
+    bgb = background + b
+    tb = text + b
+    ib = icon + b
+    bdb = border + b
     d = default
     s = subdued
-    {c}{bb}{d} bg
-    {c}{bb}{s} bg
+    {c}{bgb}{d} bg
+    {c}{bgb}{s} bg
     {c}background-neutral-{d} bg
-    {c}border-base-{s} bg
+    {c}{bdb}{s} bg
+    {c}{bdb}{d} bg1
     {c}{tb}{d} fg
     {c}{tb}{s} fg
     {c}{ib}{d} fg
@@ -120,6 +123,8 @@ set-fg()
 
 
   ._8dab8e44-document_settings-separator
+  ._fbad2f66-synonyms-wrapper
+  ._c203692f-synonyms-emptyResultWrapper
     set-bg1()
 
   ._8bbcd63e-formatting-toolbar-item
@@ -143,6 +148,10 @@ set-fg()
   :not([data-disabled='true'])[data-hovered='true'] > .cheetah_button-buttonContent_fq5jbwy
   .triggerButton_f1l4zisq[data-active="true"]
     set-bg1()
+
+  .navigation-outcomeBtnBorders_f1kskyj5[data-active='true']
+    set-bg1()
+    set-fg()
 
   .menuItem_ffsq1m9
     &:hover
@@ -187,7 +196,7 @@ set-fg()
   .toolbarIcon_f1qxzied
     stroke fg
 
-  for frame in fd4lfih f14nvp94
+  for frame in fd4lfih f14nvp94 f12ab1sv
     @keyframes frame
       100%
         set-bg1()
