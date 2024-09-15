@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.08.04
+@version        24.09.15
 @description    Dark theme for some (simpler) Arch Linux pages: Home, Packages, AUR and Download.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -9,31 +9,46 @@
 @updateURL      https://github.com/aruncveli/userstyles/raw/main/archlinux/archlinux.user.styl
 @license        MIT
 @preprocessor   stylus
-@var	color	fg	        "Foreground"	            white
-@var	color	bg	        "Background"	            black
-@var	color	bg1	        "Background lightened 1"	#111111
-@var	color	bg2	        "Background lightened 2"	#222222
+@var	color	cfg  "Foreground"	            white
+@var	color	cbg	"Background"	            black
+@var	color	cbg1	"Background lightened 1"	#111111
+@var	color	cbg2	"Background lightened 2"	#222222
+@var	color	cbg3 "Background lightened 3"	#333333
 @var	color	link-color	"Link"                    #0b84ff
+@var	color	red-color	  "Red"                     #ff443a
 ==/UserStyle== */
 
 dark-scheme()
   :root
     color-scheme dark
 
-text()
-  color fg
+fg()
+  color cfg
 
-background(variant = bg)
-  background-color variant
+bg(color = cbg)
+  background-color color
 
-background1()
-  background(bg1)
+bg1()
+  bg(cbg1)
 
-background2()
-  background(bg2)
+bg2()
+  bg(cbg2)
+
+bg3()
+  bg(cbg3)
 
 link()
   color link-color
+
+bcr(color = cbg, radius = 16px)
+  border-color color
+  border-radius radius
+
+bbc(color = cbg)
+  border-bottom-color color
+
+btc(color = cbg)
+  border-top-color color
 
 @-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org"), url-prefix("https://man.archlinux.org")
   a:link
@@ -47,46 +62,81 @@ link()
 
   body
   dl dt
-    text()
+    fg()
 
   body
-    background()
+    bg()
 
   div.box
-  #news h3 a
+    bcr(cbg1)
+
+  div.box
   code
   pre
-    background1()
+    bg1()
+
+  #news
+    h4
+      bbc()
+    h3 a
+      bg1()
+      bcr(cbg1)
+
+  pre
+    bg1()
+    bcr(cbg1)
 
   #pkgsearch
-    background1()
+    bg1()
+    bcr(cbg1)
     input
-      text()
-      background1()
+      fg()
+      bg2()
+      bcr(cbg2, 4px)
 
   .pkgsearch-typeahead
-    background1()
+    bg3()
+    bcr(cbg3, 4px)
     li a
-      text()
+      fg()
 
   h3 span.arrow
-    border-top-color bg1
+    btc(cbg1)
+
+  h2
+    bbc(cbg1)
+
+  dl
+    dt
+    dd
+      btc(cbg)
 
 @-moz-document url-prefix("https://archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages")
+  table.results
+    btc(cbg1)
+
   .results
     th
-      background()
-    tr:nth-child(odd)
-    tr:nth-child(even)
-      background1()
+      bg2()
+      bbc(cbg2)
+    tr:nth-child
+      &(odd)
+      &(even)
+        bg1()
+
 
   #pkglist-results tr:hover
-    background()
+    bg2()
 
   #pkgdetails
     #metadata h3
+      bg2()
+      bcr(cbg2, 4px)
     #detailslinks > div
-      background()
+      bg2()
+      bcr(cbg2, 12px)
+    #actionlist .flagged
+      color red-color
 
 @-moz-document url-prefix("https://aur.archlinux.org")
   form.link button
@@ -100,7 +150,7 @@ link()
       link()
 
   .flagged a
-    color red
+    color red-color
 
 @-moz-document url-prefix("https://aur.archlinux.org/cgit")
   @css {
@@ -235,39 +285,54 @@ link()
   dark-scheme()
 
   body
-    text()
-    background()
+    fg()
+    bg()
 
   code
-    background1()
-  table.styled-table
-    background()
-    th
-    tr:hover
-      background1()
+    bg1()
+  table
+    &.styled-table
+      bg()
+      border-color cbg
+      th
+        bg1()
+        border-bottom-color cbg1
+      tr td
+        border-top-color cbg
+      tr:hover
+        bg1()
+    &.head
+      border-bottom-color cbg
+    &.foot
+      border-top-color cbg
+
+  .man-page-content a.permalink
+    border-bottom-color cbg
 
 @-moz-document url-prefix("https://man.archlinux.org/search")
   .box
-    background1()
+    bg1()
 
 @-moz-document url-prefix("https://man.archlinux.org/man")
   .man-page-content table.tbl
-    background()
+    bg()
     tr:first-child td:not(:only-child)
-      background()
+      bg()
   pre
-    background1()
+    bg1()
+    bcr(cbg1)
+
 
 @-moz-document url-prefix("https://archlinux.org/groups")
   .results
     th
       &
-        background()
+        bg()
       &.tablesorter-header
         &Asc
         &Desc
-          background()
+          bg()
     tr:nth-child
       &(odd)
       &(even)
-        background1()
+        bg1()
