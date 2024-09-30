@@ -29,6 +29,9 @@ set-bg2()
 set-fg()
   color fg
 
+btc(color = bg)
+  border-top-color color
+
 @-moz-document domain("survey2.yougov.com")
   :root
     color-scheme dark
@@ -102,6 +105,9 @@ set-fg()
         set-bg2()
     tr th.grid-item-text-right
       set-fg()
+    td
+    th
+      btc()
 
   .rankSelectionBlock
     set-bg1()
@@ -133,3 +139,6 @@ set-fg()
   .alert
     color alert
     background-color '%s33' % alert
+
+  table
+    border-collapse separate
