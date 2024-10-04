@@ -1,0 +1,14 @@
+name: "Checks"
+env:
+  HUSKY: 0
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun compile
+      - run: bun lint
+      - run: bun format:check

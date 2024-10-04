@@ -13,14 +13,13 @@
     "compile": "stylus **/*.user.styl",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "generate": "node --import @swc-node/register/esm-register generate.ts",
+    "generate": "bun generate.ts",
     "lint": "stylelint **/*.user.styl && eslint .",
     "lint:fix": "stylelint **/*.user.styl --fix && eslint . --fix",
     "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "9.11.1",
-    "@swc-node/register": "1.10.9",
     "@tsconfig/strictest": "2.0.5",
     "@types/ejs": "3.1.5",
     "@types/eslint-config-prettier": "6.11.3",
