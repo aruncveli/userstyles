@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.09.30
+@version        24.10.04
 @description    Dark theme for npm
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -126,10 +126,21 @@ unset-bg-img()
     p
     .highlight
     li
+    .keyword
       set-fg()
     td
       border-color bg
-
+    .entity.name.function
+      color link-color
+    .variable
+      color #66d4cf
+    .comment
+    .storage.type
+      color #98989d
+    .support.function
+      color #5e5ce6
+    .string
+      color #ff9d0a
   .a0dff0b1 // Keywords
     // .c84e15be // Right pane headings: Install, Repository, etc.
     set-fg()
