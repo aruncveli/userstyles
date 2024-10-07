@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           snowfl dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.08.06
+@version        24.10.07
 @description    Dark theme for snowfl
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -9,35 +9,40 @@
 @updateURL      https://github.com/aruncveli/userstyles/raw/main/snowfl/snowfl.user.styl
 @license        MIT
 @preprocessor   stylus
-@var	color	fg	        "Foreground"	            white
-@var	color	bg	        "Background"	            black
-@var	color	bg1	        "Background lightened 1"	#111111
-@var	color	bg2	        "Background lightened 2"	#222222
-@var	color	link-color	"Link"                    #0b84ff
+@var color cfg "Foreground" white
+@var color cbg "Background" black
+@var color cbg1 "Background lightened 1" #111111
+@var color cbg2 "Background lightened 2" #222222
+@var color link-color	"Link" #0b84ff
 ==/UserStyle== */
 
-set-bg()
-  background bg
+fg()
+  color cfg
 
-set-bg1()
-  background bg1
+bgc(color = cbg)
+  background-color color
 
-set-bg2()
-  background bg2
+bgc1()
+  bgc(cbg1)
 
-set-fg()
-  color fg
+bgc2()
+  bgc(cbg2)
 
-unset-fg-bg()
+bc(color=cbg)
+  border-color color
+
+bc1(color=cbg)
+  bc(cbg1)
+
+bg(color=cbg)
+  background color
+
+btn-combi()
   color unset
-  background unset
+  bg(cbg2)
 
-set-border()
-  border-color fg
-
-btn-lightened()
-  color unset()
-  set-border()
+ou()
+  outline unset
 
 @-moz-document domain("snowfl.com")
   :root
@@ -48,35 +53,35 @@ btn-lightened()
     color link-color
 
   body
-    set-bg()
-    set-fg()
+    bgc()
+    fg()
 
   .navbar
-    set-bg()
+    bg()
     border none
 
   .form-control
-    set-bg1()
-    set-fg()
+    bgc1()
+    fg()
+    bc1()
     &::placeholder
       color unset
     &:focus
-      border-color unset
+      bgc2()
+      bc1()
+      box-shadow unset
     &[disabled]
-      set-bg2()
-    option
-    optgroup
-      set-bg()
-      set-bg()
-
-  btn-combi()
-    btn-lightened()
-    set-bg2()
+      bgc2()
+    // stylelint-disable-next-line stylus/selector-type-no-unknown
+    opt
+      &ion
+      &group
+        bgc()
 
   .btn-default
-    set-fg()
-    set-bg1()
-    set-border()
+    fg()
+    bg(cbg1)
+    bc1()
     &:hover
     &:focus
       btn-combi()
@@ -87,14 +92,19 @@ btn-lightened()
     &[disabled]
       &
       &:hover
-        btn-lightened()
-        set-bg2()
+        btn-combi()
+    &:active:focus
+      ou()
+      btn-combi()
+
+  .btn:focus
+    ou()
 
   img.spinner
     filter invert(1)
 
   #newsfeed
-    background bg !important
-    color fg !important
+    background cbg !important
+    color cfg !important
     a
-      color fg !important
+      color cfg !important

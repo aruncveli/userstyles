@@ -3,7 +3,7 @@
   "tasks": [
     {
       "type": "shell",
-      "command": "pnpm stylelint ${file} --fix",
+      "command": "bun stylelint ${file} --fix",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -12,7 +12,7 @@
     },
     {
       "type": "shell",
-      "command": "pnpm stylus ${file}",
+      "command": "bun stylus ${file}",
       "group": {
         "kind": "build"
       },

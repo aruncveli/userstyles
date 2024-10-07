@@ -1,13 +1,13 @@
 name: "Checks"
 env:
   HUSKY: 0
-on: 
+on:
   push:
     paths-ignore:
-      - '**.png'
+      - "**.png"
   pull_request:
     paths-ignore:
-      - '**.png'
+      - "**.png"
   workflow_dispatch:
 jobs:
   run:
