@@ -9,23 +9,26 @@
 @updateURL      https://github.com/aruncveli/userstyles/raw/main/raw/main/grammarly/grammarly.user.styl
 @license        MIT
 @preprocessor   stylus
-@var	color	fg	        "Foreground"	            white
-@var	color	bg	        "Background"	            black
-@var	color	bg1	        "Background lightened 1"	#111111
-@var	color	bg2	        "Background lightened 2"	#222222
+@var color cfg "Foreground" white
+@var color cbg "Background" black
+@var color cbg1 "Background lightened 1" #111111
+@var color cbg2 "Background lightened 2" #222222
 ==/UserStyle== */
 
-set-bg(var = bg)
-  background var
+fg()
+  color cfg
 
-set-bg1()
-  set-bg(bg1)
+bg(color = cbg)
+  background-color color
 
-set-bg2()
-  set-bg(bg2)
+bg1()
+  bg(cbg1)
 
-set-fg()
-  color fg
+bg2()
+  bg(cbg2)
+
+bsu()
+  box-shadow unset
 
 @-moz-document url-prefix("https://app.grammarly.com/ddocs")
   :root
@@ -39,140 +42,159 @@ set-fg()
     bdb = border + b
     d = default
     s = subdued
-    {c}{bgb}{d} bg
-    {c}{bgb}{s} bg
-    {c}background-neutral-{d} bg
-    {c}{bdb}{s} bg
-    {c}{bdb}{d} bg1
-    {c}{tb}{d} fg
-    {c}{tb}{s} fg
-    {c}{ib}{d} fg
+    {c}{bgb}{d} cbg
+    {c}{bgb}{s} cbg
+    {c}background-neutral-{d} cbg
+    {c}{bdb}{s} cbg
+    {c}{bdb}{d} cbg1
+    {c}{tb}{d} cfg
+    {c}{tb}{s} cfg
+    {c}{ib}{d} cfg
+    {c}elevation-outline-{d}{"-1"} cbg
 
     bt = --button-tertiary-
     h = hover
     bgh = background- + h
     t = text-
-    {bt}{bgh} bg2
+    {bt}{bgh} cbg2
     {bt}border-{h} unset
-    {bt}{t}{d} fg
-    {bt}{t}{h} fg
-    {bt}background-active bg1
-    {bt}{t}active fg
+    {bt}{t}{d} cfg
+    {bt}{t}{h} cfg
+    {bt}background-active cbg1
+    {bt}{t}active cfg
 
   .toolbar-
-    &toolbarTitleContainer_f1v3u1nf
+    &toolbarTitleContainer_f18wroqg
+      background cbg
     &wordCounter_ftobdvv
-      set-bg()
-    &headerTitleHighlight_f11ekwp8:before
-      set-bg1()
+      bg()
+    &headerTitle
+      &Highlight_f11ekwp8
+      &ContainerFocused_fpo367h
+        &:before
+          bg1()
 
-  .fqelrj5
+  .fqelrj5 // Editor content
   .fal6plv // Name
   .f1riuydc // Score/performance modal texts
-  .fq061rn
-  .f10buadf
-  .f1vn8v6g
-  .fhsusol
-  ._b08aac52-footer-footerLabel
-  .f1rx9jzm
-  .fjlhwhm
-  .fc6omth
-  .feu4lv1
-    set-fg()
+  .fq061rn // Headings in Performance dialog
+  .f10buadf // Smaller texts in Readability section
+  .f1vn8v6g // Saved status
+  .fhsusol // Overall score
+  ._b08aac52-footer-footerLabel // Readability score label
+  .f1rx9jzm // Document heading
+  .fjlhwhm // Goals dialog headings
+  .fc6omth // Assistant suggestion content
+  .feu4lv1 // Assistant suggestions headings
+    fg()
 
   ._f0f464d7-footer-footerWrapper
   ._de72bac6-footer-fContainer
-  .fkhz08q
+  .fkhz08q // Assistant footer
   main
   .f10wkw6u .f113r6od:not([data-active='true'])
   .f113r6od
   .fe88rpf
   .fqa53j6
   .f1dyakn9
-    set-bg()
+    bg()
+
+
+  .f1aw243f // Suggestions tooltip
+  .listItem_f18hii0e // Suggestions tooltip item
+    bg1()
+
+  .f1fk53u7:hover // Suggestions tooltip item
+    bg2()
 
   .f1aunnt9
-    set-fg()
-    &:not([data-disabled='true'])[data-hovered='true'] // weird buttons
-      set-bg1()
+    fg()
+    &:not([data-disabled='true'])[data-hovered='true'] // weird buttons in the left side panel
+      bg1()
 
   dataIds2 = ":not([data-disabled='true']):not([aria-disabled='true'])"
   dataIds3 = dataIds2 + "[data-hovered='true']"
 
+  .f1lo3unn:not([data-disabled='true'])[data-hovered='true'] // Suggestions tooltip button
+    bg2()
+
   .fvnnys1{dataIds3}
-    set-bg1()
-    set-fg()
+    bg1()
+    fg()
 
   .f1u61vn1
-    set-fg()
+    fg()
     &{dataIds3}
-      set-bg1()
+      bg1()
 
   .fsk4xi
     &{dataIds3}
-      set-bg1()
+      bg1()
     &{dataIds2}[data-active='true']
-      set-bg2()
+      bg2()
     > i
       fill fg !important
 
   .f1todjtg
     &:hover
     &:focus
-      set-bg1()
+      bg1()
 
 
   ._8dab8e44-document_settings-separator
   ._fbad2f66-synonyms-wrapper
   ._c203692f-synonyms-emptyResultWrapper
-    set-bg1()
+    bg1()
 
   ._8bbcd63e-formatting-toolbar-item
     &[data-active=false][data-hovered=false]>i[data-role=icon]>svg
     &[data-active=false][data-hovered=true]>i[data-role=icon]>svg
       fill fg
     &:hover
-      set-bg1()
+      bg1()
 
   ._70c2ea48-document_settings-documentSettings
-    set-bg()
+    bg()
   .modal-
     &body_f1orqs7k
     &footer_f1v9ogc7
-      set-bg()
+      bg()
   .modalHeader_ffbp2bq
-    set-bg()
+    bg()
 
   // weird buttons
   .f1u0d4ph:not([data-disabled='true']):not([aria-disabled='true']):hover
   :not([data-disabled='true'])[data-hovered='true'] > .cheetah_button-buttonContent_fq5jbwy
   .triggerButton_f1l4zisq[data-active="true"]
-    set-bg1()
+    bg1()
 
   .navigation-outcomeBtnBorders_f1kskyj5[data-active='true']
-    set-bg1()
-    set-fg()
+    bg1()
+    fg()
 
   .menuItem_ffsq1m9
     &:hover
     &:focus-visible
     &:focus
-      set-bg1()
+      bg1()
 
   ._f564a3b5-document_settings-menuHead
-    box-shadow unset
+    bsu()
 
   .oggyWrapper_f16zfgaf
-    set-bg()
-    box-shadow unset
+    bg()
+    bsu()
 
-  .f115rtmw
+  .f115rtmw // Assistant header
     border-bottom unset
 
   // Assistant
-  .oggy-oggyWrapper_f1y9tgv0 > div
-    border unset
-    box-shadow unset
+  .oggy-oggyWrapper
+    &_f1y9tgv0 > div
+      border unset
+      bsu()
+    &WithNavigation_fx1921y > div
+      bsu()
 
   // Plagiarism and AI text
   .fk78ga
@@ -188,15 +210,31 @@ set-fg()
 
   .cheetah_button-button
     &Content_fq5jbwy
-      set-bg()
-      set-fg()
+      bg()
+      fg()
     &_f1ncib7
       border unset
 
   .toolbarIcon_f1qxzied
     stroke fg
 
+  gb = ".gds-button-"
+  {gb}tertiary{gb}pressed
+    bsu()
+
   for frame in fd4lfih f14nvp94 f12ab1sv
     @keyframes frame
       100%
-        set-bg1()
+        bg1()
+
+  // Performance/score dialog headings
+  .sectionHeader
+    &Underline_fs3keob
+    &Wrapper_f10kg88j
+      border-bottom-color cbg
+
+  // Goals dialog
+  .modalHeader_ffbp2bq:after
+    bg()
+  .row_fmjb5au:not(:last-child)
+    border-bottom-color cbg
