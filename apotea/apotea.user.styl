@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.08.04
+@version        24.10.14
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -222,7 +222,22 @@ set-fg-imp()
     color fg !important
 
   .prescriptionRow div
+  .card-padding.rx-prescription-flex-row h5
+  .toggle-element.collapsed
     set-fg()
 
   .rx-user-container
+  .prescription-row-more-info .toggle-element
+  .rx-navbar-new a
     set-bg()
+
+  .bslabel-success-light
+    set-bg1()
+
+  .thinBorder
+  .rowDivider
+    border-bottom-color bg
+
+  .collapse-link:hover
+  .collapse-link.collapsed:hover
+    set-fg()
