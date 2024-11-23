@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm dark
 @namespace      github.com/aruncveli/userstyles
-@version        24.10.15
+@version        24.11.23
 @description    Dark theme for npm
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -94,13 +94,11 @@ unset-bg-img()
 
   // Logos
   .fbd04dd1 // Copy code
-  .lh-copy // Copy code arrow
-  ._5cfc0900// Downloads
-    svg
-      fill cfg
-
-  .fbd04dd1:hover svg
-    fill cfg
+    &:hover
+    /.lh-copy // Copy code arrow
+    /._5cfc0900// Downloads
+      svg
+        fill cfg
 
   // Logos
   a[aria-labelelledby=repository] // repo

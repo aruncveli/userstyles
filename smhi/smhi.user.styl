@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SMHI Dark (Ten day forecast)
 @namespace      github.com/aruncveli/userstyles
-@version        24.09.10
+@version        24.11.23
 @description    Dark theme for SMHI's ten day forecast page
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -33,7 +33,7 @@ set-fg()
     color-scheme dark
 
   a:hover
-  ._expandedData_1en0v_57
+  ._expandedData_330y8_57
   ._labelDate_et9mg_152
   ._forecastIssued_1tq7k_1
     set-fg()
@@ -122,6 +122,16 @@ set-fg()
     &:hover
       set-bg1()
 
+  ._card_330y8_1
+    set-fg()
+    &._largeCard_330y8_200 ._cardContent_330y8_140 ._block_330y8_153
+      ._valueCol_330y8_161>*:first-child
+        set-fg()
+      &._dayCell_330y8_1
+        border-right-color bg
+        &:hover
+          border-right-color bg1
+
   ._windDirection_1cjv5_1 img
     filter invert(1)
 
@@ -145,8 +155,8 @@ set-fg()
     set-bg1()
 
   ._placeContainer_114oc_2
-  ._forecastContainer_114oc_1
-    ._markerContent_114oc_18 ._markerLabel_114oc_30
+  ._forecastContainer_om9tb_1
+    ._markerContent_om9tb_18 ._markerLabel_om9tb_30
       text-shadow none
       color bg
 
@@ -195,11 +205,3 @@ set-fg()
   .card-module_card__CJdzk .card-module_cardWrapper__iNImr
   .badge-module_badge__FqSIG.badge-module_badgeInformative__cL3rv
     border-color bg
-
-  temp = "._cardContent_1en0v_140 ._block_1en0v_153._dayCell_1en0v_1"
-  ._card_1en0v_1._largeCard_1en0v_200
-    & {temp}
-      border-right-color bg
-    &:hover
-      {temp}
-        border-right-color bg1
