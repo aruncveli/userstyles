@@ -1,0 +1,197 @@
+/* ==UserStyle==
+@name           Apotea Dark
+@namespace      github.com/aruncveli/userstyles
+@version        24.12.14
+@description    Dark theme for Apotea
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://github.com/aruncveli/userstyles/raw/main/sites/apotea/apotea.user.css
+@license        MIT
+@preprocessor   default
+@var	color	fg	        "Foreground"	            white
+@var	color	bg	        "Background"	            black
+@var	color	bg1	        "Background lightened 1"	#111111
+@var	color	bg2	        "Background lightened 2"	#222222
+==/UserStyle== */
+@-moz-document domain("www.apotea.se") {
+  :root {
+    --background-color: var(--bg);
+    --bs-body-color: var(--fg);
+    --bs-btn-hover-color: var(--fg);
+    --bs-white-rgb: var(--bg);
+    color-scheme: dark;
+  }
+  body,
+  p,
+  .search-facet-label,
+  #product-subscription-details,
+  #sidebar-categories .lvl-1.collapsed {
+    background: var(--bg);
+    color: var(--fg);
+  }
+  #header,
+  .header-container,
+  #toplinks,
+  #popular-links-container,
+  #brands-left,
+  .general-form-item,
+  .premium .price-tag a,
+  #toplist,
+  .footer-logo-container,
+  #footer-logos-new,
+  .search-top,
+  .description,
+  #search-facets,
+  .white-with-padding,
+  .login-box,
+  #product-facts-grid,
+  #cart-header,
+  #cart-item-container,
+  #cart-parent,
+  #choose-auth-main,
+  #product,
+  #product .row,
+  #main-menu,
+  #main-menu .rx,
+  #main-menu li,
+  #sidebar-categories,
+  #sidebar-categories .category-container,
+  #left-bottom-panel,
+  #left-bottom-panel ul,
+  #cart-content,
+  #cart-content .cart-item,
+  #cart-content .footer,
+  .apotea-responsive-footer,
+  .form-control,
+  .product-block {
+    background: var(--bg);
+  }
+  .facet-dropdown,
+  .btn:hover,
+  .table,
+  .checkout-field input,
+  #suggest-container,
+  #suggest-container div.hit.selected,
+  .form-control:focus {
+    background: var(--bg1);
+  }
+  #suggest-container {
+    border: 1px solid var(--bg1);
+  }
+  #suggest-container div.hit {
+    border-top: 1px solid var(--bg2);
+    border-bottom: 1px solid var(--bg2);
+  }
+  #suggest-container div.hit:hover,
+  #suggest-container div.hit.selected:hover,
+  #backToTop {
+    background-color: var(--bg2);
+  }
+  #last-sold,
+  #home-right-banners {
+    background: var(--bg) !important;
+  }
+  div,
+  .lvl-1.sidebar-categories-go,
+  #sidebar-categories .lvl-1.sidebar-categories-go,
+  .lvl-2.sidebar-categories-go,
+  .sidebar-category-header.lvl-2.collapsed,
+  #left-bottom-panel li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  #suggest-container a,
+  .toggle-element.collapsed h5,
+  .btn-info,
+  #cart-parent .name a,
+  #cart-content .ord-price,
+  #cart-content .sum h4 #cart-header-sum,
+  .form-control,
+  .form-control:focus,
+  .product-block a:not(:hover),
+  .product-block .is-med-div {
+    color: var(--fg);
+  }
+  .apotea-responsive-footer h4,
+  .apotea-responsive-footer a,
+  .apotea-responsive-footer > div {
+    background: var(--bg) !important;
+    color: var(--fg) !important;
+  }
+  .product-block {
+    background: var(--bg);
+  }
+  #cart-quantity-full {
+    color: var(--fg) !important;
+  }
+  .first-page-container .fadeout,
+  #search .fadeout {
+    background: linear-gradient(rgba(0,0,0,0), #000);
+  }
+  .offcanvas {
+    --bs-offcanvas-bg: var(--bg);
+  }
+}
+
+@-moz-document url-prefix("https://widget-launcher.imbox.io/index") {
+  #root {
+    background-color: var(--bg);
+  }
+}
+
+@-moz-document url-prefix("https://www.apotea.se/nyakassan") {
+  #checkout .checkout-form-title,
+  #cart-item-container,
+  input,
+  .checkout-charity-item,
+  .offer-item,
+  .counceling-question,
+  #checkout-message-container,
+  .checkout-shipping-method,
+  #cart-parent,
+  #cart-content .cart-item,
+  #checkout-top .checkout-top-info {
+    background: var(--bg);
+  }
+  .checkout-shipping-method.active,
+  #checkout-top .toggle-element {
+    background: var(--bg1);
+  }
+  #checkout-offers .offer-item-text,
+  #cart-parent .name a,
+  #cart-content .sum h4 #cart-header-sum {
+    color: var(--fg);
+  }
+  #checkout-top .toggle-element svg {
+    stroke: var(--fg);
+  }
+}
+
+@-moz-document url-prefix("https://www.apotea.se/recept/hamta-ut") {
+  .prescription-title {
+    color: var(--fg) !important;
+  }
+  .prescriptionRow div,
+  .card-padding.rx-prescription-flex-row h5,
+  .toggle-element.collapsed,
+  .collapse-link:hover,
+  .collapse-link.collapsed:hover {
+    color: var(--fg);
+  }
+  .rx-user-container,
+  .prescription-row-more-info .toggle-element,
+  .rx-navbar-new a {
+    background: var(--bg);
+  }
+  .bslabel-success-light {
+    background: var(--bg1);
+  }
+  .thinBorder,
+  .rowDivider {
+    border-bottom-color: var(--bg);
+  }
+}

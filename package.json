@@ -14,28 +14,28 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "generate": "bun generate.ts",
-    "lint": "stylelint **/*.user.styl && eslint .",
-    "lint:fix": "stylelint **/*.user.styl --fix && eslint . --fix",
+    "lint": "stylelint **/*.user.styl sites/**/*.css && eslint .",
+    "lint:fix": "stylelint **/*.user.styl sites/**/*.css --fix && eslint . --fix",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@eslint/js": "9.15.0",
+    "@eslint/js": "9.17.0",
     "@tsconfig/strictest": "2.0.5",
     "@types/ejs": "3.1.5",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
-    "@types/node": "22.9.3",
+    "@types/node": "22.10.2",
     "ejs": "3.1.10",
-    "eslint": "9.15.0",
+    "eslint": "9.17.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "husky": "9.1.7",
-    "lint-staged": "15.2.10",
-    "prettier": "3.3.3",
-    "stylelint": "16.10.0",
+    "lint-staged": "15.2.11",
+    "prettier": "3.4.2",
+    "stylelint": "16.11.0",
     "stylelint-stylus": "1.0.0",
     "stylus": "0.64.0",
     "typescript": "5.7.2",
-    "typescript-eslint": "8.15.0"
+    "typescript-eslint": "8.18.0"
   }
 }
