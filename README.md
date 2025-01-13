@@ -14,10 +14,10 @@ style.
 
 |         Name          |                                                                                                                   |                               |
 | :-------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------: |
-|      Arch Linux       |             [Install](https://github.com/aruncveli/userstyles/raw/main/archlinux/archlinux.user.styl)             |       [Info](archlinux)       |
+|      Arch Linux       |          [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/archlinux/archlinux.user.css)           |    [Info](sites/archlinux)    |
 |        snowfl         |                [Install](https://github.com/aruncveli/userstyles/raw/main/snowfl/snowfl.user.styl)                |        [Info](snowfl)         |
 |      Hacker News      |            [Install](https://github.com/aruncveli/userstyles/raw/main/hackernews/hackernews.user.styl)            |      [Info](hackernews)       |
-|        Apotea         |                [Install](https://github.com/aruncveli/userstyles/raw/main/apotea/apotea.user.styl)                |        [Info](apotea)         |
+|        Apotea         |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/apotea/apotea.user.css)              |     [Info](sites/apotea)      |
 |         SMHI          |                  [Install](https://github.com/aruncveli/userstyles/raw/main/smhi/smhi.user.styl)                  |         [Info](smhi)          |
 | Trafikinformation tåg | [Install](https://github.com/aruncveli/userstyles/raw/main/trafikinformation-tåg/trafikinformation-tåg.user.styl) | [Info](trafikinformation-tåg) |
 |       npm Docs        |              [Install](https://github.com/aruncveli/userstyles/raw/main/npm-docs/npm-docs.user.styl)              |       [Info](npm-docs)        |

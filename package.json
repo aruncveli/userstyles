@@ -11,31 +11,32 @@
   ],
   "scripts": {
     "compile": "stylus **/*.user.styl",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format": "biome format --write && prettier --write **/*.md",
+    "format:check": "biome format && prettier --check **/*.md",
     "generate": "bun generate.ts",
     "lint": "stylelint **/*.user.styl sites/**/*.css && eslint .",
     "lint:fix": "stylelint **/*.user.styl sites/**/*.css --fix && eslint . --fix",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@eslint/js": "9.17.0",
+    "@eslint/js": "9.18.0",
     "@tsconfig/strictest": "2.0.5",
     "@types/ejs": "3.1.5",
     "@types/eslint-config-prettier": "6.11.3",
     "@types/eslint__js": "8.42.3",
-    "@types/node": "22.10.2",
+    "@types/node": "22.10.5",
+    "@biomejs/biome": "1.9.4",
     "ejs": "3.1.10",
-    "eslint": "9.17.0",
+    "eslint": "9.18.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "husky": "9.1.7",
-    "lint-staged": "15.2.11",
+    "lint-staged": "15.3.0",
     "prettier": "3.4.2",
-    "stylelint": "16.11.0",
+    "stylelint": "16.13.0",
     "stylelint-stylus": "1.0.0",
     "stylus": "0.64.0",
-    "typescript": "5.7.2",
-    "typescript-eslint": "8.18.0"
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.19.1"
   }
 }
