@@ -1,3 +1,3 @@
 export default {
-	"*": ["biome check --write", "prettier --write ."],
+	"*": ["biome check --write --no-errors-on-unmatched", "prettier --write ."],
 };
