@@ -1,3 +1,3 @@
 export default {
-  proseWrap: "always",
+	proseWrap: "always",
 };

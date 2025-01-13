@@ -1,42 +1,29 @@
 {
-  "name": "userstyles",
-  "description": "A collection of userstyles for simple and boring dark themes",
-  "author": "Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)",
-  "license": "MIT",
-  "type": "module",
-  "keywords": [
-    "userstyles",
-    "stylus",
-    "dark-theme"
-  ],
-  "scripts": {
-    "compile": "stylus **/*.user.styl",
-    "format": "biome format --write && prettier --write **/*.md",
-    "format:check": "biome format && prettier --check **/*.md",
-    "generate": "bun generate.ts",
-    "lint": "stylelint **/*.user.styl sites/**/*.css && eslint .",
-    "lint:fix": "stylelint **/*.user.styl sites/**/*.css --fix && eslint . --fix",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@eslint/js": "9.18.0",
-    "@tsconfig/strictest": "2.0.5",
-    "@types/ejs": "3.1.5",
-    "@types/eslint-config-prettier": "6.11.3",
-    "@types/eslint__js": "8.42.3",
-    "@types/node": "22.10.5",
-    "@biomejs/biome": "1.9.4",
-    "ejs": "3.1.10",
-    "eslint": "9.18.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-simple-import-sort": "12.1.1",
-    "husky": "9.1.7",
-    "lint-staged": "15.3.0",
-    "prettier": "3.4.2",
-    "stylelint": "16.13.0",
-    "stylelint-stylus": "1.0.0",
-    "stylus": "0.64.0",
-    "typescript": "5.7.3",
-    "typescript-eslint": "8.19.1"
-  }
+	"name": "userstyles",
+	"description": "A collection of userstyles for simple and boring dark themes",
+	"author": "Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)",
+	"license": "MIT",
+	"type": "module",
+	"keywords": ["userstyles", "stylus", "dark-theme"],
+	"scripts": {
+		"check": "biome check && prettier --check .",
+		"fix": "biome check --write && prettier --write .",
+		"generate": "bun generate.ts",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@eslint/js": "9.18.0",
+		"@tsconfig/strictest": "2.0.5",
+		"@types/ejs": "3.1.5",
+		"@types/node": "22.10.5",
+		"ejs": "3.1.10",
+		"husky": "9.1.7",
+		"lint-staged": "15.3.0",
+		"stylus": "0.64.0",
+		"typescript": "5.7.3"
+	},
+	"dependencies": {
+		"prettier": "3.4.2"
+	}
 }

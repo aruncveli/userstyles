@@ -1,4 +1,0 @@
-extends:
-  - stylelint-stylus/standard
-rules:
-  stylus/selector-list-comma: null
