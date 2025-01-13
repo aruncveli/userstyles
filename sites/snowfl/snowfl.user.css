@@ -1,0 +1,96 @@
+/* ==UserStyle==
+@name           snowfl dark
+@namespace      github.com/aruncveli/userstyles
+@version        25.1.13
+@description    Dark theme for snowfl
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/snowfl/snowfl.user.css
+@license        MIT
+@preprocessor   default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color link-color "Link" #0b84ff
+==/UserStyle== */
+
+@-moz-document domain("snowfl.com") {
+	:root {
+		color-scheme: dark;
+	}
+
+	a,
+	a:hover {
+		color: var(--link-color);
+	}
+
+	body {
+		color: var(--fg);
+		background-color: var(--bg);
+	}
+
+	.navbar {
+		background: var(--bg);
+		border: none;
+	}
+
+	.form-control {
+		color: var(--fg);
+		background-color: var(--bg1);
+		&,
+		&:focus {
+			border-color: var(--bg1);
+		}
+		&::placeholder {
+			color: unset;
+		}
+		&:focus {
+			background-color: var(--bg2);
+			box-shadow: unset;
+		}
+		&[disabled] {
+			background-color: var(--bg2);
+		}
+		option,
+		optgroup {
+			background-color: var(--bg);
+		}
+	}
+
+	.btn-default {
+		color: var(--fg);
+		background: var(--bg1);
+		border-color: var(--bg1);
+		&:hover,
+		&:focus,
+		&:active,
+		&:active:hover,
+		&:active:focus,
+		&[disabled],
+		&[disabled]:hover {
+			color: unset;
+			background: var(--bg2);
+		}
+		&:active:focus {
+			outline: unset;
+		}
+	}
+
+	.btn:focus {
+		outline: unset;
+	}
+
+	img.spinner {
+		filter: invert(1);
+	}
+
+	#newsfeed {
+		background: bg !important;
+		color: var(--fg) !important;
+		a {
+			color: var(--fg) !important;
+		}
+	}
+}
