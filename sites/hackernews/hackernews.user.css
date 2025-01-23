@@ -1,0 +1,70 @@
+/* ==UserStyle==
+@name           Hacker News Dark
+@namespace      github.com/aruncveli/userstyles
+@version        25.1.23
+@description    Dark theme for Hacker News
+@author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL    https://github.com/aruncveli/userstyles
+@supportURL     https://github.com/aruncveli/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/hackernews/hackernews.user.css
+@license        MIT
+@preprocessor   default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var text title-font-size "Title font size" 1em
+@var text subtext-font-size "Subtext font size" 0.8em
+@var text comment-font-size "Comment font size" 1em
+@var text space-between-items "Space between items" 0.5em
+==/UserStyle== */
+
+@-moz-document domain("news.ycombinator.com") {
+	:root {
+		color-scheme: dark;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	#hnmain {
+		background-color: var(--bg);
+		width: 100%;
+	}
+
+	tr:not(:first-child) {
+		a:visited,
+		a:link,
+		td,
+		.c00,
+		.c73,
+		.c5a,
+		.title {
+			color: var(--fg);
+		}
+	}
+
+	.subtext,
+	.comhead {
+		&,
+		a:link {
+			color: var(--fg);
+		}
+	}
+
+	.title,
+	.comhead {
+		font-size: var(--title-font-size);
+	}
+
+	.subtext {
+		font-size: var(--subtext-font-size);
+	}
+
+	.comment {
+		font-size: var(--comment-font-size);
+	}
+
+	.spacer {
+		height: var(--space-between-items) !important;
+	}
+}

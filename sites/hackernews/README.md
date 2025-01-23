@@ -1,6 +1,6 @@
 # Hacker News Dark
 
-[Install](https://github.com/aruncveli/userstyles/raw/main/hackernews/hackernews.user.styl)
+[Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/hackernews/hackernews.user.css)
 
 Dark theme for Hacker News.
 
