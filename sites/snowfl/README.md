@@ -1,6 +1,6 @@
 # snowfl dark
 
-[Install](https://github.com/aruncveli/userstyles/raw/main/snowfl/snowfl.user.styl)
+[Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/snowfl/snowfl.user.css)
 
 Dark theme for [snowfl](https://snowfl.com/). Ads are not hidden, as visible in
 the screenshot.

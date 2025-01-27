@@ -1,6 +1,6 @@
 # Trafikinformation tåg Dark
 
-[Install](https://github.com/aruncveli/userstyles/raw/main/trafikinformation-tåg/trafikinformation-tåg.user.styl)
+[Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/trafikinformation-tåg/trafikinformation-tåg.user.css)
 
 Official [train info](https://www.trafikverket.se/trafikinformation/tag) page
 from Trafikverket.
