@@ -23,5 +23,5 @@ style.
 |       npm Docs        |                           [Install](https://github.com/aruncveli/userstyles/raw/main/npm-docs/npm-docs.user.styl)                            |          [Info](npm-docs)           |
 |          npm          |                   [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm/npm.user.css)                   |          [Info](sites/npm)          |
 |        YouGov         |                             [Install](https://github.com/aruncveli/userstyles/raw/main/yougov/yougov.user.styl)                              |           [Info](yougov)            |
-|        AWS CDK        |                            [Install](https://github.com/aruncveli/userstyles/raw/main/aws-cdk/aws-cdk.user.styl)                             |           [Info](aws-cdk)           |
+|        AWS CDK        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cdk/aws-cdk.user.css)               |        [Info](sites/aws-cdk)        |
 |       Grammarly       |                          [Install](https://github.com/aruncveli/userstyles/raw/main/grammarly/grammarly.user.styl)                           |          [Info](grammarly)          |

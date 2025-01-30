@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.1.24
+@version        25.1.30
 @description    Dark theme for some (simpler) Arch Linux pages: Home, Packages, AUR and Download.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -10,6 +10,7 @@
 @license        MIT
 @preprocessor   default
 @var color fg "Foreground" white
+@var color fg1 "Foreground darkened 1" #bbb
 @var color bg "Background" black
 @var color bg1 "Background lightened 1" #111
 @var color bg2 "Background lightened 2" #222
@@ -82,13 +83,13 @@
 	}
 
 	#pkgsearch input {
-		background-color: var(--bg2);
-		border-color: var(--bg2);
+		background-color: var(--bg);
+		border-color: var(--bg);
 	}
 
 	.pkgsearch-typeahead {
-		background-color: var(--bg3);
-		border-color: var(--bg3);
+		background-color: var(--bg2);
+		border-color: var(--bg2);
 	}
 
 	#pkgsearch input,
@@ -147,13 +148,13 @@
 	#pkglist-results tr:hover,
 	#pkgdetails #metadata h3,
 	#pkgdetails #detailslinks > div {
-		background-color: var(--bg2);
+		background-color: var(--bg);
 	}
 
 	#pkgdetails {
 		#metadata h3,
 		#detailslinks > div {
-			border-color: var(--bg2);
+			border-color: var(--bg);
 		}
 
 		#metadata h3 {
@@ -646,7 +647,7 @@
 	#dev-todo-lists,
 	#dev-todo-pkglist {
 		tr:hover {
-			background-color: var(--bg2);
+			background-color: var(--bg);
 		}
 	}
 
@@ -682,5 +683,33 @@
 @-moz-document url-prefix("https://security.archlinux.org") {
 	hr {
 		border-top-color: var(--bg);
+	}
+}
+
+@-moz-document url-prefix("https://archlinux.org/people") {
+	.arch-bio-entry {
+		table.bio th {
+			color: var(--fg1);
+		}
+		td {
+			h3 {
+				border-bottom-color: var(--bg1);
+			}
+			&.pic img {
+				border-color: var(--bg1);
+			}
+		}
+	}
+}
+
+@-moz-document url-prefix("https://archlinux.org/master-keys"), url-prefix("https://archlinux.org/feeds") {
+	table.pretty2,
+	.pretty2 td {
+		border-color: var(--bg1);
+	}
+
+	.pretty2 th {
+		background-color: var(--bg);
+		border-color: var(--bg);
 	}
 }
