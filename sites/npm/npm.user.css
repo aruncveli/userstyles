@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.1.24
+@version        25.2.1
 @description    Dark theme for npm
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -97,7 +97,8 @@
 	.lh-copy svg /* Copy code arrow */,
 	._5cfc0900 svg /* Downloads */,
 	a[aria-labelelledby="repository"] svg g,
-	._513426a8 svg g /* Git */ {
+	._513426a8 svg g /* Git */,
+	.b2812e30 svg path /* Homepage */ {
 		fill: var(--fg);
 	}
 
@@ -110,7 +111,12 @@
 		background-color: var(--bg);
 	}
 
-	._6d9832ac table ._6d9832ac h4 {
+	._6d9832ac table ._6d9832ac h4,
+	.cab9c622 th /* Versions table */,
+	.cab9c622 td,
+	._0b79531e /* Code tab current dir */,
+	._5ec64de6 /* Code tab file navbar and details */,
+	.a0dff0b1 /* Dependencies tab headers */ {
 		border-bottom-color: var(--bg);
 	}
 
@@ -120,7 +126,9 @@
 	._704c034e tr:nth-child(2n) td,
 	a[href^="/support"],
 	a[href^="https://runkit.com"],
-	a[href^="https://runkit.com"]:hover {
+	a[href^="https://runkit.com"]:hover,
+	._5ae7dfec /* Code tab dir */,
+	.a2ab2737 /* File explorer code tab row */ {
 		border-color: var(--bg);
 	}
 
@@ -130,7 +138,7 @@
 	._8055e658._7cec0316:hover,
 	._8055e658.b4fcfd19:hover,
 	._704c034e blockquote /* Contents + Legacy Markdown */,
-	.a2ab2737:hover /* File explorer code tab row */,
+	.a2ab2737:hover,
 	a[href^="/support?"]:hover,
 	a[href^="https://runkit.com"]:hover,
 	._24a1e9c7:hover {
@@ -302,7 +310,7 @@
 	}
 }
 
-@-moz-document url-prefix("https://www.npmjs.com/search") {
+@-moz-document url-prefix("https://www.npmjs.com/search"), url-prefix("https://www.npmjs.com/browse/depended") {
 	._31dfe8f0 a /* Pagination */,
 	._26391339 a,
 	._9390ec46 label /* Sort labels */,
