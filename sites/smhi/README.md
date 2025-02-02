@@ -1,6 +1,6 @@
 # SMHI Dark
 
-[Install](https://github.com/aruncveli/userstyles/raw/main/smhi/smhi.user.styl)
+[Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/smhi/smhi.user.css)
 
 Dark theme for SMHI's
 [ten day forecast](https://www.smhi.se/en/weather/forecasts/ten-day-forecast/).

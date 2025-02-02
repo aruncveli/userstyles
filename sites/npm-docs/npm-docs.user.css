@@ -45,7 +45,7 @@
 		color: var(--fg) !important;
 		background-color: var(--bg1) !important;
 	}
-	.VTnRl.token /*Code blocks*/ {
+	.VTnRl.token /* Code blocks */ {
 		&.function {
 			color: var(--link-color) !important;
 		}

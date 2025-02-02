@@ -18,7 +18,7 @@ style.
 |        snowfl         |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/snowfl/snowfl.user.css)                |        [Info](sites/snowfl)         |
 |      Hacker News      |            [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/hackernews/hackernews.user.css)            |      [Info](sites/hackernews)       |
 |        Apotea         |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/apotea/apotea.user.css)                |        [Info](sites/apotea)         |
-|         SMHI          |                               [Install](https://github.com/aruncveli/userstyles/raw/main/smhi/smhi.user.styl)                                |            [Info](smhi)             |
+|         SMHI          |                  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/smhi/smhi.user.css)                  |         [Info](sites/smhi)          |
 | Trafikinformation tåg | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/trafikinformation-tåg/trafikinformation-tåg.user.css) | [Info](sites/trafikinformation-tåg) |
 |       npm Docs        |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm-docs/npm-docs.user.css)              |       [Info](sites/npm-docs)        |
 |          npm          |                   [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm/npm.user.css)                   |          [Info](sites/npm)          |
