@@ -20,7 +20,7 @@ style.
 |        Apotea         |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/apotea/apotea.user.css)                |        [Info](sites/apotea)         |
 |         SMHI          |                               [Install](https://github.com/aruncveli/userstyles/raw/main/smhi/smhi.user.styl)                                |            [Info](smhi)             |
 | Trafikinformation tåg | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/trafikinformation-tåg/trafikinformation-tåg.user.css) | [Info](sites/trafikinformation-tåg) |
-|       npm Docs        |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm-docs/npm-docs.user.styl)              |       [Info](sites/npm-docs)        |
+|       npm Docs        |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm-docs/npm-docs.user.css)              |       [Info](sites/npm-docs)        |
 |          npm          |                   [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm/npm.user.css)                   |          [Info](sites/npm)          |
 |        YouGov         |                             [Install](https://github.com/aruncveli/userstyles/raw/main/yougov/yougov.user.styl)                              |           [Info](yougov)            |
 |        AWS CDK        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cdk/aws-cdk.user.css)               |        [Info](sites/aws-cdk)        |
