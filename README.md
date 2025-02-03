@@ -22,6 +22,6 @@ style.
 | Trafikinformation tåg | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/trafikinformation-tåg/trafikinformation-tåg.user.css) | [Info](sites/trafikinformation-tåg) |
 |       npm Docs        |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm-docs/npm-docs.user.css)              |       [Info](sites/npm-docs)        |
 |          npm          |                   [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm/npm.user.css)                   |          [Info](sites/npm)          |
-|        YouGov         |                             [Install](https://github.com/aruncveli/userstyles/raw/main/yougov/yougov.user.styl)                              |           [Info](yougov)            |
+|        YouGov         |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/yougov/yougov.user.css)                |        [Info](sites/yougov)         |
 |        AWS CDK        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cdk/aws-cdk.user.css)               |        [Info](sites/aws-cdk)        |
-|       Grammarly       |                          [Install](https://github.com/aruncveli/userstyles/raw/main/grammarly/grammarly.user.styl)                           |          [Info](grammarly)          |
+|       Grammarly       |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/grammarly/grammarly.user.css)             |       [Info](sites/grammarly)       |
