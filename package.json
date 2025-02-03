@@ -9,7 +9,7 @@
 		"check": "biome check && prettier --check .",
 		"fix": "biome check --write && prettier --write .",
 		"fix:biome": "biome check --write",
-		"generate": "bun generate.ts",
+		"generate": "bun templates/generate.ts",
 		"prepare": "husky"
 	},
 	"devDependencies": {

@@ -1,4 +1,2 @@
 node_modules
-*.css
-!sites/**/*.css
 .idea
