@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.2.5
+@version        25.2.6
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -59,7 +59,7 @@
 	.f10wkw6u .f113r6od:not([data-active="true"]) /* Goals modal row button */,
 	.f113r6od /* Goals modal row button 2 */,
 	.modal-footer_f1l98qk9,
-	.horizontalEditorWrapper_ffc8rcx {
+	.document-view-horizontalEditorWrapper_ffc8rcx {
 		background-color: var(--bg);
 	}
 
@@ -70,8 +70,8 @@
 			[data-disabled="true"]
 		)[data-hovered="true"] /* Performance modal Download PDF report */,
 	.f1aunnt9:not([data-disabled="true"])[data-hovered="true"] /* Left menu */,
-	.wrapper_f1u08us1 /* Synonyms tooltip */,
-	.synonymsEmptyResultWrapper_fhq484e,
+	.synonyms-wrapper_f1u08us1 /* Synonyms tooltip */,
+	.synonyms-emptyResultWrapper_fhq484e,
 	.f1u61vn1:not([data-disabled="true"]):not(
 			[aria-disabled="true"]
 		)[data-hovered="true"] /* Correctness suggestion info button */,
@@ -87,7 +87,9 @@
 			[aria-disabled="true"]
 		)[data-active="true"],
 	.f1todjtg:focus /* Correctness Kebab menu item */,
-	.f1nnpij3 /* Correctness popover */ {
+	.f1nnpij3 /* Correctness popover */,
+	.triggerButton_f1l4zisq[data-active="true"] /* Metrics bottom center */,
+	.popover_f1nnpij3 {
 		background-color: var(--bg1);
 	}
 
@@ -146,8 +148,14 @@
 		}
 	}
 
-	.f1todjtg:hover /* Correctness Kebab menu item */ {
+	.f1todjtg:hover /* Correctness Kebab menu item */,
+	.menuItem_ffsq1m9:focus /* Metrics item */,
+	.menuItem_ffsq1m9:hover {
 		background-color: var(--bg2);
+	}
+
+	.menuItem_ffsq1m9:focus {
+		box-shadow: 0 0 0 1px var(--bg1), 0 0 0 3px var(--bg1);
 	}
 
 	.f1todjtg:focus,
