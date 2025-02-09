@@ -1,0 +1,232 @@
+/* ==UserStyle==
+@name Seedr Dark
+@namespace github.com/aruncveli/userstyles
+@version 25.2.9
+@description Dark theme for Seedr
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/seedr/seedr.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.seedr.cc/files") {
+	body,
+	#files-heading > div > div > div:nth-child(3),
+	#text-modal > div:nth-child(2) {
+		background-color: var(--bg) !important;
+	}
+
+	#files-heading,
+	#files-search-input,
+	.content-item,
+	.content-item-size,
+	.item-buttons > span {
+		background-color: var(--bg);
+	}
+
+	#add-folder-button,
+	.context-menu-theme-gloss .context-menu-item,
+	.context-menu-theme-gloss .context-menu-item-hover,
+	.item-buttons,
+	.swal2-title,
+	.swal2-content {
+		color: var(--fg);
+	}
+
+	#folder-empty > div {
+		color: var(--fg) !important;
+	}
+
+	.content-item {
+		border-bottom-color: var(--bg);
+	}
+
+	#files-heading .header-row > div:hover,
+	.context-menu-theme-gloss,
+	.item-buttons > span:hover,
+	.swal2-popup,
+	.swal2-popup.swal2-toast {
+		background-color: var(--bg1);
+	}
+
+	#files-heading > div > div > div:nth-child(3):hover,
+	.content-item[marked="true"] {
+		background-color: var(--bg1) !important;
+	}
+
+	#files-heading > div > div > div:nth-child(3) {
+		border-bottom-color: var(--bg) !important;
+	}
+
+	#add-folder-button:hover,
+	.context-menu-theme-gloss .context-menu-item-hover,
+	input[type="text"]:focus {
+		background-color: var(--bg2);
+	}
+
+	#files-search-input:focus,
+	div#wishlist-container,
+	.progress,
+	#files-search-input,
+	.item-buttons > span,
+	.item-buttons > span:hover {
+		border-color: var(--bg);
+	}
+
+	.context-menu-theme-gloss .context-menu-separator {
+		border-color: var(--bg1);
+	}
+
+	.right-menu-text-icon:hover {
+		border-bottom-color: var(--bg2);
+	}
+
+	.context-menu-theme-gloss {
+		border-left-color: var(--bg1);
+	}
+
+	.after-arrow:after {
+		border-bottom-color: var(--fg);
+	}
+
+	.context-menu-theme-gloss .context-menu-item-hover {
+		border: 1px solid transparent;
+	}
+
+	#folder-up > div.medium-1.columns.s-icon-column > img,
+	#link-results-searching > img {
+		filter: invert(1);
+	}
+
+	input[type="text"]:focus {
+		border-color: var(--bg2);
+	}
+}
+
+@-moz-document url-prefix("https://www.seedr.cc/files"), url-prefix("https://www.seedr.cc/settings") {
+	:root {
+		color-scheme: dark;
+	}
+
+	body,
+	h6,
+	#link-paste-icon,
+	input[type="text"],
+	input[type="text"]::placeholder,
+	#upload-button,
+	#link-results-empty,
+	.right-menu-text-icon,
+	#main-drop li,
+	header:hover #menu-drop,
+	#menu-drop,
+	footer,
+	a,
+	a:hover,
+	.s-icon-column,
+	.table-heading,
+	.support-button {
+		color: var(--fg);
+	}
+
+	.page-header,
+	footer,
+	.header-row .s-icon-column,
+	.support-button {
+		background-color: var(--bg);
+	}
+
+	.progress,
+	#top-wishlist-div:hover,
+	div#wishlist-container,
+	div#wishlist-container ul,
+	#link-upload-text,
+	.link-upload-container input[type="text"],
+	#upload-button,
+	#link-results,
+	.right-menu-text-icon,
+	#main-drop,
+	#menu-drop {
+		background-color: var(--bg1);
+	}
+
+	#top-wishlist-div,
+	.page-header,
+	.header-row .s-icon-column {
+		border-bottom-color: var(--bg);
+	}
+
+	.progress,
+	div#wishlist-container,
+	.support-button {
+		border-color: var(--bg);
+	}
+
+	#subscription-menu-item {
+		border-color: var(--bg1);
+	}
+
+	div#wishlist-container ul,
+	div#wishlist-container:before,
+	#link-results:before,
+	.right-menu-text-icon,
+	#main-drop:before,
+	.menu-separator {
+		border-bottom-color: var(--bg1);
+	}
+
+	#link-results,
+	#main-drop {
+		border-right-color: var(--bg1);
+	}
+
+	div#wishlist-container li:hover,
+	#upload-button:hover,
+	.right-menu-text-icon:hover,
+	header:hover #menu-drop,
+	#main-drop > ul > li:hover {
+		background-color: var(--bg2);
+	}
+
+	#subscription-menu-item {
+		background-color: var(--bg1) !important;
+		&:hover {
+			background-color: var(--bg2) !important;
+		}
+	}
+
+	.main-menu-icon {
+		border-left-color: var(--bg1);
+	}
+}
+
+@-moz-document url-prefix("https://www.seedr.cc/settings") {
+	#settings-tab,
+	.content-heading {
+		background-color: var(--bg);
+	}
+
+	.progress.round,
+	p.title,
+	p.title i {
+		background-color: var(--bg1);
+	}
+
+	.settings-text {
+		color: var(--fg);
+		border-color: var(--bg);
+	}
+
+	p.title {
+		border-bottom-color: var(--bg1);
+	}
+
+	p.title i {
+		border-left-color: var(--bg1);
+	}
+}

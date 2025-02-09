@@ -25,3 +25,4 @@ style.
 |        YouGov         |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/yougov/yougov.user.css)                |        [Info](sites/yougov)         |
 |        AWS CDK        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cdk/aws-cdk.user.css)               |        [Info](sites/aws-cdk)        |
 |       Grammarly       |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/grammarly/grammarly.user.css)             |       [Info](sites/grammarly)       |
+|         Seedr         |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/seedr/seedr.user.css)                 |         [Info](sites/seedr)         |
