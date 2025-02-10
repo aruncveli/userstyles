@@ -27,7 +27,7 @@ const date = new Date();
 const year = date.getFullYear().toString().substring(2);
 const month = date.getMonth() + 1;
 const day = date.getDate();
-const version = `${year}.${month}.${day}`;
+const version = `${year}.${month.toString()}.${day.toString()}`;
 
 renderFile(
 	"templates/user.css.ejs",

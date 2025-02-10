@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Seedr Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.2.9
+@version 25.2.10
 @description Dark theme for Seedr
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -14,100 +14,6 @@
 @var color bg1 "Background lightened 1" #111
 @var color bg2 "Background lightened 2" #222
 ==/UserStyle== */
-
-@-moz-document url-prefix("https://www.seedr.cc/files") {
-	body,
-	#files-heading > div > div > div:nth-child(3),
-	#text-modal > div:nth-child(2) {
-		background-color: var(--bg) !important;
-	}
-
-	#files-heading,
-	#files-search-input,
-	.content-item,
-	.content-item-size,
-	.item-buttons > span {
-		background-color: var(--bg);
-	}
-
-	#add-folder-button,
-	.context-menu-theme-gloss .context-menu-item,
-	.context-menu-theme-gloss .context-menu-item-hover,
-	.item-buttons,
-	.swal2-title,
-	.swal2-content {
-		color: var(--fg);
-	}
-
-	#folder-empty > div {
-		color: var(--fg) !important;
-	}
-
-	.content-item {
-		border-bottom-color: var(--bg);
-	}
-
-	#files-heading .header-row > div:hover,
-	.context-menu-theme-gloss,
-	.item-buttons > span:hover,
-	.swal2-popup,
-	.swal2-popup.swal2-toast {
-		background-color: var(--bg1);
-	}
-
-	#files-heading > div > div > div:nth-child(3):hover,
-	.content-item[marked="true"] {
-		background-color: var(--bg1) !important;
-	}
-
-	#files-heading > div > div > div:nth-child(3) {
-		border-bottom-color: var(--bg) !important;
-	}
-
-	#add-folder-button:hover,
-	.context-menu-theme-gloss .context-menu-item-hover,
-	input[type="text"]:focus {
-		background-color: var(--bg2);
-	}
-
-	#files-search-input:focus,
-	div#wishlist-container,
-	.progress,
-	#files-search-input,
-	.item-buttons > span,
-	.item-buttons > span:hover {
-		border-color: var(--bg);
-	}
-
-	.context-menu-theme-gloss .context-menu-separator {
-		border-color: var(--bg1);
-	}
-
-	.right-menu-text-icon:hover {
-		border-bottom-color: var(--bg2);
-	}
-
-	.context-menu-theme-gloss {
-		border-left-color: var(--bg1);
-	}
-
-	.after-arrow:after {
-		border-bottom-color: var(--fg);
-	}
-
-	.context-menu-theme-gloss .context-menu-item-hover {
-		border: 1px solid transparent;
-	}
-
-	#folder-up > div.medium-1.columns.s-icon-column > img,
-	#link-results-searching > img {
-		filter: invert(1);
-	}
-
-	input[type="text"]:focus {
-		border-color: var(--bg2);
-	}
-}
 
 @-moz-document url-prefix("https://www.seedr.cc/files"), url-prefix("https://www.seedr.cc/settings") {
 	:root {
@@ -155,10 +61,12 @@
 		background-color: var(--bg1);
 	}
 
-	#top-wishlist-div,
-	.page-header,
-	.header-row .s-icon-column {
-		border-bottom-color: var(--bg);
+	div#wishlist-container li:hover,
+	#upload-button:hover,
+	.right-menu-text-icon:hover,
+	header:hover #menu-drop,
+	#main-drop > ul > li:hover {
+		background-color: var(--bg2);
 	}
 
 	.progress,
@@ -167,8 +75,10 @@
 		border-color: var(--bg);
 	}
 
-	#subscription-menu-item {
-		border-color: var(--bg1);
+	#top-wishlist-div,
+	.page-header,
+	.header-row .s-icon-column {
+		border-bottom-color: var(--bg);
 	}
 
 	div#wishlist-container ul,
@@ -185,23 +95,110 @@
 		border-right-color: var(--bg1);
 	}
 
-	div#wishlist-container li:hover,
-	#upload-button:hover,
-	.right-menu-text-icon:hover,
-	header:hover #menu-drop,
-	#main-drop > ul > li:hover {
-		background-color: var(--bg2);
+	.main-menu-icon {
+		border-left-color: var(--bg1);
 	}
 
 	#subscription-menu-item {
 		background-color: var(--bg1) !important;
+		border-color: var(--bg1);
 		&:hover {
 			background-color: var(--bg2) !important;
 		}
 	}
+}
 
-	.main-menu-icon {
+@-moz-document url-prefix("https://www.seedr.cc/files") {
+	body,
+	#files-heading > div > div > div:nth-child(3),
+	#text-modal > div:nth-child(2) {
+		background-color: var(--bg) !important;
+	}
+
+	#add-folder-button,
+	.context-menu-theme-gloss .context-menu-item,
+	.context-menu-theme-gloss .context-menu-item-hover,
+	.item-buttons,
+	.swal2-title,
+	.swal2-content {
+		color: var(--fg);
+	}
+
+	#folder-empty > div {
+		color: var(--fg) !important;
+	}
+
+	#files-heading,
+	#files-search-input,
+	.content-item,
+	.content-item-size,
+	.item-buttons > span {
+		background-color: var(--bg);
+	}
+
+	#files-heading .header-row > div:hover,
+	.context-menu-theme-gloss,
+	.item-buttons > span:hover,
+	.swal2-popup,
+	.swal2-popup.swal2-toast {
+		background-color: var(--bg1);
+	}
+
+	#files-heading > div > div > div:nth-child(3):hover,
+	.content-item[marked="true"] {
+		background-color: var(--bg1) !important;
+	}
+
+	#add-folder-button:hover,
+	.context-menu-theme-gloss .context-menu-item-hover,
+	input[type="text"]:focus {
+		background-color: var(--bg2);
+	}
+
+	#files-search-input:focus,
+	div#wishlist-container,
+	.progress,
+	#files-search-input,
+	.item-buttons > span,
+	.item-buttons > span:hover {
+		border-color: var(--bg);
+	}
+
+	.context-menu-theme-gloss .context-menu-separator {
+		border-color: var(--bg1);
+	}
+
+	input[type="text"]:focus {
+		border-color: var(--bg2);
+	}
+
+	.content-item {
+		border-bottom-color: var(--bg);
+	}
+
+	#files-heading > div > div > div:nth-child(3) {
+		border-bottom-color: var(--bg) !important;
+	}
+
+	.right-menu-text-icon:hover {
+		border-bottom-color: var(--bg2);
+	}
+
+	.after-arrow:after {
+		border-bottom-color: var(--fg);
+	}
+
+	.context-menu-theme-gloss {
 		border-left-color: var(--bg1);
+	}
+
+	.context-menu-theme-gloss .context-menu-item-hover {
+		border: 1px solid transparent;
+	}
+
+	#folder-up > div.medium-1.columns.s-icon-column > img,
+	#link-results-searching > img {
+		filter: invert(1);
 	}
 }
 
@@ -224,9 +221,8 @@
 
 	p.title {
 		border-bottom-color: var(--bg1);
-	}
-
-	p.title i {
-		border-left-color: var(--bg1);
+		i {
+			border-left-color: var(--bg1);
+		}
 	}
 }
