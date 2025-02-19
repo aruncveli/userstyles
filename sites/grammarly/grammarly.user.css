@@ -48,7 +48,18 @@
 	.f1vn8v6g /* Performance modal readability slider */,
 	.f1aunnt9 /* Left menu text */,
 	.feu4lv1 /* Correctness suggestion text */,
-	.fc6omth {
+	.fc6omth /* Pro suggestion text */,
+	.f1lo3unn:not(
+			[data-disabled="true"]
+		)[data-hovered="true"] /* Link tooltip buttons */,
+	.fvnnys1:not([data-disabled="true"]):not(
+			[aria-disabled="true"]
+		)[data-hovered="true"] /* Review suggestions category filter buttons */,
+	.fvnnys1:not([data-disabled="true"]):not(
+			[aria-disabled="true"]
+		)[data-active="true"],
+	.fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):active,
+	.fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):hover {
 		color: var(--fg);
 	}
 
@@ -59,7 +70,8 @@
 	.f10wkw6u .f113r6od:not([data-active="true"]) /* Goals modal row button */,
 	.f113r6od /* Goals modal row button 2 */,
 	.modal-footer_f1l98qk9,
-	.document-view-horizontalEditorWrapper_ffc8rcx {
+	.document-view-horizontalEditorWrapper_ffc8rcx,
+	.f1dyakn9 /* Pro suggestion */ {
 		background-color: var(--bg);
 	}
 
@@ -89,7 +101,14 @@
 	.f1todjtg:focus /* Correctness Kebab menu item */,
 	.f1nnpij3 /* Correctness popover */,
 	.triggerButton_f1l4zisq[data-active="true"] /* Metrics bottom center */,
-	.popover_f1nnpij3 {
+	.popover_f1nnpij3,
+	.formatting-link-wrapper_fihlfwi,
+	.formatting-link-delimiter_fi62vqz,
+	.fvnnys1:not([data-disabled="true"]):not(
+			[aria-disabled="true"]
+		)[data-hovered="true"],
+	.fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):active,
+	.fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):hover {
 		background-color: var(--bg1);
 	}
 
@@ -147,10 +166,18 @@
 			background-color: var(--bg1);
 		}
 	}
+	@keyframes f1flb63c {
+		/* Some purple suggestions, probably delivery */
+		100% {
+			background-color: var(--bg1);
+		}
+	}
 
 	.f1todjtg:hover /* Correctness Kebab menu item */,
 	.menuItem_ffsq1m9:focus /* Metrics item */,
-	.menuItem_ffsq1m9:hover {
+	.menuItem_ffsq1m9:hover,
+	.formatting-link-urlInput_f109vv3n /* Link tooltip */,
+	.f1lo3unn:not([data-disabled="true"])[data-hovered="true"] {
 		background-color: var(--bg2);
 	}
 
@@ -162,5 +189,9 @@
 	.f1todjtg:focus-visible {
 		box-shadow: 0 0 0 1px var(--color-background-base-default), 0 0 0 3px
 			var(--bg1);
+	}
+
+	.yellow_f16pxtey span /* Pro try for free button text */ {
+		color: var(--bg);
 	}
 }

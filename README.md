@@ -3,7 +3,8 @@
 A collection of simple and boring dark theme userstyles.
 
 No UX research was done behind picking the default colors. Background and
-foreground colors were just checked for sufficient constrast.
+foreground colors were just checked for sufficient constrast. But they are
+configurable.
 
 ## Styles
 
