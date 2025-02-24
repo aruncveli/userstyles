@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.2.1
+@version        25.2.24
 @description    Dark theme for npm
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -111,6 +111,7 @@
 		background-color: var(--bg);
 	}
 
+	._6d9832ac table,
 	._6d9832ac table ._6d9832ac h4,
 	.cab9c622 th /* Versions table */,
 	.cab9c622 td,

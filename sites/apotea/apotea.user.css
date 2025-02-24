@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.1.13
+@version        25.2.24
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -146,11 +146,9 @@
 	.offcanvas {
 		--bs-offcanvas-bg: var(--bg);
 	}
-}
 
-@-moz-document url-prefix("https://widget-launcher.imbox.io/index") {
-	#root {
-		background-color: var(--bg);
+	tr {
+		border-bottom-color: var(--bg1);
 	}
 }
 
