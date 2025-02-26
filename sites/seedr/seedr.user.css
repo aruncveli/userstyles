@@ -38,7 +38,8 @@
 	.s-icon-column,
 	.table-heading,
 	.support-button,
-	.progress-label {
+	.progress-label,
+	#alerts > div {
 		color: var(--fg);
 	}
 
@@ -65,7 +66,8 @@
 	button.wishlist-download,
 	#link-progress-display > div,
 	#close-link,
-	#link-progress-display .progress {
+	#link-progress-display .progress,
+	#alerts > div {
 		background-color: var(--bg1);
 	}
 
@@ -93,7 +95,8 @@
 	}
 
 	#close-link,
-	#link-progress-display .progress {
+	#link-progress-display .progress,
+	#alerts > div {
 		border-color: var(--bg1);
 	}
 
@@ -123,7 +126,8 @@
 		}
 	}
 
-	#top-storage-span > span[style="color: rgb(57, 218, 90);"] {
+	#top-storage-span > span[style="color: rgb(57, 218, 90);"],
+	#top-storage-span > span[style="color:#b50a1a"] {
 		color: #ff453a !important;
 	}
 
