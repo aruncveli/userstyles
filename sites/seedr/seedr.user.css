@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Seedr Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.2.26
+@version 25.2.28
 @description Dark theme for Seedr
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -39,7 +39,9 @@
 	.table-heading,
 	.support-button,
 	.progress-label,
-	#alerts > div {
+	#alerts > div,
+	.has-tip,
+	.wishlist-date {
 		color: var(--fg);
 	}
 
@@ -67,7 +69,9 @@
 	#link-progress-display > div,
 	#close-link,
 	#link-progress-display .progress,
-	#alerts > div {
+	#alerts > div,
+	.torrent-status-indicator:hover,
+	.torrent.warning {
 		background-color: var(--bg1);
 	}
 
@@ -90,7 +94,8 @@
 
 	#top-wishlist-div,
 	.page-header,
-	.header-row .s-icon-column {
+	.header-row .s-icon-column,
+	.has-tip {
 		border-bottom-color: var(--bg);
 	}
 
@@ -110,7 +115,8 @@
 	}
 
 	#link-results,
-	#main-drop {
+	#main-drop,
+	.torrent-status-indicator {
 		border-right-color: var(--bg1);
 	}
 
@@ -142,6 +148,10 @@
 	.torrent.loading .meter,
 	#link-progress-display.loading .meter {
 		background-color: rgba(172, 142, 104, 0.4);
+	}
+
+	.progress.success .meter {
+		background-color: rgba(50, 215, 75, 0.4);
 	}
 }
 
