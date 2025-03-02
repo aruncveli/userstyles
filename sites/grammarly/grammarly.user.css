@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.2.19
+@version        25.3.2
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -71,7 +71,8 @@
 	.f113r6od /* Goals modal row button 2 */,
 	.modal-footer_f1l98qk9,
 	.document-view-horizontalEditorWrapper_ffc8rcx,
-	.f1dyakn9 /* Pro suggestion */ {
+	.f1dyakn9 /* Pro suggestion */,
+	.fe88rpf /* Suggestion category icon background */ {
 		background-color: var(--bg);
 	}
 
