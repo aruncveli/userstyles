@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.3.2
+@version        25.3.3
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -148,6 +148,10 @@
 		box-shadow: 0 0 10px 10px var(--bg);
 	}
 
+	.f1aunnt9:focus-visible {
+		box-shadow: unset;
+	}
+
 	/* Suggestions */
 	@keyframes fd4lfih {
 		/* Correctness */
@@ -169,6 +173,12 @@
 	}
 	@keyframes f1flb63c {
 		/* Some purple suggestions, probably delivery */
+		100% {
+			background-color: var(--bg1);
+		}
+	}
+	@keyframes fw30ui5 {
+		/* Vocabulary */
 		100% {
 			background-color: var(--bg1);
 		}
