@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Seedr Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.2.28
+@version 25.3.4
 @description Dark theme for Seedr
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -71,7 +71,8 @@
 	#link-progress-display .progress,
 	#alerts > div,
 	.torrent-status-indicator:hover,
-	.torrent.warning {
+	.torrent.warning,
+	.torrent.error {
 		background-color: var(--bg1);
 	}
 
