@@ -1,0 +1,9 @@
+/**
+Dummy CSS file to fool WebStorm into thinking that the variables are defined statically and available for all the user css files.
+ */
+:root {
+	--fg: unset;
+	--bg: unset;
+	--bg1: unset;
+	--bg2: unset;
+}

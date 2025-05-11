@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Seedr Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.3.4
+@version 25.3.7
 @description Dark theme for Seedr
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -21,6 +21,8 @@
 	}
 
 	body,
+	h3,
+	h4,
 	h6,
 	#link-paste-icon,
 	input[type="text"],
@@ -41,7 +43,8 @@
 	.progress-label,
 	#alerts > div,
 	.has-tip,
-	.wishlist-date {
+	.wishlist-date,
+	.reveal-modal .close-reveal-modal {
 		color: var(--fg);
 	}
 
@@ -56,6 +59,7 @@
 
 	.progress,
 	#top-wishlist-div:hover,
+	#top-wishlist-div:before,
 	div#wishlist-container,
 	div#wishlist-container ul,
 	#link-upload-text,
@@ -72,7 +76,10 @@
 	#alerts > div,
 	.torrent-status-indicator:hover,
 	.torrent.warning,
-	.torrent.error {
+	.torrent.error,
+	.reveal-modal,
+	button,
+	.button {
 		background-color: var(--bg1);
 	}
 
@@ -81,7 +88,11 @@
 	.right-menu-text-icon:hover,
 	header:hover #menu-drop,
 	#main-drop > ul > li:hover,
-	#close-link:hover {
+	#close-link:hover,
+	.button:focus,
+	button:focus,
+	.button:hover,
+	button:hover {
 		background-color: var(--bg2);
 	}
 
@@ -153,6 +164,18 @@
 
 	.progress.success .meter {
 		background-color: rgba(50, 215, 75, 0.4);
+	}
+
+	.content-item-filename > div::selection {
+		background: rgb(from var(--bg2) calc(r + 34) calc(g + 34) calc(b + 34));
+	}
+
+	.reveal-modal-bg {
+		background: unset !important;
+	}
+
+	.reveal-modal {
+		box-shadow: unset;
 	}
 }
 
@@ -245,7 +268,8 @@
 	}
 
 	#folder-up > div.medium-1.columns.s-icon-column > img,
-	#link-results-searching > img {
+	#link-results-searching > img,
+	#wishlist-upgrade-modal > div > img {
 		filter: invert(1);
 	}
 

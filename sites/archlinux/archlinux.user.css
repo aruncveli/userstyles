@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.1.30
+@version        25.5.11
 @description    Dark theme for some (simpler) Arch Linux pages: Home, Packages, AUR and Download.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -144,7 +144,7 @@
 	}
 }
 
-@-moz-document url-prefix("https://archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages") {
+@-moz-document url-prefix("https://archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages"), url-prefix("https://aur.archlinux.org/pkgbase") {
 	#pkglist-results tr:hover,
 	#pkgdetails #metadata h3,
 	#pkgdetails #detailslinks > div {
