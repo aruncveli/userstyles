@@ -17,124 +17,124 @@
 @var color alert "Yellow" #ffd60a
 ==/UserStyle== */
 @-moz-document domain("survey2.yougov.com") {
-	:root {
-		color-scheme: dark;
-		--color-grapefruit-300: var(--error);
-		--color-grapefruit-1200: var(--error);
-	}
+  :root {
+    color-scheme: dark;
+    --color-grapefruit-300: var(--error);
+    --color-grapefruit-1200: var(--error);
+  }
 
-	body,
-	body select.selected,
-	body select:focus:not(.focus),
-	body select:hover,
-	.response-button,
-	div.uniform-checker span,
-	div.uniform-radio span,
-	.question .question-text,
-	.label-inner,
-	.accordion-caret .accordion-toggle,
-	.grid-layout tr.grid-row th,
-	.grid-layout .grid-item-text-left,
-	.grid-layout tr th.grid-item-text-right,
-	input[type="text"],
-	input[type="number"],
-	textarea {
-		color: var(--fg);
-	}
+  body,
+  body select.selected,
+  body select:focus:not(.focus),
+  body select:hover,
+  .response-button,
+  div.uniform-checker span,
+  div.uniform-radio span,
+  .question .question-text,
+  .label-inner,
+  .accordion-caret .accordion-toggle,
+  .grid-layout tr.grid-row th,
+  .grid-layout .grid-item-text-left,
+  .grid-layout tr th.grid-item-text-right,
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    color: var(--fg);
+  }
 
-	body,
-	select,
-	.response-button,
-	label:hover div.uniform-checker span,
-	.response-label.selected,
-	.content-wrapper,
-	#rankingWidget .rank,
-	#rankingWidget .select,
-	.modal,
-	.grid-cell label div.uniform-radio > span,
-	.grid-cell label div.uniform-checker > span {
-		background-color: var(--bg);
-	}
+  body,
+  select,
+  .response-button,
+  label:hover div.uniform-checker span,
+  .response-label.selected,
+  .content-wrapper,
+  #rankingWidget .rank,
+  #rankingWidget .select,
+  .modal,
+  .grid-cell label div.uniform-radio > span,
+  .grid-cell label div.uniform-checker > span {
+    background-color: var(--bg);
+  }
 
-	#rankingWidget #rankPlacementBlockSkinny .rankPlace .rank-selections {
-		.rank-dropdown {
-			&.diabledDropdown,
-			&.selected > span {
-				background-color: var(--bg);
-			}
-		}
+  #rankingWidget #rankPlacementBlockSkinny .rankPlace .rank-selections {
+    .rank-dropdown {
+      &.diabledDropdown,
+      &.selected > span {
+        background-color: var(--bg);
+      }
+    }
 
-		.rank-dropdown-modal {
-			.modal-header .rank-modal-close {
-				background-color: var(--bg);
-			}
-			.modal-body .rank-dropdown-option {
-				border-top-color: var(--bg);
-			}
-		}
-	}
+    .rank-dropdown-modal {
+      .modal-header .rank-modal-close {
+        background-color: var(--bg);
+      }
+      .modal-body .rank-dropdown-option {
+        border-top-color: var(--bg);
+      }
+    }
+  }
 
-	body select {
-		&.selected,
-		&:focus:not(.focus) {
-			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%2290gx9qw0ea%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22bcpp00x30c%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%3Cmask%20id%3D%22st2uf5dhjb%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%23st2uf5dhjb%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmask%20id%3D%227xa1j14p5d%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%237xa1j14p5d%29%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%200h16v16H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
-		}
-		&:hover {
-			border-color: #616e90;
-			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%2290gx9qw0ea%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22bcpp00x30c%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cmask%20id%3D%22st2uf5dhjb%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%23st2uf5dhjb%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmask%20id%3D%227xa1j14p5d%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%237xa1j14p5d%29%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%200h16v16H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
-		}
-	}
+  body select {
+    &.selected,
+    &:focus:not(.focus) {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%2290gx9qw0ea%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22bcpp00x30c%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%3Cmask%20id%3D%22st2uf5dhjb%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%23st2uf5dhjb%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmask%20id%3D%227xa1j14p5d%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%237xa1j14p5d%29%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%200h16v16H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+    }
+    &:hover {
+      border-color: #616e90;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%2290gx9qw0ea%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22bcpp00x30c%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cmask%20id%3D%22st2uf5dhjb%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%23st2uf5dhjb%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmask%20id%3D%227xa1j14p5d%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%237xa1j14p5d%29%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%200h16v16H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
+    }
+  }
 
-	.response-button:hover,
-	.grid-layout tbody tr:hover > th,
-	.grid-layout tbody tr:hover > td,
-	.rankSelectionBlock,
-	.grid-container-sticky-header .grid-layout thead th,
-	.grid-container-sticky-header .grid-layout thead td,
-	input[type="text"],
-	input[type="number"],
-	textarea,
-	.scale_button span {
-		background-color: var(--bg1);
-	}
+  .response-button:hover,
+  .grid-layout tbody tr:hover > th,
+  .grid-layout tbody tr:hover > td,
+  .rankSelectionBlock,
+  .grid-container-sticky-header .grid-layout thead th,
+  .grid-container-sticky-header .grid-layout thead td,
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  .scale_button span {
+    background-color: var(--bg1);
+  }
 
-	.response-label:hover {
-		background-color: unset;
-	}
+  .response-label:hover {
+    background-color: unset;
+  }
 
-	div.uniform-radio span.uniform-checked:not(.hidden-response) {
-		background-color: var(--fg);
-	}
+  div.uniform-radio span.uniform-checked:not(.hidden-response) {
+    background-color: var(--fg);
+  }
 
-	.grid-layout tbody tr:hover > td:hover,
-	textarea[readonly] {
-		background-color: var(--bg2);
-	}
+  .grid-layout tbody tr:hover > td:hover,
+  textarea[readonly] {
+    background-color: var(--bg2);
+  }
 
-	.grid-layout td,
-	.grid-layout th {
-		border-top-color: var(--bg);
-	}
+  .grid-layout td,
+  .grid-layout th {
+    border-top-color: var(--bg);
+  }
 
-	select:hover {
-		border-color: #616e90;
-	}
+  select:hover {
+    border-color: #616e90;
+  }
 
-	input[type="text"],
-	input[type="number"],
-	textarea,
-	label:hover div.uniform-checker span {
-		border-color: var(--fg);
-	}
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  label:hover div.uniform-checker span {
+    border-color: var(--fg);
+  }
 
-	.scale-options {
-		background-image: linear-gradient(var(--bg1) 100%, transparent 90%);
-	}
-	.alert {
-		color: var(--alert);
-		background-color: var(--alert) 33;
-	}
-	table {
-		border-collapse: separate;
-	}
+  .scale-options {
+    background-image: linear-gradient(var(--bg1) 100%, transparent 90%);
+  }
+  .alert {
+    color: var(--alert);
+    background-color: var(--alert) 33;
+  }
+  table {
+    border-collapse: separate;
+  }
 }

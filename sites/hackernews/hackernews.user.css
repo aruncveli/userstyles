@@ -18,53 +18,53 @@
 ==/UserStyle== */
 
 @-moz-document domain("news.ycombinator.com") {
-	:root {
-		color-scheme: dark;
-	}
+  :root {
+    color-scheme: dark;
+  }
 
-	body {
-		margin: 0;
-	}
+  body {
+    margin: 0;
+  }
 
-	#hnmain {
-		background-color: var(--bg);
-		width: 100%;
-	}
+  #hnmain {
+    background-color: var(--bg);
+    width: 100%;
+  }
 
-	tr:not(:first-child) {
-		a:visited,
-		a:link,
-		td,
-		.c00,
-		.c73,
-		.c5a,
-		.title {
-			color: var(--fg);
-		}
-	}
+  tr:not(:first-child) {
+    a:visited,
+    a:link,
+    td,
+    .c00,
+    .c73,
+    .c5a,
+    .title {
+      color: var(--fg);
+    }
+  }
 
-	.subtext,
-	.comhead {
-		&,
-		a:link {
-			color: var(--fg);
-		}
-	}
+  .subtext,
+  .comhead {
+    &,
+    a:link {
+      color: var(--fg);
+    }
+  }
 
-	.title,
-	.comhead {
-		font-size: var(--title-font-size);
-	}
+  .title,
+  .comhead {
+    font-size: var(--title-font-size);
+  }
 
-	.subtext {
-		font-size: var(--subtext-font-size);
-	}
+  .subtext {
+    font-size: var(--subtext-font-size);
+  }
 
-	.comment {
-		font-size: var(--comment-font-size);
-	}
+  .comment {
+    font-size: var(--comment-font-size);
+  }
 
-	.spacer {
-		height: var(--space-between-items) !important;
-	}
+  .spacer {
+    height: var(--space-between-items) !important;
+  }
 }

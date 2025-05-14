@@ -21,695 +21,695 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org"), url-prefix("https://man.archlinux.org"), url-prefix("https://security.archlinux.org") {
-	:root {
-		color-scheme: dark;
-	}
+  :root {
+    color-scheme: dark;
+  }
 
-	a {
-		&:link,
-		&:hover,
-		&:visited,
-		&:visited:hover {
-			color: var(--link-color);
-		}
-	}
+  a {
+    &:link,
+    &:hover,
+    &:visited,
+    &:visited:hover {
+      color: var(--link-color);
+    }
+  }
 
-	body {
-		color: var(--fg);
-		background-color: var(--bg);
-	}
+  body {
+    color: var(--fg);
+    background-color: var(--bg);
+  }
 
-	table.styled-table {
-		border-color: var(--bg);
-		background-color: var(--bg);
-		th {
-			border-bottom-color: var(--bg1);
-		}
-		tr td {
-			border-top-color: var(--bg);
-		}
-		th,
-		tr:hover {
-			background-color: var(--bg1);
-		}
-	}
+  table.styled-table {
+    border-color: var(--bg);
+    background-color: var(--bg);
+    th {
+      border-bottom-color: var(--bg1);
+    }
+    tr td {
+      border-top-color: var(--bg);
+    }
+    th,
+    tr:hover {
+      background-color: var(--bg1);
+    }
+  }
 }
 
 @-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org") {
-	dl dt,
-	#pkgsearch input,
-	.pkgsearch-typeahead li a {
-		color: var(--fg);
-	}
+  dl dt,
+  #pkgsearch input,
+  .pkgsearch-typeahead li a {
+    color: var(--fg);
+  }
 
-	div.box {
-		border-color: var(--bg1);
-		border-radius: 16px;
-	}
+  div.box {
+    border-color: var(--bg1);
+    border-radius: 16px;
+  }
 
-	div.box,
-	code,
-	pre,
-	#pkgsearch,
-	#news h3 a {
-		background-color: var(--bg1);
-	}
+  div.box,
+  code,
+  pre,
+  #pkgsearch,
+  #news h3 a {
+    background-color: var(--bg1);
+  }
 
-	#news h3 a,
-	pre,
-	#pkgsearch {
-		border-color: var(--bg1);
-		border-radius: 16px;
-	}
+  #news h3 a,
+  pre,
+  #pkgsearch {
+    border-color: var(--bg1);
+    border-radius: 16px;
+  }
 
-	#pkgsearch input {
-		background-color: var(--bg);
-		border-color: var(--bg);
-	}
+  #pkgsearch input {
+    background-color: var(--bg);
+    border-color: var(--bg);
+  }
 
-	.pkgsearch-typeahead {
-		background-color: var(--bg2);
-		border-color: var(--bg2);
-	}
+  .pkgsearch-typeahead {
+    background-color: var(--bg2);
+    border-color: var(--bg2);
+  }
 
-	#pkgsearch input,
-	.pkgsearch-typeahead {
-		border-radius: 4px;
-	}
+  #pkgsearch input,
+  .pkgsearch-typeahead {
+    border-radius: 4px;
+  }
 
-	h3 span.arrow {
-		border-top-color: var(--bg1);
-	}
+  h3 span.arrow {
+    border-top-color: var(--bg1);
+  }
 
-	dl {
-		dt,
-		dd {
-			border-top-color: var(--bg);
-		}
-	}
+  dl {
+    dt,
+    dd {
+      border-top-color: var(--bg);
+    }
+  }
 
-	h2 {
-		border-bottom-color: var(--bg1);
-	}
+  h2 {
+    border-bottom-color: var(--bg1);
+  }
 
-	#news h4 {
-		border-bottom-color: var(--bg);
-	}
+  #news h4 {
+    border-bottom-color: var(--bg);
+  }
 
-	table.results {
-		border-top-color: var(--bg1);
-	}
+  table.results {
+    border-top-color: var(--bg1);
+  }
 
-	.results {
-		th {
-			background-color: var(--bg);
-			border-bottom-color: var(--bg);
-		}
+  .results {
+    th {
+      background-color: var(--bg);
+      border-bottom-color: var(--bg);
+    }
 
-		tr:nth-child(odd of :not([hidden])),
-		tr:nth-child(even of :not([hidden])) {
-			background-color: var(--bg1);
-		}
-	}
+    tr:nth-child(odd of :not([hidden])),
+    tr:nth-child(even of :not([hidden])) {
+      background-color: var(--bg1);
+    }
+  }
 
-	table thead {
-		th.tablesorter-headerAsc,
-		th.tablesorter-headerDesc {
-			background-color: var(--bg);
-		}
-	}
+  table thead {
+    th.tablesorter-headerAsc,
+    th.tablesorter-headerDesc {
+      background-color: var(--bg);
+    }
+  }
 
-	#content {
-		font-size: var(--font-size);
-	}
+  #content {
+    font-size: var(--font-size);
+  }
 }
 
 @-moz-document url-prefix("https://archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages"), url-prefix("https://aur.archlinux.org/pkgbase") {
-	#pkglist-results tr:hover,
-	#pkgdetails #metadata h3,
-	#pkgdetails #detailslinks > div {
-		background-color: var(--bg);
-	}
+  #pkglist-results tr:hover,
+  #pkgdetails #metadata h3,
+  #pkgdetails #detailslinks > div {
+    background-color: var(--bg);
+  }
 
-	#pkgdetails {
-		#metadata h3,
-		#detailslinks > div {
-			border-color: var(--bg);
-		}
+  #pkgdetails {
+    #metadata h3,
+    #detailslinks > div {
+      border-color: var(--bg);
+    }
 
-		#metadata h3 {
-			border-radius: 4px;
-		}
+    #metadata h3 {
+      border-radius: 4px;
+    }
 
-		#detailslinks > div {
-			border-radius: 12px;
-		}
+    #detailslinks > div {
+      border-radius: 12px;
+    }
 
-		#actionlist .flagged {
-			color: var(--red-color);
-		}
-	}
-	.comment-header {
-		border-bottom-color: var(--bg);
-	}
+    #actionlist .flagged {
+      color: var(--red-color);
+    }
+  }
+  .comment-header {
+    border-bottom-color: var(--bg);
+  }
 }
 
 @-moz-document url-prefix("https://aur.archlinux.org") {
-	form.link button,
-	#archdev-navbar li a {
-		color: var(--link-color);
-	}
+  form.link button,
+  #archdev-navbar li a {
+    color: var(--link-color);
+  }
 }
 
 @-moz-document url-prefix("https://aur.archlinux.org/packages") {
-	.text-button,
-	.text-button:hover {
-		color: var(--link-color);
-	}
+  .text-button,
+  .text-button:hover {
+    color: var(--link-color);
+  }
 
-	.flagged a {
-		color: var(--red-color);
-	}
+  .flagged a {
+    color: var(--red-color);
+  }
 
-	.comments-header h3 span.text {
-		background-color: var(--bg1);
-		border-color: var(--bg1);
-		border-radius: 16px;
-	}
+  .comments-header h3 span.text {
+    background-color: var(--bg1);
+    border-color: var(--bg1);
+    border-radius: 16px;
+  }
 
-	.edited {
-		color: var(--fg);
-	}
+  .edited {
+    color: var(--fg);
+  }
 }
 
 @-moz-document url-prefix("https://aur.archlinux.org/cgit") {
-	div#cgit {
-		color: #eee;
-		background: #171717;
-	}
-	div#cgit a {
-		color: #3af;
-	}
-	div#cgit .diffstat-header a {
-		color: #28d;
-	}
-	div#cgit table#header td.main a {
-		color: #eee;
-	}
-	div#cgit table#header td.sub {
-		color: #999;
-	}
-	div#cgit table.tabs {
-		border-bottom-color: #444;
-	}
-	div#cgit table.tabs td a {
-		color: #888;
-	}
-	div#cgit table.tabs td a.active {
-		color: #fff;
-		background-color: #444;
-	}
-	div#cgit div.path {
-		color: #eee;
-		background-color: #333;
-	}
-	div#cgit div.content {
-		border-bottom-color: #bbb;
-	}
-	div#cgit table.list tr {
-		background: #171717;
-	}
-	div#cgit table.list tr.logheader {
-		background: #171717;
-	}
-	div#cgit table.list tr:nth-child(even) {
-		background: #171717;
-	}
-	div#cgit table.list tr:nth-child(odd) {
-		background: #1f1f1f;
-	}
-	div#cgit table.list tr:hover {
-		background: #333;
-	}
-	div#cgit table.list tr.nohover {
-		background: #171717;
-	}
-	div#cgit table.list tr.nohover:hover {
-		background: #171717;
-	}
-	div#cgit table.list tr.nohover-highlight:hover:nth-child(even) {
-		background: #171717;
-	}
-	div#cgit table.list tr.nohover-highlight:hover:nth-child(odd) {
-		background: #1f1f1f;
-	}
-	div#cgit table.list td.commitgraph .column1 {
-		color: #f55;
-	}
-	div#cgit table.list td.commitgraph .column2 {
-		color: #5f5;
-	}
-	div#cgit table.list td.commitgraph .column3 {
-		color: #ff5;
-	}
-	div#cgit table.list td.commitgraph .column4 {
-		color: #55f;
-	}
-	div#cgit table.list td.commitgraph .column5 {
-		color: #f5f;
-	}
-	div#cgit table.list td.commitgraph .column6 {
-		color: #5ff;
-	}
-	div#cgit table.list td a {
-		color: #eee;
-	}
-	div#cgit table.list td a.ls-dir {
-		color: #28d;
-	}
-	div#cgit table.list td a:hover {
-		color: #3af;
-	}
-	div#cgit table#downloads {
-		border-color: #888;
-	}
-	div#cgit table#downloads th {
-		background-color: #333;
-	}
-	div#cgit div#blob {
-		border-color: #eee;
-	}
-	div#cgit table.blob {
-		border-top-color: #eee;
-	}
-	div#cgit table.blob td.hashes,
-	div#cgit table.blob td.lines {
-		color: #eee;
-	}
-	div#cgit table.blob td.linenumbers {
-		border-right-color: gray;
-	}
-	div#cgit table.blob td.linenumbers a,
-	div#cgit table.ssdiff td.lineno a {
-		color: gray;
-	}
-	div#cgit table.blob td.linenumbers a:hover,
-	div#cgit table.ssdiff td.lineno a:hover {
-		color: #eee;
-	}
-	div#cgit table.blame div.alt:nth-child(even) {
-		background: #171717;
-	}
-	div#cgit table.blame div.alt:nth-child(odd) {
-		background: #1f1f1f;
-	}
-	div#cgit table.bin-blob {
-		border-color: #eee;
-	}
-	div#cgit table.bin-blob th {
-		border-color: #888;
-	}
-	div#cgit table.bin-blob td {
-		border-left-color: #888;
-	}
-	div#cgit div.cgit-panel table {
-		border-color: #555;
-		background-color: #282828;
-	}
-	div#cgit div.notes {
-		border-color: #661;
-		background-color: #220;
-	}
-	div#cgit table.diffstat {
-		border-color: #555;
-		background-color: #282828;
-	}
-	div#cgit table.diffstat td span.modechange {
-		color: #c66;
-	}
-	div#cgit table.diffstat td.add a {
-		color: #6c6;
-	}
-	div#cgit table.diffstat td.del a {
-		color: #c66;
-	}
-	div#cgit table.diffstat td.upd a {
-		color: #3af;
-	}
-	div#cgit table.diffstat td.graph td.add {
-		background-color: #3a3;
-	}
-	div#cgit table.diffstat td.graph td.rem {
-		background-color: #a33;
-	}
-	div#cgit div.diffstat-summary {
-		color: #777;
-	}
-	div#cgit table.diff td div.head {
-		color: #eee;
-	}
-	div#cgit table.diff td div.hunk {
-		color: #28d;
-	}
-	div#cgit table.diff td div.add {
-		color: #6c6;
-	}
-	div#cgit table.diff td div.del {
-		color: #c66;
-	}
-	div#cgit table.list td.reposection {
-		color: #777;
-	}
-	div#cgit ul.pager a {
-		color: #888;
-	}
-	div#cgit span.age-mins {
-		color: #7f7;
-	}
-	div#cgit span.age-hours {
-		color: #7f7;
-	}
-	div#cgit span.age-days {
-		color: #9d9;
-	}
-	div#cgit span.age-weeks {
-		color: #bbb;
-	}
-	div#cgit span.age-months {
-		color: #888;
-	}
-	div#cgit span.age-years {
-		color: #666;
-	}
-	div#cgit span.insertions {
-		color: #7f7;
-	}
-	div#cgit span.deletions {
-		color: #e33;
-	}
-	div#cgit div.footer {
-		color: #555;
-	}
-	div#cgit div.footer a {
-		color: #555;
-	}
-	div#cgit a.branch-deco {
-		color: #fff;
-		background-color: #361;
-		border-color: #3b2;
-	}
-	div#cgit a.tag-deco {
-		color: #fff;
-		background-color: #650;
-		border-color: #ba3;
-	}
-	div#cgit a.tag-annotated-deco {
-		color: #fff;
-		background-color: #840;
-		border-color: #b96;
-	}
-	div#cgit a.remote-deco {
-		color: #fff;
-		background-color: #348;
-		border-color: #67c;
-	}
-	div#cgit a.deco {
-		color: #fff;
-		background-color: #922;
-		border-color: #d55;
-	}
-	div#cgit a.branch-deco:hover,
-	div#cgit table.list td a.branch-deco:hover,
-	div#cgit a.tag-deco:hover,
-	div#cgit table.list td a.tag-deco:hover,
-	div#cgit a.tag-annotated-deco:hover,
-	div#cgit table.list td a.tag-annotated-deco:hover,
-	div#cgit a.remote-deco:hover,
-	div#cgit table.list td a.remote-deco:hover,
-	div#cgit a.deco:hover,
-	div#cgit table.list td a.deco:hover {
-		color: #fff;
-	}
-	div#cgit table.stats {
-		border-color: #555;
-	}
-	div#cgit table.stats th {
-		background-color: #333;
-		border-color: #555;
-	}
-	div#cgit table.stats td {
-		border-color: #555;
-	}
-	div#cgit table.stats td.sum {
-		color: #5c7e9b;
-	}
-	div#cgit table.vgraph {
-		border-color: #eee;
-	}
-	div#cgit table.vgraph th {
-		background-color: #1f1f1f;
-		border-color: black;
-	}
-	div#cgit table.vgraph div.bar {
-		background-color: #1f1f1f;
-	}
-	div#cgit table.hgraph {
-		border-color: #eee;
-	}
-	div#cgit table.hgraph th {
-		background-color: #1f1f1f;
-		border-color: #eee;
-	}
-	div#cgit table.hgraph div.bar {
-		background-color: #1f1f1f;
-	}
-	div#cgit table.ssdiff td {
-		border-left-color: #555;
-		border-right-color: #555;
-	}
-	div#cgit table.ssdiff td.add {
-		color: #eee;
-		background: #353;
-	}
-	div#cgit table.ssdiff td.add_dark {
-		color: #eee;
-		background: #030;
-	}
-	div#cgit table.ssdiff span.add {
-		background: #030;
-	}
-	div#cgit table.ssdiff td.del {
-		color: #eee;
-		background: #533;
-	}
-	div#cgit table.ssdiff td.del_dark {
-		color: #eee;
-		background: #411;
-	}
-	div#cgit table.ssdiff span.del {
-		background: #300;
-	}
-	div#cgit table.ssdiff td.changed {
-		color: #eee;
-		background: #553;
-	}
-	div#cgit table.ssdiff td.changed_dark {
-		color: #eee;
-		background: #330;
-	}
-	div#cgit table.ssdiff td.lineno {
-		color: #eee;
-		background: #1f1f1f;
-	}
-	div#cgit table.ssdiff td.hunk {
-		color: #eee;
-		background: #0d3d64;
-		border-top-color: #555;
-		border-bottom-color: #555;
-	}
-	div#cgit table.ssdiff td.head {
-		border-top-color: #555;
-		border-bottom-color: #555;
-	}
-	div#cgit table.ssdiff td.head div.head {
-		color: #eee;
-	}
-	div#cgit table.ssdiff td.foot {
-		border-top-color: #555;
-	}
+  div#cgit {
+    color: #eee;
+    background: #171717;
+  }
+  div#cgit a {
+    color: #3af;
+  }
+  div#cgit .diffstat-header a {
+    color: #28d;
+  }
+  div#cgit table#header td.main a {
+    color: #eee;
+  }
+  div#cgit table#header td.sub {
+    color: #999;
+  }
+  div#cgit table.tabs {
+    border-bottom-color: #444;
+  }
+  div#cgit table.tabs td a {
+    color: #888;
+  }
+  div#cgit table.tabs td a.active {
+    color: #fff;
+    background-color: #444;
+  }
+  div#cgit div.path {
+    color: #eee;
+    background-color: #333;
+  }
+  div#cgit div.content {
+    border-bottom-color: #bbb;
+  }
+  div#cgit table.list tr {
+    background: #171717;
+  }
+  div#cgit table.list tr.logheader {
+    background: #171717;
+  }
+  div#cgit table.list tr:nth-child(even) {
+    background: #171717;
+  }
+  div#cgit table.list tr:nth-child(odd) {
+    background: #1f1f1f;
+  }
+  div#cgit table.list tr:hover {
+    background: #333;
+  }
+  div#cgit table.list tr.nohover {
+    background: #171717;
+  }
+  div#cgit table.list tr.nohover:hover {
+    background: #171717;
+  }
+  div#cgit table.list tr.nohover-highlight:hover:nth-child(even) {
+    background: #171717;
+  }
+  div#cgit table.list tr.nohover-highlight:hover:nth-child(odd) {
+    background: #1f1f1f;
+  }
+  div#cgit table.list td.commitgraph .column1 {
+    color: #f55;
+  }
+  div#cgit table.list td.commitgraph .column2 {
+    color: #5f5;
+  }
+  div#cgit table.list td.commitgraph .column3 {
+    color: #ff5;
+  }
+  div#cgit table.list td.commitgraph .column4 {
+    color: #55f;
+  }
+  div#cgit table.list td.commitgraph .column5 {
+    color: #f5f;
+  }
+  div#cgit table.list td.commitgraph .column6 {
+    color: #5ff;
+  }
+  div#cgit table.list td a {
+    color: #eee;
+  }
+  div#cgit table.list td a.ls-dir {
+    color: #28d;
+  }
+  div#cgit table.list td a:hover {
+    color: #3af;
+  }
+  div#cgit table#downloads {
+    border-color: #888;
+  }
+  div#cgit table#downloads th {
+    background-color: #333;
+  }
+  div#cgit div#blob {
+    border-color: #eee;
+  }
+  div#cgit table.blob {
+    border-top-color: #eee;
+  }
+  div#cgit table.blob td.hashes,
+  div#cgit table.blob td.lines {
+    color: #eee;
+  }
+  div#cgit table.blob td.linenumbers {
+    border-right-color: gray;
+  }
+  div#cgit table.blob td.linenumbers a,
+  div#cgit table.ssdiff td.lineno a {
+    color: gray;
+  }
+  div#cgit table.blob td.linenumbers a:hover,
+  div#cgit table.ssdiff td.lineno a:hover {
+    color: #eee;
+  }
+  div#cgit table.blame div.alt:nth-child(even) {
+    background: #171717;
+  }
+  div#cgit table.blame div.alt:nth-child(odd) {
+    background: #1f1f1f;
+  }
+  div#cgit table.bin-blob {
+    border-color: #eee;
+  }
+  div#cgit table.bin-blob th {
+    border-color: #888;
+  }
+  div#cgit table.bin-blob td {
+    border-left-color: #888;
+  }
+  div#cgit div.cgit-panel table {
+    border-color: #555;
+    background-color: #282828;
+  }
+  div#cgit div.notes {
+    border-color: #661;
+    background-color: #220;
+  }
+  div#cgit table.diffstat {
+    border-color: #555;
+    background-color: #282828;
+  }
+  div#cgit table.diffstat td span.modechange {
+    color: #c66;
+  }
+  div#cgit table.diffstat td.add a {
+    color: #6c6;
+  }
+  div#cgit table.diffstat td.del a {
+    color: #c66;
+  }
+  div#cgit table.diffstat td.upd a {
+    color: #3af;
+  }
+  div#cgit table.diffstat td.graph td.add {
+    background-color: #3a3;
+  }
+  div#cgit table.diffstat td.graph td.rem {
+    background-color: #a33;
+  }
+  div#cgit div.diffstat-summary {
+    color: #777;
+  }
+  div#cgit table.diff td div.head {
+    color: #eee;
+  }
+  div#cgit table.diff td div.hunk {
+    color: #28d;
+  }
+  div#cgit table.diff td div.add {
+    color: #6c6;
+  }
+  div#cgit table.diff td div.del {
+    color: #c66;
+  }
+  div#cgit table.list td.reposection {
+    color: #777;
+  }
+  div#cgit ul.pager a {
+    color: #888;
+  }
+  div#cgit span.age-mins {
+    color: #7f7;
+  }
+  div#cgit span.age-hours {
+    color: #7f7;
+  }
+  div#cgit span.age-days {
+    color: #9d9;
+  }
+  div#cgit span.age-weeks {
+    color: #bbb;
+  }
+  div#cgit span.age-months {
+    color: #888;
+  }
+  div#cgit span.age-years {
+    color: #666;
+  }
+  div#cgit span.insertions {
+    color: #7f7;
+  }
+  div#cgit span.deletions {
+    color: #e33;
+  }
+  div#cgit div.footer {
+    color: #555;
+  }
+  div#cgit div.footer a {
+    color: #555;
+  }
+  div#cgit a.branch-deco {
+    color: #fff;
+    background-color: #361;
+    border-color: #3b2;
+  }
+  div#cgit a.tag-deco {
+    color: #fff;
+    background-color: #650;
+    border-color: #ba3;
+  }
+  div#cgit a.tag-annotated-deco {
+    color: #fff;
+    background-color: #840;
+    border-color: #b96;
+  }
+  div#cgit a.remote-deco {
+    color: #fff;
+    background-color: #348;
+    border-color: #67c;
+  }
+  div#cgit a.deco {
+    color: #fff;
+    background-color: #922;
+    border-color: #d55;
+  }
+  div#cgit a.branch-deco:hover,
+  div#cgit table.list td a.branch-deco:hover,
+  div#cgit a.tag-deco:hover,
+  div#cgit table.list td a.tag-deco:hover,
+  div#cgit a.tag-annotated-deco:hover,
+  div#cgit table.list td a.tag-annotated-deco:hover,
+  div#cgit a.remote-deco:hover,
+  div#cgit table.list td a.remote-deco:hover,
+  div#cgit a.deco:hover,
+  div#cgit table.list td a.deco:hover {
+    color: #fff;
+  }
+  div#cgit table.stats {
+    border-color: #555;
+  }
+  div#cgit table.stats th {
+    background-color: #333;
+    border-color: #555;
+  }
+  div#cgit table.stats td {
+    border-color: #555;
+  }
+  div#cgit table.stats td.sum {
+    color: #5c7e9b;
+  }
+  div#cgit table.vgraph {
+    border-color: #eee;
+  }
+  div#cgit table.vgraph th {
+    background-color: #1f1f1f;
+    border-color: black;
+  }
+  div#cgit table.vgraph div.bar {
+    background-color: #1f1f1f;
+  }
+  div#cgit table.hgraph {
+    border-color: #eee;
+  }
+  div#cgit table.hgraph th {
+    background-color: #1f1f1f;
+    border-color: #eee;
+  }
+  div#cgit table.hgraph div.bar {
+    background-color: #1f1f1f;
+  }
+  div#cgit table.ssdiff td {
+    border-left-color: #555;
+    border-right-color: #555;
+  }
+  div#cgit table.ssdiff td.add {
+    color: #eee;
+    background: #353;
+  }
+  div#cgit table.ssdiff td.add_dark {
+    color: #eee;
+    background: #030;
+  }
+  div#cgit table.ssdiff span.add {
+    background: #030;
+  }
+  div#cgit table.ssdiff td.del {
+    color: #eee;
+    background: #533;
+  }
+  div#cgit table.ssdiff td.del_dark {
+    color: #eee;
+    background: #411;
+  }
+  div#cgit table.ssdiff span.del {
+    background: #300;
+  }
+  div#cgit table.ssdiff td.changed {
+    color: #eee;
+    background: #553;
+  }
+  div#cgit table.ssdiff td.changed_dark {
+    color: #eee;
+    background: #330;
+  }
+  div#cgit table.ssdiff td.lineno {
+    color: #eee;
+    background: #1f1f1f;
+  }
+  div#cgit table.ssdiff td.hunk {
+    color: #eee;
+    background: #0d3d64;
+    border-top-color: #555;
+    border-bottom-color: #555;
+  }
+  div#cgit table.ssdiff td.head {
+    border-top-color: #555;
+    border-bottom-color: #555;
+  }
+  div#cgit table.ssdiff td.head div.head {
+    color: #eee;
+  }
+  div#cgit table.ssdiff td.foot {
+    border-top-color: #555;
+  }
 
-	/* These are modified as per https://gitlab.com/saalen/highlight/-/blob/master/themes/darkness.theme,
+  /* These are modified as per https://gitlab.com/saalen/highlight/-/blob/master/themes/darkness.theme,
     of which the arch linux site uses the edit-kwrite.theme */
-	div#cgit table.blob .num {
-		color: #619de7;
-	}
-	div#cgit table.blob .esc {
-		color: #00abab;
-	}
-	div#cgit table.blob .str {
-		color: #abab00;
-	}
-	div#cgit table.blob .pps {
-		color: #abab00;
-	}
-	div#cgit table.blob .slc {
-		color: #008888;
-		font-style: italic;
-	}
-	div#cgit table.blob .com {
-		color: #008888;
-		font-style: italic;
-	}
-	div#cgit table.blob .ppc {
-		color: #1da3cf;
-	}
-	div#cgit table.blob .opt {
-		color: #ff00ff;
-	}
-	div#cgit table.blob .ipl {
-		color: #db70b8;
-	}
-	div#cgit table.blob .lin {
-		color: #888888;
-	}
-	div#cgit table.blob .kwa {
-		color: #ffff00;
-		font-weight: bold;
-	}
-	div#cgit table.blob .kwb {
-		color: #00ff00;
-	}
-	div#cgit table.blob .kwc {
-		color: #26e0e7;
-		font-weight: bold;
-	}
-	div#cgit table.blob .kwd {
-		color: #f34627;
-	}
+  div#cgit table.blob .num {
+    color: #619de7;
+  }
+  div#cgit table.blob .esc {
+    color: #00abab;
+  }
+  div#cgit table.blob .str {
+    color: #abab00;
+  }
+  div#cgit table.blob .pps {
+    color: #abab00;
+  }
+  div#cgit table.blob .slc {
+    color: #008888;
+    font-style: italic;
+  }
+  div#cgit table.blob .com {
+    color: #008888;
+    font-style: italic;
+  }
+  div#cgit table.blob .ppc {
+    color: #1da3cf;
+  }
+  div#cgit table.blob .opt {
+    color: #ff00ff;
+  }
+  div#cgit table.blob .ipl {
+    color: #db70b8;
+  }
+  div#cgit table.blob .lin {
+    color: #888888;
+  }
+  div#cgit table.blob .kwa {
+    color: #ffff00;
+    font-weight: bold;
+  }
+  div#cgit table.blob .kwb {
+    color: #00ff00;
+  }
+  div#cgit table.blob .kwc {
+    color: #26e0e7;
+    font-weight: bold;
+  }
+  div#cgit table.blob .kwd {
+    color: #f34627;
+  }
 }
 
 @-moz-document url-prefix("https://man.archlinux.org") {
-	code {
-		background-color: var(--bg1);
-	}
+  code {
+    background-color: var(--bg1);
+  }
 
-	table.foot {
-		border-top-color: var(--bg);
-	}
+  table.foot {
+    border-top-color: var(--bg);
+  }
 
-	table.head,
-	.man-page-content a.permalink {
-		border-bottom-color: var(--bg);
-	}
+  table.head,
+  .man-page-content a.permalink {
+    border-bottom-color: var(--bg);
+  }
 }
 
 @-moz-document url-prefix("https://man.archlinux.org/search") {
-	.box {
-		background-color: var(--bg1);
-	}
+  .box {
+    background-color: var(--bg1);
+  }
 }
 
 @-moz-document url-prefix("https://man.archlinux.org/man") {
-	.man-page-content table.tbl {
-		&,
-		tr:first-child td:not(:only-child) {
-			background-color: var(--bg1);
-		}
-	}
+  .man-page-content table.tbl {
+    &,
+    tr:first-child td:not(:only-child) {
+      background-color: var(--bg1);
+    }
+  }
 
-	pre {
-		background-color: var(--bg1);
-		border-color: var(--bg1);
-		border-radius: 16px;
-	}
+  pre {
+    background-color: var(--bg1);
+    border-color: var(--bg1);
+    border-radius: 16px;
+  }
 }
 
 @-moz-document url-prefix("https://archlinux.org/groups") {
-	.results {
-		tr:nth-child(odd),
-		tr:nth-child(even) {
-			background-color: var(--bg1);
-		}
+  .results {
+    tr:nth-child(odd),
+    tr:nth-child(even) {
+      background-color: var(--bg1);
+    }
 
-		th {
-			&,
-			&.tablesorter-header {
-				&Asc,
-				&Desc {
-					background-color: var(--bg);
-				}
-			}
-		}
-	}
+    th {
+      &,
+      &.tablesorter-header {
+        &Asc,
+        &Desc {
+          background-color: var(--bg);
+        }
+      }
+    }
+  }
 }
 
 @-moz-document url-prefix("https://archlinux.org/todo") {
-	#dev-todo-lists,
-	#dev-todo-pkglist {
-		tr:hover {
-			background-color: var(--bg);
-		}
-	}
+  #dev-todo-lists,
+  #dev-todo-pkglist {
+    tr:hover {
+      background-color: var(--bg);
+    }
+  }
 
-	.todo-info {
-		color: var(--fg);
-		border-bottom-color: var(--bg1);
-	}
+  .todo-info {
+    color: var(--fg);
+    border-bottom-color: var(--bg1);
+  }
 
-	.todo-pkgbases {
-		border-top-color: var(--bg1);
-	}
+  .todo-pkgbases {
+    border-top-color: var(--bg1);
+  }
 }
 
 @-moz-document url-prefix("https://archlinux.org/news") {
-	.results tr:nth-child(odd of :not([hidden])),
-	#article-list tr:nth-child(odd),
-	.results tr:nth-child(even of :not([hidden])),
-	#article-list tr:nth-child(even) {
-		background-color: var(--bg1);
-	}
+  .results tr:nth-child(odd of :not([hidden])),
+  #article-list tr:nth-child(odd),
+  .results tr:nth-child(even of :not([hidden])),
+  #article-list tr:nth-child(even) {
+    background-color: var(--bg1);
+  }
 
-	div.news-article .article-info {
-		color: var(--fg);
-	}
+  div.news-article .article-info {
+    color: var(--fg);
+  }
 }
 
 @-moz-document url-prefix("https://archlinux.org/download") {
-	#arch-downloads h3 {
-		border-bottom-color: var(--bg1);
-	}
+  #arch-downloads h3 {
+    border-bottom-color: var(--bg1);
+  }
 }
 
 @-moz-document url-prefix("https://security.archlinux.org") {
-	hr {
-		border-top-color: var(--bg);
-	}
+  hr {
+    border-top-color: var(--bg);
+  }
 }
 
 @-moz-document url-prefix("https://archlinux.org/people") {
-	.arch-bio-entry {
-		table.bio th {
-			color: var(--fg1);
-		}
-		td {
-			h3 {
-				border-bottom-color: var(--bg1);
-			}
-			&.pic img {
-				border-color: var(--bg1);
-			}
-		}
-	}
+  .arch-bio-entry {
+    table.bio th {
+      color: var(--fg1);
+    }
+    td {
+      h3 {
+        border-bottom-color: var(--bg1);
+      }
+      &.pic img {
+        border-color: var(--bg1);
+      }
+    }
+  }
 }
 
 @-moz-document url-prefix("https://archlinux.org/master-keys"), url-prefix("https://archlinux.org/feeds") {
-	table.pretty2,
-	.pretty2 td {
-		border-color: var(--bg1);
-	}
+  table.pretty2,
+  .pretty2 td {
+    border-color: var(--bg1);
+  }
 
-	.pretty2 th {
-		background-color: var(--bg);
-		border-color: var(--bg);
-	}
+  .pretty2 th {
+    background-color: var(--bg);
+    border-color: var(--bg);
+  }
 }

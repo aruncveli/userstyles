@@ -16,289 +16,289 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.seedr.cc/files"), url-prefix("https://www.seedr.cc/settings"), url-prefix("https://www.seedr.cc/torrent") {
-	:root {
-		color-scheme: dark;
-	}
+  :root {
+    color-scheme: dark;
+  }
 
-	body,
-	h3,
-	h4,
-	h6,
-	#link-paste-icon,
-	input[type="text"],
-	input[type="text"]::placeholder,
-	#upload-button,
-	#link-results-empty,
-	.right-menu-text-icon,
-	#main-drop li,
-	header:hover #menu-drop,
-	header:hover #menu-drop.active,
-	#menu-drop,
-	footer,
-	a,
-	a:hover,
-	.s-icon-column,
-	.table-heading,
-	.support-button,
-	.progress-label,
-	#alerts > div,
-	.has-tip,
-	.wishlist-date,
-	.reveal-modal .close-reveal-modal {
-		color: var(--fg);
-	}
+  body,
+  h3,
+  h4,
+  h6,
+  #link-paste-icon,
+  input[type="text"],
+  input[type="text"]::placeholder,
+  #upload-button,
+  #link-results-empty,
+  .right-menu-text-icon,
+  #main-drop li,
+  header:hover #menu-drop,
+  header:hover #menu-drop.active,
+  #menu-drop,
+  footer,
+  a,
+  a:hover,
+  .s-icon-column,
+  .table-heading,
+  .support-button,
+  .progress-label,
+  #alerts > div,
+  .has-tip,
+  .wishlist-date,
+  .reveal-modal .close-reveal-modal {
+    color: var(--fg);
+  }
 
-	.page-header,
-	footer,
-	.header-row .s-icon-column,
-	.support-button,
-	.progress.round,
-	.torrent.loading {
-		background-color: var(--bg);
-	}
+  .page-header,
+  footer,
+  .header-row .s-icon-column,
+  .support-button,
+  .progress.round,
+  .torrent.loading {
+    background-color: var(--bg);
+  }
 
-	.progress,
-	#top-wishlist-div:hover,
-	#top-wishlist-div:before,
-	div#wishlist-container,
-	div#wishlist-container ul,
-	#link-upload-text,
-	.link-upload-container input[type="text"],
-	#upload-button,
-	#link-results,
-	.right-menu-text-icon,
-	#main-drop,
-	#menu-drop,
-	button.wishlist-download,
-	#link-progress-display > div,
-	#close-link,
-	#link-progress-display .progress,
-	#alerts > div,
-	.torrent-status-indicator:hover,
-	.torrent.warning,
-	.torrent.error,
-	.reveal-modal,
-	button,
-	.button {
-		background-color: var(--bg1);
-	}
+  .progress,
+  #top-wishlist-div:hover,
+  #top-wishlist-div:before,
+  div#wishlist-container,
+  div#wishlist-container ul,
+  #link-upload-text,
+  .link-upload-container input[type="text"],
+  #upload-button,
+  #link-results,
+  .right-menu-text-icon,
+  #main-drop,
+  #menu-drop,
+  button.wishlist-download,
+  #link-progress-display > div,
+  #close-link,
+  #link-progress-display .progress,
+  #alerts > div,
+  .torrent-status-indicator:hover,
+  .torrent.warning,
+  .torrent.error,
+  .reveal-modal,
+  button,
+  .button {
+    background-color: var(--bg1);
+  }
 
-	div#wishlist-container li:hover,
-	#upload-button:hover,
-	.right-menu-text-icon:hover,
-	header:hover #menu-drop,
-	#main-drop > ul > li:hover,
-	#close-link:hover,
-	.button:focus,
-	button:focus,
-	.button:hover,
-	button:hover {
-		background-color: var(--bg2);
-	}
+  div#wishlist-container li:hover,
+  #upload-button:hover,
+  .right-menu-text-icon:hover,
+  header:hover #menu-drop,
+  #main-drop > ul > li:hover,
+  #close-link:hover,
+  .button:focus,
+  button:focus,
+  .button:hover,
+  button:hover {
+    background-color: var(--bg2);
+  }
 
-	.progress,
-	div#wishlist-container,
-	.support-button,
-	.progress.round,
-	#link-progress-display > div {
-		border-color: var(--bg);
-	}
+  .progress,
+  div#wishlist-container,
+  .support-button,
+  .progress.round,
+  #link-progress-display > div {
+    border-color: var(--bg);
+  }
 
-	#top-wishlist-div,
-	.page-header,
-	.header-row .s-icon-column,
-	.has-tip {
-		border-bottom-color: var(--bg);
-	}
+  #top-wishlist-div,
+  .page-header,
+  .header-row .s-icon-column,
+  .has-tip {
+    border-bottom-color: var(--bg);
+  }
 
-	#close-link,
-	#link-progress-display .progress,
-	#alerts > div {
-		border-color: var(--bg1);
-	}
+  #close-link,
+  #link-progress-display .progress,
+  #alerts > div {
+    border-color: var(--bg1);
+  }
 
-	div#wishlist-container ul,
-	div#wishlist-container:before,
-	#link-results:before,
-	.right-menu-text-icon,
-	#main-drop:before,
-	.menu-separator {
-		border-bottom-color: var(--bg1);
-	}
+  div#wishlist-container ul,
+  div#wishlist-container:before,
+  #link-results:before,
+  .right-menu-text-icon,
+  #main-drop:before,
+  .menu-separator {
+    border-bottom-color: var(--bg1);
+  }
 
-	#link-results,
-	#main-drop,
-	.torrent-status-indicator {
-		border-right-color: var(--bg1);
-	}
+  #link-results,
+  #main-drop,
+  .torrent-status-indicator {
+    border-right-color: var(--bg1);
+  }
 
-	.main-menu-icon {
-		border-left-color: var(--bg1);
-	}
+  .main-menu-icon {
+    border-left-color: var(--bg1);
+  }
 
-	#subscription-menu-item {
-		background-color: var(--bg1) !important;
-		border-color: var(--bg1);
-		&:hover {
-			background-color: var(--bg2) !important;
-		}
-	}
+  #subscription-menu-item {
+    background-color: var(--bg1) !important;
+    border-color: var(--bg1);
+    &:hover {
+      background-color: var(--bg2) !important;
+    }
+  }
 
-	#top-storage-span > span[style="color: rgb(57, 218, 90);"],
-	#top-storage-span > span[style="color:#b50a1a"] {
-		color: #ff453a !important;
-	}
+  #top-storage-span > span[style="color: rgb(57, 218, 90);"],
+  #top-storage-span > span[style="color:#b50a1a"] {
+    color: #ff453a !important;
+  }
 
-	#link-progress-display .progress {
-		box-shadow: 1px 1px 2px var(--bg1);
-	}
+  #link-progress-display .progress {
+    box-shadow: 1px 1px 2px var(--bg1);
+  }
 
-	#link-progress-display .meter {
-		background-color: #0a84ff;
-	}
+  #link-progress-display .meter {
+    background-color: #0a84ff;
+  }
 
-	.torrent.loading .meter,
-	#link-progress-display.loading .meter {
-		background-color: rgba(172, 142, 104, 0.4);
-	}
+  .torrent.loading .meter,
+  #link-progress-display.loading .meter {
+    background-color: rgba(172, 142, 104, 0.4);
+  }
 
-	.progress.success .meter {
-		background-color: rgba(50, 215, 75, 0.4);
-	}
+  .progress.success .meter {
+    background-color: rgba(50, 215, 75, 0.4);
+  }
 
-	.content-item-filename > div::selection {
-		background: rgb(from var(--bg2) calc(r + 34) calc(g + 34) calc(b + 34));
-	}
+  .content-item-filename > div::selection {
+    background: rgb(from var(--bg2) calc(r + 34) calc(g + 34) calc(b + 34));
+  }
 
-	.reveal-modal-bg {
-		background: unset !important;
-	}
+  .reveal-modal-bg {
+    background: unset !important;
+  }
 
-	.reveal-modal {
-		box-shadow: unset;
-	}
+  .reveal-modal {
+    box-shadow: unset;
+  }
 }
 
 @-moz-document url-prefix("https://www.seedr.cc/files"), url-prefix("https://www.seedr.cc/torrent") {
-	body,
-	#files-heading > div > div > div:nth-child(3),
-	#text-modal > div:nth-child(2) {
-		background-color: var(--bg) !important;
-	}
+  body,
+  #files-heading > div > div > div:nth-child(3),
+  #text-modal > div:nth-child(2) {
+    background-color: var(--bg) !important;
+  }
 
-	#add-folder-button,
-	.context-menu-theme-gloss .context-menu-item,
-	.context-menu-theme-gloss .context-menu-item-hover,
-	.item-buttons,
-	.swal2-title,
-	.swal2-content {
-		color: var(--fg);
-	}
+  #add-folder-button,
+  .context-menu-theme-gloss .context-menu-item,
+  .context-menu-theme-gloss .context-menu-item-hover,
+  .item-buttons,
+  .swal2-title,
+  .swal2-content {
+    color: var(--fg);
+  }
 
-	#folder-empty > div {
-		color: var(--fg) !important;
-	}
+  #folder-empty > div {
+    color: var(--fg) !important;
+  }
 
-	#files-heading,
-	#files-search-input,
-	.content-item,
-	.content-item-size,
-	.item-buttons > span {
-		background-color: var(--bg);
-	}
+  #files-heading,
+  #files-search-input,
+  .content-item,
+  .content-item-size,
+  .item-buttons > span {
+    background-color: var(--bg);
+  }
 
-	#files-heading .header-row > div:hover,
-	.context-menu-theme-gloss,
-	.item-buttons > span:hover,
-	.swal2-popup,
-	.swal2-popup.swal2-toast {
-		background-color: var(--bg1);
-	}
+  #files-heading .header-row > div:hover,
+  .context-menu-theme-gloss,
+  .item-buttons > span:hover,
+  .swal2-popup,
+  .swal2-popup.swal2-toast {
+    background-color: var(--bg1);
+  }
 
-	#files-heading > div > div > div:nth-child(3):hover,
-	.content-item[marked="true"] {
-		background-color: var(--bg1) !important;
-	}
+  #files-heading > div > div > div:nth-child(3):hover,
+  .content-item[marked="true"] {
+    background-color: var(--bg1) !important;
+  }
 
-	#add-folder-button:hover,
-	.context-menu-theme-gloss .context-menu-item-hover,
-	input[type="text"]:focus {
-		background-color: var(--bg2);
-	}
+  #add-folder-button:hover,
+  .context-menu-theme-gloss .context-menu-item-hover,
+  input[type="text"]:focus {
+    background-color: var(--bg2);
+  }
 
-	#files-search-input:focus,
-	div#wishlist-container,
-	.progress,
-	#files-search-input,
-	.item-buttons > span,
-	.item-buttons > span:hover {
-		border-color: var(--bg);
-	}
+  #files-search-input:focus,
+  div#wishlist-container,
+  .progress,
+  #files-search-input,
+  .item-buttons > span,
+  .item-buttons > span:hover {
+    border-color: var(--bg);
+  }
 
-	.context-menu-theme-gloss .context-menu-separator {
-		border-color: var(--bg1);
-	}
+  .context-menu-theme-gloss .context-menu-separator {
+    border-color: var(--bg1);
+  }
 
-	input[type="text"]:focus {
-		border-color: var(--bg2);
-	}
+  input[type="text"]:focus {
+    border-color: var(--bg2);
+  }
 
-	.content-item {
-		border-bottom-color: var(--bg);
-	}
+  .content-item {
+    border-bottom-color: var(--bg);
+  }
 
-	#files-heading > div > div > div:nth-child(3) {
-		border-bottom-color: var(--bg) !important;
-	}
+  #files-heading > div > div > div:nth-child(3) {
+    border-bottom-color: var(--bg) !important;
+  }
 
-	.right-menu-text-icon:hover {
-		border-bottom-color: var(--bg2);
-	}
+  .right-menu-text-icon:hover {
+    border-bottom-color: var(--bg2);
+  }
 
-	.after-arrow:after {
-		border-bottom-color: var(--fg);
-	}
+  .after-arrow:after {
+    border-bottom-color: var(--fg);
+  }
 
-	.context-menu-theme-gloss {
-		border-left-color: var(--bg1);
-	}
+  .context-menu-theme-gloss {
+    border-left-color: var(--bg1);
+  }
 
-	.context-menu-theme-gloss .context-menu-item-hover {
-		border: 1px solid transparent;
-	}
+  .context-menu-theme-gloss .context-menu-item-hover {
+    border: 1px solid transparent;
+  }
 
-	#folder-up > div.medium-1.columns.s-icon-column > img,
-	#link-results-searching > img,
-	#wishlist-upgrade-modal > div > img {
-		filter: invert(1);
-	}
+  #folder-up > div.medium-1.columns.s-icon-column > img,
+  #link-results-searching > img,
+  #wishlist-upgrade-modal > div > img {
+    filter: invert(1);
+  }
 
-	.swal2-popup.swal2-toast {
-		box-shadow: 0 0 .625em var(--bg);
-	}
+  .swal2-popup.swal2-toast {
+    box-shadow: 0 0 .625em var(--bg);
+  }
 }
 
 @-moz-document url-prefix("https://www.seedr.cc/settings") {
-	#settings-tab,
-	.content-heading {
-		background-color: var(--bg);
-	}
+  #settings-tab,
+  .content-heading {
+    background-color: var(--bg);
+  }
 
-	.progress.round,
-	p.title,
-	p.title i {
-		background-color: var(--bg1);
-	}
+  .progress.round,
+  p.title,
+  p.title i {
+    background-color: var(--bg1);
+  }
 
-	.settings-text {
-		color: var(--fg);
-		border-color: var(--bg);
-	}
+  .settings-text {
+    color: var(--fg);
+    border-color: var(--bg);
+  }
 
-	p.title {
-		border-bottom-color: var(--bg1);
-		i {
-			border-left-color: var(--bg1);
-		}
-	}
+  p.title {
+    border-bottom-color: var(--bg1);
+    i {
+      border-left-color: var(--bg1);
+    }
+  }
 }

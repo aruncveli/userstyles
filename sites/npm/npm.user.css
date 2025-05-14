@@ -16,328 +16,328 @@
 @var color link "Link" #ff453a
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.npmjs.com") {
-	:root {
-		color-scheme: dark;
-		--header-color: var(--fg);
-		--code-bg: var(--bg1);
-		--wombat-red: var(--link);
-		--background-color: var(--bg);
-		--color-fg-subtle: var(--fg);
-		--search-fg-muted: var(--fg);
-		--search-border: var(--bg);
-		--search-bg-subtle: var(--bg1);
-	}
+  :root {
+    color-scheme: dark;
+    --header-color: var(--fg);
+    --code-bg: var(--bg1);
+    --wombat-red: var(--link);
+    --background-color: var(--bg);
+    --color-fg-subtle: var(--fg);
+    --search-fg-muted: var(--fg);
+    --search-border: var(--bg);
+    --search-bg-subtle: var(--bg1);
+  }
 
-	.bg-white,
-	._8a2f7809:hover {
-		background-color: var(--bg);
-	}
+  .bg-white,
+  ._8a2f7809:hover {
+    background-color: var(--bg);
+  }
 
-	._2f299eeb /* search box */,
-	.bg-black-05 {
-		background-color: var(--bg1);
-	}
+  ._2f299eeb /* search box */,
+  .bg-black-05 {
+    background-color: var(--bg1);
+  }
 
-	._8a2f7809 /* search results */ {
-		border-bottom: unset;
-	}
+  ._8a2f7809 /* search results */ {
+    border-bottom: unset;
+  }
 
-	.dde91b96 {
-		border-color: var(--bg1);
-	}
+  .dde91b96 {
+    border-color: var(--bg1);
+  }
 
-	/* Logos */
-	.af43375d svg path /* npm */,
-	a[aria-label="GitHub"] svg path /* GitHub */ {
-		fill: var(--fg);
-	}
+  /* Logos */
+  .af43375d svg path /* npm */,
+  a[aria-label="GitHub"] svg path /* GitHub */ {
+    fill: var(--fg);
+  }
 
-	.dark-gray,
-	._1b8c0a9f /* Footer headings */,
-	.cd2827bb a /* Footer links */,
-	.a0dff0b1 /* Keywords */,
-	._390acbc5::placeholder /* search box */,
-	.hover-black:hover,
-	.c84e15be /* Right pane headings: Install, Repository, etc. */,
-	.black,
-	.black-90,
-	.black-80,
-	.black-70,
-	.black-60 {
-		color: var(--fg);
-	}
+  .dark-gray,
+  ._1b8c0a9f /* Footer headings */,
+  .cd2827bb a /* Footer links */,
+  .a0dff0b1 /* Keywords */,
+  ._390acbc5::placeholder /* search box */,
+  .hover-black:hover,
+  .c84e15be /* Right pane headings: Install, Repository, etc. */,
+  .black,
+  .black-90,
+  .black-80,
+  .black-70,
+  .black-60 {
+    color: var(--fg);
+  }
 
-	._755f5b0f /* Search bar div */ {
-		border-bottom-color: var(--bg);
-	}
+  ._755f5b0f /* Search bar div */ {
+    border-bottom-color: var(--bg);
+  }
 }
 
 @-moz-document url-prefix("https://www.npmjs.com/package") {
-	._6d9832ac h1 /* Readme */,
-	._6d9832ac h2,
-	._6d9832ac h3,
-	._6d9832ac h4,
-	._6d9832ac h5,
-	._6d9832ac h6,
-	._6d9832ac strong,
-	._704c034e,
-	._704c034e p,
-	._704c034e .highlight,
-	._704c034e li,
-	._704c034e .keyword,
-	._704c034e .storage,
-	.a0dff0b1 /* Keywords */,
-	._5ae7dfec button /* File explorer - Code tab */,
-	._5ae7dfec button:hover,
-	._24a1e9c7 /* Fund this package */,
-	._24a1e9c7:hover {
-		color: var(--fg);
-	}
+  ._6d9832ac h1 /* Readme */,
+  ._6d9832ac h2,
+  ._6d9832ac h3,
+  ._6d9832ac h4,
+  ._6d9832ac h5,
+  ._6d9832ac h6,
+  ._6d9832ac strong,
+  ._704c034e,
+  ._704c034e p,
+  ._704c034e .highlight,
+  ._704c034e li,
+  ._704c034e .keyword,
+  ._704c034e .storage,
+  .a0dff0b1 /* Keywords */,
+  ._5ae7dfec button /* File explorer - Code tab */,
+  ._5ae7dfec button:hover,
+  ._24a1e9c7 /* Fund this package */,
+  ._24a1e9c7:hover {
+    color: var(--fg);
+  }
 
-	/* Logos */
-	.fbd04dd1:hover svg /* Copy code */,
-	.lh-copy svg /* Copy code arrow */,
-	._5cfc0900 svg /* Downloads */,
-	a[aria-labelelledby="repository"] svg g,
-	._513426a8 svg g /* Git */,
-	.b2812e30 svg path /* Homepage */ {
-		fill: var(--fg);
-	}
+  /* Logos */
+  .fbd04dd1:hover svg /* Copy code */,
+  .lh-copy svg /* Copy code arrow */,
+  ._5cfc0900 svg /* Downloads */,
+  a[aria-labelelledby="repository"] svg g,
+  ._513426a8 svg g /* Git */,
+  .b2812e30 svg path /* Homepage */ {
+    fill: var(--fg);
+  }
 
-	._704c034e td,
-	._704c034e th,
-	._704c034e tr:nth-child(2n) td,
-	a[href^="/support?"] /* Report malware */,
-	a[href^="https://runkit.com"],
-	._24a1e9c7 {
-		background-color: var(--bg);
-	}
+  ._704c034e td,
+  ._704c034e th,
+  ._704c034e tr:nth-child(2n) td,
+  a[href^="/support?"] /* Report malware */,
+  a[href^="https://runkit.com"],
+  ._24a1e9c7 {
+    background-color: var(--bg);
+  }
 
-	._6d9832ac table,
-	._6d9832ac h4,
-	._6d9832ac table ._6d9832ac h4,
-	._6d9832ac .package-description-redundant,
-	.cab9c622 th /* Versions table */,
-	.cab9c622 td,
-	._0b79531e /* Code tab current dir */,
-	._5ec64de6 /* Code tab file navbar and details */,
-	.a0dff0b1 /* Dependencies tab headers */ {
-		border-bottom-color: var(--bg);
-	}
+  ._6d9832ac table,
+  ._6d9832ac h4,
+  ._6d9832ac table ._6d9832ac h4,
+  ._6d9832ac .package-description-redundant,
+  .cab9c622 th /* Versions table */,
+  .cab9c622 td,
+  ._0b79531e /* Code tab current dir */,
+  ._5ec64de6 /* Code tab file navbar and details */,
+  .a0dff0b1 /* Dependencies tab headers */ {
+    border-bottom-color: var(--bg);
+  }
 
-	.d767adf4 p /* Install command div */,
-	._704c034e td,
-	._704c034e th,
-	._704c034e tr:nth-child(2n) td,
-	a[href^="/support"],
-	a[href^="https://runkit.com"],
-	a[href^="https://runkit.com"]:hover,
-	._5ae7dfec /* Code tab dir */,
-	.a2ab2737 /* File explorer code tab row */ {
-		border-color: var(--bg);
-	}
+  .d767adf4 p /* Install command div */,
+  ._704c034e td,
+  ._704c034e th,
+  ._704c034e tr:nth-child(2n) td,
+  a[href^="/support"],
+  a[href^="https://runkit.com"],
+  a[href^="https://runkit.com"]:hover,
+  ._5ae7dfec /* Code tab dir */,
+  .a2ab2737 /* File explorer code tab row */ {
+    border-color: var(--bg);
+  }
 
-	._8055e658.d9f99065:hover /* Tabs */,
-	._8055e658._7aa1ee94:hover,
-	._8055e658.c1f85151:hover,
-	._8055e658._7cec0316:hover,
-	._8055e658.b4fcfd19:hover,
-	._704c034e blockquote /* Contents + Legacy Markdown */,
-	.a2ab2737:hover,
-	a[href^="/support?"]:hover,
-	a[href^="https://runkit.com"]:hover,
-	._24a1e9c7:hover {
-		background-color: var(--bg1);
-	}
+  ._8055e658.d9f99065:hover /* Tabs */,
+  ._8055e658._7aa1ee94:hover,
+  ._8055e658.c1f85151:hover,
+  ._8055e658._7cec0316:hover,
+  ._8055e658.b4fcfd19:hover,
+  ._704c034e blockquote /* Contents + Legacy Markdown */,
+  .a2ab2737:hover,
+  a[href^="/support?"]:hover,
+  a[href^="https://runkit.com"]:hover,
+  ._24a1e9c7:hover {
+    background-color: var(--bg1);
+  }
 
-	._8055e658._7cec0316.ac5f7ef8 {
-		background-color: rgba(137, 86, 255, 0.08);
-	}
+  ._8055e658._7cec0316.ac5f7ef8 {
+    background-color: rgba(137, 86, 255, 0.08);
+  }
 
-	._704c034e .entity.name.function,
-	._75a5f581 /* Keywords */ {
-		color: var(--link);
-	}
+  ._704c034e .entity.name.function,
+  ._75a5f581 /* Keywords */ {
+    color: var(--link);
+  }
 
-	._704c034e .variable {
-		color: #66d4cf;
-	}
-	._704c034e .comment,
-	._704c034e .storage.type {
-		color: #98989d;
-	}
-	._704c034e .support.function {
-		color: #5e5ce6;
-	}
-	._704c034e .string {
-		color: #ff9d0a;
-	}
+  ._704c034e .variable {
+    color: #66d4cf;
+  }
+  ._704c034e .comment,
+  ._704c034e .storage.type {
+    color: #98989d;
+  }
+  ._704c034e .support.function {
+    color: #5e5ce6;
+  }
+  ._704c034e .string {
+    color: #ff9d0a;
+  }
 
-	._450b46e9 /* back button */ {
-		filter: invert(1);
-	}
+  ._450b46e9 /* back button */ {
+    filter: invert(1);
+  }
 
-	._24a1e9c7 {
-		&,
-		&:hover {
-			background-image: unset;
-		}
-	}
+  ._24a1e9c7 {
+    &,
+    &:hover {
+      background-image: unset;
+    }
+  }
 
-	/*!
+  /*!
 	  * GitHub Dark v0.5.0
 	  * Copyright (c) 2012 - 2017 GitHub, Inc.
 	  * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
 	  */
 
-	.pl-c /* comment, punctuation.definition.comment, string.comment */ {
-		color: #959da5;
-	}
+  .pl-c /* comment, punctuation.definition.comment, string.comment */ {
+    color: #959da5;
+  }
 
-	.pl-c1,
-	.pl-s .pl-v /* string variable */ {
-		color: #c8e1ff;
-	}
+  .pl-c1,
+  .pl-s .pl-v /* string variable */ {
+    color: #c8e1ff;
+  }
 
-	.pl-e,
-	.pl-en /* entity.name */ {
-		color: #b392f0;
-	}
+  .pl-e,
+  .pl-en /* entity.name */ {
+    color: #b392f0;
+  }
 
-	.pl-smi,
-	.pl-s .pl-s1 /* string source */ {
-		color: #f6f8fa;
-	}
+  .pl-smi,
+  .pl-s .pl-s1 /* string source */ {
+    color: #f6f8fa;
+  }
 
-	.pl-ent /* entity.name.tag */ {
-		color: #7bcc72;
-	}
+  .pl-ent /* entity.name.tag */ {
+    color: #7bcc72;
+  }
 
-	.pl-k /* keyword, storage, storage.type */ {
-		color: #ea4a5a;
-	}
+  .pl-k /* keyword, storage, storage.type */ {
+    color: #ea4a5a;
+  }
 
-	.pl-s,
-	.pl-pds,
-	.pl-s .pl-pse .pl-s1,
-	.pl-sr,
-	.pl-sr .pl-cce,
-	.pl-sr .pl-sre,
-	.pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
-		color: #79b8ff;
-	}
+  .pl-s,
+  .pl-pds,
+  .pl-s .pl-pse .pl-s1,
+  .pl-sr,
+  .pl-sr .pl-cce,
+  .pl-sr .pl-sre,
+  .pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
+    color: #79b8ff;
+  }
 
-	.pl-v,
-	.pl-ml /* markup.list, sublimelinter.mark.warning */ {
-		color: #fb8532;
-	}
+  .pl-v,
+  .pl-ml /* markup.list, sublimelinter.mark.warning */ {
+    color: #fb8532;
+  }
 
-	.pl-bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */ {
-		color: #d73a49;
-	}
+  .pl-bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */ {
+    color: #d73a49;
+  }
 
-	.pl-ii /* invalid.illegal */ {
-		color: #fafbfc;
-		background-color: #d73a49;
-	}
+  .pl-ii /* invalid.illegal */ {
+    color: #fafbfc;
+    background-color: #d73a49;
+  }
 
-	.pl-c2 /* carriage-return */ {
-		color: #fafbfc;
-		background-color: #d73a49;
-	}
+  .pl-c2 /* carriage-return */ {
+    color: #fafbfc;
+    background-color: #d73a49;
+  }
 
-	.pl-c2::before /* carriage-return */ {
-		content: "^M";
-	}
+  .pl-c2::before /* carriage-return */ {
+    content: "^M";
+  }
 
-	.pl-sr .pl-cce /* string.regexp constant.character.escape */ {
-		font-weight: bold;
-		color: #7bcc72;
-	}
+  .pl-sr .pl-cce /* string.regexp constant.character.escape */ {
+    font-weight: bold;
+    color: #7bcc72;
+  }
 
-	.pl-mh,
-	.pl-mh .pl-en,
-	.pl-ms /* meta.separator */ {
-		font-weight: bold;
-		color: #0366d6;
-	}
+  .pl-mh,
+  .pl-mh .pl-en,
+  .pl-ms /* meta.separator */ {
+    font-weight: bold;
+    color: #0366d6;
+  }
 
-	.pl-mi /* markup.italic */ {
-		font-style: italic;
-		color: #f6f8fa;
-	}
+  .pl-mi /* markup.italic */ {
+    font-style: italic;
+    color: #f6f8fa;
+  }
 
-	.pl-mb /* markup.bold */ {
-		font-weight: bold;
-		color: #f6f8fa;
-	}
+  .pl-mb /* markup.bold */ {
+    font-weight: bold;
+    color: #f6f8fa;
+  }
 
-	.pl-md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */ {
-		color: #b31d28;
-		background-color: #ffeef0;
-	}
+  .pl-md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */ {
+    color: #b31d28;
+    background-color: #ffeef0;
+  }
 
-	.pl-mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */ {
-		color: #176f2c;
-		background-color: #f0fff4;
-	}
+  .pl-mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */ {
+    color: #176f2c;
+    background-color: #f0fff4;
+  }
 
-	.pl-mc /* markup.changed, punctuation.definition.changed */ {
-		color: #b08800;
-		background-color: #fffdef;
-	}
+  .pl-mc /* markup.changed, punctuation.definition.changed */ {
+    color: #b08800;
+    background-color: #fffdef;
+  }
 
-	.pl-mi2 /* markup.ignored, markup.untracked */ {
-		color: #2f363d;
-		background-color: #959da5;
-	}
+  .pl-mi2 /* markup.ignored, markup.untracked */ {
+    color: #2f363d;
+    background-color: #959da5;
+  }
 
-	.pl-mdr /* meta.diff.range */ {
-		font-weight: bold;
-		color: #b392f0;
-	}
+  .pl-mdr /* meta.diff.range */ {
+    font-weight: bold;
+    color: #b392f0;
+  }
 
-	.pl-mo /* meta.output */ {
-		color: #0366d6;
-	}
+  .pl-mo /* meta.output */ {
+    color: #0366d6;
+  }
 
-	.pl-ba /* brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote */ {
-		color: #ffeef0;
-	}
+  .pl-ba /* brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote */ {
+    color: #ffeef0;
+  }
 
-	.pl-sg /* sublimelinter.gutter-mark */ {
-		color: #6a737d;
-	}
+  .pl-sg /* sublimelinter.gutter-mark */ {
+    color: #6a737d;
+  }
 
-	.pl-corl /* constant.other.reference.link, string.other.link */ {
-		text-decoration: underline;
-		color: #79b8ff;
-	}
+  .pl-corl /* constant.other.reference.link, string.other.link */ {
+    text-decoration: underline;
+    color: #79b8ff;
+  }
 }
 
 @-moz-document url-prefix("https://www.npmjs.com/search"), url-prefix("https://www.npmjs.com/browse/depended") {
-	._31dfe8f0 a /* Pagination */,
-	._26391339 a,
-	._9390ec46 label /* Sort labels */,
-	._9390ec46 label:hover,
-	._89d0b3e5 /* Quality stats */,
-	.hover-black:hover {
-		color: var(--fg);
-	}
+  ._31dfe8f0 a /* Pagination */,
+  ._26391339 a,
+  ._9390ec46 label /* Sort labels */,
+  ._9390ec46 label:hover,
+  ._89d0b3e5 /* Quality stats */,
+  .hover-black:hover {
+    color: var(--fg);
+  }
 
-	.a9b7335e,
-	._26391339 a,
-	._39bb688c:hover {
-		background-color: var(--bg);
-	}
+  .a9b7335e,
+  ._26391339 a,
+  ._39bb688c:hover {
+    background-color: var(--bg);
+  }
 
-	._26391339 a {
-		border-color: var(--bg);
-	}
+  ._26391339 a {
+    border-color: var(--bg);
+  }
 
-	.a0329937._31dfe8f0 a,
-	._26391339 a:hover,
-	._39bb688c /*Tag chips */ {
-		background-color: var(--bg1);
-	}
+  .a0329937._31dfe8f0 a,
+  ._26391339 a:hover,
+  ._39bb688c /*Tag chips */ {
+    background-color: var(--bg1);
+  }
 }

@@ -16,45 +16,45 @@
 @var color link-color "Link" #ff453a
 ==/UserStyle== */
 @-moz-document url-prefix("https://docs.npmjs.com") {
-	:root {
-		color-scheme: dark;
-		--fgColor-accent: var(--link-color);
-		--fgColor-default: var(--fg);
-		--fgColor-muted: var(--fg);
-		--bgColor-default: var(--bg);
-		--bgColor-accent-muted: var(--bg1);
-		--bgColor-neutral-muted: var(--bg1);
-		--control-transparent-bgColor-hover: var(--bg1);
-		--control-transparent-bgColor-active: var(--bg2);
-		--control-transparent-bgColor-selected: var(--bg2);
-		--borderColor-default: var(--bg);
-		--button-default-borderColor-active: var(--bg);
-		--button-default-borderColor-hover: var(--bg);
-		--button-default-borderColor-rest: var(--bg);
-		--button-default-bgColor-rest: var(--bg1);
-		--button-default-bgColor-hover: var(--bg2);
-		--button-default-bgColor-active: var(--bg2);
-		--button-default-fgColor-rest: var(--fg);
-		--overlay-bgColor: var(--bg1);
-		--borderColor-muted: var(--bg1);
-	}
-	.haGPdU {
-		color: var(--link-color);
-	}
-	.bRtvlF {
-		color: var(--fg) !important;
-		background-color: var(--bg1) !important;
-	}
-	.VTnRl.token /* Code blocks */ {
-		&.function {
-			color: var(--link-color) !important;
-		}
-		&.plain,
-		&.builtin.class-name,
-		&.operator,
-		&.punctuation,
-		&.keyword {
-			color: var(--fg) !important;
-		}
-	}
+  :root {
+    color-scheme: dark;
+    --fgColor-accent: var(--link-color);
+    --fgColor-default: var(--fg);
+    --fgColor-muted: var(--fg);
+    --bgColor-default: var(--bg);
+    --bgColor-accent-muted: var(--bg1);
+    --bgColor-neutral-muted: var(--bg1);
+    --control-transparent-bgColor-hover: var(--bg1);
+    --control-transparent-bgColor-active: var(--bg2);
+    --control-transparent-bgColor-selected: var(--bg2);
+    --borderColor-default: var(--bg);
+    --button-default-borderColor-active: var(--bg);
+    --button-default-borderColor-hover: var(--bg);
+    --button-default-borderColor-rest: var(--bg);
+    --button-default-bgColor-rest: var(--bg1);
+    --button-default-bgColor-hover: var(--bg2);
+    --button-default-bgColor-active: var(--bg2);
+    --button-default-fgColor-rest: var(--fg);
+    --overlay-bgColor: var(--bg1);
+    --borderColor-muted: var(--bg1);
+  }
+  .haGPdU {
+    color: var(--link-color);
+  }
+  .bRtvlF {
+    color: var(--fg) !important;
+    background-color: var(--bg1) !important;
+  }
+  .VTnRl.token /* Code blocks */ {
+    &.function {
+      color: var(--link-color) !important;
+    }
+    &.plain,
+    &.builtin.class-name,
+    &.operator,
+    &.punctuation,
+    &.keyword {
+      color: var(--fg) !important;
+    }
+  }
 }

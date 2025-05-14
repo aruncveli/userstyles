@@ -17,151 +17,151 @@
 @var text link-hover "Link hover" #ff6961
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.trafikverket.se/trafikinformation/tag") {
-	:root {
-		color-scheme: dark;
-		--bs-body-bg: var(--bg);
-		--bs-secondary-bg: var(--bg);
-		--bs-secondary-bg-subtle: var(--bg);
-		--bs-secondary-color: var(--fg);
-		--bs-body-color: var(--fg);
-		--bs-link-color: var(--link);
-		--bs-link-hover-color: var(--link-hover);
-		--bs-link-color-rgb: 255, 69, 58;
-		--bs-link-hover-color-rgb: 255, 105, 97;
-		--bs-white-rgb: 0, 0, 0;
-		--bs-btn-color: var(--link);
-	}
+  :root {
+    color-scheme: dark;
+    --bs-body-bg: var(--bg);
+    --bs-secondary-bg: var(--bg);
+    --bs-secondary-bg-subtle: var(--bg);
+    --bs-secondary-color: var(--fg);
+    --bs-body-color: var(--fg);
+    --bs-link-color: var(--link);
+    --bs-link-hover-color: var(--link-hover);
+    --bs-link-color-rgb: 255, 69, 58;
+    --bs-link-hover-color-rgb: 255, 105, 97;
+    --bs-white-rgb: 0, 0, 0;
+    --bs-btn-color: var(--link);
+  }
 
-	.btn-close,
-	.toggle-direction .btn-check + .btn {
-		--bs-btn-close-color: var(--link);
-		--bs-btn-color: var(--link);
-	}
-	.btn-outline-primary {
-		--bs-btn-color: var(--fg);
-	}
+  .btn-close,
+  .toggle-direction .btn-check + .btn {
+    --bs-btn-close-color: var(--link);
+    --bs-btn-color: var(--link);
+  }
+  .btn-outline-primary {
+    --bs-btn-color: var(--fg);
+  }
 
-	.c-autocomplete li a,
-	.c-autocomplete li[aria-selected="true"] a,
-	.c-autocomplete li a:hover,
-	.c-autocomplete li[aria-selected="true"] a:hover,
-	.nav-tabs > li > .nav-link,
-	.nav-tabs > li > .nav-link:hover,
-	.time-table th,
-	.time-table .station .passing,
-	.c-autocomplete li button,
-	.c-autocomplete li button:hover,
-	.c-autocomplete li[aria-selected="true"] button,
-	.c-autocomplete li[aria-selected="true"] button:hover,
-	.group-list.traffic-accordion .panel-heading a,
-	.group-list.traffic-accordion .panel-heading a[aria-expanded="true"],
-	.group-list.traffic-accordion .panel-heading a:hover,
-	.group-list.traffic-accordion .panel-heading a[aria-expanded="true"]:hover,
-	.time-table.train.train-time-table
-		tr.station-passed
-		> td:first-child
-		.panel-heading
-		a {
-		color: var(--fg);
-	}
+  .c-autocomplete li a,
+  .c-autocomplete li[aria-selected="true"] a,
+  .c-autocomplete li a:hover,
+  .c-autocomplete li[aria-selected="true"] a:hover,
+  .nav-tabs > li > .nav-link,
+  .nav-tabs > li > .nav-link:hover,
+  .time-table th,
+  .time-table .station .passing,
+  .c-autocomplete li button,
+  .c-autocomplete li button:hover,
+  .c-autocomplete li[aria-selected="true"] button,
+  .c-autocomplete li[aria-selected="true"] button:hover,
+  .group-list.traffic-accordion .panel-heading a,
+  .group-list.traffic-accordion .panel-heading a[aria-expanded="true"],
+  .group-list.traffic-accordion .panel-heading a:hover,
+  .group-list.traffic-accordion .panel-heading a[aria-expanded="true"]:hover,
+  .time-table.train.train-time-table
+    tr.station-passed
+    > td:first-child
+    .panel-heading
+    a {
+    color: var(--fg);
+  }
 
-	.form-control,
-	.traffic-map-page .map-menu,
-	.table-tm tbody tr td,
-	.group-list.traffic-accordion .panel-heading a,
-	.time-table > :not(caption) > * > * {
-		background-color: var(--bg);
-	}
+  .form-control,
+  .traffic-map-page .map-menu,
+  .table-tm tbody tr td,
+  .group-list.traffic-accordion .panel-heading a,
+  .time-table > :not(caption) > * > * {
+    background-color: var(--bg);
+  }
 
-	.form-control:focus,
-	.c-autocomplete li a,
-	.c-autocomplete li[aria-selected="true"] a,
-	.nav-tabs > li > .nav-link:hover,
-	.group-list.traffic-accordion .panel-heading a:hover,
-	.group-list.traffic-accordion .panel-heading a[aria-expanded="true"],
-	.group-list.traffic-accordion .panel-heading a[aria-expanded="true"]:hover,
-	.group-list.traffic-accordion .panel-heading .badge,
-	.traffic-message,
-	.table-tm tbody tr:hover td,
-	.c-autocomplete,
-	.c-autocomplete li[aria-selected="true"] button,
-	.train-panel__meta ul li.time-update .rounded-pill,
-	.time-table.table-hover > tbody > tr:hover,
-	.time-table th,
-	.table-hover > tbody > tr:hover > *,
-	.time-table.train.train-time-table
-		tr.station-passed
-		> td:first-child
-		.panel-heading
-		a:focus,
-	.time-table.train.train-time-table
-		tr.station-passed
-		> td:first-child
-		.panel-heading
-		a:hover,
-	.time-table.train.train-time-table tr.station-passed table tr {
-		background-color: var(--bg1);
-	}
+  .form-control:focus,
+  .c-autocomplete li a,
+  .c-autocomplete li[aria-selected="true"] a,
+  .nav-tabs > li > .nav-link:hover,
+  .group-list.traffic-accordion .panel-heading a:hover,
+  .group-list.traffic-accordion .panel-heading a[aria-expanded="true"],
+  .group-list.traffic-accordion .panel-heading a[aria-expanded="true"]:hover,
+  .group-list.traffic-accordion .panel-heading .badge,
+  .traffic-message,
+  .table-tm tbody tr:hover td,
+  .c-autocomplete,
+  .c-autocomplete li[aria-selected="true"] button,
+  .train-panel__meta ul li.time-update .rounded-pill,
+  .time-table.table-hover > tbody > tr:hover,
+  .time-table th,
+  .table-hover > tbody > tr:hover > *,
+  .time-table.train.train-time-table
+    tr.station-passed
+    > td:first-child
+    .panel-heading
+    a:focus,
+  .time-table.train.train-time-table
+    tr.station-passed
+    > td:first-child
+    .panel-heading
+    a:hover,
+  .time-table.train.train-time-table tr.station-passed table tr {
+    background-color: var(--bg1);
+  }
 
-	.c-autocomplete li a:hover,
-	.c-autocomplete li[aria-selected="true"] a:hover,
-	.c-autocomplete li button:hover,
-	.c-autocomplete li[aria-selected="true"] button:hover {
-		background-color: var(--bg2);
-	}
+  .c-autocomplete li a:hover,
+  .c-autocomplete li[aria-selected="true"] a:hover,
+  .c-autocomplete li button:hover,
+  .c-autocomplete li[aria-selected="true"] button:hover {
+    background-color: var(--bg2);
+  }
 
-	.table {
-		--bs-table-hover-color: var(--fg);
-		--bs-table-hover-bg: var(--bg1);
-		--bs-table-color-state: var(--fg);
-	}
-	.time-table .massage-badge.estimated-time > span {
-		color: var(--bg);
-	}
+  .table {
+    --bs-table-hover-color: var(--fg);
+    --bs-table-hover-bg: var(--bg1);
+    --bs-table-color-state: var(--fg);
+  }
+  .time-table .massage-badge.estimated-time > span {
+    color: var(--bg);
+  }
 
-	.time-table.train.train-time-table
-		tr.station-passed
-		> td:first-child
-		.panel-heading
-		a {
-		--bs-btn-active-bg: var(--bg2);
-		--bs-btn-border-color: var(--bg);
-	}
+  .time-table.train.train-time-table
+    tr.station-passed
+    > td:first-child
+    .panel-heading
+    a {
+    --bs-btn-active-bg: var(--bg2);
+    --bs-btn-border-color: var(--bg);
+  }
 
-	.btn-close {
-		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f66' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3E%3C/svg%3E");
-	}
-	.table-tm--train tbody tr td:first-child:before {
-		background-color: var(--fg);
-	}
+  .btn-close {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f66' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3E%3C/svg%3E");
+  }
+  .table-tm--train tbody tr td:first-child:before {
+    background-color: var(--fg);
+  }
 
-	.group-list.traffic-accordion .panel-heading a:hover,
-	.group-list.traffic-accordion .panel-heading a[aria-expanded="true"],
-	.time-table.train.train-time-table
-		tr.station-passed
-		> td:first-child
-		.panel-heading
-		a:focus,
-	.time-table.train.train-time-table
-		tr.station-passed
-		> td:first-child
-		.panel-heading
-		a:hover {
-		border-color: var(--bg1);
-	}
+  .group-list.traffic-accordion .panel-heading a:hover,
+  .group-list.traffic-accordion .panel-heading a[aria-expanded="true"],
+  .time-table.train.train-time-table
+    tr.station-passed
+    > td:first-child
+    .panel-heading
+    a:focus,
+  .time-table.train.train-time-table
+    tr.station-passed
+    > td:first-child
+    .panel-heading
+    a:hover {
+    border-color: var(--bg1);
+  }
 
-	.group-list.traffic-accordion.station-messages
-		.traffic-message:not(:last-child),
-	.ti-list-train .traffic-message:last-child {
-		border-bottom-color: var(--bg1);
-	}
+  .group-list.traffic-accordion.station-messages
+    .traffic-message:not(:last-child),
+  .ti-list-train .traffic-message:last-child {
+    border-bottom-color: var(--bg1);
+  }
 
-	.group-list.traffic-accordion.station-messages .panel-heading,
-	.time-table > tbody > tr {
-		border-bottom-color: var(--bg);
-	}
+  .group-list.traffic-accordion.station-messages .panel-heading,
+  .time-table > tbody > tr {
+    border-bottom-color: var(--bg);
+  }
 
-	body.traffic-info-page footer {
-		border-top-color: var(--bg);
-	}
+  body.traffic-info-page footer {
+    border-top-color: var(--bg);
+  }
 }

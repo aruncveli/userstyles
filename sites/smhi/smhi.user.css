@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SMHI Dark (Ten day forecast)
 @namespace      github.com/aruncveli/userstyles
-@version        25.2.2
+@version        25.5.14
 @description    Dark theme for SMHI's ten day forecast page
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -15,175 +15,106 @@
 @var color bg1 "Background lightened 1"	#111
 @var color bg2 "Background lightened 2"	#222
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.smhi.se/en/weather/forecasts/ten-day-forecast/") {
-	:root {
-		color-scheme: dark;
-	}
+@-moz-document url-prefix("https://www.smhi.se/en/weather/warnings-and-forecasts/weather-forecast") {
+  :root {
+    color-scheme: dark;
+  }
 
-	a:hover,
-	._expandedData_330y8_57,
-	._labelDate_et9mg_152,
-	._forecastIssued_1tq7k_1,
-	.nextgen,
-	a._warningTextContainer_2n9on_1._warningTextContainer_2n9on_1 span,
-	a._warningTextContainer_2n9on_1._warningTextContainer_2n9on_1 svg,
-	#leftmenu.leftnav-nextgen a,
-	#leftmenu.leftnav-nextgen .active-page.active-page a,
-	#leftmenu.leftnav-nextgen .leaf .leaf,
-	._eosMenuItem_13wan_1,
-	._eosMenuItem_13wan_1 ._text_13wan_31 ._typeText_13wan_35,
-	._list_1sluo_219 ._favoritesHeader_1sluo_222,
-	._card_330y8_1 /* Day weather cards */,
-	._card_330y8_1._largeCard_330y8_200
-		._cardContent_330y8_140
-		._block_330y8_153
-		._valueCol_330y8_161
-		> *:first-child,
-	._label_y73h5_127,
-	._label_et9mg_127,
-	._gale_et9mg_200,
-	._gale_y73h5_187,
-	._temperatureAxisTitle_y73h5_198::before,
-	._temperatureAxisTitle_et9mg_211::before,
-	._windAxisTitle_y73h5_213::before,
-	._windAxisTitle_et9mg_226::before,
-	._precipitationAxisTitle_y73h5_206::before,
-	._precipitationAxisTitle_et9mg_219::before,
-	._labelDate_y73h5_139 {
-		color: var(--fg);
-	}
+  .smhi-header-logo img,
+  .sv-marketplace-sitevision-sub-menu button:after,
+  ._windDirection_1cjv5_1._icon_tnsbo_29 > img,
+  ._windDirection_1cjv5_1._icon_1jxgj_105 > img,
+  ._windDirection_1cjv5_1 > img,
+  .highcharts-root image[width="16"] {
+    filter: invert(1);
+  }
 
-	.nextgen,
-	.nextgen #headcontent,
-	.nextgen .smhialternating,
-	#top-menu .nav-drop:hover,
-	#top-menu .nav-drop.active-page,
-	#top-menu .nav-drop.active-page:hover,
-	#leftmenu.leftnav-nextgen,
-	#leftmenu.leftnav-nextgen .overview-link,
-	#leftmenu.leftnav-nextgen .navigation-heading-wrapper,
-	#leftmenu.leftnav-nextgen .leaf .leaf,
-	._autocomplete_1sluo_126,
-	._tooltip_et9mg_234 span,
-	._tooltip_y73h5_221 span {
-		background-color: var(--bg);
-	}
+  .sv-theme-standardtema {
+    --header-background-color: var(--bg);
+    --main-background-color: var(--bg);
+    --color-sky-80: var(--fg);
+    --color-sky-10: var(--bg1);
+    --color-cloud-10: var(--bg);
+    --color-cloud-30: var(--bg);
+    --color-cloud-100: var(--fg);
+    --env-font-color: var(--fg);
+    --env-element-font-color: var(--fg);
+    --env-focus-outline-color: var(--bg1);
+    --env-section-background-color: var(--bg);
+  }
 
-	#leftmenu.leftnav-nextgen .overview-link:hover,
-	#leftmenu.leftnav-nextgen .navigation-heading-wrapper:hover,
-	#leftmenu.leftnav-nextgen .active-page.active-page,
-	#leftmenu.leftnav-nextgen .active-page-leaf a:hover,
-	._autocomplete_1sluo_126:hover /* Location search autocomplete */,
-	._autocomplete_1sluo_126:focus-within,
-	._eosMenuItem_13wan_1,
-	._eosMenuItem_13wan_1:active,
-	._eosMenuItem_13wan_1._active_13wan_13,
-	._list_1sluo_219 ._favoritesHeader_1sluo_222,
-	.tab-module_tab__dWFgU:hover:not(:disabled):not(.tab-module_selected__x8WYO),
-	.SimpleSelect-module_select__VWv7m
-		.SimpleSelect-module_toggleButton__XNSud:hover:not([disabled]):not(
-			.SimpleSelect-module_disabled__LDaMe
-		) {
-		background-color: var(--bg1);
-	}
+  .sv-nestedlistmenu-portlet a,
+  .sv-nestedlistmenu-portlet a:hover,
+  .sv-marketplace-sitevision-sub-menu a:hover,
+  ._eosMenuItem_1r7d2_1,
+  a._warningTextContainer_2n9on_1._warningTextContainer_2n9on_1 span {
+    color: var(--fg);
+  }
 
-	._eosMenuItem_13wan_1:hover {
-		background-color: var(--bg2);
-	}
+  ._autocomplete_1eudd_130 {
+    background-color: var(--bg);
+  }
 
-	.nextgen,
-	.nextgen #headcontent,
-	#leftmenu.leftnav-nextgen .next-nav-main li,
-	.tabs-module_tabs__4BiXZ
-		.tabs-module_tabsHeader__g7zIj
-		.tabs-module_tabsWrapper__tN17g:not(
-			.tabs-module_noBottomBorder__CBn3H
-		):before,
-	._tableContainer_u7j8u_140 table tr {
-		border-bottom-color: var(--bg);
-	}
+  .lbDkoyRdUHp4p3jqVNPO.NiNr7k2boEzl1t49Ahj1 /* tabs on top */,
+  .smhi-main-nav .smhi-main-nav__link:hover,
+  ._autocomplete_1eudd_130:focus-within,
+  ._eosMenuItem_1r7d2_1,
+  ._list_1eudd_254 ._favoritesHeader_1eudd_257,
+  ._tooltip_spxyq_206 > span {
+    background-color: var(--bg1);
+  }
 
-	.nextgen .breadcrumbs ul a {
-		color: #0c6bc4;
-	}
+  .lbDkoyRdUHp4p3jqVNPO.NiNr7k2boEzl1t49Ahj1:hover,
+  ._eosMenuItem_1r7d2_1:hover:not(._noHover_1r7d2_9),
+  ._eosMenuItem_1r7d2_1._active_1r7d2_13 {
+    background-color: var(--bg2);
+  }
 
-	#mainLogo,
-	._legendSwatch_et9mg_264 img,
-	._windDirection_1cjv5_1 img,
-	.highcharts-root image[width="16"] {
-		filter: invert(1);
-	}
+  .aurora-root-module_root__QHlfl {
+    --colorCloud100: var(--fg);
+    --colorCloud70: var(--fg);
+    --colorCloud30: var(--bg);
+    --colorCloud10: var(--bg1);
+    --colorSky10: var(--bg1);
+    --colorHorizon10: var(--bg);
+    --colorZenith: var(--bg);
+    --hoverFillColor: var(--bg1);
+    --selectedHoverFillColor: var(--bg1);
+    --activeFillColor: var(--bg1);
+    --selectedActiveFillColor: var(--bg1);
+    --colorNadir: var(--fg);
+    --borderColor: var(--bg);
+    --borderColorSecondary: var(--bg);
+  }
 
-	#leftmenu.leftnav-nextgen {
-		.next-nav-main li {
-			&:first-of-type,
-			li:first-of-type {
-				border-top-color: var(--bg);
-			}
-		}
-		.overview-link .expand-button-symbol svg,
-		.navigation-heading-wrapper .expand-button-symbol svg {
-			fill: var(--fg);
-		}
-	}
+  .highcharts-background {
+    fill: var(--bg);
+  }
 
-	._card_330y8_1._largeCard_330y8_200
-		._cardContent_330y8_140
-		._block_330y8_153._dayCell_330y8_1 {
-		border-right-color: var(--bg);
-		&:hover {
-			border-right-color: var(--bg1);
-		}
-	}
+  ._forecastContainer_4olyg_1 ._markerContent_4olyg_18 ._weatherSymbol_4olyg_45,
+  ._forecastContainer_4olyg_1
+    ._markerContent_4olyg_18
+    ._weatherSymbol_4olyg_45._selected_4olyg_71 {
+    background-color: var(--fg);
+    border-color: var(--fg);
+  }
 
-	.aurora-root-module_root__QHlfl {
-		--color10: #022440;
-		--colorCloud100: var(--fg);
-		--colorCloud70: var(--fg);
-		--colorCloud10: var(--bg1);
-		--colorSky10: var(--bg1);
-		--colorZenith: var(--bg);
-		--hoverFillColor: var(--bg1);
-		--selectedHoverFillColor: var(--bg1);
-		--activeFillColor: var(--bg1);
-		--selectedActiveFillColor: var(--bg1);
-		--colorNadir: var(--fg);
-		--borderColor: var(--bg);
-		--borderColorSecondary: var(--bg);
-	}
+  @media (hover: hover) {
+    ._forecastContainer_4olyg_1
+      ._markerContent_4olyg_18
+      ._weatherSymbol_4olyg_45:hover {
+      background-color: var(--fg);
+      border-color: var(--fg);
+    }
+  }
 
-	._placeContainer_114oc_2 ._markerContent_om9tb_18 ._markerLabel_om9tb_30,
-	._forecastContainer_om9tb_1 ._markerContent_om9tb_18 ._markerLabel_om9tb_30 {
-		text-shadow: none;
-		color: var(--bg);
-	}
+  ._markerLabel_4olyg_30 {
+    color: var(--bg);
+    text-shadow: none;
+  }
 
-	.highcharts-background {
-		fill: var(--bg);
-	}
-
-	._tooltip_et9mg_234 span,
-	._tooltip_y73h5_221 span {
-		color: var(--fg) !important;
-	}
-
-	.button-module_button__V-oN8.button-module_buttonSecondary__csP-q,
-	.card-module_card__CJdzk .card-module_cardWrapper__iNImr,
-	.badge-module_badge__FqSIG.badge-module_badgeInformative__cL3rv {
-		border-color: var(--bg);
-	}
-
-	@media (hover: hover) {
-		._card_330y8_1._largeCard_330y8_200:hover
-			._cardContent_330y8_140
-			._block_330y8_153._dayCell_330y8_1 {
-			border-right-color: var(--bg);
-		}
-	}
-
-	._forecastContainer_om9tb_1
-		._markerContent_om9tb_18
-		._weatherSymbol_om9tb_46 {
-		background-color: var(--fg);
-	}
+  ._tooltip_spxyq_206 span,
+  ._tooltip_y73h5_221 span {
+    color: var(--fg) !important;
+  }
 }

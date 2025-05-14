@@ -17,80 +17,80 @@
 ==/UserStyle== */
 
 @-moz-document domain("snowfl.com") {
-	:root {
-		color-scheme: dark;
-	}
+  :root {
+    color-scheme: dark;
+  }
 
-	a,
-	a:hover {
-		color: var(--link-color);
-	}
+  a,
+  a:hover {
+    color: var(--link-color);
+  }
 
-	body {
-		color: var(--fg);
-		background-color: var(--bg);
-	}
+  body {
+    color: var(--fg);
+    background-color: var(--bg);
+  }
 
-	.navbar {
-		background: var(--bg);
-		border: none;
-	}
+  .navbar {
+    background: var(--bg);
+    border: none;
+  }
 
-	.form-control {
-		color: var(--fg);
-		background-color: var(--bg1);
-		&,
-		&:focus {
-			border-color: var(--bg1);
-		}
-		&::placeholder {
-			color: unset;
-		}
-		&:focus {
-			background-color: var(--bg2);
-			box-shadow: unset;
-		}
-		&[disabled] {
-			background-color: var(--bg2);
-		}
-		option,
-		optgroup {
-			background-color: var(--bg);
-		}
-	}
+  .form-control {
+    color: var(--fg);
+    background-color: var(--bg1);
+    &,
+    &:focus {
+      border-color: var(--bg1);
+    }
+    &::placeholder {
+      color: unset;
+    }
+    &:focus {
+      background-color: var(--bg2);
+      box-shadow: unset;
+    }
+    &[disabled] {
+      background-color: var(--bg2);
+    }
+    option,
+    optgroup {
+      background-color: var(--bg);
+    }
+  }
 
-	.btn-default {
-		color: var(--fg);
-		background: var(--bg1);
-		border-color: var(--bg1);
-		&:hover,
-		&:focus,
-		&:active,
-		&:active:hover,
-		&:active:focus,
-		&[disabled],
-		&[disabled]:hover {
-			color: unset;
-			background: var(--bg2);
-		}
-		&:active:focus {
-			outline: unset;
-		}
-	}
+  .btn-default {
+    color: var(--fg);
+    background: var(--bg1);
+    border-color: var(--bg1);
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus,
+    &[disabled],
+    &[disabled]:hover {
+      color: unset;
+      background: var(--bg2);
+    }
+    &:active:focus {
+      outline: unset;
+    }
+  }
 
-	.btn:focus {
-		outline: unset;
-	}
+  .btn:focus {
+    outline: unset;
+  }
 
-	img.spinner {
-		filter: invert(1);
-	}
+  img.spinner {
+    filter: invert(1);
+  }
 
-	#newsfeed {
-		background: bg !important;
-		color: var(--fg) !important;
-		a {
-			color: var(--fg) !important;
-		}
-	}
+  #newsfeed {
+    background: bg !important;
+    color: var(--fg) !important;
+    a {
+      color: var(--fg) !important;
+    }
+  }
 }
