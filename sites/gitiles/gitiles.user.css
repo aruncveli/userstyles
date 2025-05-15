@@ -1,0 +1,137 @@
+/* ==UserStyle==
+@name Gitiles Dark
+@namespace github.com/aruncveli/userstyles
+@version 25.5.15
+@description description
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gitiles/gitiles.user.css
+@license MIT
+@processor default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://gerrit.googlesource.com/gitiles/") {
+  :root {
+    color-scheme: dark;
+  }
+
+  .Site,
+  .Breadcrumbs-crumb:last-child,
+  .u-sha1,
+  .CommitLog-time,
+  .Footer,
+  .MetadataMessage,
+  .InlineReadme-path {
+    color: var(--fg);
+  }
+
+  .Site,
+  .Site-header,
+  .Site-footer,
+  .CloneRepo,
+  .Blame-region--bg1 {
+    background-color: var(--bg);
+  }
+
+  .u-sha1,
+  .CommitLog-item--oneline:hover,
+  .doc code,
+  .MetadataMessage,
+  .FileList-item:hover,
+  .FileContents-lineContents:target,
+  .Blame-region--bg2 {
+    background-color: var(--bg1);
+  }
+
+  .Breadcrumbs-crumb {
+    color: var(--link-color);
+  }
+
+  .CommitLog-branchLabel {
+    color: var(--red-color);
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  .MetadataMessage {
+    border-color: var(--bg1);
+  }
+
+  /* Copied from https://github.com/googlearchive/code-prettify/blob/master/styles/sunburst.css */
+
+  .str {
+    color: #65b042;
+  } /* string  - green */
+  .kwd {
+    color: #e28964;
+  } /* keyword - dark pink */
+  .com {
+    color: #aeaeae;
+    font-style: italic;
+  } /* comment - gray */
+  .typ {
+    color: #89bdff;
+  } /* type - light blue */
+  .lit {
+    color: #3387cc;
+  } /* literal - blue */
+  .pun {
+    color: #fff;
+  } /* punctuation - white */
+  .pln {
+    color: #fff;
+  } /* plaintext - white */
+  .tag {
+    color: #89bdff;
+  } /* html/xml tag    - light blue */
+  .atn {
+    color: #bdb76b;
+  } /* html/xml attribute name  - khaki */
+  .atv {
+    color: #65b042;
+  } /* html/xml attribute value - green */
+  .dec {
+    color: #3387cc;
+  } /* decimal - blue */
+
+  .ttyprint,
+  code.ttyprint {
+    background-color: #000;
+    border-radius: 8px;
+  }
+
+  .ttyprint {
+    width: 95%;
+    margin: 1em auto;
+    padding: 1em;
+    white-space: -wrap;
+  }
+
+  /* Specify class=linenums on a  to get line numbering */
+  ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #aeaeae;
+  } /* IE indents via margin-left */
+  li.L0,
+  li.L1,
+  li.L2,
+  li.L3,
+  li.L5,
+  li.L6,
+  li.L7,
+  li.L8 {
+    list-style-type: none;
+  }
+}
