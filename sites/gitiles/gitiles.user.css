@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name Gitiles Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.5.15
-@description description
+@version 25.5.16
+@description Dark theme for Gitiles, Gerrit's repository browser.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
 @supportURL https://github.com/aruncveli/userstyles/issues
 @updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gitiles/gitiles.user.css
 @license MIT
-@processor default
+@preprocessor default
 @var color fg "Foreground" white
 @var color bg "Background" black
 @var color bg1 "Background lightened 1" #111
@@ -18,7 +18,7 @@
 @var color red-color "Red" #ff443a
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://gerrit.googlesource.com/gitiles/") {
+@-moz-document regexp(".+\/gitiles.*") {
   :root {
     color-scheme: dark;
   }
@@ -29,7 +29,8 @@
   .CommitLog-time,
   .Footer,
   .MetadataMessage,
-  .InlineReadme-path {
+  .InlineReadme-path,
+  .RepoList-itemDescription {
     color: var(--fg);
   }
 
@@ -44,10 +45,13 @@
   .u-sha1,
   .CommitLog-item--oneline:hover,
   .doc code,
+  .doc pre,
   .MetadataMessage,
   .FileList-item:hover,
   .FileContents-lineContents:target,
-  .Blame-region--bg2 {
+  .Blame-region--bg2,
+  .RepoList-item--header:hover,
+  .RepoList-item:hover {
     background-color: var(--bg1);
   }
 
@@ -64,7 +68,9 @@
     text-decoration: none;
   }
 
-  .MetadataMessage {
+  .MetadataMessage,
+  .doc pre,
+  .CloneRepo-command {
     border-color: var(--bg1);
   }
 
@@ -105,13 +111,13 @@
     color: #3387cc;
   } /* decimal - blue */
 
-  .ttyprint,
-  code.ttyprint {
+  .prettyprint,
+  code.prettyprint {
     background-color: #000;
     border-radius: 8px;
   }
 
-  .ttyprint {
+  .prettyprint {
     width: 95%;
     margin: 1em auto;
     padding: 1em;
