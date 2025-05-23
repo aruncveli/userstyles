@@ -28,3 +28,4 @@ style.
 |       Grammarly       |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/grammarly/grammarly.user.css)             |       [Info](sites/grammarly)       |
 |         Seedr         |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/seedr/seedr.user.css)                 |         [Info](sites/seedr)         |
 |        Gitiles        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gitiles/gitiles.user.css)               |        [Info](sites/gitiles)        |
+|      Metacritic       |          [Install](https://raw.githubusercontent.com/<aruncveli/userstyles/refs/heads/main/sites/%= smallName /metacritic.user.css)          |      [Info](sites/metacritic)       |

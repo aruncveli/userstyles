@@ -1,0 +1,192 @@
+/* ==UserStyle==
+@name Metacritic Dark
+@namespace github.com/aruncveli/userstyles
+@version 25.5.23
+@description Dark theme for Metacritic
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/metacritic/metacritic.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.metacritic.com") {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  .c-globalProductFeatureCard_container,
+  .c-globalProductCard_container :hover,
+  .c-tagList,
+  .g-color-gray50,
+  .g-color-gray60,
+  .g-color-gray70,
+  .g-color-gray90,
+  .g-color-gray80,
+  .g-color-tertiary,
+  .c-tagList_button,
+  .c-articleSummary:hover .c-articleSummary_title,
+  a,
+  a:focus,
+  a:hover,
+  .c-crewList_link,
+  .c-globalHeader_menu_item-active,
+  .c-globalHeader_menu_item-activeLeft,
+  .c-globalHeader_menu_item-activeRight,
+  .c-globalHeader_menu_item:hover,
+  .c-videoPlaylist_title a,
+  .light-theme .c-siteHeaderNavigationItem_subMenu,
+  .light-theme .c-siteHeaderNavigationItem_subMenu a,
+  .light-theme .c-siteHeaderNavigationList_item:hover,
+  .c-searchSuggestion_title,
+  .c-searchSuggestions .c-heroMetadata,
+  .c-searchSuggestions_seeAll,
+  .c-searchSuggestions_seeAll:hover,
+  .c-productSubpageNavigation_menu_item:hover,
+  input::placeholder,
+  .c-siteReviewHeader_publicationName:hover,
+  .c-siteReviewHeader_username:hover,
+  .c-globalHeader_viewMore:hover,
+  .c-CmsContent p a,
+  .c-CmsContent p a:hover,
+  .c-seasonsModalCard_link:hover,
+  div[title="Metascore TBD"] > span,
+  div[title="Metascore null out of 100"] > span {
+    color: var(--fg);
+  }
+
+  .c-globalProductFeatureCard_container:focus,
+  .c-globalProductFeatureCard_container:hover {
+    color: var(--fg) !important;
+  }
+
+  .c-globalProductCard .c-siteReviewScore,
+  .c-siteReviewScore_large[data-v-e408cafe],
+  .c-siteReviewScore_small[data-v-e408cafe],
+  .c-siteReviewScore_medium[data-v-e408cafe] {
+    color: var(--bg);
+  }
+
+  html,
+  .c-productHero_player-scoreInfo,
+  .g-bg-white,
+  .g-bg-gray10,
+  .c-aboutSection_content,
+  .c-globalPageTitle_seoTitle,
+  .c-movieDetails_sectionContainer,
+  .c-productionDetailsTv_sectionContainer {
+    background-color: var(--bg);
+  }
+
+  .c-globalProductFeatureCard,
+  .c-globalHeader_nav_button,
+  .light-theme .c-siteHeaderNavigationItem_subMenu,
+  .c-searchBox,
+  .c-searchSuggestions,
+  .c-searchSuggestions_divider,
+  .c-pageSiteSearch-results-item:hover,
+  .c-siteDropdown_option:hover {
+    background-color: var(--bg1);
+  }
+
+  .c-searchSuggestion:hover,
+  .c-searchSuggestions_seeAll:hover {
+    background-color: var(--bg2);
+  }
+
+  .c-globalCarousel_fade-right:before {
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      var(--bg) 100%
+    );
+  }
+
+  .c-globalCarousel_fade-left:after {
+    background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 0%,
+      var(--bg) 100%
+    );
+  }
+
+  .c-globalHeader_heading,
+  .g-border-thin-light-bottom {
+    border-bottom-color: var(--bg);
+  }
+
+  .c-articleSummary--image.c-articleSummary .c-articleSummary_footer,
+  .c-articleSummary_footer {
+    border-top-color: var(--bg);
+  }
+
+  .c-globalProductFeatureCard_footer {
+    border-top-color: var(--bg1);
+  }
+
+  .c-siteHeaderNavigationList.isSideBar {
+    border-left-color: var(--bg1);
+  }
+
+  .g-border-gray30 {
+    border-color: var(--bg);
+  }
+
+  .c-searchBox,
+  .c-searchSuggestions,
+  .c-globalHeader_nav_button {
+    border-color: var(--bg1);
+  }
+
+  .c-globalHeader_nav_button {
+    display: none;
+  }
+
+  .c-globalHeader_nav_button-active {
+    display: inherit;
+  }
+
+  .c-adSkyBox.rendered,
+  .c-adDisplay_container.spaced,
+  #floor_adhesion,
+  .mini-ad,
+  .c-adDisplay_container {
+    display: none;
+  }
+
+  .c-globalProductCard_title,
+  .u-text-underline,
+  .c-articleSummary_title {
+    text-decoration-line: none;
+  }
+
+  .c-globalHeader_viewMore {
+    text-decoration-line: none !important;
+  }
+
+  .c-siteIMDBNotice_imgContainer {
+    filter: invert(1);
+  }
+
+  .c-siteFooter .c-siteLogo_image-medium,
+  .c-siteFooter_socialIcon,
+  .c-siteFooterBrands_brandIcon,
+  .c-searchBox svg.u-pointer {
+    fill: var(--fg);
+  }
+
+  .c-searchBox svg.u-pointer,
+  .c-siteReview_flag svg,
+  .c-siteDropdown_iconCaret {
+    stroke: var(--fg);
+  }
+}
