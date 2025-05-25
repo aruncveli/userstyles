@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name IMDB Dark
+@namespace github.com/aruncveli/userstyles
+@version 25.5.25
+@description description
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/imdb/imdb.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.imdb.com") {
+  :root {
+    color-scheme: dark;
+    --ipt-base-bg: var(--bg);
+    --ipt-on-base-textPrimary-color: var(--fg);
+    --ipt-on-base-textSecondary-color: var(--fg);
+    --ipt-on-base-color: var(--fg);
+    --ipt-on-base-textIcon-color: var(--fg);
+    --ipt-on-base-accent2-color: var(--link-color);
+    --ipc-listCard-base-bg: var(--bg);
+    --ipt-base-shade3-bg: var(--bg1);
+    --ipt-base-shade1-bg: var(--bg1);
+  }
+
+  .kPQEqa {
+    --ipt-on-base-textPrimary-color: var(--fg);
+    --ipt-on-base-textSecondary-color: var(--fg);
+    --ipt-base-bg: var(--bg);
+  }
+
+  #inline20_responsive_wrapper,
+  #inline40_responsive_wrapper,
+  #inline80_responsive_wrapper {
+    display: none;
+  }
+}

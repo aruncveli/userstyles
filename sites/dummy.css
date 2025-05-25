@@ -6,4 +6,5 @@ Dummy CSS file to fool WebStorm into thinking that the variables are defined sta
   --bg: unset;
   --bg1: unset;
   --bg2: unset;
+  --link-color: unset;
 }

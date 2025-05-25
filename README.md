@@ -29,3 +29,4 @@ style.
 |         Seedr         |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/seedr/seedr.user.css)                 |         [Info](sites/seedr)         |
 |        Gitiles        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gitiles/gitiles.user.css)               |        [Info](sites/gitiles)        |
 |      Metacritic       |            [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/metacritic/metacritic.user.css)            |      [Info](sites/metacritic)       |
+|         IMDB          |                  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/imdb/imdb.user.css)                  |         [Info](sites/imdb)          |

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.3.3
+@version        25.5.25
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -19,6 +19,7 @@
     color-scheme: dark;
     --color-background-base-default: var(--bg);
     --color-background-base-subdued: var(--bg1);
+    --color-background-neutral-default: var(--bg1);
     --button-secondary-background-hover: var(--bg1);
     --button-secondary-text-hover: var(--fg);
     --button-secondary-border-default: var(--bg);
@@ -72,7 +73,12 @@
   .modal-footer_f1l98qk9,
   .document-view-horizontalEditorWrapper_ffc8rcx,
   .f1dyakn9 /* Pro suggestion */,
-  .fe88rpf /* Suggestion category icon background */ {
+  .fe88rpf /* Suggestion category icon */,
+  .listItem_f18hii0e /* Inconsistent hyphenation list */,
+  .f1gdskq8 /* Clarity icon */,
+  .f1jrdjr6 /* Engagement icon */,
+  .f1gd4a8b /*Delivery icon */,
+  .f178k9lm /* Delivery confidence icon */ {
     background-color: var(--bg);
   }
 
@@ -109,7 +115,9 @@
       [aria-disabled="true"]
     )[data-hovered="true"],
   .fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):active,
-  .fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):hover {
+  .fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):hover,
+  .f1hd2upw /* Plagiarism format menu */,
+  .f1fk53u7:hover /* Inconsistent hyphenation list item */ {
     background-color: var(--bg1);
   }
 
@@ -183,12 +191,25 @@
       background-color: var(--bg1);
     }
   }
+  @keyframes f6grapm {
+    /* Plagiarism */
+    100% {
+      background-color: var(--bg1);
+    }
+  }
 
   .f1todjtg:hover /* Correctness Kebab menu item */,
   .menuItem_ffsq1m9:focus /* Metrics item */,
   .menuItem_ffsq1m9:hover,
   .formatting-link-urlInput_f109vv3n /* Link tooltip */,
-  .f1lo3unn:not([data-disabled="true"])[data-hovered="true"] {
+  .f1lo3unn:not([data-disabled="true"])[data-hovered="true"],
+  .f1u0d4ph:not([data-disabled="true"]):not(
+      [aria-disabled="true"]
+    )[data-hovered="true"] /* Write with GenAI buttons*/,
+  .f1u0d4ph:not([data-disabled="true"]):not(
+      [aria-disabled="true"]
+    )[data-active="true"],
+  .f1xgqlqj:hover {
     background-color: var(--bg2);
   }
 
@@ -202,7 +223,9 @@
       var(--bg1);
   }
 
-  .yellow_f16pxtey span /* Pro try for free button text */ {
+  .yellow_f16pxtey span /* Pro try for free button text */,
+  .f1xaqyow /* Write with GenAI banner heading */,
+  .f1s230ur /* Write with GenAI banner text */ {
     color: var(--bg);
   }
 }
