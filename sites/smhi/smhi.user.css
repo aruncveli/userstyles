@@ -76,6 +76,7 @@
     --colorCloud30: var(--bg);
     --colorCloud10: var(--bg1);
     --colorSky10: var(--bg1);
+    --colorSky30: var(--bg);
     --colorHorizon10: var(--bg);
     --colorZenith: var(--bg);
     --hoverFillColor: var(--bg1);

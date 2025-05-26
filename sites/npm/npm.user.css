@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.2.28
+@version        25.5.26
 @description    Dark theme for npm
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -13,14 +13,16 @@
 @var color bg "Background" black
 @var color bg1 "Background lightened 1" #111
 @var color bg2 "Background lightened 2" #222
-@var color link "Link" #ff453a
+@var color link-color "Link" #ff453a
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.npmjs.com") {
   :root {
     color-scheme: dark;
     --header-color: var(--fg);
     --code-bg: var(--bg1);
-    --wombat-red: var(--link);
+    --wombat-red: var(--link-color);
+    --wombat-yellow: var(--fg);
+    --wombat-purple: var(--fg);
     --background-color: var(--bg);
     --color-fg-subtle: var(--fg);
     --search-fg-muted: var(--fg);
@@ -90,7 +92,12 @@
   ._5ae7dfec button /* File explorer - Code tab */,
   ._5ae7dfec button:hover,
   ._24a1e9c7 /* Fund this package */,
-  ._24a1e9c7:hover {
+  ._24a1e9c7:hover,
+  ._8055e658.d9f99065 ._38ce9a85 /*Readme tab*/,
+  ._8055e658._7aa1ee94 ._38ce9a85 /* Code tab */,
+  ._8055e658.c1f85151 ._38ce9a85 /* Dependencies tab */,
+  ._8055e658._7cec0316 ._38ce9a85 /* Dependents tab */,
+  ._8055e658.b4fcfd19 ._38ce9a85 /* Versions tab */ {
     color: var(--fg);
   }
 
@@ -133,7 +140,12 @@
   a[href^="https://runkit.com"],
   a[href^="https://runkit.com"]:hover,
   ._5ae7dfec /* Code tab dir */,
-  .a2ab2737 /* File explorer code tab row */ {
+  .a2ab2737 /* File explorer code tab row */,
+  ._8055e658.d9f99065,
+  ._8055e658._7aa1ee94,
+  ._8055e658.c1f85151,
+  ._8055e658._7cec0316,
+  ._8055e658.b4fcfd19 {
     border-color: var(--bg);
   }
 
