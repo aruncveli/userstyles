@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.5.23
+@version 25.6.1
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -60,19 +60,33 @@
   .c-CmsContent p a:hover,
   .c-seasonsModalCard_link:hover,
   div[title="Metascore TBD"] > span,
-  div[title="Metascore null out of 100"] > span {
+  div[title="Metascore null out of 100"] > span,
+  .c-globalCardButton,
+  .c-globalCardButton:hover,
+  .c-slider_reset_disabled,
+  .c-slider_reset_disabled:hover,
+  .c-globalCheckbox_label,
+  .c-globalCheckbox,
+  .c-globalCheckbox:hover .c-globalCheckbox_label,
+  .c-filterInput_button,
+  .c-slider_reset,
+  .c-slider_reset:hover,
+  .c-navigationPagination_itemButtonContent {
     color: var(--fg);
   }
 
   .c-globalProductFeatureCard_container:focus,
-  .c-globalProductFeatureCard_container:hover {
+  .c-globalProductFeatureCard_container:hover,
+  .c-globalCheckbox-active .c-globalCheckbox_label,
+  .c-filterInput_button:hover {
     color: var(--fg) !important;
   }
 
   .c-globalProductCard .c-siteReviewScore,
   .c-siteReviewScore_large[data-v-e408cafe],
   .c-siteReviewScore_small[data-v-e408cafe],
-  .c-siteReviewScore_medium[data-v-e408cafe] {
+  .c-siteReviewScore_medium[data-v-e408cafe],
+  .c-siteReviewScore_xsmall[data-v-e408cafe] {
     color: var(--bg);
   }
 
@@ -83,7 +97,8 @@
   .c-aboutSection_content,
   .c-globalPageTitle_seoTitle,
   .c-movieDetails_sectionContainer,
-  .c-productionDetailsTv_sectionContainer {
+  .c-productionDetailsTv_sectionContainer,
+  .c-globalCheckbox_icon {
     background-color: var(--bg);
   }
 
@@ -94,13 +109,29 @@
   .c-searchSuggestions,
   .c-searchSuggestions_divider,
   .c-pageSiteSearch-results-item:hover,
-  .c-siteDropdown_option:hover {
+  .c-siteDropdown_option:hover,
+  .c-globalCardButton,
+  .c-globalCheckbox:hover .c-globalCheckbox_icon,
+  .c-slider_tooltip,
+  .c-navigationPagination_itemButtonContent {
     background-color: var(--bg1);
   }
 
+  .c-filterInput_button:hover {
+    background-color: var(--bg1) !important;
+  }
+
   .c-searchSuggestion:hover,
-  .c-searchSuggestions_seeAll:hover {
+  .c-searchSuggestions_seeAll:hover,
+  .c-globalCardButton:hover,
+  .c-navigationPagination_item.enabled,
+  .c-navigationPagination_itemButton:hover,
+  .c-navigationPagination_itemButtonContent {
     background-color: var(--bg2);
+  }
+
+  .c-FinderTabbedHeader_selected-filter:before {
+    background: var(--fg);
   }
 
   .c-globalCarousel_fade-right:before {
@@ -120,21 +151,30 @@
   }
 
   .c-globalHeader_heading,
-  .g-border-thin-light-bottom {
+  .g-border-thin-light-bottom,
+  .c-finderHeader {
     border-bottom-color: var(--bg);
   }
 
   .c-articleSummary--image.c-articleSummary .c-articleSummary_footer,
-  .c-articleSummary_footer {
+  .c-articleSummary_footer,
+  .c-slider,
+  .c-filterInput {
     border-top-color: var(--bg);
   }
 
-  .c-globalProductFeatureCard_footer {
+  .c-globalProductFeatureCard_footer,
+  .c-slider_tooltip:after,
+  .c-slider_tooltip:before {
     border-top-color: var(--bg1);
   }
 
   .c-siteHeaderNavigationList.isSideBar {
     border-left-color: var(--bg1);
+  }
+
+  .c-siteDropdown_select:hover {
+    border-color: var(--fg);
   }
 
   .g-border-gray30 {
@@ -143,7 +183,10 @@
 
   .c-searchBox,
   .c-searchSuggestions,
-  .c-globalHeader_nav_button {
+  .c-globalHeader_nav_button,
+  .c-globalCardButton,
+  .c-globalCardButton:hover,
+  .c-slider_tooltip {
     border-color: var(--bg1);
   }
 
@@ -184,9 +227,16 @@
     fill: var(--fg);
   }
 
+  #filterChevron > path,
+  #check > path {
+    stroke: var(--fg) !important;
+  }
+
   .c-searchBox svg.u-pointer,
   .c-siteReview_flag svg,
-  .c-siteDropdown_iconCaret {
+  .c-siteDropdown_iconCaret,
+  .c-globalCardButton_icon,
+  .c-siteDropdown_iconCheck {
     stroke: var(--fg);
   }
 }
