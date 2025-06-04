@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SMHI Dark (Ten day forecast)
 @namespace      github.com/aruncveli/userstyles
-@version        25.5.26
+@version        25.6.4
 @description    Dark theme for SMHI's ten day forecast page
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -71,11 +71,14 @@
   }
 
   .aurora-root-module_root__QHlfl {
-    --colorCloud100: var(--fg);
-    --colorCloud70: var(--fg);
-    --colorCloud30: var(--bg);
     --colorCloud10: var(--bg1);
+    --colorCloud20: var(--bg1);
+    --colorCloud30: var(--bg);
+    --colorCloud60: var(--fg);
+    --colorCloud70: var(--fg);
+    --colorCloud100: var(--fg);
     --colorSky10: var(--bg1);
+    --colorSky20: var(--bg1);
     --colorSky30: var(--bg);
     --colorSky40: var(--bg);
     --colorSky50: var(--bg);
