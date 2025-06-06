@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm Docs Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.2.2
+@version        25.6.6
 @description    Dark theme for npm Docs
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -38,22 +38,13 @@
     --overlay-bgColor: var(--bg1);
     --borderColor-muted: var(--bg1);
   }
-  .haGPdU {
-    color: var(--link-color);
-  }
-  .bRtvlF {
+  .bRtvlF /* Code blocks */ {
     color: var(--fg) !important;
     background-color: var(--bg1) !important;
   }
-  .VTnRl.token /* Code blocks */ {
-    &.function {
-      color: var(--link-color) !important;
-    }
-    &.plain,
-    &.builtin.class-name,
-    &.operator,
-    &.punctuation,
-    &.keyword {
+  .token-line {
+    color: var(--fg) !important;
+    .operator {
       color: var(--fg) !important;
     }
   }
