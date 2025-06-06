@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.2.3
+@version        25.6.6
 @description    Dark mode for YouGov surveys
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -96,6 +96,11 @@
   textarea,
   .scale_button span {
     background-color: var(--bg1);
+  }
+
+  .grid-layout thead tr td,
+  .grid-layout thead tr th {
+    background-color: var(--bg1) !important;
   }
 
   .response-label:hover {
