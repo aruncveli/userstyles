@@ -22,6 +22,7 @@
   :root {
     color-scheme: dark;
     --ipt-base-bg: var(--bg);
+    --ipt-base-rgb: 0, 0, 0;
     --ipt-on-base-textPrimary-color: var(--fg);
     --ipt-on-base-textSecondary-color: var(--fg);
     --ipt-on-base-color: var(--fg);
