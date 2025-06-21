@@ -4,7 +4,11 @@
     "ignoreUnknown": true
   },
   "linter": {
-    "enabled": false
+    "rules": {
+      "style": {
+        "noDescendingSpecificity": "off"
+      }
+    }
   },
   "formatter": {
     "indentStyle": "space",

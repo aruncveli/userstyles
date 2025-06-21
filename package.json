@@ -4,27 +4,28 @@
   "author": "Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)",
   "license": "MIT",
   "type": "module",
-  "keywords": ["userstyles", "stylus", "dark-theme"],
+  "keywords": [
+    "userstyles",
+    "stylus",
+    "dark-theme"
+  ],
   "scripts": {
-    "check": "biome check && eslint . && prettier --check .",
-    "fix": "biome check --write && eslint --fix . && prettier --write .",
+    "check": "biome check && prettier --check .",
+    "fix": "biome check --write && prettier --write .",
     "fix:biome": "biome check --write",
-    "generate": "bun templates/generate.ts",
+    "generate": "bun scripts/generate.ts",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@eslint/js": "9.28.0",
+    "@biomejs/biome": "2.0.4",
     "@tsconfig/strictest": "2.0.5",
+    "@types/bun": "1.2.17",
     "@types/ejs": "3.1.5",
-    "@types/node": "22.15.30",
+    "@types/node": "24.0.3",
     "ejs": "3.1.10",
-    "eslint": "9.28.0",
-    "eslint-config-prettier": "10.1.5",
     "husky": "9.1.7",
-    "lint-staged": "16.1.0",
+    "lint-staged": "16.1.2",
     "prettier": "3.5.3",
-    "typescript": "5.8.3",
-    "typescript-eslint": "8.33.1"
+    "typescript": "5.8.3"
   }
 }

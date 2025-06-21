@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.5.25
+@version 25.6.21
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -214,13 +214,16 @@
   }
 
   .menuItem_ffsq1m9:focus {
-    box-shadow: 0 0 0 1px var(--bg1), 0 0 0 3px var(--bg1);
+    box-shadow:
+      0 0 0 1px var(--bg1),
+      0 0 0 3px var(--bg1);
   }
 
   .f1todjtg:focus,
   .f1todjtg:focus-visible {
-    box-shadow: 0 0 0 1px var(--color-background-base-default), 0 0 0 3px
-      var(--bg1);
+    box-shadow:
+      0 0 0 1px var(--color-background-base-default),
+      0 0 0 3px var(--bg1);
   }
 
   .yellow_f16pxtey span /* Pro try for free button text */,

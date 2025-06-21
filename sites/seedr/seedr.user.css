@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Seedr Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.3.7
+@version 25.6.21
 @description Dark theme for Seedr
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -274,7 +274,7 @@
   }
 
   .swal2-popup.swal2-toast {
-    box-shadow: 0 0 .625em var(--bg);
+    box-shadow: 0 0 0.625em var(--bg);
   }
 }
 

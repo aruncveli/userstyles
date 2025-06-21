@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.6.5
+@version 25.6.21
 @description    Dark theme for some (simpler) Arch Linux pages: Home, Packages, AUR and Download.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -634,11 +634,9 @@
 
     th {
       &,
-      &.tablesorter-header {
-        &Asc,
-        &Desc {
-          background-color: var(--bg);
-        }
+      &.tablesorter-headerAsc,
+      &.tablesorter-headerDesc {
+        background-color: var(--bg);
       }
     }
   }

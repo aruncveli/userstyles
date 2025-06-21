@@ -3,6 +3,8 @@ import { argv } from "node:process";
 
 import { renderFile } from "ejs";
 
+import version from "./calver.js";
+
 /**
  * Usage: bun generate Style Name
  */
@@ -22,12 +24,6 @@ renderFile("templates/readme.ejs", { name, smallName }, (err, str) => {
   console.log(`Writing sites/${smallName}/README.md`);
   writeFileSync(`sites/${smallName}/README.md`, str);
 });
-
-const date = new Date();
-const year = date.getFullYear().toString().substring(2);
-const month = date.getMonth() + 1;
-const day = date.getDate();
-const version = `${year}.${month.toString()}.${day.toString()}`;
 
 renderFile(
   "templates/user.css.ejs",
