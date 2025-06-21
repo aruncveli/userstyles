@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.6.1
+@version 25.6.22
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -71,7 +71,13 @@
   .c-filterInput_button,
   .c-slider_reset,
   .c-slider_reset:hover,
-  .c-navigationPagination_itemButtonContent {
+  .c-navigationPagination_itemButtonContent,
+  .light-theme .c-siteHeaderUserDropdown_list_item[data-v-5618330a]:hover,
+  .c-globalSidebarLink,
+  .c-profileNavigation_menu_item:hover,
+  .c-globalTabListHeader_tab-active,
+  .c-globalTabListHeader_tab,
+  .c-globalTabListHeader_tab:hover {
     color: var(--fg);
   }
 
@@ -98,7 +104,8 @@
   .c-globalPageTitle_seoTitle,
   .c-movieDetails_sectionContainer,
   .c-productionDetailsTv_sectionContainer,
-  .c-globalCheckbox_icon {
+  .c-globalCheckbox_icon,
+  .c-globalSidebar {
     background-color: var(--bg);
   }
 
@@ -113,7 +120,9 @@
   .c-globalCardButton,
   .c-globalCheckbox:hover .c-globalCheckbox_icon,
   .c-slider_tooltip,
-  .c-navigationPagination_itemButtonContent {
+  .c-navigationPagination_itemButtonContent,
+  .c-globalModal_wrapper,
+  .c-siteHeaderUserDropdown[data-v-5618330a] {
     background-color: var(--bg1);
   }
 
@@ -130,7 +139,8 @@
     background-color: var(--bg2);
   }
 
-  .c-FinderTabbedHeader_selected-filter:before {
+  .c-FinderTabbedHeader_selected-filter:before,
+  .c-globalTabListHeader_tab:after {
     background: var(--fg);
   }
 
@@ -198,7 +208,7 @@
     display: inherit;
   }
 
-  .c-adSkyBox.rendered,
+  .c-adSkyBox,
   .c-adDisplay_container.spaced,
   #floor_adhesion,
   .mini-ad,
@@ -223,7 +233,8 @@
   .c-siteFooter .c-siteLogo_image-medium,
   .c-siteFooter_socialIcon,
   .c-siteFooterBrands_brandIcon,
-  .c-searchBox svg.u-pointer {
+  .c-searchBox svg.u-pointer,
+  #logoWordmark :nth-child(4) {
     fill: var(--fg);
   }
 

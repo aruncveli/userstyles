@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "check": "biome check && prettier --check .",
-    "fix": "biome check --write && prettier --write .",
+    "fix": "biome check --write && prettier --write --log-level warn .",
     "fix:biome": "biome check --write",
     "generate": "bun scripts/generate.ts",
     "prepare": "husky"
