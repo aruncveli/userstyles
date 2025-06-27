@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.6.22
+@version 25.6.27
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -61,6 +61,7 @@
   .c-seasonsModalCard_link:hover,
   div[title="Metascore TBD"] > span,
   div[title="Metascore null out of 100"] > span,
+  div[title="User score TBD"] > span,
   .c-globalCardButton,
   .c-globalCardButton:hover,
   .c-slider_reset_disabled,
@@ -77,7 +78,9 @@
   .c-profileNavigation_menu_item:hover,
   .c-globalTabListHeader_tab-active,
   .c-globalTabListHeader_tab,
-  .c-globalTabListHeader_tab:hover {
+  .c-globalTabListHeader_tab:hover,
+  .c-productHero_seasonLink,
+  .c-episodesModalCard_link:hover {
     color: var(--fg);
   }
 
