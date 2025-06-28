@@ -19,14 +19,14 @@ const smallName = args.join("-").toLocaleLowerCase();
 console.log(`Creating directory sites/${smallName}`);
 mkdirSync(`sites/${smallName}`);
 
-renderFile("templates/readme.ejs", { name, smallName }, (err, str) => {
+renderFile(`${__dirname}/readme.ejs`, { name, smallName }, (err, str) => {
   if (err) throw err;
   console.log(`Writing sites/${smallName}/README.md`);
   writeFileSync(`sites/${smallName}/README.md`, str);
 });
 
 renderFile(
-  "templates/user.css.ejs",
+  `${__dirname}/user.css.ejs`,
   { name, smallName, version },
   (err, str) => {
     if (err) throw err;
@@ -36,7 +36,7 @@ renderFile(
 );
 
 renderFile(
-  "templates/root-readme-entry.ejs",
+  `${__dirname}/root-readme-entry.ejs`,
   { name, smallName },
   (err, str) => {
     if (err) throw err;

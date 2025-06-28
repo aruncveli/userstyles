@@ -1,0 +1,192 @@
+/* ==UserStyle==
+@name Baeldung Dark
+@namespace github.com/aruncveli/userstyles
+@version 25.6.28
+@description Dark theme for Baeldung.
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/baeldung/baeldung.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.baeldung.com") {
+  :root {
+    color-scheme: dark;
+  }
+
+  .hpost-heading-title,
+  #wrap .page-header .single-title,
+  .single p.post-modified,
+  .author-by,
+  .reviewer-by,
+  .single #wrap .post-content p,
+  .single #wrap .post-content h2,
+  .single #wrap .post-content h3,
+  .single #wrap .post-content h4,
+  .single #wrap .post-content li,
+  body {
+    color: var(--fg);
+  }
+
+  #wrap pre code.hljs,
+  #wrap a.nav--menu_item_anchor,
+  #wrap a.loginout__link:link,
+  #wrap a.loginout__link:visited {
+    color: var(--fg) !important;
+  }
+
+  #content,
+  body {
+    background-color: var(--bg);
+  }
+
+  .short_box.short_box-announcement,
+  .content-control {
+    background-color: var(--bg1);
+  }
+
+  .fs-sidewall-container,
+  #primisPlayerContainerDiv,
+  #baeldung_leaderboard_mid_1,
+  #baeldung_leaderboard_mid_2,
+  #baeldung_leaderboard_mid_3,
+  #baeldung_leaderboard_mid_4,
+  #baeldung_leaderboard_btf_2,
+  #baeldung_right_rail_1,
+  #baeldung_right_rail_2,
+  #baeldung_right_rail_3,
+  #baeldung_right_rail_4,
+  .topAdContainer,
+  #baeldung_top_1,
+  #sidebar1 {
+    display: none;
+  }
+
+  .fs-sticky-footer,
+  div[spottype="dynamic_mc"],
+  .sliding-ad-container {
+    display: none !important;
+  }
+
+  .homepage-posts .post-links {
+    border-bottom-color: var(--bg);
+  }
+
+  #wrap {
+    /* Highlight.js GitHub Dark - https://github.com/highlightjs/highlight.js/blob/main/src/styles/github-dark.css */
+    .hljs {
+      color: #c9d1d9;
+      background: #0d1117;
+    }
+
+    .hljs-doctag,
+    .hljs-keyword,
+    .hljs-meta .hljs-keyword,
+    .hljs-template-tag,
+    .hljs-template-variable,
+    .hljs-type,
+    .hljs-variable.language_ {
+      /* prettylights-syntax-keyword */
+      color: #ff7b72;
+    }
+
+    .hljs-title,
+    .hljs-title.class_,
+    .hljs-title.class_.inherited__,
+    .hljs-title.function_ {
+      /* prettylights-syntax-entity */
+      color: #d2a8ff;
+    }
+
+    .hljs-attr,
+    .hljs-attribute,
+    .hljs-literal,
+    .hljs-meta,
+    .hljs-number,
+    .hljs-operator,
+    .hljs-variable,
+    .hljs-selector-attr,
+    .hljs-selector-class,
+    .hljs-selector-id {
+      /* prettylights-syntax-constant */
+      color: #79c0ff;
+    }
+
+    .hljs-regexp,
+    .hljs-string,
+    .hljs-meta .hljs-string {
+      /* prettylights-syntax-string */
+      color: #a5d6ff;
+    }
+
+    .hljs-built_in,
+    .hljs-symbol {
+      /* prettylights-syntax-variable */
+      color: #ffa657;
+    }
+
+    .hljs-comment,
+    .hljs-code,
+    .hljs-formula {
+      /* prettylights-syntax-comment */
+      color: #8b949e;
+    }
+
+    .hljs-name,
+    .hljs-quote,
+    .hljs-selector-tag,
+    .hljs-selector-pseudo {
+      /* prettylights-syntax-entity-tag */
+      color: #7ee787;
+    }
+
+    .hljs-subst {
+      /* prettylights-syntax-storage-modifier-import */
+      color: #c9d1d9;
+    }
+
+    .hljs-section {
+      /* prettylights-syntax-markup-heading */
+      color: #1f6feb;
+      font-weight: bold;
+    }
+
+    .hljs-bullet {
+      /* prettylights-syntax-markup-list */
+      color: #f2cc60;
+    }
+
+    .hljs-emphasis {
+      /* prettylights-syntax-markup-italic */
+      color: #c9d1d9;
+      font-style: italic;
+    }
+
+    .hljs-strong {
+      /* prettylights-syntax-markup-bold */
+      color: #c9d1d9;
+      font-weight: bold;
+    }
+
+    .hljs-addition {
+      /* prettylights-syntax-markup-inserted */
+      color: #aff5b4;
+      background-color: #033a16;
+    }
+
+    .hljs-deletion {
+      /* prettylights-syntax-markup-deleted */
+      color: #ffdcd7;
+      background-color: #67060c;
+    }
+  }
+}
