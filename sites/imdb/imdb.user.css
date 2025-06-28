@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name IMDB Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.6.20
+@version 25.6.28
 @description description
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -33,7 +33,7 @@
     --ipt-base-shade1-bg: var(--bg1);
   }
 
-  .fysXdH {
+  .grONsY {
     --ipt-on-base-textPrimary-color: var(--fg);
     --ipt-on-base-textSecondary-color: var(--fg);
     --ipt-base-bg: var(--bg);
@@ -43,5 +43,14 @@
   #inline40_responsive_wrapper,
   #inline80_responsive_wrapper {
     display: none;
+  }
+
+  .gCFbYJ:hover,
+  .ipc-scroll-to-top-button {
+    color: var(--fg);
+  }
+
+  .ipc-scroll-to-top-button {
+    background-color: var(--bg1);
   }
 }
