@@ -31,3 +31,4 @@ style.
 |      Metacritic       |            [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/metacritic/metacritic.user.css)            |      [Info](sites/metacritic)       |
 |         IMDB          |                  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/imdb/imdb.user.css)                  |         [Info](sites/imdb)          |
 |       Baeldung        |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/baeldung/baeldung.user.css)              |       [Info](sites/baeldung)        |
+|       Thesaurus       |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/thesaurus/thesaurus.user.css)             |       [Info](sites/thesaurus)       |

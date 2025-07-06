@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.2.24
+@version 25.7.6
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -67,17 +67,21 @@
   #cart-content .footer,
   .apotea-responsive-footer,
   .form-control,
-  .product-block {
+  .product-block,
+  #brands,
+  .table,
+  .article-wrapper:after {
     background: var(--bg);
   }
 
   .facet-dropdown,
   .btn:hover,
-  .table,
   .checkout-field input,
   #suggest-container,
   #suggest-container div.hit.selected,
-  .form-control:focus {
+  .form-control:focus,
+  .filter-container,
+  .filter-content {
     background: var(--bg1);
   }
 
@@ -121,7 +125,17 @@
   .form-control,
   .form-control:focus,
   .product-block a:not(:hover),
-  .product-block .is-med-div {
+  .product-block .is-med-div,
+  #main-menu div li,
+  #sidebar-categories .no-children a,
+  #sidebar-categories .no-children a:hover,
+  #last-sold-heading,
+  #toplist-header,
+  .toplist-article-row,
+  h2 a,
+  #search-sort-dropdown,
+  #search-sort-dropdown option,
+  .main-container strong {
     color: var(--fg);
   }
 
@@ -134,7 +148,10 @@
     }
   }
 
-  #cart-quantity-full {
+  #cart-quantity-full,
+  p.toplist-article-row > span,
+  .lpg,
+  .sidebar-category-header.lvl-2.collapsed {
     color: var(--fg) !important;
   }
 
@@ -148,7 +165,19 @@
   }
 
   tr {
-    border-bottom-color: var(--bg1);
+    border-bottom-color: var(--bg);
+  }
+
+  .filter-content button svg {
+    stroke: var(--fg) !important;
+  }
+
+  .filter-item-parent {
+    border-top-color: var(--bg1);
+  }
+
+  .btn {
+    --bs-btn-color: var(--fg);
   }
 }
 
