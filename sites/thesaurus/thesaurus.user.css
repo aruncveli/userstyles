@@ -32,17 +32,37 @@
     --aard-color-bkgd-negative: var(--bg1);
     --aard-color-bkgd-positive: var(--bg1);
     --aard-color-bkgd-quizanswer-default: var(--bg1);
+    --aard-palette-gray-025: var(--bg);
+    --aard-palette-gray-050: var(--bg);
+    --aard-color-bkgd-quizanswer-hovered: var(--bg2);
+    --aard-color-bkgd-info: var(--bg1);
+    --aard-color-navitem-secondary-attention-selected: var(--bg1);
+    --aard-color-navitem-secondary-attention-hovered: var(--bg1);
+    --aard-color-bkgd-semimuted: var(--bg);
+    --aard-color-interactive-headline-hovered-onmuted: var(--fg);
+    --lightgray: var(--fg);
+    --softgray: var(--bg2);
+  }
+
+  .thesaurus-site .AsdlOJUG4I3j2VqOdnga {
+    --focus-default-button-color: var(--bg1);
+    --hover-button-color: var(--bg2);
   }
 
   .FcvpNkZTEsVQ3v6NFfbK[aria-selected="true"] /* Tab */,
   .k2qFz3iR1eXVRkpF29WJ /* Header */,
   .vVf7ViAcM8IyoD95Hmd1 /* Pages Menu */,
-  .dKPJOGfILqWFODkvnJEd /* Main */ {
+  .dKPJOGfILqWFODkvnJEd /* Main */,
+  #global-search,
+  .VX9rjf5QOw0KOL2Guuk9 /* Search form */,
+  .nXF8unPl3YF7kIFtCEJl > .M5L8uBxiXQScnZpxOtVL::before /* Dropdown */,
+  .a_Z1cA3pMYySwQsdWv5Q /* Footer */ {
     background-color: var(--bg);
   }
 
-  .VX9rjf5QOw0KOL2Guuk9 {
-    background-color: var(--bg);
+  .M5L8uBxiXQScnZpxOtVL /* Dropdown */,
+  ul.e9SGRZUPdtkgo2FY4YVp /* Search Results */ {
+    background-color: var(--bg1);
   }
 
   #thesaurus-tab > div > svg > path:nth-child(2) {
@@ -53,7 +73,42 @@
   .ac-lre-ima-ad-wrapper,
   .ac-lre-display-ad-container,
   .ac-lre-fallback-ad-wrapper,
-  .ac-lre-ad-bar {
+  .ac-lre-ad-bar,
+  .videoAdUi {
     display: none;
+  }
+}
+
+@-moz-document url-prefix("https://www.thesaurus.com/browse") {
+  .R2dKqQgpn7A_oPi9UWfr /* main */,
+  .mNmN3R7bkkDtinyNiLtl /* Left side nav */,
+  .QXhVD4zXdAnJKNytqXmK /* Results */,
+  [data-linktype="antonyms"] {
+    background-color: var(--bg);
+  }
+
+  .rXhgGek5ucMOQ0I0J3pa /* Synonyms */ {
+    background-color: var(--bg1);
+  }
+
+  .Bf5RRqL5MiAp4gB8wAZa /* Strongest matches */ {
+    --background-color-default: var(--bg);
+  }
+
+  .u7owlPWJz16NbHjXogfX /* Weak :matches */ {
+    --background-color-default: var(--bg);
+  }
+
+  [data-type="thesaurus-carambola-ad"] {
+    display: none;
+  }
+
+  .cY0SYTkIeNY8R0DY0K_r > svg > path /* Left side nav menu toggle */,
+  #related-words > details > summary > svg > path {
+    fill: var(--fg);
+  }
+
+  nav.mNmN3R7bkkDtinyNiLtl svg > path:nth-child(2) {
+    fill: var(--fg);
   }
 }
