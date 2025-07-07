@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Thesaurus Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.7.6
+@version 25.7.7
 @description Dark theme for Thesaurus.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -26,11 +26,17 @@
     --aard-color-ink-default-onmuted: var(--fg);
     --aard-color-ink-positive: #30d158;
     --aard-color-ink-negative: var(--red-color);
+    --aard-color-ink-line-deep: var(--fg);
+    --aard-color-ink-line-default: var(--fg);
+    --aard-color-ink-line-muted: var(--bg);
+    --aard-color-ink-line-extramuted: var(--bg);
     --aard-color-bkgd-default: var(--bg);
     --aard-color-bkgd-muted: var(--bg1);
     --aard-color-interactive-link-default: var(--link-color);
     --aard-color-bkgd-negative: var(--bg1);
     --aard-color-bkgd-positive: var(--bg1);
+    --aard-color-bkgd-button-icon-attention-hovered: var(--bg1);
+    --aard-color-bkgd-button-icon-attention-active: var(--bg2);
     --aard-color-bkgd-quizanswer-default: var(--bg1);
     --aard-palette-gray-025: var(--bg);
     --aard-palette-gray-050: var(--bg);
@@ -87,15 +93,22 @@
     background-color: var(--bg);
   }
 
-  .rXhgGek5ucMOQ0I0J3pa /* Synonyms */ {
+  .rXhgGek5ucMOQ0I0J3pa /* Synonyms/Antonyms focused */ {
     background-color: var(--bg1);
   }
 
-  .Bf5RRqL5MiAp4gB8wAZa /* Strongest matches */ {
-    --background-color-default: var(--bg);
+  .ZIu4Pmp_JmWEfr4WEkmw:not(
+      .rXhgGek5ucMOQ0I0J3pa
+    ) /* Synonyms/Antonyms unfocused */ {
+    background-color: var(--bg);
   }
 
-  .u7owlPWJz16NbHjXogfX /* Weak :matches */ {
+  .Bf5RRqL5MiAp4gB8wAZa /* Strongest matches */,
+  .CPTwwN0qNO__USQgCKp8 /* Strong matches */,
+  .u7owlPWJz16NbHjXogfX /* Weak :matches */,
+  .wBXvVlI83HMyXkhpf9FQ.Bf5RRqL5MiAp4gB8wAZa /* Strongest opposites */,
+  .wBXvVlI83HMyXkhpf9FQ.CPTwwN0qNO__USQgCKp8 /* Strong opposites */,
+  .wBXvVlI83HMyXkhpf9FQ.u7owlPWJz16NbHjXogfX /* Weak opposites */ {
     --background-color-default: var(--bg);
   }
 
