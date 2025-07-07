@@ -48,6 +48,8 @@
     --aard-color-interactive-headline-hovered-onmuted: var(--fg);
     --lightgray: var(--fg);
     --softgray: var(--bg2);
+    --aard-color-bkgd-button-secondary-enabled: var(--bg1);
+    --aard-color-bkgd-button-secondary-hovered: var(--bg2);
   }
 
   .thesaurus-site .AsdlOJUG4I3j2VqOdnga {
@@ -82,6 +84,10 @@
   .ac-lre-ad-bar,
   .videoAdUi {
     display: none;
+  }
+
+  .dKPJOGfILqWFODkvnJEd /* Main */ {
+    padding: 0;
   }
 }
 
@@ -123,5 +129,9 @@
 
   nav.mNmN3R7bkkDtinyNiLtl svg > path:nth-child(2) {
     fill: var(--fg);
+  }
+
+  .D7NUkW0JoLnfN3mRopVF /* main */ {
+    margin-top: 0;
   }
 }
