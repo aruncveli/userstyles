@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           AWS CDK Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.1.28
+@version 25.7.14
 @description    Dark mode only for the TypeScript docs of AWS CDK.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -47,7 +47,8 @@
 
   a,
   a:hover,
-  .toc .toggleNav ul li a:hover {
+  .toc .toggleNav ul li a:hover,
+  .toc .toggleNav ul li.navListItemActive a {
     color: var(--link-color);
   }
 
