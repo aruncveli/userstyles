@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm Docs Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.6.6
+@version 25.7.16
 @description    Dark theme for npm Docs
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -47,5 +47,8 @@
     .operator {
       color: var(--fg) !important;
     }
+  }
+  .token.punctuation {
+    color: var(--fg) !important;
   }
 }
