@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.6.27
+@version 25.8.2
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -108,7 +108,8 @@
   .c-movieDetails_sectionContainer,
   .c-productionDetailsTv_sectionContainer,
   .c-globalCheckbox_icon,
-  .c-globalSidebar {
+  .c-globalSidebar,
+  .c-navigationPagination_itemButtonContent {
     background-color: var(--bg);
   }
 
@@ -123,9 +124,11 @@
   .c-globalCardButton,
   .c-globalCheckbox:hover .c-globalCheckbox_icon,
   .c-slider_tooltip,
-  .c-navigationPagination_itemButtonContent,
   .c-globalModal_wrapper,
-  .c-siteHeaderUserDropdown[data-v-5618330a] {
+  .c-siteHeaderUserDropdown[data-v-5618330a],
+  .c-navigationPagination_item.enabled
+    .c-navigationPagination_itemButton:hover
+    .c-navigationPagination_itemButtonContent {
     background-color: var(--bg1);
   }
 
@@ -135,10 +138,7 @@
 
   .c-searchSuggestion:hover,
   .c-searchSuggestions_seeAll:hover,
-  .c-globalCardButton:hover,
-  .c-navigationPagination_item.enabled,
-  .c-navigationPagination_itemButton:hover,
-  .c-navigationPagination_itemButtonContent {
+  .c-globalCardButton:hover {
     background-color: var(--bg2);
   }
 
@@ -242,7 +242,8 @@
   }
 
   #filterChevron > path,
-  #check > path {
+  #check > path,
+  #arrowChevron > path {
     stroke: var(--fg) !important;
   }
 
