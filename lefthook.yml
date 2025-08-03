@@ -4,15 +4,15 @@ pre-commit:
     - run: bun scripts/bumpVersion.ts {staged_files}
       glob: "*.css"
       stage_fixed: true
-    - run: biome check --write {staged_files}
+    - run: bun biome check --write {staged_files}
       glob: "*.css"
       stage_fixed: true
   commands:
     biome:
-      run: biome check --write {staged_files}
+      run: bun biome check --write {staged_files}
       glob: "*.{js,ts,json}"
       stage_fixed: true
     prettier:
-      run: prettier --write --ignore-unknown {staged_files}
+      run: bun prettier --write --ignore-unknown {staged_files}
       glob: "*.{yml,md}"
       stage_fixed: true
