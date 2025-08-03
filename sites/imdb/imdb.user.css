@@ -46,7 +46,8 @@
   }
 
   .gCFbYJ:hover,
-  .ipc-scroll-to-top-button {
+  .ipc-scroll-to-top-button,
+ .dOykdw:hover, .dOykdw:active, .dOykdw:focus {
     color: var(--fg);
   }
 
