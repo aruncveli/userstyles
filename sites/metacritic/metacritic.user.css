@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.8.4
+@version 25.8.16
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -82,7 +82,8 @@
   .c-productHero_seasonLink,
   .c-episodesModalCard_link:hover,
   .c-productSubpageNavigation_menu_item a,
-  .c-profileProductCard_title:hover {
+  .c-profileProductCard_title:hover,
+  .c-globalButton-secondary .c-globalButton_container {
     color: var(--fg);
   }
 
@@ -131,7 +132,10 @@
   .c-siteHeaderUserDropdown[data-v-5618330a],
   .c-navigationPagination_item.enabled
     .c-navigationPagination_itemButton:hover
-    .c-navigationPagination_itemButtonContent {
+    .c-navigationPagination_itemButtonContent,
+  .c-w2wModal_body /* Where to watch */,
+  .c-globalButton-secondary .c-globalButton_container,
+  .g-bg-gray30 {
     background-color: var(--bg1);
   }
 
@@ -217,14 +221,6 @@
     display: inherit;
   }
 
-  .c-adSkyBox,
-  .c-adDisplay_container.spaced,
-  #floor_adhesion,
-  .mini-ad,
-  .c-adDisplay_container {
-    display: none;
-  }
-
   .c-globalProductCard_title,
   .u-text-underline,
   .c-articleSummary_title {
@@ -243,14 +239,16 @@
   .c-siteFooter_socialIcon,
   .c-siteFooterBrands_brandIcon,
   .c-searchBox svg.u-pointer,
-  #logoWordmark :nth-child(4) {
+  #logoWordmark :nth-child(4),
+  #logo_justwatch path {
     fill: var(--fg);
   }
 
   #filterChevron > path,
   #check > path,
   #arrowChevron > path,
-  #chevronLeft > path {
+  #chevronLeft > path,
+  #externalLink path {
     stroke: var(--fg) !important;
   }
 
