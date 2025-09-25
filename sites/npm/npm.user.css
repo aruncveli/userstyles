@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.5.26
+@version 25.9.25
 @description    Dark theme for npm
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -118,6 +118,14 @@
   a[href^="https://runkit.com"],
   ._24a1e9c7 {
     background-color: var(--bg);
+  }
+
+  .ca243068 > pre /* Code tab content */ {
+    color: var(--fg) !important;
+    background-color: var(--bg) !important;
+    * {
+      color: var(--fg) !important;
+    }
   }
 
   ._6d9832ac table,

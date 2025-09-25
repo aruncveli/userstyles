@@ -16,13 +16,13 @@
     "generate": "bun scripts/generate.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.0",
-    "@tsconfig/strictest": "2.0.5",
-    "@types/bun": "1.2.20",
+    "@biomejs/biome": "2.2.4",
+    "@tsconfig/strictest": "2.0.6",
+    "@types/bun": "1.2.22",
     "@types/ejs": "3.1.5",
-    "@types/node": "24.3.0",
+    "@types/node": "24.5.2",
     "ejs": "3.1.10",
-    "lefthook": "1.12.3",
+    "lefthook": "1.13.4",
     "prettier": "3.6.2",
     "typescript": "5.9.2"
   }

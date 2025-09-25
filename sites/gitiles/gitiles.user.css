@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Gitiles Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.5.16
+@version 25.9.25
 @description Dark theme for Gitiles, Gerrit's repository browser.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -18,7 +18,7 @@
 @var color red-color "Red" #ff443a
 ==/UserStyle== */
 
-@-moz-document regexp(".+\/gitiles.*") {
+@-moz-document regexp(".+/gitiles.*") {
   :root {
     color-scheme: dark;
   }
