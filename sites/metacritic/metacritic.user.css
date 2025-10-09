@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.8.16
+@version 25.10.9
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -83,7 +83,8 @@
   .c-episodesModalCard_link:hover,
   .c-productSubpageNavigation_menu_item a,
   .c-profileProductCard_title:hover,
-  .c-globalButton-secondary .c-globalButton_container {
+  .c-globalButton-secondary .c-globalButton_container,
+  .c-globalCarouselJustWatchLogo span {
     color: var(--fg);
   }
 
