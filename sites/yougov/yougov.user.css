@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version 25.8.13
+@version 25.10.9
 @description    Dark mode for YouGov surveys
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -38,7 +38,9 @@
   .grid-layout tr th.grid-item-text-right,
   input[type="text"],
   input[type="number"],
-  textarea {
+  textarea,
+  .spd-consent-text,
+  a.spd-consent-skip {
     color: var(--fg);
   }
 
@@ -121,7 +123,8 @@
   }
 
   .grid-layout td,
-  .grid-layout th {
+  .grid-layout th,
+  .spd-consent-text {
     border-top-color: var(--bg);
   }
 

@@ -84,7 +84,9 @@
   .c-productSubpageNavigation_menu_item a,
   .c-profileProductCard_title:hover,
   .c-globalButton-secondary .c-globalButton_container,
-  .c-globalCarouselJustWatchLogo span {
+  .c-globalCarouselJustWatchLogo span,
+  .c-CmsContent table a:not(.c-globalButton a),
+  .c-CmsContent table a:not(.c-globalButton a):hover {
     color: var(--fg);
   }
 
@@ -99,7 +101,12 @@
   .c-siteReviewScore_large[data-v-e408cafe],
   .c-siteReviewScore_small[data-v-e408cafe],
   .c-siteReviewScore_medium[data-v-e408cafe],
-  .c-siteReviewScore_xsmall[data-v-e408cafe] {
+  .c-siteReviewScore_xsmall[data-v-e408cafe],
+  .c-CmsContent
+    table
+    a:not(.c-globalButton a).o-inlineScore[data-testid="shortcode"]:not(
+      .o-inlineScore-tbd
+    ) {
     color: var(--bg);
   }
 
@@ -114,7 +121,8 @@
   .c-globalCheckbox_icon,
   .c-globalSidebar,
   .c-navigationPagination_itemButtonContent,
-  .c-productCredits dl div:nth-child(odd) {
+  .c-productCredits dl div:nth-child(odd),
+  .c-CmsContent .c-CmsContent--container > table tr:nth-child(odd) {
     background-color: var(--bg);
   }
 
