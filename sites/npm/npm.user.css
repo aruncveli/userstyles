@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm dark
 @namespace      github.com/aruncveli/userstyles
-@version 25.9.25
+@version 25.11.8
 @description    Dark theme for npm
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -14,6 +14,7 @@
 @var color bg1 "Background lightened 1" #111
 @var color bg2 "Background lightened 2" #222
 @var color link-color "Link" #ff453a
+@var color warning-color "Warning" #bd8e01
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.npmjs.com") {
   :root {
@@ -28,6 +29,9 @@
     --search-fg-muted: var(--fg);
     --search-border: var(--bg);
     --search-bg-subtle: var(--bg1);
+    --color-border-attention: var(--bg);
+    --color-fg-attention: var(--warning-color);
+    --color-bg-attention: var(--bg);
   }
 
   .bg-white,
@@ -176,7 +180,7 @@
 
   ._704c034e .entity.name.function,
   ._75a5f581 /* Keywords */ {
-    color: var(--link);
+    color: var(--link-color);
   }
 
   ._704c034e .variable {
