@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name IMDB Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.8.3
+@version 25.11.21
 @description description
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -10,6 +10,7 @@
 @license MIT
 @preprocessor default
 @var color fg "Foreground" white
+@var color fg1 "Foreground darkened" #ccc
 @var color bg "Background" black
 @var color bg1 "Background lightened 1" #111
 @var color bg2 "Background lightened 2" #222
@@ -53,7 +54,16 @@
     color: var(--fg);
   }
 
+  .ezFuSE .advanced-search-tabs,
+  .fLmkjJ {
+    background-color: var(--bg);
+  }
+
   .ipc-scroll-to-top-button {
     background-color: var(--bg1);
+  }
+
+  .ipc-textinput__input {
+    border: solid 0.15em var(--bg1);
   }
 }
