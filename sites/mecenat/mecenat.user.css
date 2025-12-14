@@ -1,0 +1,103 @@
+/* ==UserStyle==
+@name Mecenat Dark
+@namespace github.com/aruncveli/userstyles
+@version 25.12.14
+@description Dark theme for Mecenat.
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/mecenat/mecenat.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.mecenatalumni.com") {
+  :root {
+    color-scheme: dark;
+  }
+
+  /* html.alumni {
+    color-scheme: dark;
+    --text-black: 39 39 42;
+    --text-white: 244 244 245;
+    --text-primary: var(--text-white);
+    --text-secondary: var(--text-black);
+    --background-primary: 24 24 27;
+    --background-secondary: 63 63 70;
+    --background-tertiary: 24 24 27;
+    --link-contrast: var(--background-tertiary);
+    --link: 6 182 212;
+    --link-hover: 34 211 238;
+    --link-pressed: 8 145 178;
+  } */
+
+  html.alumni {
+    color-scheme: dark;
+    --text-black: 0 0 0;
+    --text-white: 255 255 255;
+    --text-primary: var(--text-white);
+    --text-secondary: var(--text-black);
+    --background-primary: 0 0 0;
+    --background-secondary: 17 17 17;
+    --background-tertiary: 34 34 34;
+    --link-contrast: var(--background-tertiary);
+    --link: 0 145 255;
+    --link-hover: 34 211 238;
+    --link-pressed: 8 145 178;
+  }
+
+  html.dark {
+    color-scheme: dark;
+    --text-black: 39 39 42;
+    --text-white: 244 244 245;
+    --text-primary: var(--text-white);
+    --text-secondary: var(--text-black);
+    --background-primary: 24 24 27;
+    --background-secondary: 63 63 70;
+    --background-tertiary: 24 24 27;
+    --link: 6 182 212;
+    --link-hover: 34 211 238;
+    --link-pressed: 8 145 178;
+  }
+
+  .nativemkt .prose {
+    --tw-prose-body: --var(--fg);
+  }
+
+  .nativemkt .text-black path {
+    fill: var(--fg);
+  }
+
+  .bigmec .hover\:text-black:hover {
+    color: #aaa !important;
+  }
+
+  .bigmec .text-black {
+    color: var(--fg) !important;
+  }
+
+  .bigmec .border-gray-200,
+  .bigmec .border-\[\#939393\] {
+    border-color: var(--bg1) !important;
+  }
+  .bigmec .bg-background-quaternary {
+    background-color: var(--bg2) !important;
+  }
+
+  a[aria-label="Go to alumni"] > div > svg > path:first-child {
+    fill: var(--fg);
+  }
+
+  .behemoth .prose,
+  .contentpage .mec-mce-content {
+    --tw-prose-headings: var(--fg);
+    --tw-prose-body: var(--fg);
+  }
+}

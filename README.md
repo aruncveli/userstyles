@@ -33,3 +33,4 @@ style.
 |       Baeldung        |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/baeldung/baeldung.user.css)              |       [Info](sites/baeldung)        |
 |       Thesaurus       |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/thesaurus/thesaurus.user.css)             |       [Info](sites/thesaurus)       |
 |        AWS CLI        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cli/aws-cli.user.css)               |        [Info](sites/aws-cli)        |
+|        Mecenat        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/mecenat/mecenat.user.css)               |        [Info](sites/mecenat)        |
