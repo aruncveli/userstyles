@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name IMDB Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.12.14
+@version 25.12.24
 @description description
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -34,7 +34,7 @@
     --ipt-base-shade1-bg: var(--bg1);
   }
 
-  .bExpVV {
+  .lpdhwr {
     --ipt-on-base-textPrimary-color: var(--fg);
     --ipt-on-base-textSecondary-color: var(--fg);
     --ipt-base-bg: var(--bg);
