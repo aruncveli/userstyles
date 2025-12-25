@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           AWS CDK Dark
 @namespace      github.com/aruncveli/userstyles
-@version 25.7.14
+@version 25.12.25
 @description    Dark mode only for the TypeScript docs of AWS CDK.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -10,6 +10,7 @@
 @license        MIT
 @preprocessor   default
 @var color fg "Foreground" white
+@var color fg1 "Foreground darkened 1" #ddd
 @var color bg "Background" black
 @var color bg1 "Background lightened 1" #111
 @var color link-color "Link" #0b84ff
@@ -17,6 +18,11 @@
 @-moz-document url-prefix("https://docs.aws.amazon.com/cdk/api/v2/docs/") {
   :root {
     color-scheme: dark;
+    --color-background: var(--bg1);
+    --layout-max-width: unset;
+    --content-max-width: unset;
+    --text-max-width: unset;
+    scrollbar-gutter: stable;
   }
 
   body,
@@ -25,17 +31,24 @@
   .toc .toggleNav .navGroup .navGroupCategoryTitle,
   .toc .toggleNav .navGroup .navGroupSubcategoryTitle,
   .navGroupCategoryTitle path:first-child,
-  blockquote {
+  blockquote,
+  .nav-footer {
     color: var(--fg);
   }
 
   body,
-  table tr:nth-child(2n) {
+  table tr:nth-child(2n),
+  .fixedHeaderContainer,
+  .nav-footer {
     background-color: var(--bg);
   }
 
   code,
-  blockquote {
+  blockquote,
+  .navigationSlider .slidingNav ul li.siteNavGroupActive > a,
+  .navigationSlider .slidingNav ul li > a:focus,
+  .navigationSlider .slidingNav ul li > a:hover,
+  .button:hover {
     background-color: var(--bg1);
   }
 
@@ -48,7 +61,11 @@
   a,
   a:hover,
   .toc .toggleNav ul li a:hover,
-  .toc .toggleNav ul li.navListItemActive a {
+  .toc .toggleNav ul li.navListItemActive a,
+  .toc .toggleNav ul li a:focus,
+  .onPageNav .toc-headings > li > a.active,
+  .button,
+  .button:hover {
     color: var(--link-color);
   }
 
@@ -58,6 +75,36 @@
         border-left-color: var(--bg);
       }
     }
+  }
+
+  span.arrow > svg > path:first-child /* arrow in the left sidebar */ {
+    fill: var(--fg);
+  }
+
+  .toc .toggleNav .navGroup .navGroupSubcategoryTitle,
+  .navGroup:not(.subNavGroup) > ul > li > a {
+    font-weight: bold;
+  }
+
+  .button {
+    border-color: var(--bg);
+  }
+
+  pre code {
+    white-space: pre-wrap;
+  }
+
+  #docsNav {
+    width: unset !important;
+  }
+
+  .toc,
+  .docsNavContainer {
+    padding: unset;
+  }
+
+  .toc {
+    overflow-x: hidden;
   }
 
   /*!
