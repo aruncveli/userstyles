@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           snowfl dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.1.13
+@version 26.1.9
 @description    Dark theme for snowfl
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -13,7 +13,7 @@
 @var color bg "Background" black
 @var color bg1 "Background lightened 1" #111
 @var color bg2 "Background lightened 2" #222
-@var color link-color "Link" #0b84ff
+@var color link-color "Link" #5cb8ff
 ==/UserStyle== */
 
 @-moz-document domain("snowfl.com") {
