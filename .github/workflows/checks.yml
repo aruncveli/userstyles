@@ -1,6 +1,4 @@
 name: "Checks"
-env:
-  HUSKY: 0
 on:
   push:
     paths-ignore:
