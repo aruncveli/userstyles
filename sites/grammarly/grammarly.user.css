@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.1.10
+@version 26.1.11
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -706,6 +706,10 @@
 
   .f1fk53u7:hover /* Spelling popover list items on hover */ {
     background-color: var(--color-background-base-subdued);
+  }
+
+  .fqa53j6 /* Pro suggestion popover */ {
+    background-color: var(--color-background-base-default);
   }
 }
 
