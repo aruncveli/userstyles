@@ -2,7 +2,7 @@
 
 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/archlinux/archlinux.user.css)
 
-Dark theme for most of the Arch Linux pages.
+Dark theme for the Arch Linux website.
 
 For the AUR cgit, dark mode styles from
 [cgit homepage](https://git.zx2c4.com/cgit/) are copied as is.

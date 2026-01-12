@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.1.11
-@description    Dark theme for some (simpler) Arch Linux pages: Home, Packages, AUR and Download.
+@version 26.1.12
+@description    Dark theme for the Arch Linux website
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
 @supportURL     https://github.com/aruncveli/userstyles/issues
@@ -16,8 +16,9 @@
 @var color bg2 "Background lightened 2" #222
 @var color bg3 "Background lightened 3" #333
 @var color link-color "Link" #5cb8ff
-@var color red-color "Red" #ff443a
+@var color red-color "Red" #ff6165
 @var text font-size "Font size" 0.95em
+@var text font-size-forum "Forum font size" 1.2em
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org"), url-prefix("https://man.archlinux.org"), url-prefix("https://security.archlinux.org") {
@@ -714,5 +715,129 @@
   .pretty2 th {
     background-color: var(--bg);
     border-color: var(--bg);
+  }
+}
+
+@-moz-document domain("bbs.archlinux.org") {
+  :root {
+    color-scheme: dark;
+  }
+
+  .pun .punwrap {
+    font-size: var(--font-size-forum);
+  }
+
+  .pun,
+  .pun .punwrap,
+  .pun label,
+  .pun .blocktable th,
+  #punindex .blocktable h2,
+  .pun .postmsg,
+  .pun .blockpost h2,
+  .pun .codebox,
+  .pun .quotebox,
+  .pun .postmsg .postedit,
+  .pun #quickpost h2,
+  .pun .quotebox cite,
+  .pun legend,
+  #punpost .blockform h2,
+  #punedit .blockform h2 {
+    color: var(--fg);
+  }
+
+  .pun a,
+  .pun a:link,
+  #brdmain a:visited,
+  #brdmenu a,
+  #brdmenu a:link,
+  #brdmenu a:visited {
+    color: var(--link-color);
+  }
+
+  html,
+  .pun,
+  .pun .punwrap,
+  #brdmenu,
+  #brdmenu a,
+  #brdmenu a:link,
+  #brdmenu a:visited,
+  .pun .blocktable .box,
+  .pun .blocktable th,
+  .pun .blockpost,
+  .pun .blockpost .postbody,
+  .pun .blockpost .postfoot,
+  .pun .postmsg hr,
+  #postpreview {
+    background-color: var(--bg);
+  }
+
+  .pun .codebox,
+  .pun .quotebox,
+  .pun .blockpost h2,
+  .pun .blockform .box,
+  .pun #quickpost h2,
+  .pun .infldset,
+  #punpost .blockform h2,
+  #punedit .blockform h2 {
+    background-color: var(--bg1);
+  }
+
+  .pun .punwrap,
+  #brdmenu a,
+  #brdmenu a:link,
+  #brdmenu a:visited,
+  #brdmain,
+  .pun .blocktable .box,
+  .pun .blocktable td,
+  #brdstats,
+  #brdstats #onlinelist,
+  .pun .linkst .crumbsplus .pagepost,
+  .pun .blockpost,
+  .pun .blockpost h2,
+  #quickpost,
+  .pun .blockform .box,
+  .pun .blockpost .postbody,
+  .pun .blockpost .postfoot,
+  .pun .postlinksb .crumbsplus .pagepost,
+  #postpreview {
+    border-color: var(--bg);
+  }
+
+  .pun .infldset,
+  .pun .quotebox,
+  .pun .codebox {
+    border-color: var(--bg1);
+  }
+}
+@-moz-document url-prefix("https://bbs.archlinux.org/profile.php") {
+  .pun .blockmenu .isactive a:visited,
+  .pun a:hover,
+  #brdmain a:hover {
+    background-color: var(--bg1);
+  }
+
+  .pun .blockmenu ul,
+  .pun .blockmenu li {
+    border-color: var(--bg);
+  }
+}
+
+@-moz-document url-prefix("https://bbs.archlinux.org/misc.php") {
+  #punmisc #rules .box {
+    background-color: var(--bg);
+    border-color: var(--bg);
+  }
+}
+
+@-moz-document url-prefix("https://bbs.archlinux.org/userlist.php") {
+  .pun #users1 h2 {
+    background-color: var(--bg1);
+  }
+}
+
+@-moz-document url-prefix("https://bbs.archlinux.org/search.php") {
+  .pun .checklist {
+    background-color: var(--bg2);
+    border-color: var(--bg1);
   }
 }
