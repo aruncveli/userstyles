@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           npm Docs Dark
 @namespace      github.com/aruncveli/userstyles
-@version 25.7.16
+@version 26.1.15
 @description    Dark theme for npm Docs
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -29,7 +29,7 @@
     --control-transparent-bgColor-selected: var(--bg2);
     --borderColor-default: var(--bg);
     --button-default-borderColor-active: var(--bg);
-    --button-default-borderColor-hover: var(--bg);
+    --button-default-borderColor-hover: var(--bg1);
     --button-default-borderColor-rest: var(--bg);
     --button-default-bgColor-rest: var(--bg1);
     --button-default-bgColor-hover: var(--bg2);
@@ -38,7 +38,7 @@
     --overlay-bgColor: var(--bg1);
     --borderColor-muted: var(--bg1);
   }
-  .bRtvlF /* Code blocks */ {
+  .code-module--Box_1--2a509 /* Code blocks */ {
     color: var(--fg) !important;
     background-color: var(--bg1) !important;
   }
@@ -50,5 +50,9 @@
   }
   .token.punctuation {
     color: var(--fg) !important;
+  }
+  .code-module--ClipboardCopy--0a970,
+  .code-module--Box_1--2a509 {
+    border-color: var(--bg1);
   }
 }
