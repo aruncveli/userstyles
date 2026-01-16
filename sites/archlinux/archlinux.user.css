@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.1.12
+@version 26.1.16
 @description    Dark theme for the Arch Linux website
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -21,7 +21,7 @@
 @var text font-size-forum "Forum font size" 1.2em
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org"), url-prefix("https://man.archlinux.org"), url-prefix("https://security.archlinux.org") {
+@-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org"), url-prefix("https://security.archlinux.org") {
   :root {
     color-scheme: dark;
   }
@@ -591,42 +591,6 @@
   }
   div#cgit table.blob .kwd {
     color: #f34627;
-  }
-}
-
-@-moz-document url-prefix("https://man.archlinux.org") {
-  code {
-    background-color: var(--bg1);
-  }
-
-  table.foot {
-    border-top-color: var(--bg);
-  }
-
-  table.head,
-  .man-page-content a.permalink {
-    border-bottom-color: var(--bg);
-  }
-}
-
-@-moz-document url-prefix("https://man.archlinux.org/search") {
-  .box {
-    background-color: var(--bg1);
-  }
-}
-
-@-moz-document url-prefix("https://man.archlinux.org/man") {
-  .man-page-content table.tbl {
-    &,
-    tr:first-child td:not(:only-child) {
-      background-color: var(--bg1);
-    }
-  }
-
-  pre {
-    background-color: var(--bg1);
-    border-color: var(--bg1);
-    border-radius: 16px;
   }
 }
 
