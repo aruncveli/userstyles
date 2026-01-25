@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Mecenat Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.12.14
+@version 26.1.25
 @description Dark theme for Mecenat.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -18,85 +18,61 @@
 @var color red-color "Red" #ff443a
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.mecenatalumni.com") {
+@-moz-document domain("mecenatalumni.com"), domain("mecenat.com") {
   :root {
     color-scheme: dark;
   }
 
-  /* html.alumni {
-    color-scheme: dark;
-    --text-black: 39 39 42;
-    --text-white: 244 244 245;
-    --text-primary: var(--text-white);
-    --text-secondary: var(--text-black);
-    --background-primary: 24 24 27;
-    --background-secondary: 63 63 70;
-    --background-tertiary: 24 24 27;
-    --link-contrast: var(--background-tertiary);
-    --link: 6 182 212;
-    --link-hover: 34 211 238;
-    --link-pressed: 8 145 178;
-  } */
-
+  html,
   html.alumni {
     color-scheme: dark;
     --text-black: 0 0 0;
     --text-white: 255 255 255;
     --text-primary: var(--text-white);
-    --text-secondary: var(--text-black);
-    --background-primary: 0 0 0;
-    --background-secondary: 17 17 17;
-    --background-tertiary: 34 34 34;
-    --link-contrast: var(--background-tertiary);
-    --link: 0 145 255;
-    --link-hover: 34 211 238;
-    --link-pressed: 8 145 178;
-  }
+    --text-secondary: var(--text-white);
+    --tw-prose-bold: var(--text-white);
 
-  html.dark {
-    color-scheme: dark;
-    --text-black: 39 39 42;
-    --text-white: 244 244 245;
-    --text-primary: var(--text-white);
-    --text-secondary: var(--text-black);
-    --background-primary: 24 24 27;
-    --background-secondary: 63 63 70;
-    --background-tertiary: 24 24 27;
-    --link: 6 182 212;
-    --link-hover: 34 211 238;
-    --link-pressed: 8 145 178;
+    --background-primary: var(--bg);
+    --background-secondary: var(--bg1);
+    --background-tertiary: var(--bg2);
+    --link-contrast: var(--background-tertiary);
+    --link: var(--link-color);
+    --link-hover: var(--link-color);
+    --link-pressed: var(--link-color);
+    --grayscale-700: 255 255 255;
+    --border-tertiary: var(--bg2);
   }
 
   .nativemkt .prose {
     --tw-prose-body: --var(--fg);
+    --tw-prose-headings: var(--fg);
   }
 
-  .nativemkt .text-black path {
-    fill: var(--fg);
+  .bigmec .bg-background-secondary {
+    background-color: var(--bg) !important;
   }
 
-  .bigmec .hover\:text-black:hover {
-    color: #aaa !important;
-  }
-
-  .bigmec .text-black {
-    color: var(--fg) !important;
-  }
-
-  .bigmec .border-gray-200,
-  .bigmec .border-\[\#939393\] {
-    border-color: var(--bg1) !important;
-  }
-  .bigmec .bg-background-quaternary {
+  .nativemkt .bg-background-secondary {
     background-color: var(--bg2) !important;
   }
 
-  a[aria-label="Go to alumni"] > div > svg > path:first-child {
+  .contentpage .bg-background-tertiary {
+    background-color: var(--bg2) !important;
+  }
+
+  a[aria-label="Go to alumni"],
+  a[aria-label="Go to mecenat"] {
+    > div > svg > path:first-child {
+      fill: var(--fg);
+    }
+  }
+
+  div[aria-label="Add to favorites"] svg > path:first-child {
     fill: var(--fg);
   }
 
-  .behemoth .prose,
   .contentpage .mec-mce-content {
+    --tw-prose-bold: var(--fg);
     --tw-prose-headings: var(--fg);
     --tw-prose-body: var(--fg);
   }
