@@ -1,7 +1,7 @@
 import { appendFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { argv } from "node:process";
 
-import { renderFile } from "ejs";
+import ejs from "ejs";
 
 import version from "./calver.js";
 
@@ -19,13 +19,13 @@ const smallName = args.join("-").toLocaleLowerCase();
 console.log(`Creating directory sites/${smallName}`);
 mkdirSync(`sites/${smallName}`);
 
-renderFile(`${__dirname}/readme.ejs`, { name, smallName }, (err, str) => {
+ejs.renderFile(`${__dirname}/readme.ejs`, { name, smallName }, (err, str) => {
   if (err) throw err;
   console.log(`Writing sites/${smallName}/README.md`);
   writeFileSync(`sites/${smallName}/README.md`, str);
 });
 
-renderFile(
+ejs.renderFile(
   `${__dirname}/user.css.ejs`,
   { name, smallName, version },
   (err, str) => {
@@ -35,7 +35,7 @@ renderFile(
   },
 );
 
-renderFile(
+ejs.renderFile(
   `${__dirname}/root-readme-entry.ejs`,
   { name, smallName },
   (err, str) => {

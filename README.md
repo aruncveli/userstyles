@@ -34,3 +34,4 @@ style.
 |       Thesaurus       |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/thesaurus/thesaurus.user.css)             |       [Info](sites/thesaurus)       |
 |        AWS CLI        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cli/aws-cli.user.css)               |        [Info](sites/aws-cli)        |
 |        Mecenat        |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/mecenat/mecenat.user.css)               |        [Info](sites/mecenat)        |
+|   Google Translate    |      [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-translate/google-translate.user.css)      |   [Info](sites/google-translate)    |

@@ -1,0 +1,186 @@
+/* ==UserStyle==
+@name Google Translate Dark
+@namespace github.com/aruncveli/userstyles
+@version 26.1.29
+@description Dark theme for Google Translate.
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-translate/google-translate.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color fg1 "Foreground darkened 1" #888
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://translate.google.com") {
+  :root {
+    color-scheme: dark;
+    --og-logo-color: var(--fg);
+    --gm3-sys-color-surface: var(--bg);
+    --gm3-sys-color-on-surface-variant: var(--fg);
+    --gm3-sys-color-background: var(--bg);
+    --gm-hairlinebutton-outline-color: var(--bg1);
+    --gm-hairlinebutton-ink-color--stateful: var(--link-color);
+    --gm-iconbutton-disabled-ink-color: var(--bg2);
+    --gm-outlinedtextfield-ink-color: var(--fg);
+    --mdc-theme-surface: var(--bg1);
+  }
+
+  .HWmS8 /* Text: active area footer */,
+  .zklE3 /* Images: active area footer */,
+  .BXabBd /* Documents: active area footer */,
+  .c5bTNd /* Websites: active area footer */,
+  .kXN2zb.Q5Onnd /* Weird background uncovered when dictionary opens */ {
+    background-color: var(--bg);
+  }
+
+  body,
+  .gb_6c,
+  .Ose4Jf .VfPpkd-jY41G-V67aGc /* Unselected languages */,
+  .JJYS0b:hover .VfPpkd-jY41G-V67aGc /* Selected languages */,
+  .X2ZoU.X2ZoU,
+  .MxWhHf.MxWhHf,
+  .GyPTPe.GyPTPe,
+  .Ft4sJe.Ft4sJe /* Text, Images, Documents and Websites */,
+  .er8xn /* Translation input */,
+  .lRu31 /* Translatino output 2*/,
+  .dWI6ed /* See dictionary */,
+  .rrPCWc:not(:disabled) /* Listen */,
+  .ZTPlmc /* Number of characters */,
+  .ZihNHd:not(
+      :disabled
+    ) /* Various other icons includling: Language list dropdown trigger */,
+  .ZihNHd:not(:disabled) .VfPpkd-kBDsod /* Clear input, swap languages */,
+  .ydsGXd /* More translations text */,
+  .b08HRd:not(:disabled) /* More translations: Expand all */,
+  .b08HRd:not(:disabled):hover,
+  .jq25U /* Adjective */,
+  .jqUpHc:not(:disabled) /* More translations: Collapse all */,
+  .jqUpHc:not(:disabled):hover,
+  .UdTY9 /* Phonetics */,
+  .C99pKe /* Output subtext */,
+  .qSb8Pe /* Languages dropdown: items */,
+  .VhOj3e /* Translate from suggestion */,
+  .uNr6ee /* Autocomplete suggestion */,
+  .vk-btn /* VK: Virtual keyboard*/,
+  .vk-t,
+  .vk-btn.vk-sf-h,
+  .qSb8Pe:not(.KKjvXb) .qGfVtc /* Detect language sparkles */,
+  .ita-kd-menuitem,
+  .pu3MFc /* Images: drag and drop */,
+  .LYeNu /* Images: or choose a file */,
+  .uqt39c /* Suported file types */,
+  .sp2Bqb /* Documents: powered by */,
+  .pWIpbc /* Settings: header */,
+  .Jp7KKb /* Settings: voice speed */,
+  .Q1Za9c /* Settings: voice speed options */,
+  .m2ySsc /* Dictionary sidebar heading */,
+  .Mplckd /* Dictionary sidebar phonetics */,
+  .FpSDVb /* Dictionary sidebar Definitions of */,
+  .vvvYne /* Dictionary sidebar input word */,
+  .uRVWye /* Dictionary sidebar numbering */,
+  .sUGHdf /* Document: uploaded file card */,
+  .MXuJQd /* Document: uploaded file name */,
+  .d3Mtee /* Document: uploaded file size */ {
+    color: var(--fg);
+  }
+
+  .gb_6c /* Side bar */,
+  .ccvoYb /* Input area */,
+  .QcsUad /* Output text area */,
+  .ySES5 /* History and favourite buttons */,
+  .hX7wnb /* More translations */,
+  .vk-box /* Translation output box */,
+  .dOQF4b /* Images: card*/,
+  .k5v5Nb /* Documents: card*/,
+  .CLKk4c /* Websites: card*/,
+  .kmXzdf /* Dictionary sidebar */,
+  .bhvHjb /* Dictionary sidebar header */ {
+    background-color: var(--bg1);
+  }
+
+  .b08HRd:not(:disabled):hover,
+  .jqUpHc:not(:disabled):hover,
+  .jCAhz:hover /* Translated output on hover */,
+  .Xcmxjb.FwR7Pc /* Input when translated output on hover*/,
+  .bvzp8c,
+  .fMHXgc,
+  .yFQBKb /* Search languages */,
+  .KjuTac /* Input autocomplete popup */,
+  .vk-btn,
+  .ita-kd-dropdown-menu {
+    background-color: var(--bg2);
+  }
+
+  .qSb8Pe.KKjvXb /* Selected language */,
+  .qSb8Pe:hover /* Hovered language */,
+  .vk-btn.vk-sf-h,
+  .Bcbxbe.FwR7Pc /* Autocomplete menu item */ {
+    background-color: var(--bg3);
+  }
+
+  .ita-kd-menuitem-hover {
+    color: var(--fg) !important;
+    background-color: var(--bg3) !important;
+  }
+
+  .vk-btn,
+  .vk-btn.vk-sf-h {
+    background-image: unset;
+  }
+
+  .qSb8Pe.KKjvXb /* Selected language */,
+  .mvqA2c /* Translate from suggestion */ {
+    color: var(--link-color);
+  }
+
+  .U0xwnf::after /* Header with tabs: text, images, etc*/ {
+    background: var(--bg);
+  }
+
+  .X4DQ0::after /* Languages horizontal scrollable */,
+  .GAyS9e /* More translations item*/ {
+    background: linear-gradient(to right, rgba(17, 17, 17, 0), rgb(17, 17, 17));
+  }
+
+  .sUGHdf {
+    background: var(--bg2);
+  }
+
+  .hX7wnb /* More translations items */,
+  .Bljmlb /* More translations */,
+  .qt6jm /* More translations collapse all */,
+  .W50gQb /* Dictionary definitions */ {
+    border-top-color: var(--bg2);
+  }
+
+  .bvzp8c.Tht3fc /* Selected more translations item */,
+  .bvzp8c.DlHcnf /* Output languages selection popover*/,
+  .vk-btn.vk-sf-h {
+    border-color: var(--bg2);
+  }
+
+  .FqSPb /* Translation output */,
+  .xUPQqb /* Autocomplete suggestion translated */ {
+    color: var(--fg1);
+  }
+
+  .KjuTac /* Autocomplete popover */ {
+    outline-color: var(--bg2);
+  }
+
+  .kmXzdf {
+    box-shadow: unset;
+  }
+
+  .ita-kd-img {
+    filter: invert(1);
+  }
+}
