@@ -1,0 +1,270 @@
+/* ==UserStyle==
+@name Dictionary and Thesaurus Dark
+@namespace github.com/aruncveli/userstyles
+@version 26.1.31
+@description Dark theme for Dictionary and Thesaurus.
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/thesaurus/thesaurus.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #5cb8ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document domain("thesaurus.com"), domain("dictionary.com") {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    --search-suggestions-container-shadow-color: #00000029;
+    --common-lk-chip-bg-color: var(--bg1);
+    --common-lk-chip-bg-color-hover: var(--bg2);
+    --browse-entry-2nd-nav-lk-bg-hover: var(--bg2);
+  }
+
+  .site-ftr {
+    --gray-text: var(--fg);
+  }
+
+  .wrapper-site-hdr .site-hdr {
+    --tcom-highlight: var(--bg3);
+    --dcom-highlight: var(--bg3);
+  }
+
+  .a0G06W_suggestionContainer a,
+  .featured-articles-homepage .header-container .hdr-featured-articles,
+  .featured-articles-homepage .lk-primary-article .txt-content .hdr-category,
+  .featured-articles-homepage .lk-primary-article .txt-content .txt-subtitle,
+  .featured-articles-homepage .lk-secondary-article .hdr-featured-category,
+  .sec-wotd-card .hdr-wotd,
+  .sec-wotd-card .txt-date,
+  .sec-wotd-card .txt-phonetics,
+  .site-ftr .internal-links a,
+  .site-ftr .sec-wotd-card .btn-common-cta,
+  .site-ftr .sec-wotd-card .hdr-headword,
+  .site-ftr .sec-wotd-card .hdr-headword .lk-headword:hover,
+  .trending-words-homepage .word-description,
+  .wrapper-site-hdr
+    .form-search-word-container
+    .form-search-word
+    .input-search-word,
+  .wrapper-site-hdr .nav-site .lk-site-nav,
+  input::placeholder {
+    color: var(--fg);
+  }
+
+  .featured-articles-homepage .lk-primary-article .txt-content .hdr-title,
+  .featured-articles-homepage .lk-secondary-article .hdr-article,
+  .site-ftr .internal-links a:hover,
+  a,
+  a:hover {
+    color: var(--link-color);
+  }
+
+  .pg-dcom-home,
+  .pg-tcom-home,
+  .search-container,
+  .site-ftr .sec-wotd-card,
+  .wrapper-site-hdr .nav-site .menu-site-nav,
+  body {
+    background-color: var(--bg);
+  }
+
+  .featured-articles-homepage .lk-primary-article,
+  .featured-articles-homepage .lk-secondary-article,
+  .sec-wotd-card,
+  .site-ftr .sec-wotd-card .btn-common-cta,
+  .trending-words-homepage .word-container,
+  .wrapper-site-hdr .nav-site .lk-site-nav:hover {
+    background-color: var(--bg1);
+  }
+
+  .featured-articles-homepage .lk-primary-article:hover,
+  .featured-articles-homepage .lk-secondary-article:hover,
+  .site-ftr .sec-wotd-card .btn-common-cta:hover,
+  .trending-words-homepage .word-container:hover,
+  .wrapper-site-hdr .site-hdr #search-suggestions {
+    background-color: var(--bg2);
+  }
+
+  .site-ftr .sec-wotd-card .common-btn-headword-audio {
+    background-color: var(--fg);
+  }
+
+  .featured-articles-homepage {
+    .lk-primary-article,
+    .lk-secondary-article {
+      border-color: var(--bg1);
+      &:hover {
+        border-color: var(--bg2);
+      }
+    }
+  }
+
+  .sec-wotd-card {
+    box-shadow: 0 4px 16px #00000029;
+  }
+
+  .social-logo-container a img {
+    filter: invert(1);
+  }
+}
+
+@-moz-document url-prefix("https://www.thesaurus.com/browse"), url-prefix("https://www.dictionary.com/browse") {
+  :is(.pg-dcom-entry, .pg-tcom-entry) .copyright-txt,
+  .box-entry-group-nav .lk-to-dcom-tcom,
+  .box-entry-group-nav .lk-to-dcom-tcom:hover,
+  .box-entry-group-nav .menu-entry-group .lk-entry-group,
+  .box-headword-audio-pronunciation .box-audio-pronunciation .txt-ipa,
+  .box-headword-audio-pronunciation .box-audio-pronunciation .txt-phonetic,
+  .box-headword-audio-pronunciation .box-headword-type .hdr-headword,
+  .box-headword-audio-pronunciation .box-headword-type .txt-entry-group-type,
+  .box-posb-verb-phrase .box-examples .txt-example,
+  .box-posb-verb-phrase .box-posb .ftr-british-group,
+  .box-posb-verb-phrase .box-posb h2,
+  .box-posb-verb-phrase .list-definition .item-definition,
+  .init-secondary-nav .more-menu-btn,
+  .init-secondary-nav.wrapper-nav-entry-group .menu-more .lk-more-menu,
+  .pg-dcom-entry .sec-list-notes h2,
+  .pg-dcom-entry .sec-more-info h2,
+  .pg-dcom-entry .sec-more-info h3,
+  .pg-tcom-entry
+    .synonym-antonym-section
+    .definition-block
+    .part-of-speech-label,
+  .pg-tcom-entry .synonym-antonym-section .definition-block .definition,
+  .pg-tcom-entry
+    .synonym-antonym-section
+    .definition-block
+    .synonym-antonym-panel
+    .synonym-antonym-similarity-grouping-list
+    .similarity-level-label,
+  .pg-tcom-entry .related-words-section h3,
+  .pg-tcom-entry .sec-list-notes h2,
+  .sec-example-sentences .box-examples .txt-example,
+  .sec-example-sentences .txt-disclaimer {
+    color: var(--fg);
+  }
+
+  .pg-tcom-entry
+    .wrapper-site-main
+    .box-content-primary
+    .box-headword-audio-pronunciation {
+    box-shadow: 0 4px 16px #00000029;
+  }
+
+  a.lk-ex-source-icon-logo {
+    filter: invert(1);
+  }
+
+  .box-entry-group-nav,
+  .init-secondary-nav.wrapper-nav-entry-group .menu-more {
+    background-color: var(--bg1);
+  }
+
+  .pg-tcom-entry
+    .synonym-antonym-section
+    .definition-block
+    .synonym-antonym-panel {
+    border-color: var(--bg);
+  }
+}
+
+@-moz-document url-prefix("https://www.thesaurus.com/articles"), url-prefix("https://www.dictionary.com/culture"), url-prefix("https://www.dictionary.com/articles") {
+  :is(.pg-articles-category-page, .pg-articles-landing-page)
+    .list-article
+    .item-article
+    .hdr-title,
+  .pg-articles-article-page .box-content-primary,
+  .pg-articles-category-page,
+  .pg-articles-landing-page {
+    color: var(--fg);
+  }
+
+  :is(.pg-articles-category-page, .pg-articles-landing-page)
+    .box-spotlight-article {
+    .hdr-article-title {
+      color: var(--link-color);
+    }
+
+    background-color: var(--bg1);
+    border-color: var(--bg1);
+
+    &:hover {
+      background-color: var(--bg2);
+      border-color: var(--bg2);
+    }
+  }
+}
+
+@-moz-document domain("dictionary.com") {
+  .pg-dcom-home {
+    background-color: var(--bg) !important;
+  }
+}
+
+@-moz-document url-prefix("https://www.dictionary.com/games") {
+  .games-landing-page .dcom-games-header .subtitle,
+  .games-landing-page .dcom-games-header .title,
+  .games-landing-page
+    .featured-quizzes-section
+    .featured-quizzes-header
+    .description,
+  .games-landing-page .featured-quizzes-section .featured-quizzes-header .title,
+  .games-landing-page .featured-quizzes-section .featured-quiz-card,
+  .games-landing-page .sec-arkadium-all-games,
+  .games-landing-page
+    .words-dot-com-section
+    .words-dot-com-header
+    .word-dot-come-title,
+  .games-landing-page .words-dot-com-featured-game-card .content .description,
+  .pg-dcom-games .below-game-headers .below-game-header,
+  .pg-dcom-games .below-game-headers .below-game-subheader,
+  .pg-dcom-games .below-game-play-more-section .below-game-play-more-header,
+  .pg-dcom-games .below-game-ready-for-more {
+    color: var(--fg);
+  }
+
+  .games-landing-page
+    .words-dot-com-featured-game-card:hover
+    .content
+    .game-name,
+  .games-landing-page .words-dot-com-featured-game-card .content .game-name,
+  .pg-dcom-games .below-game-crossword-links .crossword-link {
+    color: var(--link-color);
+  }
+
+  .games-landing-page .dcom-featured-game-card,
+  .games-landing-page .featured-quizzes-section .featured-quiz-card,
+  .games-landing-page .sec-arkadium-all-games,
+  .games-landing-page .words-dot-com-section,
+  .pg-dcom-games .below-game-crossword-links .crossword-link {
+    background-color: var(--bg1);
+  }
+
+  .games-landing-page .dcom-featured-game-card {
+    border-color: var(--bg1);
+  }
+
+  .games-landing-page .dcom-featured-game-card:hover,
+  .games-landing-page .featured-quizzes-section .featured-quiz-card:hover,
+  .pg-dcom-games .below-game-crossword-links .crossword-link:hover {
+    background-color: var(--bg2);
+  }
+
+  .games-landing-page .dcom-featured-game-card:hover {
+    border-color: var(--bg2);
+  }
+
+  .games-landing-page .words-dot-com-section {
+    box-shadow: 0 4px 16px #00000029;
+  }
+}
