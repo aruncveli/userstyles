@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name AWS CLI Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.7.14
+@version 26.2.10
 @description Dark theme for AWS CLI.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -14,7 +14,8 @@
 @var color bg1 "Background lightened 1" #111
 @var color bg2 "Background lightened 2" #222
 @var color bg3 "Background lightened 3" #333
-@var color link-color "Link" #0b84ff
+@var color link-color "Link" #5cb8ff
+@var color link-visited-color "Link visited" #ea8dff
 @var color red-color "Red" #ff443a
 ==/UserStyle== */
 
@@ -38,6 +39,16 @@
   .navbar .nav > li > a:hover,
   div.footer {
     color: var(--fg);
+  }
+
+  a:link,
+  a:hover,
+  a:active {
+    color: var(--link-color);
+  }
+
+  a:visited {
+    color: var(--link-visited-color);
   }
 
   body,
