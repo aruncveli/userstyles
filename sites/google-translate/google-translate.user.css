@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Google Translate Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.1.29
+@version 26.2.13
 @description Dark theme for Google Translate.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -15,7 +15,7 @@
 @var color bg1 "Background lightened 1" #111
 @var color bg2 "Background lightened 2" #222
 @var color bg3 "Background lightened 3" #333
-@var color link-color "Link" #0b84ff
+@var color primary-color "Primary" #5cb8ff
 @var color red-color "Red" #ff443a
 ==/UserStyle== */
 
@@ -23,11 +23,15 @@
   :root {
     color-scheme: dark;
     --og-logo-color: var(--fg);
+    --gm3-sys-color-primary: var(--primary-color);
     --gm3-sys-color-surface: var(--bg);
+    --gm3-sys-color-surface-container: var(--bg1);
+    --gm3-sys-color-on-surface: var(--fg);
+    --gm3-sys-color-surface-variant: var(--bg1);
     --gm3-sys-color-on-surface-variant: var(--fg);
     --gm3-sys-color-background: var(--bg);
     --gm-hairlinebutton-outline-color: var(--bg1);
-    --gm-hairlinebutton-ink-color--stateful: var(--link-color);
+    --gm-hairlinebutton-ink-color--stateful: var(--primary-color);
     --gm-iconbutton-disabled-ink-color: var(--bg2);
     --gm-outlinedtextfield-ink-color: var(--fg);
     --mdc-theme-surface: var(--bg1);
@@ -43,8 +47,7 @@
 
   body,
   .gb_6c,
-  .Ose4Jf .VfPpkd-jY41G-V67aGc /* Unselected languages */,
-  .JJYS0b:hover .VfPpkd-jY41G-V67aGc /* Selected languages */,
+  .EO28P.GeWPTc .LxQvde .VfPpkd-jY41G-V67aGc /* Language names */,
   .X2ZoU.X2ZoU,
   .MxWhHf.MxWhHf,
   .GyPTPe.GyPTPe,
@@ -136,9 +139,11 @@
     background-image: unset;
   }
 
-  .qSb8Pe.KKjvXb /* Selected language */,
+  .EO28P.GeWPTc
+    .LxQvde.VfPpkd-AznF2e-OWXEXe-auswjd
+    .VfPpkd-jY41G-V67aGc /* Selected language */,
   .mvqA2c /* Translate from suggestion */ {
-    color: var(--link-color);
+    color: var(--primary-color);
   }
 
   .U0xwnf::after /* Header with tabs: text, images, etc*/ {
