@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version 25.7.6
+@version 26.2.13
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -13,6 +13,7 @@
 @var	color	bg	        "Background"	            black
 @var	color	bg1	        "Background lightened 1"	#111
 @var	color	bg2	        "Background lightened 2"	#222
+@var color link        "Link color"              #eda3b9
 ==/UserStyle== */
 
 @-moz-document domain("www.apotea.se") {
@@ -34,9 +35,9 @@
   }
 
   #header,
-  .header-container,
-  #toplinks,
-  #popular-links-container,
+  /*.header-container,
+  #toplinks,*/
+    #popular-links-container,
   #brands-left,
   .general-form-item,
   .premium .price-tag a,
@@ -70,7 +71,8 @@
   .product-block,
   #brands,
   .table,
-  .article-wrapper:after {
+  .article-wrapper:after,
+  .dropdown-header {
     background: var(--bg);
   }
 
@@ -81,7 +83,9 @@
   #suggest-container div.hit.selected,
   .form-control:focus,
   .filter-container,
-  .filter-content {
+  .filter-content,
+  .bslabel-last,
+  .btn-disabled {
     background: var(--bg1);
   }
 
@@ -100,7 +104,8 @@
   }
 
   #last-sold,
-  #home-right-banners {
+  #home-right-banners,
+  #toplist.new-toplist-responsive {
     background: var(--bg) !important;
   }
 
@@ -131,11 +136,15 @@
   #sidebar-categories .no-children a:hover,
   #last-sold-heading,
   #toplist-header,
+  .header-new-toplist-responsive,
   .toplist-article-row,
   h2 a,
   #search-sort-dropdown,
   #search-sort-dropdown option,
-  .main-container strong {
+  .main-container strong,
+  .apotea-responsive-sub-social p,
+  .rec-te,
+  #suggest-container .desc {
     color: var(--fg);
   }
 
@@ -151,7 +160,8 @@
   #cart-quantity-full,
   p.toplist-article-row > span,
   .lpg,
-  .sidebar-category-header.lvl-2.collapsed {
+  .sidebar-category-header.lvl-2.collapsed,
+  .apotea-responsive-footer a#confirm-policy {
     color: var(--fg) !important;
   }
 
@@ -164,12 +174,20 @@
     --bs-offcanvas-bg: var(--bg);
   }
 
-  tr {
+  tr,
+  .slick-header.line-after,
+  .header-new-toplist-responsive,
+  #main-menu li:last-child,
+  .dropdown-content li {
     border-bottom-color: var(--bg);
   }
 
   .filter-content button svg {
     stroke: var(--fg) !important;
+  }
+
+  #main-menu li {
+    border-top-color: var(--bg);
   }
 
   .filter-item-parent {
@@ -178,6 +196,19 @@
 
   .btn {
     --bs-btn-color: var(--fg);
+  }
+
+  a,
+  #sidebar-categories .lvl-1:is(.collapsed):hover,
+  .expand-pre-text,
+  .collapse-pre-text,
+  #main-menu #popular-links-container a:hover {
+    color: var(--link);
+  }
+
+  .description-expand svg,
+  .description-collapse svg {
+    stroke: var(--link);
   }
 }
 
@@ -238,5 +269,28 @@
   .thinBorder,
   .rowDivider {
     border-bottom-color: var(--bg);
+  }
+
+  .collapse-pre-text,
+  .rx-navbar-new a,
+  .visaMerInfo span,
+  .rx-show-hide,
+  .rx-user-show-hide div,
+  .rx-contact-us div > p > a,
+  .contact-us-formular > a,
+  .prescription-toggle-optional-visibility span,
+  .prescription.expired-prescription a,
+  .prescription.expired-prescription .toggle-element,
+  .prescription.expired-prescription .toggle-element.visaMerInfo span,
+  .prescription.expired-prescription .toggle-element.visaRecept span,
+  .prescription.expired-prescription
+    .prescription-toggle-optional-visibility
+    span {
+    color: var(--link);
+  }
+
+  .rx-user-container .toggle-element.collapsed svg,
+  .rx-user-container .toggle-element:not(.collapsed) svg {
+    stroke: var(--link);
   }
 }
