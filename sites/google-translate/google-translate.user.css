@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Google Translate Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.2.13
+@version 26.2.15
 @description Dark theme for Google Translate.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -30,11 +30,15 @@
     --gm3-sys-color-surface-variant: var(--bg1);
     --gm3-sys-color-on-surface-variant: var(--fg);
     --gm3-sys-color-background: var(--bg);
+    --gm-outlinedtextfield-caret-color: var(--primary-color);
+    --gm-outlinedtextfield-outline-color--stateful: var(--primary-color);
+    --gm-outlinedtextfield-label-color--stateful: var(--primary-color);
     --gm-hairlinebutton-outline-color: var(--bg1);
     --gm-hairlinebutton-ink-color--stateful: var(--primary-color);
     --gm-iconbutton-disabled-ink-color: var(--bg2);
     --gm-outlinedtextfield-ink-color: var(--fg);
     --mdc-theme-surface: var(--bg1);
+    --mdc-theme-on-surface: var(--fg);
   }
 
   .HWmS8 /* Text: active area footer */,
@@ -83,7 +87,7 @@
   .sp2Bqb /* Documents: powered by */,
   .pWIpbc /* Settings: header */,
   .Jp7KKb /* Settings: voice speed */,
-  .Q1Za9c /* Settings: voice speed options */,
+  .Q1Za9 /* Settings: voice speed options */,
   .m2ySsc /* Dictionary sidebar heading */,
   .Mplckd /* Dictionary sidebar phonetics */,
   .FpSDVb /* Dictionary sidebar Definitions of */,
@@ -91,19 +95,23 @@
   .uRVWye /* Dictionary sidebar numbering */,
   .sUGHdf /* Document: uploaded file card */,
   .MXuJQd /* Document: uploaded file name */,
-  .d3Mtee /* Document: uploaded file size */ {
+  .d3Mtee /* Document: uploaded file size */,
+  .v2OCrb /* History translation direction */,
+  .EYBmYc /* History translation input */,
+  .uqiNJb /* History translation output */,
+  .HswdMd /* Saved pane title */,
+  .oWkzh /* Saved pane subtitle */ {
     color: var(--fg);
   }
 
   .gb_6c /* Side bar */,
-  .ccvoYb /* Input area */,
   .QcsUad /* Output text area */,
   .ySES5 /* History and favourite buttons */,
+  .AzKM4 /* History pane */,
+  .DLAnyc /* Clear history */,
+  .NBY4Kb /* History manage all activity */,
   .hX7wnb /* More translations */,
   .vk-box /* Translation output box */,
-  .dOQF4b /* Images: card*/,
-  .k5v5Nb /* Documents: card*/,
-  .CLKk4c /* Websites: card*/,
   .kmXzdf /* Dictionary sidebar */,
   .bhvHjb /* Dictionary sidebar header */ {
     background-color: var(--bg1);
@@ -152,7 +160,7 @@
 
   .X4DQ0::after /* Languages horizontal scrollable */,
   .GAyS9e /* More translations item*/ {
-    background: linear-gradient(to right, rgba(17, 17, 17, 0), rgb(17, 17, 17));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
   }
 
   .sUGHdf {
@@ -168,7 +176,8 @@
 
   .bvzp8c.Tht3fc /* Selected more translations item */,
   .bvzp8c.DlHcnf /* Output languages selection popover*/,
-  .vk-btn.vk-sf-h {
+  .vk-btn.vk-sf-h,
+  .kXN2zb.GeWPTc .kmXzdf /* History pane */ {
     border-color: var(--bg2);
   }
 
