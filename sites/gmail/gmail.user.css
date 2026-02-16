@@ -1,0 +1,216 @@
+/* ==UserStyle==
+@name Gmail Dark
+@namespace github.com/aruncveli/userstyles
+@version 26.2.16
+@description Dark theme for gmail.
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color bg "Background" #111
+@var color bg1 "Background lightened 1" #222
+@var color bg2 "Background lightened 2" #333
+@var color bg3 "Background lightened 3" #444
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document domain("mail.google.com") {
+  :root {
+    color-scheme: dark;
+    --gm3-sys-color-on-surface: var(--fg);
+    --gm3-list-divider-color: var(--bg2);
+  }
+
+  .X92YGb,
+  .DILLkc {
+    --gm3-icon-button-standard-unselected-icon-color: var(--fg);
+  }
+
+  .GUpjnc {
+    --gm3-menu-container-color: var(--bg1);
+  }
+
+  .O68mGe-M {
+    --gm3-list-list-item-label-text-color: var(--fg);
+  }
+
+  .ha > .hP /* Heading */,
+  .hx .hb /* Recipient */,
+  .ig .g3,
+  .hI .g3,
+  .iv .g3 /* Timestamp */,
+  .hx .gD /* Sender */,
+  .go /* Sender email */,
+  .amn > .ams /* Footer buttons text */,
+  .hx,
+  .t2 /* Travel date */,
+  .vL /* Travel data label */,
+  .vU /* Travel data value */,
+  .bgb /* Travel feedback */ {
+    color: var(--fg);
+  }
+
+  .hx .ii * /* Content */ {
+    color: var(--fg) !important;
+    background-color: var(--bg) !important;
+  }
+
+  .ii a[href] /* Links */ {
+    color: var(--link-color);
+  }
+
+  .iY /* Mail background */,
+  .btDi4d /* Footer */,
+  .nr /* Footer */ {
+    background-color: var(--bg);
+  }
+
+  .qY /* Travel detection */ {
+    background-color: var(--bg1);
+  }
+
+  .ha .pH-A7 /* Mark as important */,
+  .GUpjnc .mL /* More options reply */,
+  .GUpjnc .mI /* More options forward */,
+  .Z5Teic /* More options delete */,
+  .nSpxAc /* More options Delete */,
+  .xdwIuc,
+  .adULxf /* More options block */,
+  .NKobye /* More options report spam */,
+  .avlNQd /* More options report phishing */,
+  .amr .ams.bkH::before /* Footer reply */,
+  .amr .ams.bkG::before /* Footer forward */,
+  .tA /* Travel checkin icon */,
+  .tC /* Travel location icon */,
+  .tB /* Travel confirmation icon */,
+  .bga img /* Travel feedback */,
+  .tG /* Travel phone icon */ {
+    filter: invert(1);
+  }
+
+  .amr .amn > .ams /* Footer buttons */ {
+    border-color: var(--bg1);
+  }
+
+  .bga {
+    border-top-color: var(--bg1);
+  }
+
+  .qY {
+    box-shadow: unset;
+  }
+
+  .btDi4d.tyMQmc /* Footer */ {
+    box-shadow: 0 -3px 2px -2px var(--bg);
+  }
+
+  .bkL .a98,
+  .bkL .IU,
+  .bkL .r4,
+  .qp .a98,
+  .qp .IU,
+  .qp .r4 {
+    --gm3-sys-color-background: #131314;
+    --gm3-sys-color-background-rgb: 19, 19, 20;
+    --gm3-sys-color-error: #f2b8b5;
+    --gm3-sys-color-error-rgb: 242, 184, 181;
+    --gm3-sys-color-error-container: #8c1d18;
+    --gm3-sys-color-error-container-rgb: 140, 29, 24;
+    --gm3-sys-color-inverse-on-surface: #303030;
+    --gm3-sys-color-inverse-on-surface-rgb: 48, 48, 48;
+    --gm3-sys-color-inverse-primary: #0b57d0;
+    --gm3-sys-color-inverse-primary-rgb: 11, 87, 208;
+    --gm3-sys-color-inverse-surface: #e3e3e3;
+    --gm3-sys-color-inverse-surface-rgb: 227, 227, 227;
+    --gm3-sys-color-on-background: #e3e3e3;
+    --gm3-sys-color-on-background-rgb: 227, 227, 227;
+    --gm3-sys-color-on-error: #601410;
+    --gm3-sys-color-on-error-rgb: 96, 20, 16;
+    --gm3-sys-color-on-error-container: #f9dedc;
+    --gm3-sys-color-on-error-container-rgb: 249, 222, 220;
+    --gm3-sys-color-on-primary: #062e6f;
+    --gm3-sys-color-on-primary-rgb: 6, 46, 111;
+    --gm3-sys-color-on-primary-container: #d3e3fd;
+    --gm3-sys-color-on-primary-container-rgb: 211, 227, 253;
+    --gm3-sys-color-on-primary-fixed: #041e49;
+    --gm3-sys-color-on-primary-fixed-rgb: 4, 30, 73;
+    --gm3-sys-color-on-primary-fixed-variant: #0842a0;
+    --gm3-sys-color-on-primary-fixed-variant-rgb: 8, 66, 160;
+    --gm3-sys-color-on-secondary: #035;
+    --gm3-sys-color-on-secondary-rgb: 0, 51, 85;
+    --gm3-sys-color-on-secondary-container: #c2e7ff;
+    --gm3-sys-color-on-secondary-container-rgb: 194, 231, 255;
+    --gm3-sys-color-on-secondary-fixed: #001d35;
+    --gm3-sys-color-on-secondary-fixed-rgb: 0, 29, 53;
+    --gm3-sys-color-on-secondary-fixed-variant: #004a77;
+    --gm3-sys-color-on-secondary-fixed-variant-rgb: 0, 74, 119;
+    --gm3-sys-color-on-surface: #e3e3e3;
+    --gm3-sys-color-on-surface-rgb: 227, 227, 227;
+    --gm3-sys-color-on-surface-variant: #c4c7c5;
+    --gm3-sys-color-on-surface-variant-rgb: 196, 199, 197;
+    --gm3-sys-color-on-tertiary: #0a3818;
+    --gm3-sys-color-on-tertiary-rgb: 10, 56, 24;
+    --gm3-sys-color-on-tertiary-container: #c4eed0;
+    --gm3-sys-color-on-tertiary-container-rgb: 196, 238, 208;
+    --gm3-sys-color-on-tertiary-fixed: #072711;
+    --gm3-sys-color-on-tertiary-fixed-rgb: 7, 39, 17;
+    --gm3-sys-color-on-tertiary-fixed-variant: #0f5223;
+    --gm3-sys-color-on-tertiary-fixed-variant-rgb: 15, 82, 35;
+    --gm3-sys-color-outline: #8e918f;
+    --gm3-sys-color-outline-rgb: 142, 145, 143;
+    --gm3-sys-color-outline-variant: #444746;
+    --gm3-sys-color-outline-variant-rgb: 68, 71, 70;
+    --gm3-sys-color-primary: #a8c7fa;
+    --gm3-sys-color-primary-rgb: 168, 199, 250;
+    --gm3-sys-color-primary-container: #0842a0;
+    --gm3-sys-color-primary-container-rgb: 8, 66, 160;
+    --gm3-sys-color-primary-fixed: #d3e3fd;
+    --gm3-sys-color-primary-fixed-rgb: 211, 227, 253;
+    --gm3-sys-color-primary-fixed-dim: #a8c7fa;
+    --gm3-sys-color-primary-fixed-dim-rgb: 168, 199, 250;
+    --gm3-sys-color-scrim: #000;
+    --gm3-sys-color-scrim-rgb: 0, 0, 0;
+    --gm3-sys-color-secondary: #7fcfff;
+    --gm3-sys-color-secondary-rgb: 127, 207, 255;
+    --gm3-sys-color-secondary-container: #004a77;
+    --gm3-sys-color-secondary-container-rgb: 0, 74, 119;
+    --gm3-sys-color-secondary-fixed: #c2e7ff;
+    --gm3-sys-color-secondary-fixed-rgb: 194, 231, 255;
+    --gm3-sys-color-secondary-fixed-dim: #7fcfff;
+    --gm3-sys-color-secondary-fixed-dim-rgb: 127, 207, 255;
+    --gm3-sys-color-shadow: #000;
+    --gm3-sys-color-shadow-rgb: 0, 0, 0;
+    --gm3-sys-color-surface: #131314;
+    --gm3-sys-color-surface-rgb: 19, 19, 20;
+    --gm3-sys-color-surface-bright: #37393b;
+    --gm3-sys-color-surface-bright-rgb: 55, 57, 59;
+    --gm3-sys-color-surface-container: #1e1f20;
+    --gm3-sys-color-surface-container-rgb: 30, 31, 32;
+    --gm3-sys-color-surface-container-high: #282a2c;
+    --gm3-sys-color-surface-container-high-rgb: 40, 42, 44;
+    --gm3-sys-color-surface-container-highest: #333537;
+    --gm3-sys-color-surface-container-highest-rgb: 51, 53, 55;
+    --gm3-sys-color-surface-container-low: #1b1b1b;
+    --gm3-sys-color-surface-container-low-rgb: 27, 27, 27;
+    --gm3-sys-color-surface-container-lowest: #0e0e0e;
+    --gm3-sys-color-surface-container-lowest-rgb: 14, 14, 14;
+    --gm3-sys-color-surface-dim: #131314;
+    --gm3-sys-color-surface-dim-rgb: 19, 19, 20;
+    --gm3-sys-color-surface-tint: #d1e1ff;
+    --gm3-sys-color-surface-tint-rgb: 209, 225, 255;
+    --gm3-sys-color-surface-variant: #444746;
+    --gm3-sys-color-surface-variant-rgb: 68, 71, 70;
+    --gm3-sys-color-tertiary: #6dd58c;
+    --gm3-sys-color-tertiary-rgb: 109, 213, 140;
+    --gm3-sys-color-tertiary-container: #0f5223;
+    --gm3-sys-color-tertiary-container-rgb: 15, 82, 35;
+    --gm3-sys-color-tertiary-fixed: #c4eed0;
+    --gm3-sys-color-tertiary-fixed-rgb: 196, 238, 208;
+    --gm3-sys-color-tertiary-fixed-dim: #6dd58c;
+    --gm3-sys-color-tertiary-fixed-dim-rgb: 109, 213, 140;
+  }
+}

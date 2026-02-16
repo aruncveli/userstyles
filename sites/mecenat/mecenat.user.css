@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Mecenat Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.1.25
+@version 26.2.16
 @description Dark theme for Mecenat.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -39,6 +39,7 @@
     --link: var(--link-color);
     --link-hover: var(--link-color);
     --link-pressed: var(--link-color);
+    --grayscale-600: 255 255 255;
     --grayscale-700: 255 255 255;
     --border-tertiary: var(--bg2);
   }
@@ -48,14 +49,31 @@
     --tw-prose-headings: var(--fg);
   }
 
-  .bigmec .bg-background-secondary {
+  .behemoth .prose {
+    --tw-prose-body: var(--fg);
+    --tw-prose-headings: var(--fg);
+  }
+
+  .bigmec .text-black,
+  .bigmec .text-slate-500 {
+    color: var(--fg) !important;
+  }
+
+  .bigmec .bg-background-secondary,
+  .bigmec .bg-white {
     background-color: var(--bg) !important;
   }
 
-  .nativemkt .bg-background-secondary {
-    background-color: var(--bg2) !important;
+  .discountcodemodal .bg-background-secondary,
+  .bigmec .mec-btn.text:hover {
+    background-color: var(--bg1) !important;
   }
 
+  .tw * {
+    border-color: var(--border-tertiary);
+  }
+
+  .nativemkt .bg-background-secondary,
   .contentpage .bg-background-tertiary {
     background-color: var(--bg2) !important;
   }

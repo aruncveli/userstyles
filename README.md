@@ -35,3 +35,4 @@ style.
 |         AWS CLI          |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cli/aws-cli.user.css)               |        [Info](sites/aws-cli)        |
 |         Mecenat          |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/mecenat/mecenat.user.css)               |        [Info](sites/mecenat)        |
 |     Google Translate     |      [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-translate/google-translate.user.css)      |   [Info](sites/google-translate)    |
+|          Gmail           |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css)                 |         [Info](sites/gmail)         |
