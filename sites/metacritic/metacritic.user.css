@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 25.10.9
+@version 26.2.26
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -21,150 +21,172 @@
 @-moz-document url-prefix("https://www.metacritic.com") {
   :root {
     color-scheme: dark;
+    --ui-text: var(--fg);
+    --color-gray-50: var(--bg);
+    --color-gray-600: var(--fg);
+    --color-gray-800: var(--fg);
+    --color-gray-900: var(--fg);
+    --color-bg-grayscale-primary-default: var(--bg1);
+    --color-text-grayscale-primary-default: var(--fg);
+    --color-text-grayscale-secondary-default: var(--fg);
+    --color-text-grayscale-secondary-hover: var(--fg);
+  }
+
+  body {
+    color-scheme: dark;
   }
 
   html,
-  .c-globalProductFeatureCard_container,
-  .c-globalProductCard_container :hover,
-  .c-tagList,
-  .g-color-gray50,
-  .g-color-gray60,
-  .g-color-gray70,
-  .g-color-gray90,
-  .g-color-gray80,
-  .g-color-tertiary,
-  .c-tagList_button,
-  .c-articleSummary:hover .c-articleSummary_title,
   a,
   a:focus,
   a:hover,
-  .c-crewList_link,
-  .c-globalHeader_menu_item-active,
-  .c-globalHeader_menu_item-activeLeft,
-  .c-globalHeader_menu_item-activeRight,
-  .c-globalHeader_menu_item:hover,
-  .c-videoPlaylist_title a,
-  .light-theme .c-siteHeaderNavigationItem_subMenu,
-  .light-theme .c-siteHeaderNavigationItem_subMenu a,
-  .light-theme .c-siteHeaderNavigationList_item:hover,
-  .c-searchSuggestion_title,
-  .c-searchSuggestions .c-heroMetadata,
-  .c-searchSuggestions_seeAll,
-  .c-searchSuggestions_seeAll:hover,
-  .c-productSubpageNavigation_menu_item:hover,
-  input::placeholder,
-  .c-siteReviewHeader_publicationName:hover,
-  .c-siteReviewHeader_username:hover,
-  .c-globalHeader_viewMore:hover,
-  .c-CmsContent p a,
-  .c-CmsContent p a:hover,
-  .c-seasonsModalCard_link:hover,
-  div[title="Metascore TBD"] > span,
-  div[title="Metascore null out of 100"] > span,
-  div[title="User score TBD"] > span,
-  .c-globalCardButton,
-  .c-globalCardButton:hover,
+  .g-color-gray50,
+  .g-color-gray60,
+  .g-color-gray70,
+  .g-color-gray80,
+  .g-color-tertiary,
+  .global-tag-list__button[data-v-7ad7b67c],
+  .global-header-menu__item,
+  .global-header-menu__item:hover,
+  .global-button--secondary,
+  .global-button--secondary:hover:not(.global-button--disabled),
+  .c-hero-summary__title[data-v-de0d9248],
+  .c-hero-summary__description[data-v-de0d9248],
+  .hero-title__text[data-v-45ca202f],
+  .hero-release-date[data-v-3f9f357f],
+  .hero-release-date[data-v-9418694c],
+  .score-header[data-v-0b98854f],
+  .score-sentiment[data-v-1b768970],
+  .score-sentiment__texts--small[data-v-1b768970],
+  .score-review-count a[data-v-e43a9a07],
+  .global-header-title__text,
+  .express-vpn__title[data-v-83212173],
+  .express-vpn__subtitle[data-v-83212173],
+  .c-global-person-card__name[data-v-da5e82df],
+  .c-global-person-card__role[data-v-da5e82df],
+  .global-header-title__view-more,
+  .review-card__content[data-v-05402c45],
+  .product-card-link__title[data-v-452c33d7],
+  .c-footer-links-column__link[data-v-b8b3a20b],
+  .site-footer-copyright[data-v-cd27be91],
+  .hero-season-selector__label[data-v-2a5d4783],
+  .c-crew-list__link[data-v-2c24f200],
+  .tv-seasons__header[data-v-313214c4] .global-header-title__text,
+  .product-score-card__season-label[data-v-f64e559c],
+  .product-score-card__season-meta[data-v-f64e559c],
+  .global-section-header__view-all[data-v-84ceb802],
+  .review-card__date[data-v-05402c45],
+  .review-card__header[data-v-05402c45],
+  .review-action-button[data-v-5fd1ab98],
+  .tv-review-footer__author[data-v-4ff775e6],
+  .c-product-details__section__label[data-v-063e3a59],
+  .c-product-details__section__list-item[data-v-063e3a59],
+  .c-product-details__section__value[data-v-063e3a59],
+  .global-section-header__title--no-link[data-v-84ceb802]:hover,
+  .global-section-header__title[data-v-84ceb802],
+  .c-production-award-summary__award-event[data-v-4032a0af],
+  .c-tv-details__view-more-button[data-v-b479d06b],
+  .movie-review-footer__author[data-v-cfb925ca],
+  .c-search-suggestion__title[data-v-3a3fd0ab],
+  .c-search-product-meta[data-v-13f2cb4a],
+  .hero-season-title__back-link[data-v-97aae4a2],
+  .review-link[data-v-62fd11bd]:hover,
+  .c-site-header-navigation-item_sub-menu a,
+  .global-modal__header .header-title,
+  .where-to-watch-modal__name[data-v-56295d2c],
+  .where-to-watch-modal__meta[data-v-56295d2c],
+  .where-to-watch-modal__tv-label[data-v-56295d2c],
+  .where-to-watch-modal__group-label[data-v-56295d2c],
+  .where-to-watch-modal-item__provider-name[data-v-9d3f54e6],
+  .where-to-watch-modal-item__seasons[data-v-9d3f54e6],
+  .hero-episode-title__back-link[data-v-dd36632c],
+  .c-navigationPagination_itemButtonContent,
   .c-slider_reset_disabled,
   .c-slider_reset_disabled:hover,
   .c-globalCheckbox_label,
-  .c-globalCheckbox,
   .c-globalCheckbox:hover .c-globalCheckbox_label,
   .c-filterInput_button,
-  .c-slider_reset,
-  .c-slider_reset:hover,
-  .c-navigationPagination_itemButtonContent,
-  .light-theme .c-siteHeaderUserDropdown_list_item[data-v-5618330a]:hover,
-  .c-globalSidebarLink,
-  .c-profileNavigation_menu_item:hover,
-  .c-globalTabListHeader_tab-active,
-  .c-globalTabListHeader_tab,
-  .c-globalTabListHeader_tab:hover,
-  .c-productHero_seasonLink,
-  .c-episodesModalCard_link:hover,
+  .light-theme .c-siteHeaderNavigationItem_subMenu,
+  .light-theme .c-siteHeaderNavigationItem_subMenu a,
+  .light-theme .c-siteHeaderNavigationList_item:focus,
+  .light-theme .c-siteHeaderNavigationList_item:hover,
+  .c-siteHeaderNavigationItem.isSelected .c-siteHeaderNavigationItem_link,
+  .g-color-text-meta,
+  .c-productSubpageNavigation_menu_item-active a,
   .c-productSubpageNavigation_menu_item a,
-  .c-profileProductCard_title:hover,
-  .c-globalButton-secondary .c-globalButton_container,
-  .c-globalCarouselJustWatchLogo span,
-  .c-CmsContent table a:not(.c-globalButton a),
-  .c-CmsContent table a:not(.c-globalButton a):hover {
+  .c-productSubpageHeader_backIcon,
+  .game-review-footer__platform[data-v-a89de0d5],
+  .c-product-detail-link[data-v-84793196],
+  .c-CmsContent p a,
+  input::placeholder {
     color: var(--fg);
   }
 
-  .c-globalProductFeatureCard_container:focus,
-  .c-globalProductFeatureCard_container:hover,
-  .c-globalCheckbox-active .c-globalCheckbox_label,
-  .c-filterInput_button:hover {
-    color: var(--fg) !important;
-  }
-
-  .c-globalProductCard .c-siteReviewScore,
-  .c-siteReviewScore_large[data-v-e408cafe],
-  .c-siteReviewScore_small[data-v-e408cafe],
-  .c-siteReviewScore_medium[data-v-e408cafe],
-  .c-siteReviewScore_xsmall[data-v-e408cafe],
-  .c-CmsContent
-    table
-    a:not(.c-globalButton a).o-inlineScore[data-testid="shortcode"]:not(
-      .o-inlineScore-tbd
-    ) {
-    color: var(--bg);
+  .review-link[data-v-62fd11bd]:hover {
+    text-decoration-color: var(--fg);
   }
 
   html,
-  .c-productHero_player-scoreInfo,
-  .g-bg-white,
-  .g-bg-gray10,
-  .c-aboutSection_content,
-  .c-globalPageTitle_seoTitle,
-  .c-movieDetails_sectionContainer,
+  body,
+  .product-hero--left-group[data-v-7a82a84e],
+  .product-hero--right-group[data-v-7a82a84e],
+  .review-card[data-v-05402c45],
+  .site-footer[data-v-384d0c07],
+  .c-product-details__section[data-v-063e3a59],
+  .c-production-award-summary__award[data-v-4032a0af],
+  .c-no-reviews-card__be-first-placeholder[data-v-70a21c8b],
   .c-productionDetailsTv_sectionContainer,
-  .c-globalCheckbox_icon,
-  .c-globalSidebar,
-  .c-navigationPagination_itemButtonContent,
   .c-productCredits dl div:nth-child(odd),
-  .c-CmsContent .c-CmsContent--container > table tr:nth-child(odd) {
+  .c-movieDetails_sectionContainer,
+  .tv-episode-card[data-v-aab823b3] {
     background-color: var(--bg);
   }
 
-  .c-globalProductFeatureCard,
-  .c-globalHeader_nav_button,
-  .light-theme .c-siteHeaderNavigationItem_subMenu,
-  .c-searchBox,
-  .c-searchSuggestions,
-  .c-searchSuggestions_divider,
-  .c-pageSiteSearch-results-item:hover,
-  .c-siteDropdown_option:hover,
-  .c-globalCardButton,
-  .c-globalCheckbox:hover .c-globalCheckbox_icon,
+  .global-button--secondary,
+  .c-global-search__form[data-v-8cc01447],
+  .c-tv-details__view-more-button:hover,
+  section.global-carousel_content[aria-label="New and Notable content"]
+    > *:hover,
+  .c-global-search__dropdown[data-v-8cc01447],
+  .c-global-search__divider[data-v-8cc01447],
+  a.product-score-card:hover,
+  .tv-episode-card[data-v-1f06eae9],
+  .global-modal__wrapper,
+  .where-to-watch-modal__header[data-v-56295d2c]
+    a.c-finderProductCard_container:hover,
+  .g-bg-white,
+  .c-navigationPagination_item.active .c-navigationPagination_itemButtonContent,
+  .c-navigationPagination_itemButtonContent,
+  .c-globalCheckbox_icon,
   .c-slider_tooltip,
-  .c-globalModal_wrapper,
-  .c-siteHeaderUserDropdown[data-v-5618330a],
-  .c-navigationPagination_item.enabled
-    .c-navigationPagination_itemButton:hover
-    .c-navigationPagination_itemButtonContent,
-  .c-w2wModal_body /* Where to watch */,
-  .c-globalButton-secondary .c-globalButton_container,
-  .g-bg-gray30 {
+  .light-theme .c-siteHeaderNavigationItem_subMenu,
+  .c-siteHeaderNavigationItem.isSelected .c-siteHeaderNavigationItem_link,
+  .where-to-watch-modal__header[data-v-56295d2c],
+  .c-searchBox,
+  .tv-episode-card[data-v-aab823b3]:hover {
     background-color: var(--bg1);
   }
 
   .c-filterInput_button:hover {
+    color: var(--fg) !important;
     background-color: var(--bg1) !important;
   }
 
-  .c-searchSuggestion:hover,
-  .c-searchSuggestions_seeAll:hover,
-  .c-globalCardButton:hover {
+  .global-button--secondary:hover:not(.global-button--disabled),
+  .c-global-search__dropdown-item[data-v-8cc01447]:hover,
+  .c-navigationPagination_item.enabled
+    .c-navigationPagination_itemButton:hover
+    .c-navigationPagination_itemButtonContent,
+  .c-globalCheckbox:hover .c-globalCheckbox_icon {
     background-color: var(--bg2);
   }
 
   .c-FinderTabbedHeader_selected-filter:before,
-  .c-globalTabListHeader_tab:after,
   .c-productSubpageNavigation_menu_item-active:before {
-    background: var(--fg);
+    background-color: var(--fg);
   }
 
-  .c-globalCarousel_fade-right:before {
+  .global-carousel__content-container.global-carousel_fade-right[data-v-70ee98dc]:before {
     background-image: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0) 0%,
@@ -172,7 +194,7 @@
     );
   }
 
-  .c-globalCarousel_fade-left:after {
+  .global-carousel__content-container.global-carousel_fade-left[data-v-70ee98dc]:after {
     background-image: linear-gradient(
       270deg,
       rgba(0, 0, 0, 0) 0%,
@@ -180,92 +202,71 @@
     );
   }
 
-  .c-globalHeader_heading,
-  .g-border-thin-light-bottom,
-  .c-finderHeader {
+  .global-header-title,
+  .c-articleList--featured > ul li:not(:last-child),
+  .c-pageArticleListings_inlineAd,
+  .c-seoArticleSummary--latest,
+  .tv-episode-card_header[data-v-aab823b3] {
     border-bottom-color: var(--bg);
   }
 
-  .c-articleSummary--image.c-articleSummary .c-articleSummary_footer,
-  .c-articleSummary_footer,
-  .c-slider,
+  .review-footer[data-v-d4a3ca9a],
   .c-filterInput,
-  .c-productSubpageNavigation_menuContainer,
-  .c-profileProductCard + .c-profileProductCard {
+  .c-slider,
+  .c-slider_tooltip:after,
+  .c-slider_tooltip:before,
+  .g-border-thin-light-top {
     border-top-color: var(--bg);
   }
 
-  .c-globalProductFeatureCard_footer,
-  .c-slider_tooltip:after,
-  .c-slider_tooltip:before {
-    border-top-color: var(--bg1);
-  }
-
-  .c-siteHeaderNavigationList.isSideBar {
-    border-left-color: var(--bg1);
-  }
-
-  .c-siteDropdown_select:hover {
-    border-color: var(--fg);
-  }
-
-  .g-border-gray30 {
+  .global-header__nav-button--active,
+  .c-tv-details__view-more-button[data-v-b479d06b] {
     border-color: var(--bg);
   }
 
-  .c-searchBox,
-  .c-searchSuggestions,
-  .c-globalHeader_nav_button,
-  .c-globalCardButton,
-  .c-globalCardButton:hover,
-  .c-slider_tooltip {
+  .global-button--secondary,
+  .c-global-search__form[data-v-8cc01447],
+  .c-global-search__dropdown[data-v-8cc01447],
+  .c-siteDropdown_select,
+  .c-globalCheckbox_icon,
+  .c-slider_tooltip,
+  .c-searchBox {
     border-color: var(--bg1);
   }
 
-  .c-globalHeader_nav_button {
-    display: none;
+  .global-button--secondary:hover:not(.global-button--disabled),
+  .c-globalCheckbox:hover .c-globalCheckbox_icon {
+    border-color: var(--bg2);
   }
 
-  .c-globalHeader_nav_button-active {
-    display: inherit;
-  }
-
-  .c-globalProductCard_title,
-  .u-text-underline,
-  .c-articleSummary_title {
-    text-decoration-line: none;
-  }
-
-  .c-globalHeader_viewMore {
-    text-decoration-line: none !important;
-  }
-
+  .c-siteimdb-notice_img-container[data-v-19b69f11],
   .c-siteIMDBNotice_imgContainer {
     filter: invert(1);
   }
 
-  .c-siteFooter .c-siteLogo_image-medium,
-  .c-siteFooter_socialIcon,
-  .c-siteFooterBrands_brandIcon,
-  .c-searchBox svg.u-pointer,
+  .c-footer-social-column__icon[data-v-959cf210],
+  .c-footer-brands-column__link svg[data-v-34e90484],
   #logoWordmark :nth-child(4),
-  #logo_justwatch path {
+  #logo_justwatch path,
+  .global-header__nav-button--active svg,
+  .c-global-search__icon[data-v-8cc01447],
+  .review-link__icon[data-v-62fd11bd],
+  .c-product-detail-link__icon[data-v-84793196],
+  .c-siteFooter_socialLink svg,
+  .c-siteFooterBrands_brandLink svg,
+  .c-searchBox svg.u-pointer,
+  #expressVPN > g {
     fill: var(--fg);
   }
 
-  #filterChevron > path,
+  .c-global-search__icon[data-v-8cc01447],
+  .global-button--secondary .global-button__icon,
+  #hamburgerMenu-closed path,
   #check > path,
-  #arrowChevron > path,
-  #chevronLeft > path,
-  #externalLink path {
-    stroke: var(--fg) !important;
-  }
-
-  .c-searchBox svg.u-pointer,
-  .c-siteReview_flag svg,
   .c-siteDropdown_iconCaret,
-  .c-globalCardButton_icon,
-  .c-siteDropdown_iconCheck {
+  #filterChevron > path,
+  .c-searchBox svg.u-pointer,
+  #expressVPN > g {
     stroke: var(--fg);
   }
 }
