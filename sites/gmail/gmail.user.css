@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Gmail Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.2.16
+@version 26.2.27
 @description Dark theme for gmail.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -71,6 +71,7 @@
 
   .qY /* Travel detection */ {
     background-color: var(--bg1);
+    box-shadow: unset;
   }
 
   .ha .pH-A7 /* Mark as important */,
@@ -98,10 +99,6 @@
 
   .bga {
     border-top-color: var(--bg1);
-  }
-
-  .qY {
-    box-shadow: unset;
   }
 
   .btDi4d.tyMQmc /* Footer */ {

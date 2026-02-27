@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.2.26
+@version 26.2.27
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -22,6 +22,7 @@
   :root {
     color-scheme: dark;
     --ui-text: var(--fg);
+    --color-white: var(--bg);
     --color-gray-50: var(--bg);
     --color-gray-600: var(--fg);
     --color-gray-800: var(--fg);
@@ -118,8 +119,14 @@
   .game-review-footer__platform[data-v-a89de0d5],
   .c-product-detail-link[data-v-84793196],
   .c-CmsContent p a,
-  input::placeholder {
+  input::placeholder,
+  .c-slider_reset {
     color: var(--fg);
+  }
+
+  .c-globalCheckbox-active .c-globalCheckbox_label,
+  .c-filterInput_button:hover {
+    color: var(--fg) !important;
   }
 
   .review-link[data-v-62fd11bd]:hover {
@@ -155,7 +162,6 @@
   .where-to-watch-modal__header[data-v-56295d2c]
     a.c-finderProductCard_container:hover,
   .g-bg-white,
-  .c-navigationPagination_item.active .c-navigationPagination_itemButtonContent,
   .c-navigationPagination_itemButtonContent,
   .c-globalCheckbox_icon,
   .c-slider_tooltip,
@@ -168,7 +174,6 @@
   }
 
   .c-filterInput_button:hover {
-    color: var(--fg) !important;
     background-color: var(--bg1) !important;
   }
 
@@ -177,7 +182,9 @@
   .c-navigationPagination_item.enabled
     .c-navigationPagination_itemButton:hover
     .c-navigationPagination_itemButtonContent,
-  .c-globalCheckbox:hover .c-globalCheckbox_icon {
+  .c-globalCheckbox:hover .c-globalCheckbox_icon,
+  .c-navigationPagination_item.active
+    .c-navigationPagination_itemButtonContent {
     background-color: var(--bg2);
   }
 
@@ -266,7 +273,17 @@
   .c-siteDropdown_iconCaret,
   #filterChevron > path,
   .c-searchBox svg.u-pointer,
-  #expressVPN > g {
+  #expressVPN > g,
+  #arrowChevron > path,
+  #play-circle > path {
     stroke: var(--fg);
+  }
+
+  #play-circle > path {
+    fill: var(--bg);
+  }
+
+  #play-circle > circle {
+    opacity: 1;
   }
 }
