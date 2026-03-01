@@ -176,7 +176,8 @@
   .c-searchBox,
   .tv-episode-card[data-v-aab823b3]:hover,
   .c-searchSuggestions,
-  .c-searchSuggestions_divider {
+  .c-searchSuggestions_divider,
+  .c-finderProductCard:hover {
     background-color: var(--bg1);
   }
 
