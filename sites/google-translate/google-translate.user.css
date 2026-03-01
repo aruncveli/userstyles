@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Google Translate Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.2.15
+@version 26.3.1
 @description Dark theme for Google Translate.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -113,7 +113,9 @@
   .hX7wnb /* More translations */,
   .vk-box /* Translation output box */,
   .kmXzdf /* Dictionary sidebar */,
-  .bhvHjb /* Dictionary sidebar header */ {
+  .bhvHjb /* Dictionary sidebar header */,
+  .EILo8d:hover /* Word select options: listen */,
+  .rOtHJ:hover /* Word select options: copy */ {
     background-color: var(--bg1);
   }
 
