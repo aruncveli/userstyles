@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.3.1
+@version 26.3.11
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -22,8 +22,10 @@
   :root {
     color-scheme: dark;
     --ui-text: var(--fg);
+    --ui-color-neutral-800: var(--fg);
     --color-white: var(--bg);
     --color-gray-50: var(--bg);
+    --color-gray-500: var(--fg);
     --color-gray-600: var(--fg);
     --color-gray-800: var(--fg);
     --color-gray-900: var(--fg);
@@ -66,7 +68,7 @@
   .c-global-person-card__name[data-v-da5e82df],
   .c-global-person-card__role[data-v-da5e82df],
   .global-header-title__view-more,
-  .review-card__content[data-v-05402c45],
+  .review-card__content[data-v-fafc1550],
   .product-card-link__title[data-v-452c33d7],
   .c-footer-links-column__link[data-v-b8b3a20b],
   .site-footer-copyright[data-v-cd27be91],
@@ -76,8 +78,8 @@
   .product-score-card__season-label[data-v-f64e559c],
   .product-score-card__season-meta[data-v-f64e559c],
   .global-section-header__view-all[data-v-84ceb802],
-  .review-card__date[data-v-05402c45],
-  .review-card__header[data-v-05402c45],
+  .review-card__date[data-v-fafc1550],
+  .review-card__header[data-v-fafc1550],
   .review-action-button[data-v-5fd1ab98],
   .tv-review-footer__author[data-v-4ff775e6],
   .c-product-details__section__label[data-v-063e3a59],
@@ -125,7 +127,11 @@
   .c-searchSuggestions_seeAll,
   .c-searchSuggestions_seeAll:hover,
   .c-tagList_button,
-  .c-searchSuggestions .c-heroMetadata {
+  .c-searchSuggestions .c-heroMetadata,
+  .c-globalProductCardHorizontal_title[data-v-8b46f4bd],
+  .dropdown-v2__option[data-v-aac2808b],
+  div[data-testid="year-grid-picker"] > div > span,
+  .dropdown-v2__label[data-v-aac2808b] {
     color: var(--fg);
   }
 
@@ -142,7 +148,7 @@
   body,
   .product-hero--left-group[data-v-7a82a84e],
   .product-hero--right-group[data-v-7a82a84e],
-  .review-card[data-v-05402c45],
+  .review-card[data-v-fafc1550],
   .site-footer[data-v-384d0c07],
   .c-product-details__section[data-v-063e3a59],
   .c-production-award-summary__award[data-v-4032a0af],
@@ -177,7 +183,9 @@
   .tv-episode-card[data-v-aab823b3]:hover,
   .c-searchSuggestions,
   .c-searchSuggestions_divider,
-  .c-finderProductCard:hover {
+  .c-finderProductCard:hover,
+  .dropdown-v2__options[data-v-aac2808b],
+  .dropdown-v2__trigger[data-v-aac2808b] {
     background-color: var(--bg1);
   }
 
@@ -193,7 +201,9 @@
   .c-globalCheckbox:hover .c-globalCheckbox_icon,
   .c-navigationPagination_item.active .c-navigationPagination_itemButtonContent,
   .c-searchSuggestion:hover,
-  .c-searchSuggestions_seeAll:hover {
+  .c-searchSuggestions_seeAll:hover,
+  .dropdown-v2__option--focused[data-v-aac2808b],
+  .dropdown-v2__option[data-v-aac2808b]:hover {
     background-color: var(--bg2);
   }
 
@@ -285,7 +295,8 @@
   .c-searchBox svg.u-pointer,
   #expressVPN > g,
   #arrowChevron > path,
-  #play-circle > path {
+  #play-circle > path,
+  .dropdown-v2__icon[data-v-aac2808b] {
     stroke: var(--fg);
   }
 
