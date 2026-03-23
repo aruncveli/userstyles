@@ -13,26 +13,26 @@ extension [Stylus](https://github.com/openstyles/stylus). After installing the
 extension, click on any of the below links to install the corresponding user
 style.
 
-|           Name           |                                                                                                                                              |                                     |
-| :----------------------: | :------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------: |
-|        Arch Linux        |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/archlinux/archlinux.user.css)             |       [Info](sites/archlinux)       |
-|          snowfl          |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/snowfl/snowfl.user.css)                |        [Info](sites/snowfl)         |
-|       Hacker News        |            [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/hackernews/hackernews.user.css)            |      [Info](sites/hackernews)       |
-|          Apotea          |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/apotea/apotea.user.css)                |        [Info](sites/apotea)         |
-|           SMHI           |                  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/smhi/smhi.user.css)                  |         [Info](sites/smhi)          |
-|  Trafikinformation tåg   | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/trafikinformation-tåg/trafikinformation-tåg.user.css) | [Info](sites/trafikinformation-tåg) |
-|         npm Docs         |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm-docs/npm-docs.user.css)              |       [Info](sites/npm-docs)        |
-|           npm            |                   [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm/npm.user.css)                   |          [Info](sites/npm)          |
-|          YouGov          |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/yougov/yougov.user.css)                |        [Info](sites/yougov)         |
-|         AWS CDK          |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cdk/aws-cdk.user.css)               |        [Info](sites/aws-cdk)        |
-|        Grammarly         |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/grammarly/grammarly.user.css)             |       [Info](sites/grammarly)       |
-|          Seedr           |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/seedr/seedr.user.css)                 |         [Info](sites/seedr)         |
-|         Gitiles          |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gitiles/gitiles.user.css)               |        [Info](sites/gitiles)        |
-|        Metacritic        |            [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/metacritic/metacritic.user.css)            |      [Info](sites/metacritic)       |
-|           IMDB           |                  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/imdb/imdb.user.css)                  |         [Info](sites/imdb)          |
-|         Baeldung         |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/baeldung/baeldung.user.css)              |       [Info](sites/baeldung)        |
-| Dictionary and Thesaurus |  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/dictionary-thesaurus/dictionary-thesaurus.user.css)  | [Info](sites/dictionary-thesaurus)  |
-|         AWS CLI          |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cli/aws-cli.user.css)               |        [Info](sites/aws-cli)        |
-|         Mecenat          |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/mecenat/mecenat.user.css)               |        [Info](sites/mecenat)        |
-|     Google Translate     |      [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-translate/google-translate.user.css)      |   [Info](sites/google-translate)    |
-|          Gmail           |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css)                 |         [Info](sites/gmail)         |
+| Name                                                   |                                                                   Install                                                                    |
+| :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------: |
+| [Arch Linux](sites/archlinux)                          |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/archlinux/archlinux.user.css)             |
+| [snowfl](sites/snowfl)                                 |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/snowfl/snowfl.user.css)                |
+| [Hacker News](sites/hackernews)                        |            [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/hackernews/hackernews.user.css)            |
+| [Apotea](sites/apotea)                                 |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/apotea/apotea.user.css)                |
+| [SMHI](sites/smhi)                                     |                  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/smhi/smhi.user.css)                  |
+| [Trafikinformation tåg](sites/trafikinformation-tåg)   | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/trafikinformation-tåg/trafikinformation-tåg.user.css) |
+| [npm Docs](sites/npm-docs)                             |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm-docs/npm-docs.user.css)              |
+| [npm](sites/npm)                                       |                   [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm/npm.user.css)                   |
+| [YouGov](sites/yougov)                                 |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/yougov/yougov.user.css)                |
+| [AWS CDK](sites/aws-cdk)                               |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cdk/aws-cdk.user.css)               |
+| [Grammarly](sites/grammarly)                           |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/grammarly/grammarly.user.css)             |
+| [Seedr](sites/seedr)                                   |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/seedr/seedr.user.css)                 |
+| [Gitiles](sites/gitiles)                               |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gitiles/gitiles.user.css)               |
+| [Metacritic](sites/metacritic)                         |            [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/metacritic/metacritic.user.css)            |
+| [IMDB](sites/imdb)                                     |                  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/imdb/imdb.user.css)                  |
+| [Baeldung](sites/baeldung)                             |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/baeldung/baeldung.user.css)              |
+| [Dictionary and Thesaurus](sites/dictionary-thesaurus) |  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/dictionary-thesaurus/dictionary-thesaurus.user.css)  |
+| [AWS CLI](sites/aws-cli)                               |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cli/aws-cli.user.css)               |
+| [Mecenat](sites/mecenat)                               |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/mecenat/mecenat.user.css)               |
+| [Google Translate](sites/google-translate)             |      [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-translate/google-translate.user.css)      |
+| [Gmail](sites/gmail)                                   |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css)                 |

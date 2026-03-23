@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SMHI Dark (Ten day forecast)
 @namespace      github.com/aruncveli/userstyles
-@version 25.7.29
+@version 26.3.23
 @description    Dark theme for SMHI's ten day forecast page
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -46,30 +46,31 @@
   .sv-nestedlistmenu-portlet a,
   .sv-nestedlistmenu-portlet a:hover,
   .sv-marketplace-sitevision-sub-menu a:hover,
-  ._eosMenuItem_1r7d2_1,
+  ._eosMenuItem_g6j51_129,
   a._warningTextContainer_2n9on_1._warningTextContainer_2n9on_1 span {
     color: var(--fg);
   }
 
-  ._autocomplete_1eudd_130 {
+  ._autocomplete_yykhz_205 {
     background-color: var(--bg);
   }
 
   .lbDkoyRdUHp4p3jqVNPO.NiNr7k2boEzl1t49Ahj1 /* tabs on top */,
   .smhi-main-nav .smhi-main-nav__link:hover,
-  ._autocomplete_1eudd_130:focus-within,
-  ._eosMenuItem_1r7d2_1,
-  ._list_1eudd_254 ._favoritesHeader_1eudd_257,
+  ._autocomplete_yykhz_205:focus-within,
+  ._eosMenuItem_g6j51_129,
+  ._list_yykhz_331 ._favoritesHeader_yykhz_334,
   ._tooltip_spxyq_206 > span {
     background-color: var(--bg1);
   }
 
   .lbDkoyRdUHp4p3jqVNPO.NiNr7k2boEzl1t49Ahj1:hover,
-  ._eosMenuItem_1r7d2_1:hover:not(._noHover_1r7d2_9),
-  ._eosMenuItem_1r7d2_1._active_1r7d2_13 {
+  ._eosMenuItem_g6j51_129:hover:not(._noHover_g6j51_130),
+  ._eosMenuItem_g6j51_129._active_g6j51_141 {
     background-color: var(--bg2);
   }
 
+  ._root_14vw9_129,
   .aurora-root-module_root__QHlfl {
     --colorCloud10: var(--bg1);
     --colorCloud20: var(--bg1);
@@ -114,7 +115,7 @@
     }
   }
 
-  ._markerLabel_4olyg_30 {
+  ._forecastContainer_1ha49_1 ._markerContent_1ha49_18 ._markerLabel_1ha49_30 {
     color: var(--bg);
     text-shadow: none;
   }

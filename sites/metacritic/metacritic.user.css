@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.3.11
+@version 26.3.23
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -21,12 +21,15 @@
 @-moz-document url-prefix("https://www.metacritic.com") {
   :root {
     color-scheme: dark;
+    --ui-bg: var(--bg);
     --ui-text: var(--fg);
     --ui-color-neutral-800: var(--fg);
     --color-white: var(--bg);
     --color-gray-50: var(--bg);
+    --color-gray-200: var(--bg1);
     --color-gray-500: var(--fg);
     --color-gray-600: var(--fg);
+    --color-gray-700: var(--fg);
     --color-gray-800: var(--fg);
     --color-gray-900: var(--fg);
     --color-bg-grayscale-primary-default: var(--bg1);
@@ -131,7 +134,9 @@
   .c-globalProductCardHorizontal_title[data-v-8b46f4bd],
   .dropdown-v2__option[data-v-aac2808b],
   div[data-testid="year-grid-picker"] > div > span,
-  .dropdown-v2__label[data-v-aac2808b] {
+  .dropdown-v2__label[data-v-aac2808b],
+  .score-count__text[data-v-3235a420],
+  .global-header-menu__sub-text {
     color: var(--fg);
   }
 
@@ -185,7 +190,9 @@
   .c-searchSuggestions_divider,
   .c-finderProductCard:hover,
   .dropdown-v2__options[data-v-aac2808b],
-  .dropdown-v2__trigger[data-v-aac2808b] {
+  .dropdown-v2__trigger[data-v-aac2808b],
+  .c-search-suggestion[data-v-3a3fd0ab],
+  .c-search-route-link[data-v-4637e563] {
     background-color: var(--bg1);
   }
 
@@ -200,10 +207,10 @@
     .c-navigationPagination_itemButtonContent,
   .c-globalCheckbox:hover .c-globalCheckbox_icon,
   .c-navigationPagination_item.active .c-navigationPagination_itemButtonContent,
-  .c-searchSuggestion:hover,
-  .c-searchSuggestions_seeAll:hover,
+  .c-search-suggestion[data-v-3a3fd0ab]:hover,
   .dropdown-v2__option--focused[data-v-aac2808b],
-  .dropdown-v2__option[data-v-aac2808b]:hover {
+  .dropdown-v2__option[data-v-aac2808b]:hover,
+  .c-search-route-link[data-v-4637e563]:hover {
     background-color: var(--bg2);
   }
 
@@ -257,7 +264,8 @@
   .c-globalCheckbox_icon,
   .c-slider_tooltip,
   .c-searchBox,
-  .c-searchSuggestions {
+  .c-searchSuggestions,
+  div[data-testid="global-search-dropdown-item"] {
     border-color: var(--bg1);
   }
 
@@ -306,5 +314,9 @@
 
   #play-circle > circle {
     opacity: 1;
+  }
+
+  hr.w-\[calc\(100\%-2rem\)\] {
+    width: unset;
   }
 }
