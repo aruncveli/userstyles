@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name IMDB Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.3.18
+@version 26.3.28
 @description description
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -35,10 +35,22 @@
     --ipc-blockQuote-base-accent1-color: var(--bg1);
   }
 
-  .bUseIS /* Class with variable declarations */ {
-    --ipt-on-base-textPrimary-color: var(--fg);
-    --ipt-on-base-textSecondary-color: var(--fg);
-    --ipt-base-bg: var(--bg);
+  .ipc-btn--theme-base:not(.ipc-btn--not-interactable).ipc-btn--on-textPrimary,
+  .ipc-btn--theme-base:not(.ipc-btn--not-interactable).ipc-btn--on-textPrimary
+    .ipc-split-button__btn,
+  .ipc-btn--theme-base:not(.ipc-btn--not-interactable).ipc-btn--on-textPrimary
+    .ipc-split-button__iconBtn,
+  svg.ipc-icon {
+    color: var(--fg);
+  }
+
+  #nav-search-form,
+  #suggestion-search-button {
+    background-color: var(--bg);
+  }
+
+  #suggestion-search-button:hover {
+    background-color: var(--bg1);
   }
 
   #inline20_responsive_wrapper,

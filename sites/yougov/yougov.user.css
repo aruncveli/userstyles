@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version 25.10.9
+@version 26.3.28
 @description    Dark mode for YouGov surveys
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -40,7 +40,11 @@
   input[type="number"],
   textarea,
   .spd-consent-text,
-  a.spd-consent-skip {
+  a.spd-consent-skip,
+  .bs2 .accordion-caret .accordion-toggle,
+  .accordion .accordion-caret .accordion-toggle,
+  :root select,
+  :root select:hover {
     color: var(--fg);
   }
 
@@ -54,7 +58,8 @@
   #rankingWidget .select,
   .modal,
   .grid-cell label div.uniform-radio > span,
-  .grid-cell label div.uniform-checker > span {
+  .grid-cell label div.uniform-checker > span,
+  :root select {
     background-color: var(--bg);
   }
 
@@ -76,6 +81,7 @@
     }
   }
 
+  :root select,
   body select {
     &.selected,
     &:focus:not(.focus) {
@@ -124,7 +130,9 @@
 
   .grid-layout td,
   .grid-layout th,
-  .spd-consent-text {
+  .spd-consent-text,
+  .bs2 .accordion-inner,
+  .accordion .accordion-inner {
     border-top-color: var(--bg);
   }
 

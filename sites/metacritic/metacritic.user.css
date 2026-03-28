@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.3.23
+@version 26.3.28
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -32,6 +32,7 @@
     --color-gray-700: var(--fg);
     --color-gray-800: var(--fg);
     --color-gray-900: var(--fg);
+    --color-search-dropdown: var(--bg1);
     --color-bg-grayscale-primary-default: var(--bg1);
     --color-text-grayscale-primary-default: var(--fg);
     --color-text-grayscale-secondary-default: var(--fg);
@@ -126,7 +127,6 @@
   .c-CmsContent p a,
   input::placeholder,
   .c-slider_reset,
-  .c-searchSuggestion_title,
   .c-searchSuggestions_seeAll,
   .c-searchSuggestions_seeAll:hover,
   .c-tagList_button,
@@ -141,7 +141,8 @@
   }
 
   .c-globalCheckbox-active .c-globalCheckbox_label,
-  .c-filterInput_button:hover {
+  .c-filterInput_button:hover,
+  span.c-search-suggestion__title {
     color: var(--fg) !important;
   }
 
@@ -163,6 +164,10 @@
   .c-movieDetails_sectionContainer,
   .tv-episode-card[data-v-aab823b3] {
     background-color: var(--bg);
+  }
+
+  .c-search-route-link:hover {
+    background-color: var(--bg) !important;
   }
 
   .global-button--secondary,
@@ -209,8 +214,7 @@
   .c-navigationPagination_item.active .c-navigationPagination_itemButtonContent,
   .c-search-suggestion[data-v-3a3fd0ab]:hover,
   .dropdown-v2__option--focused[data-v-aac2808b],
-  .dropdown-v2__option[data-v-aac2808b]:hover,
-  .c-search-route-link[data-v-4637e563]:hover {
+  .dropdown-v2__option[data-v-aac2808b]:hover {
     background-color: var(--bg2);
   }
 
