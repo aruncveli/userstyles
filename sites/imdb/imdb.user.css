@@ -40,7 +40,8 @@
     .ipc-split-button__btn,
   .ipc-btn--theme-base:not(.ipc-btn--not-interactable).ipc-btn--on-textPrimary
     .ipc-split-button__iconBtn,
-  svg.ipc-icon {
+  svg.ipc-icon,
+  #suggestion-search {
     color: var(--fg);
   }
 
