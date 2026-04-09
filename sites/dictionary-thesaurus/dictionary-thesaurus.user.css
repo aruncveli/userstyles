@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Dictionary and Thesaurus Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.1.31
+@version 26.4.9
 @description Dark theme for Dictionary and Thesaurus.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -34,7 +34,7 @@
     --gray-text: var(--fg);
   }
 
-  .wrapper-site-hdr .site-hdr {
+  .WT_Y6W_suggestions /* Search suggestions */ {
     --tcom-highlight: var(--bg3);
     --dcom-highlight: var(--bg3);
   }
@@ -57,7 +57,9 @@
     .form-search-word
     .input-search-word,
   .wrapper-site-hdr .nav-site .lk-site-nav,
-  input::placeholder {
+  input::placeholder,
+  .wrapper-site-hdr .search-input,
+  .WT_Y6W_suggestions {
     color: var(--fg);
   }
 
@@ -83,7 +85,9 @@
   .sec-wotd-card,
   .site-ftr .sec-wotd-card .btn-common-cta,
   .trending-words-homepage .word-container,
-  .wrapper-site-hdr .nav-site .lk-site-nav:hover {
+  .wrapper-site-hdr .nav-site .lk-site-nav:hover,
+  .wrapper-site-hdr .search-form,
+  .WT_Y6W_suggestions {
     background-color: var(--bg1);
   }
 

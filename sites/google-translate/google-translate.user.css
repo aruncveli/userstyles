@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Google Translate Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.3.1
+@version 26.4.9
 @description Dark theme for Google Translate.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -30,6 +30,8 @@
     --gm3-sys-color-surface-variant: var(--bg1);
     --gm3-sys-color-on-surface-variant: var(--fg);
     --gm3-sys-color-background: var(--bg);
+    --gm-blue-600-dm-compat: var(--primary-color);
+    --gm-grey-700-dm-compat: var(--fg);
     --gm-outlinedtextfield-caret-color: var(--primary-color);
     --gm-outlinedtextfield-outline-color--stateful: var(--primary-color);
     --gm-outlinedtextfield-label-color--stateful: var(--primary-color);
@@ -37,6 +39,7 @@
     --gm-hairlinebutton-ink-color--stateful: var(--primary-color);
     --gm-iconbutton-disabled-ink-color: var(--bg2);
     --gm-outlinedtextfield-ink-color: var(--fg);
+    --mdc-ripple-color: var(--primary-color);
     --mdc-theme-surface: var(--bg1);
     --mdc-theme-on-surface: var(--fg);
   }
@@ -50,7 +53,7 @@
   }
 
   body,
-  .gb_6c,
+  .gb_7c,
   .EO28P.GeWPTc .LxQvde .VfPpkd-jY41G-V67aGc /* Language names */,
   .X2ZoU.X2ZoU,
   .MxWhHf.MxWhHf,
@@ -104,7 +107,7 @@
     color: var(--fg);
   }
 
-  .gb_6c /* Side bar */,
+  .gb_7c /* Side bar */,
   .QcsUad /* Output text area */,
   .ySES5 /* History and favourite buttons */,
   .AzKM4 /* History pane */,
@@ -152,7 +155,8 @@
   .EO28P.GeWPTc
     .LxQvde.VfPpkd-AznF2e-OWXEXe-auswjd
     .VfPpkd-jY41G-V67aGc /* Selected language */,
-  .mvqA2c /* Translate from suggestion */ {
+  .mvqA2c /* Translate from suggestion */,
+  .JJYS0b:hover .VfPpkd-jY41G-V67aGc /* Language name on hover */ {
     color: var(--primary-color);
   }
 

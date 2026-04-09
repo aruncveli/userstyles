@@ -13,7 +13,7 @@ extension [Stylus](https://github.com/openstyles/stylus). After installing the
 extension, click on any of the below links to install the corresponding user
 style.
 
-| Name                                                   |                                                                   Install                                                                    |
+| Name                                                   |                                                                                                                                              |
 | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------: |
 | [Arch Linux](sites/archlinux)                          |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/archlinux/archlinux.user.css)             |
 | [snowfl](sites/snowfl)                                 |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/snowfl/snowfl.user.css)                |
