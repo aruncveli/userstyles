@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.3.28
+@version 26.4.26
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -52,61 +52,14 @@
   .g-color-gray70,
   .g-color-gray80,
   .g-color-tertiary,
-  .global-tag-list__button[data-v-7ad7b67c],
   .global-header-menu__item,
   .global-header-menu__item:hover,
   .global-button--secondary,
   .global-button--secondary:hover:not(.global-button--disabled),
-  .c-hero-summary__title[data-v-de0d9248],
-  .c-hero-summary__description[data-v-de0d9248],
-  .hero-title__text[data-v-45ca202f],
-  .hero-release-date[data-v-3f9f357f],
-  .hero-release-date[data-v-9418694c],
-  .score-header[data-v-0b98854f],
-  .score-sentiment[data-v-1b768970],
-  .score-sentiment__texts--small[data-v-1b768970],
-  .score-review-count a[data-v-e43a9a07],
   .global-header-title__text,
-  .express-vpn__title[data-v-83212173],
-  .express-vpn__subtitle[data-v-83212173],
-  .c-global-person-card__name[data-v-da5e82df],
-  .c-global-person-card__role[data-v-da5e82df],
   .global-header-title__view-more,
-  .review-card__content[data-v-fafc1550],
-  .product-card-link__title[data-v-452c33d7],
-  .c-footer-links-column__link[data-v-b8b3a20b],
-  .site-footer-copyright[data-v-cd27be91],
-  .hero-season-selector__label[data-v-2a5d4783],
-  .c-crew-list__link[data-v-2c24f200],
-  .tv-seasons__header[data-v-313214c4] .global-header-title__text,
-  .product-score-card__season-label[data-v-f64e559c],
-  .product-score-card__season-meta[data-v-f64e559c],
-  .global-section-header__view-all[data-v-84ceb802],
-  .review-card__date[data-v-fafc1550],
-  .review-card__header[data-v-fafc1550],
-  .review-action-button[data-v-5fd1ab98],
-  .tv-review-footer__author[data-v-4ff775e6],
-  .c-product-details__section__label[data-v-063e3a59],
-  .c-product-details__section__list-item[data-v-063e3a59],
-  .c-product-details__section__value[data-v-063e3a59],
-  .global-section-header__title--no-link[data-v-84ceb802]:hover,
-  .global-section-header__title[data-v-84ceb802],
-  .c-production-award-summary__award-event[data-v-4032a0af],
-  .c-tv-details__view-more-button[data-v-b479d06b],
-  .movie-review-footer__author[data-v-cfb925ca],
-  .c-search-suggestion__title[data-v-3a3fd0ab],
-  .c-search-product-meta[data-v-13f2cb4a],
-  .hero-season-title__back-link[data-v-97aae4a2],
-  .review-link[data-v-62fd11bd]:hover,
   .c-site-header-navigation-item_sub-menu a,
   .global-modal__header .header-title,
-  .where-to-watch-modal__name[data-v-56295d2c],
-  .where-to-watch-modal__meta[data-v-56295d2c],
-  .where-to-watch-modal__tv-label[data-v-56295d2c],
-  .where-to-watch-modal__group-label[data-v-56295d2c],
-  .where-to-watch-modal-item__provider-name[data-v-9d3f54e6],
-  .where-to-watch-modal-item__seasons[data-v-9d3f54e6],
-  .hero-episode-title__back-link[data-v-dd36632c],
   .c-navigationPagination_itemButtonContent,
   .c-slider_reset_disabled,
   .c-slider_reset_disabled:hover,
@@ -122,8 +75,6 @@
   .c-productSubpageNavigation_menu_item-active a,
   .c-productSubpageNavigation_menu_item a,
   .c-productSubpageHeader_backIcon,
-  .game-review-footer__platform[data-v-a89de0d5],
-  .c-product-detail-link[data-v-84793196],
   .c-CmsContent p a,
   input::placeholder,
   .c-slider_reset,
@@ -131,91 +82,154 @@
   .c-searchSuggestions_seeAll:hover,
   .c-tagList_button,
   .c-searchSuggestions .c-heroMetadata,
-  .c-globalProductCardHorizontal_title[data-v-8b46f4bd],
-  .dropdown-v2__option[data-v-aac2808b],
   div[data-testid="year-grid-picker"] > div > span,
-  .dropdown-v2__label[data-v-aac2808b],
-  .score-count__text[data-v-3235a420],
-  .global-header-menu__sub-text {
+  .global-header-menu__sub-text,
+  .global-header-title__view-more:hover {
     color: var(--fg);
   }
 
+  .global-tag-list__button,
+  .c-hero-summary__title,
+  .c-hero-summary__description,
+  .hero-title__text,
+  .hero-release-date,
+  .score-header,
+  .score-sentiment,
+  .score-sentiment__texts--small,
+  .score-review-count a,
+  .express-vpn__title,
+  .express-vpn__subtitle,
+  .c-global-person-card__name,
+  .c-global-person-card__role,
+  .review-card__content,
+  .product-card-link__title,
+  .c-footer-links-column__link,
+  .site-footer-copyright,
+  .hero-season-selector__label,
+  .c-crew-list__link,
+  .tv-seasons__header .global-header-title__text,
+  .product-score-card__season-label,
+  .product-score-card__season-meta,
+  .global-section-header__view-all,
+  .review-card__date,
+  .review-card__header,
+  .review-action-button,
+  .tv-review-footer__author,
+  .c-product-details__section__label,
+  .c-product-details__section__list-item,
+  .c-product-details__section__value,
+  .global-section-header__title--no-link:hover,
+  .global-section-header__title,
+  .c-production-award-summary__award-event,
+  .c-tv-details__view-more-button,
+  .movie-review-footer__author,
+  .c-search-suggestion__title,
+  .c-search-product-meta,
+  .hero-season-title__back-link,
+  .review-link:hover,
+  .where-to-watch-modal__name,
+  .where-to-watch-modal__meta,
+  .where-to-watch-modal__tv-label,
+  .where-to-watch-modal__group-label,
+  .where-to-watch-modal-item__provider-name,
+  .where-to-watch-modal-item__seasons,
+  .hero-episode-title__back-link,
+  .game-review-footer__platform,
+  .c-product-detail-link,
+  .c-globalProductCardHorizontal_title,
+  .dropdown-v2__option,
+  .dropdown-v2__label,
   .c-globalCheckbox-active .c-globalCheckbox_label,
   .c-filterInput_button:hover,
-  span.c-search-suggestion__title {
+  span.c-search-suggestion__title,
+  .score-count__text,
+  .c-globalCarouselJustWatchLogo span {
     color: var(--fg) !important;
   }
 
-  .review-link[data-v-62fd11bd]:hover {
-    text-decoration-color: var(--fg);
+  .review-link:hover {
+    text-decoration-color: var(--fg) !important;
   }
 
   html,
   body,
-  .product-hero--left-group[data-v-7a82a84e],
-  .product-hero--right-group[data-v-7a82a84e],
-  .review-card[data-v-fafc1550],
-  .site-footer[data-v-384d0c07],
-  .c-product-details__section[data-v-063e3a59],
-  .c-production-award-summary__award[data-v-4032a0af],
-  .c-no-reviews-card__be-first-placeholder[data-v-70a21c8b],
   .c-productionDetailsTv_sectionContainer,
   .c-productCredits dl div:nth-child(odd),
   .c-movieDetails_sectionContainer,
-  .tv-episode-card[data-v-aab823b3] {
+  .global-header-menu__item--active:before,
+  .global-button--secondary {
     background-color: var(--bg);
   }
 
+  .product-hero--left-group,
+  .product-hero--right-group,
+  .review-card,
+  .site-footer,
+  .c-product-details__section,
+  .c-production-award-summary__award,
+  .c-no-reviews-card__be-first-placeholder,
+  .tv-episode-card,
   .c-search-route-link:hover {
     background-color: var(--bg) !important;
   }
 
-  .global-button--secondary,
-  .c-global-search__form[data-v-8cc01447],
   .c-tv-details__view-more-button:hover,
   section.global-carousel_content[aria-label="New and Notable content"]
     > *:hover,
-  .c-global-search__dropdown[data-v-8cc01447],
-  .c-global-search__divider[data-v-8cc01447],
   a.product-score-card:hover,
-  .tv-episode-card[data-v-1f06eae9],
   .global-modal__wrapper,
-  .where-to-watch-modal__header[data-v-56295d2c]
-    a.c-finderProductCard_container:hover,
   .g-bg-white,
   .c-navigationPagination_itemButtonContent,
   .c-globalCheckbox_icon,
   .c-slider_tooltip,
   .light-theme .c-siteHeaderNavigationItem_subMenu,
   .c-siteHeaderNavigationItem.isSelected .c-siteHeaderNavigationItem_link,
-  .where-to-watch-modal__header[data-v-56295d2c],
   .c-searchBox,
-  .tv-episode-card[data-v-aab823b3]:hover,
   .c-searchSuggestions,
   .c-searchSuggestions_divider,
   .c-finderProductCard:hover,
-  .dropdown-v2__options[data-v-aac2808b],
-  .dropdown-v2__trigger[data-v-aac2808b],
-  .c-search-suggestion[data-v-3a3fd0ab],
-  .c-search-route-link[data-v-4637e563] {
+  #dropdown-v-0-1-0-0-options,
+  div[data-testid="article-card"]:hover,
+  div[data-testid="product-card"]:hover,
+  div[data-testid="product-card"]:hover .global-button--secondary,
+  .global-header-title__link:hover,
+  div[data-testid="filter-results"]:hover {
     background-color: var(--bg1);
   }
 
-  .c-filterInput_button:hover {
+  .c-global-search__form,
+  .c-global-search__dropdown,
+  .c-global-search__divider,
+  .tv-episode-card,
+  .where-to-watch-modal__header a.c-finderProductCard_container:hover,
+  .where-to-watch-modal__header,
+  .tv-episode-card:hover,
+  .dropdown-v2__options,
+  .dropdown-v2__trigger,
+  .c-search-suggestion,
+  .c-search-route-link,
+  .c-filterInput_button:hover,
+  .where-to-watch-modal__divider,
+  .where-to-watch-modal__group:not(.where-to-watch-modal__group--last):after {
     background-color: var(--bg1) !important;
   }
 
-  .global-button--secondary:hover:not(.global-button--disabled),
-  .c-global-search__dropdown-item[data-v-8cc01447]:hover,
   .c-navigationPagination_item.enabled
     .c-navigationPagination_itemButton:hover
     .c-navigationPagination_itemButtonContent,
   .c-globalCheckbox:hover .c-globalCheckbox_icon,
   .c-navigationPagination_item.active .c-navigationPagination_itemButtonContent,
-  .c-search-suggestion[data-v-3a3fd0ab]:hover,
-  .dropdown-v2__option--focused[data-v-aac2808b],
-  .dropdown-v2__option[data-v-aac2808b]:hover {
+  button[data-testid="dropdown-v2-option"]:hover,
+  .bg-\[\#f2f2f2\],
+  div[data-testid="product-card"]:hover .global-button--secondary:hover {
     background-color: var(--bg2);
+  }
+
+  .c-global-search__dropdown-item:hover,
+  .c-search-suggestion:hover,
+  .dropdown-v2__option--focused,
+  .dropdown-v2__option:hover {
+    background-color: var(--bg2) !important;
   }
 
   .c-FinderTabbedHeader_selected-filter:before,
@@ -223,31 +237,33 @@
     background-color: var(--fg);
   }
 
-  .global-carousel__content-container.global-carousel_fade-right[data-v-70ee98dc]:before {
+  .global-carousel__content-container.global-carousel_fade-right:before {
     background-image: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0) 0%,
       var(--bg) 100%
-    );
+    ) !important;
   }
 
-  .global-carousel__content-container.global-carousel_fade-left[data-v-70ee98dc]:after {
+  .global-carousel__content-container.global-carousel_fade-left:after {
     background-image: linear-gradient(
       270deg,
       rgba(0, 0, 0, 0) 0%,
       var(--bg) 100%
-    );
+    ) !important;
   }
 
   .global-header-title,
   .c-articleList--featured > ul li:not(:last-child),
   .c-pageArticleListings_inlineAd,
-  .c-seoArticleSummary--latest,
-  .tv-episode-card_header[data-v-aab823b3] {
+  .c-seoArticleSummary--latest {
     border-bottom-color: var(--bg);
   }
 
-  .review-footer[data-v-d4a3ca9a],
+  .tv-episode-card_header {
+    border-bottom-color: var(--bg) !important;
+  }
+
   .c-filterInput,
   .c-slider,
   .c-slider_tooltip:after,
@@ -256,41 +272,59 @@
     border-top-color: var(--bg);
   }
 
+  .review-footer,
+  .hero-scores {
+    border-top-color: var(--bg) !important;
+  }
+
+  .express-vpn {
+    border-top-color: var(--bg1) !important;
+  }
+
   .global-header__nav-button--active,
-  .c-tv-details__view-more-button[data-v-b479d06b] {
+  .global-button--secondary {
     border-color: var(--bg);
   }
 
-  .global-button--secondary,
-  .c-global-search__form[data-v-8cc01447],
-  .c-global-search__dropdown[data-v-8cc01447],
+  .c-tv-details__view-more-button {
+    border-color: var(--bg) !important;
+  }
+
   .c-siteDropdown_select,
   .c-globalCheckbox_icon,
   .c-slider_tooltip,
   .c-searchBox,
   .c-searchSuggestions,
-  div[data-testid="global-search-dropdown-item"] {
+  div[data-testid="global-search-dropdown-item"],
+  div[data-testid="product-card"]:hover .global-button--secondary {
     border-color: var(--bg1);
   }
 
-  .global-button--secondary:hover:not(.global-button--disabled),
+  .c-global-search__form,
+  .c-global-search__dropdown {
+    border-color: var(--bg1) !important;
+  }
+
   .c-globalCheckbox:hover .c-globalCheckbox_icon {
     border-color: var(--bg2);
   }
 
-  .c-siteimdb-notice_img-container[data-v-19b69f11],
+  .border-t,
+  .md\:border-t {
+    border-color: transparent;
+  }
+
   .c-siteIMDBNotice_imgContainer {
     filter: invert(1);
   }
 
-  .c-footer-social-column__icon[data-v-959cf210],
-  .c-footer-brands-column__link svg[data-v-34e90484],
+  .c-siteimdb-notice_img-container {
+    filter: invert(1) !important;
+  }
+
   #logoWordmark :nth-child(4),
   #logo_justwatch path,
   .global-header__nav-button--active svg,
-  .c-global-search__icon[data-v-8cc01447],
-  .review-link__icon[data-v-62fd11bd],
-  .c-product-detail-link__icon[data-v-84793196],
   .c-siteFooter_socialLink svg,
   .c-siteFooterBrands_brandLink svg,
   .c-searchBox svg.u-pointer,
@@ -298,7 +332,14 @@
     fill: var(--fg);
   }
 
-  .c-global-search__icon[data-v-8cc01447],
+  .c-footer-social-column__icon,
+  .c-footer-brands-column__link svg,
+  .c-global-search__icon,
+  .review-link__icon,
+  .c-product-detail-link__icon {
+    fill: var(--fg) !important;
+  }
+
   .global-button--secondary .global-button__icon,
   #hamburgerMenu-closed path,
   #check > path,
@@ -308,8 +349,14 @@
   #expressVPN > g,
   #arrowChevron > path,
   #play-circle > path,
-  .dropdown-v2__icon[data-v-aac2808b] {
+  .global-button__leading-icon,
+  #whereToWatchIconHover > path {
     stroke: var(--fg);
+  }
+
+  .c-global-search__icon,
+  .dropdown-v2__icon {
+    stroke: var(--fg) !important;
   }
 
   #play-circle > path {
@@ -322,5 +369,14 @@
 
   hr.w-\[calc\(100\%-2rem\)\] {
     width: unset;
+  }
+
+  .underline,
+  .global-header-title__view-more {
+    text-decoration-line: none;
+  }
+
+  .product-card-link__title {
+    text-decoration-line: none !important;
   }
 }
