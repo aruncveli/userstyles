@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Google Translate Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.4.9
+@version 26.5.3
 @description Dark theme for Google Translate.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -103,7 +103,8 @@
   .EYBmYc /* History translation input */,
   .uqiNJb /* History translation output */,
   .HswdMd /* Saved pane title */,
-  .oWkzh /* Saved pane subtitle */ {
+  .oWkzh /* Saved pane subtitle */,
+  .U8K5nb /* Synonyms in result section */ {
     color: var(--fg);
   }
 
@@ -131,7 +132,8 @@
   .yFQBKb /* Search languages */,
   .KjuTac /* Input autocomplete popup */,
   .vk-btn,
-  .ita-kd-dropdown-menu {
+  .ita-kd-dropdown-menu,
+  .U8K5nb /* Synonyms in result section */ {
     background-color: var(--bg2);
   }
 
@@ -164,9 +166,12 @@
     background: var(--bg);
   }
 
-  .X4DQ0::after /* Languages horizontal scrollable */,
-  .GAyS9e /* More translations item*/ {
+  .X4DQ0::after /* Languages horizontal scrollable */ {
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  }
+
+  .GAyS9e /* More translations item*/ {
+    background: linear-gradient(to right, rgba(17, 17, 17, 0), var(--bg1));
   }
 
   .sUGHdf {
