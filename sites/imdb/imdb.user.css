@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name IMDB Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.3.28
+@version 26.5.3
 @description Dark mode for IMDB
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -24,6 +24,9 @@
     color-scheme: dark;
     --ipt-base-bg: var(--bg);
     --ipt-base-rgb: 0, 0, 0;
+    --ipt-on-base-rgb: 255, 255, 255;
+    --ipt-base-shade2-rgb: 17, 17, 17;
+    --ipt-on-base-textHint-color: var(--fg);
     --ipt-on-base-textPrimary-color: var(--fg);
     --ipt-on-base-textSecondary-color: var(--fg);
     --ipt-on-base-color: var(--fg);
@@ -79,5 +82,9 @@
 
   .ipc-textinput__input {
     border: solid 0.15em var(--bg1);
+  }
+
+  div[class^="EpisodeBarGraphColumn_background"] {
+    border-color: var(--bg1);
   }
 }
