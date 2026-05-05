@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.1.11
+@version 26.5.5
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -38,28 +38,28 @@
   }
 
   .f113r6od:not(
-      [data-disabled="true"]
-    )[data-hovered="true"] /* Goals modal row button hover */,
+    [data-disabled="true"]
+  )[data-hovered="true"] /* Goals modal row button hover */,
   .f13s55f1:not(
-      [data-disabled="true"]
-    )[data-hovered="true"] /* Performance modal Download PDF report */,
+    [data-disabled="true"]
+  )[data-hovered="true"] /* Performance modal Download PDF report */,
   .f1aunnt9:not([data-disabled="true"])[data-hovered="true"] /* Left menu */,
   .synonyms-wrapper_f1u08us1 /* Synonyms tooltip */,
   .synonyms-emptyResultWrapper_fhq484e,
   .f1u61vn1:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-hovered="true"] /* Correctness suggestion info button */,
+    [aria-disabled="true"]
+  )[data-hovered="true"] /* Correctness suggestion info button */,
   .f1u61vn1:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-active="true"],
+    [aria-disabled="true"]
+  )[data-active="true"],
   .f1u61vn1:not([data-disabled="true"]):not([aria-disabled="true"]):active,
   .fsk4xi:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-hovered="true"],
+    [aria-disabled="true"]
+  )[data-hovered="true"],
   .fsk4xi:not([data-disabled="true"]):not([aria-disabled="true"]):hover,
   .fsk4xi:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-active="true"],
+    [aria-disabled="true"]
+  )[data-active="true"],
   .f1todjtg:focus /* Correctness Kebab menu item */,
   .f1nnpij3 /* Correctness popover */,
   .triggerButton_f1l4zisq[data-active="true"] /* Metrics bottom center */,
@@ -67,8 +67,8 @@
   .formatting-link-wrapper_fihlfwi,
   .formatting-link-delimiter_fi62vqz,
   .fvnnys1:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-hovered="true"],
+    [aria-disabled="true"]
+  )[data-hovered="true"],
   .fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):active,
   .fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):hover,
   .f1hd2upw /* Plagiarism format menu */,
@@ -92,17 +92,17 @@
   }
 
   .fsk4xi:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-hovered="true"] /* Write with AI buttons */,
+    [aria-disabled="true"]
+  )[data-hovered="true"] /* Write with AI buttons */,
   .f1u61vn1:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-hovered="true"],
+    [aria-disabled="true"]
+  )[data-hovered="true"],
   .f1u61vn1:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-active="true"],
+    [aria-disabled="true"]
+  )[data-active="true"],
   .fsk4xi:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-active="true"],
+    [aria-disabled="true"]
+  )[data-active="true"],
   .f1todjtg:hover /* Correctness Kebab menu item */ {
     box-shadow: inset 0 0 0 1px var(--color-background-base-subdued);
   }
@@ -415,11 +415,11 @@
   .formatting-link-urlInput_f109vv3n /* Link tooltip */,
   .f1lo3unn:not([data-disabled="true"])[data-hovered="true"],
   .f1u0d4ph:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-hovered="true"] /* Write with GenAI buttons*/,
+    [aria-disabled="true"]
+  )[data-hovered="true"] /* Write with GenAI buttons*/,
   .f1u0d4ph:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-active="true"],
+    [aria-disabled="true"]
+  )[data-active="true"],
   .f1xgqlqj:hover {
     background-color: var(--color-background-base-subdued);
   }
@@ -438,14 +438,14 @@
   .feu4lv1 /* Correctness suggestion text */,
   .fc6omth /* Pro suggestion text */,
   .f1lo3unn:not(
-      [data-disabled="true"]
-    )[data-hovered="true"] /* Link tooltip buttons */,
+    [data-disabled="true"]
+  )[data-hovered="true"] /* Link tooltip buttons */,
   .fvnnys1:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-hovered="true"] /* Review suggestions category filter buttons */,
+    [aria-disabled="true"]
+  )[data-hovered="true"] /* Review suggestions category filter buttons */,
   .fvnnys1:not([data-disabled="true"]):not(
-      [aria-disabled="true"]
-    )[data-active="true"],
+    [aria-disabled="true"]
+  )[data-active="true"],
   .fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):active,
   .fvnnys1:not([data-disabled="true"]):not([aria-disabled="true"]):hover {
     color: var(--color-text-base-default);

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Google Translate Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.5.3
+@version 26.5.5
 @description Dark theme for Google Translate.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -65,8 +65,8 @@
   .rrPCWc:not(:disabled) /* Listen */,
   .ZTPlmc /* Number of characters */,
   .ZihNHd:not(
-      :disabled
-    ) /* Various other icons includling: Language list dropdown trigger */,
+    :disabled
+  ) /* Various other icons includling: Language list dropdown trigger */,
   .ZihNHd:not(:disabled) .VfPpkd-kBDsod /* Clear input, swap languages */,
   .ydsGXd /* More translations text */,
   .b08HRd:not(:disabled) /* More translations: Expand all */,
