@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Dictionary and Thesaurus Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.4.9
+@version 26.5.10
 @description Dark theme for Dictionary and Thesaurus.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -28,6 +28,9 @@
     --common-lk-chip-bg-color: var(--bg1);
     --common-lk-chip-bg-color-hover: var(--bg2);
     --browse-entry-2nd-nav-lk-bg-hover: var(--bg2);
+    --game-promo-background-color: var(--bg1);
+    --dialog-background-color: var(--bg1);
+    --wotd-modal-signup-background: var(--bg1);
   }
 
   .site-ftr {
@@ -59,8 +62,20 @@
   .wrapper-site-hdr .nav-site .lk-site-nav,
   input::placeholder,
   .wrapper-site-hdr .search-input,
-  .WT_Y6W_suggestions {
+  .WT_Y6W_suggestions,
+  .game-promo-container,
+  .game-promo-container:hover,
+  .game-promo-container .content .description {
     color: var(--fg);
+  }
+
+  p[class$="pronunciation"],
+  div[class$="termsPrivacy"] {
+    color: var(--fg) !important;
+  }
+
+  div[class$="inputContainer"] {
+    background-color: var(--bg1) !important;
   }
 
   .featured-articles-homepage .lk-primary-article .txt-content .hdr-title,
@@ -95,7 +110,8 @@
   .featured-articles-homepage .lk-secondary-article:hover,
   .site-ftr .sec-wotd-card .btn-common-cta:hover,
   .trending-words-homepage .word-container:hover,
-  .wrapper-site-hdr .site-hdr #search-suggestions {
+  .wrapper-site-hdr .site-hdr #search-suggestions,
+  .game-promo-container .game-container {
     background-color: var(--bg2);
   }
 
@@ -154,7 +170,16 @@
   .pg-tcom-entry .related-words-section h3,
   .pg-tcom-entry .sec-list-notes h2,
   .sec-example-sentences .box-examples .txt-example,
-  .sec-example-sentences .txt-disclaimer {
+  .sec-example-sentences .txt-disclaimer,
+  .pg-dcom-entry
+    .sec-more-info
+    .list-other-word-forms
+    .other-word-form
+    .other-word-form-pos,
+  .pg-dcom-entry .sec-explanation .txt-item-notes,
+  .pg-dcom-entry .sec-explanation h2,
+  .pg-dcom-entry .sec-vocabulary-lists h2,
+  .pg-dcom-entry .sec-vocabulary-lists .lk-vocabulary-lists-card p {
     color: var(--fg);
   }
 
@@ -179,6 +204,10 @@
     .definition-block
     .synonym-antonym-panel {
     border-color: var(--bg);
+  }
+
+  .box-item-entry {
+    background-image: none;
   }
 }
 
