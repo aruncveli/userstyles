@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.5.4
+@version 26.5.13
 @description    Dark mode for YouGov surveys
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -135,6 +135,16 @@
   .bs2 .accordion-inner,
   .accordion .accordion-inner {
     border-top-color: var(--bg);
+  }
+
+  .grid-layout tbody {
+    border-bottom-color: var(--bg);
+    tr {
+      td,
+      th {
+        border-top-color: var(--bg);
+      }
+    }
   }
 
   select:hover {
