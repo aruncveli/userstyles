@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.4.26
+@version 26.5.25
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -24,7 +24,7 @@
     --ui-bg: var(--bg);
     --ui-text: var(--fg);
     --ui-color-neutral-800: var(--fg);
-    --color-white: var(--bg);
+    --color-white: var(--bg1);
     --color-gray-50: var(--bg);
     --color-gray-200: var(--bg1);
     --color-gray-500: var(--fg);
@@ -34,6 +34,7 @@
     --color-gray-900: var(--fg);
     --color-search-dropdown: var(--bg1);
     --color-bg-grayscale-primary-default: var(--bg1);
+    --color-btn-primary-text: var(--bg);
     --color-text-grayscale-primary-default: var(--fg);
     --color-text-grayscale-secondary-default: var(--fg);
     --color-text-grayscale-secondary-hover: var(--fg);
@@ -84,7 +85,11 @@
   .c-searchSuggestions .c-heroMetadata,
   div[data-testid="year-grid-picker"] > div > span,
   .global-header-menu__sub-text,
-  .global-header-title__view-more:hover {
+  .global-header-title__view-more:hover,
+  .global-modal__close-button-wrapper,
+  div[title="Metascore tbd"],
+  div[title^="Metascore 0"],
+  div[title^="Metascore null"] {
     color: var(--fg);
   }
 
@@ -143,8 +148,14 @@
   .c-filterInput_button:hover,
   span.c-search-suggestion__title,
   .score-count__text,
-  .c-globalCarouselJustWatchLogo span {
+  .c-globalCarouselJustWatchLogo span,
+  .c-search-item,
+  .c-navigation-pagination__item-content {
     color: var(--fg) !important;
+  }
+
+  .c-navigation-pagination__item:hover .c-navigation-pagination__item-content {
+    color: #404040 !important;
   }
 
   .review-link:hover {
@@ -193,7 +204,8 @@
   div[data-testid="product-card"]:hover,
   div[data-testid="product-card"]:hover .global-button--secondary,
   .global-header-title__link:hover,
-  div[data-testid="filter-results"]:hover {
+  div[data-testid="filter-results"]:hover,
+  .global-button--secondary:hover {
     background-color: var(--bg1);
   }
 
@@ -210,7 +222,8 @@
   .c-search-route-link,
   .c-filterInput_button:hover,
   .where-to-watch-modal__divider,
-  .where-to-watch-modal__group:not(.where-to-watch-modal__group--last):after {
+  .where-to-watch-modal__group:not(.where-to-watch-modal__group--last):after,
+  .c-search-item:hover {
     background-color: var(--bg1) !important;
   }
 
@@ -260,7 +273,8 @@
     border-bottom-color: var(--bg);
   }
 
-  .tv-episode-card_header {
+  .tv-episode-card_header,
+  .c-search-item {
     border-bottom-color: var(--bg) !important;
   }
 

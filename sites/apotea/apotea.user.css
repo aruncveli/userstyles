@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.5.5
+@version 26.5.25
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -234,12 +234,18 @@
 
   #checkout-offers .offer-item-text,
   #cart-parent .name a,
-  #cart-content .sum h4 #cart-header-sum {
+  #cart-content .sum h4 #cart-header-sum,
+  .checkout-shipping-method .sm-utls select,
+  .checkout-shipping-method.active .sm-utls select {
     color: var(--fg);
   }
 
   #checkout-top .toggle-element svg {
     stroke: var(--fg);
+  }
+
+  .checkout-shipping-method {
+    border-color: var(--bg);
   }
 }
 
