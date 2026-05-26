@@ -22,7 +22,6 @@ style.
 | [SMHI](sites/smhi)                                     |                  [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/smhi/smhi.user.css)                  |
 | [Trafikinformation tåg](sites/trafikinformation-tåg)   | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/trafikinformation-tåg/trafikinformation-tåg.user.css) |
 | [npm Docs](sites/npm-docs)                             |              [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm-docs/npm-docs.user.css)              |
-| [npm](sites/npm)                                       |                   [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/npm/npm.user.css)                   |
 | [YouGov](sites/yougov)                                 |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/yougov/yougov.user.css)                |
 | [AWS CDK](sites/aws-cdk)                               |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cdk/aws-cdk.user.css)               |
 | [Grammarly](sites/grammarly)                           |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/grammarly/grammarly.user.css)             |
