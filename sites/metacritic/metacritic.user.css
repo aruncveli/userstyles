@@ -314,9 +314,8 @@
   .c-searchBox,
   .c-searchSuggestions,
   div[data-testid="global-search-dropdown-item"],
-  div[data-testid="product-card"]:hover
-    .global-button--secondary
-    .where-to-watch__button:hover {
+  div[data-testid="product-card"]:hover .global-button--secondary,
+  .where-to-watch__button:hover {
     border-color: var(--bg1);
   }
 
