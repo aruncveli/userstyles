@@ -7,6 +7,8 @@ on:
     paths-ignore:
       - "**.png"
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   run:
     runs-on: ubuntu-latest
