@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.5.25
+@version 26.6.4
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -89,7 +89,8 @@
   .global-modal__close-button-wrapper,
   div[title="Metascore tbd"],
   div[title^="Metascore 0"],
-  div[title^="Metascore null"] {
+  div[title^="Metascore null"],
+  .where-to-watch__button {
     color: var(--fg);
   }
 
@@ -168,7 +169,8 @@
   .c-productCredits dl div:nth-child(odd),
   .c-movieDetails_sectionContainer,
   .global-header-menu__item--active:before,
-  .global-button--secondary {
+  .global-button--secondary,
+  .where-to-watch__button {
     background-color: var(--bg);
   }
 
@@ -205,7 +207,8 @@
   div[data-testid="product-card"]:hover .global-button--secondary,
   .global-header-title__link:hover,
   div[data-testid="filter-results"]:hover,
-  .global-button--secondary:hover {
+  .global-button--secondary:hover,
+  .where-to-watch__button:hover {
     background-color: var(--bg1);
   }
 
@@ -296,7 +299,8 @@
   }
 
   .global-header__nav-button--active,
-  .global-button--secondary {
+  .global-button--secondary,
+  .where-to-watch__button {
     border-color: var(--bg);
   }
 
@@ -310,7 +314,9 @@
   .c-searchBox,
   .c-searchSuggestions,
   div[data-testid="global-search-dropdown-item"],
-  div[data-testid="product-card"]:hover .global-button--secondary {
+  div[data-testid="product-card"]:hover
+    .global-button--secondary
+    .where-to-watch__button:hover {
     border-color: var(--bg1);
   }
 
@@ -364,7 +370,8 @@
   #arrowChevron > path,
   #play-circle > path,
   .global-button__leading-icon,
-  #whereToWatchIconHover > path {
+  #whereToWatchIconHover > path,
+  #externalLink > path {
     stroke: var(--fg);
   }
 

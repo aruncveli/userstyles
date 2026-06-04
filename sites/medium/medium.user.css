@@ -1,0 +1,60 @@
+/* ==UserStyle==
+@name Medium Dark
+@namespace github.com/aruncveli/userstyles
+@version 26.6.4
+@description Dark theme for Medium.
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/medium/medium.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" white
+@var color bg "Background" black
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://medium.com") {
+  :root {
+    color-scheme: dark;
+    --color-bg-neutral-primary: var(--bg);
+    --color-fg-neutral-primary: var(--fg);
+  }
+
+  input::placeholder,
+  .dz /* Join medium */,
+  .uq,
+  .aq:hover:not(:disabled) /* clap count */,
+  .lw:hover p /* comment count */,
+  .lz p /* Repost count */,
+  .mg:hover /* save */,
+  .mr:focus svg /* share */ {
+    color: var(--fg);
+  }
+
+  .i /* Header */ {
+    background-color: var(--bg);
+  }
+
+  .ay /* Search */,
+  .dc /* Enter your email */,
+  .agl /* popup */,
+  .agj::after /* popup */ {
+    background-color: var(--bg1);
+  }
+
+  .th /* Comments */ {
+    border-bottom-color: var(--bg);
+  }
+
+  .ld /* clap */,
+  .lf:hover /* clap hover */,
+  .fy /* comment */,
+  .lv:hover /* comment hover */ {
+    fill: var(--fg);
+  }
+}

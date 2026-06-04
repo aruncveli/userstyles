@@ -35,3 +35,4 @@ style.
 | [Mecenat](sites/mecenat)                               |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/mecenat/mecenat.user.css)               |
 | [Google Translate](sites/google-translate)             |      [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-translate/google-translate.user.css)      |
 | [Gmail](sites/gmail)                                   |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css)                 |
+| [Medium](sites/medium)                                 |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/medium/medium.user.css)                |
