@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hacker News Dark
 @namespace      github.com/aruncveli/userstyles
-@version        25.1.23
+@version 26.6.14
 @description    Dark theme for Hacker News
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -66,5 +66,26 @@
 
   .spacer {
     height: var(--space-between-items) !important;
+  }
+}
+
+@-moz-document url("https://news.ycombinator.com/newswelcome.html") {
+  b,
+  a:link,
+  a:visited {
+    color: var(--fg);
+  }
+
+  body,
+  td {
+    background-color: var(--bg);
+  }
+
+  body > center > table {
+    width: 100%;
+  }
+
+  td {
+    font-size: var(--comment-font-size);
   }
 }
