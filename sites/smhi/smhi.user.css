@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SMHI Dark (Ten day forecast)
 @namespace      github.com/aruncveli/userstyles
-@version 26.3.23
+@version 26.7.1
 @description    Dark theme for SMHI's ten day forecast page
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -9,9 +9,9 @@
 @updateURL      https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/smhi/smhi.user.css
 @license        MIT
 @preprocessor   default
-@var color fg "Foreground" white
+@var color fg "Foreground" #fff
 @var color fg5 "Foreground darkened 5" #aaa
-@var color bg "Background" black
+@var color bg "Background" #000
 @var color bg1 "Background lightened 1"	#111
 @var color bg2 "Background lightened 2"	#222
 ==/UserStyle== */

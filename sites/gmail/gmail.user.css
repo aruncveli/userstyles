@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Gmail Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.2.27
+@version 26.7.1
 @description Dark theme for gmail.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -9,7 +9,7 @@
 @updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css
 @license MIT
 @preprocessor default
-@var color fg "Foreground" white
+@var color fg "Foreground" #fff
 @var color bg "Background" #111
 @var color bg1 "Background lightened 1" #222
 @var color bg2 "Background lightened 2" #333
