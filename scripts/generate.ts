@@ -1,7 +1,10 @@
-import { appendFileSync, mkdirSync, writeFileSync } from "node:fs";
+import {
+  appendFileSync,
+  mkdirSync,
+} from "node:fs";
 import { argv } from "node:process";
 
-import ejs from "ejs";
+import { compile } from "handlebars";
 
 import version from "./calver.js";
 
@@ -19,28 +22,23 @@ const smallName = args.join("-").toLocaleLowerCase();
 console.log(`Creating directory sites/${smallName}`);
 mkdirSync(`sites/${smallName}`);
 
-ejs.renderFile(`${__dirname}/readme.ejs`, { name, smallName }, (err, str) => {
-  if (err) throw err;
-  console.log(`Writing sites/${smallName}/README.md`);
-  writeFileSync(`sites/${smallName}/README.md`, str);
-});
+const read = (name: string) =>
+  Bun.file(`${import.meta.dir}/${name}`).text();
 
-ejs.renderFile(
-  `${__dirname}/user.css.ejs`,
-  { name, smallName, version },
-  (err, str) => {
-    if (err) throw err;
-    console.log(`Writing sites/${smallName}/${smallName}.user.css`);
-    writeFileSync(`sites/${smallName}/${smallName}.user.css`, str);
-  },
+const [readme, userCss, rootEntry] = await Promise.all([
+  read("readme.hbs"),
+  read("user.css.hbs"),
+  read("root-readme-entry.hbs"),
+]).then(files => files.map(file => compile(file)));
+
+console.log(`Writing sites/${smallName}/README.md`);
+await Bun.write(`sites/${smallName}/README.md`, readme!({ name, smallName }));
+
+console.log(`Writing sites/${smallName}/${smallName}.user.css`);
+await Bun.write(
+  `sites/${smallName}/${smallName}.user.css`,
+  userCss!({ name, smallName, version }),
 );
 
-ejs.renderFile(
-  `${__dirname}/root-readme-entry.ejs`,
-  { name, smallName },
-  (err, str) => {
-    if (err) throw err;
-    console.log("Adding entry to root README.md table");
-    appendFileSync("README.md", str);
-  },
-);
+console.log("Adding entry to root README.md table");
+appendFileSync("README.md", rootEntry!({ name, smallName }));

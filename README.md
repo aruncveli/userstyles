@@ -14,7 +14,7 @@ extension, click on any of the below links to install the corresponding user
 style.
 
 | Name                                                   |                                                                                                                                              |
-| :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------: |
+| :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------: | --- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | [Arch Linux](sites/archlinux)                          |             [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/archlinux/archlinux.user.css)             |
 | [snowfl](sites/snowfl)                                 |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/snowfl/snowfl.user.css)                |
 | [Hacker News](sites/hackernews)                        |            [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/hackernews/hackernews.user.css)            |
@@ -36,3 +36,5 @@ style.
 | [Google Translate](sites/google-translate)             |      [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-translate/google-translate.user.css)      |
 | [Gmail](sites/gmail)                                   |                 [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css)                 |
 | [Medium](sites/medium)                                 |                [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/medium/medium.user.css)                |
+| [a b c d](sites/a-b-c-d)                               |               [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/a-b-c-d/a-b-c-d.user.css)               |     | [something else](sites/something-else) | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/something-else/something-else.user.css) |
+|[ha ha](sites/ha-ha)|[Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/ha-ha/ha-ha.user.css)|

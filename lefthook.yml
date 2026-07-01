@@ -1,18 +1,9 @@
 pre-commit:
-  parallel: true
-  jobs:
-    - run: bun scripts/bumpVersion.ts {staged_files}
-      glob: "*.css"
-      stage_fixed: true
-    - run: bun biome check --write {staged_files}
-      glob: "*.css"
-      stage_fixed: true
   commands:
-    biome:
-      run: bun biome check --write {staged_files}
-      glob: "*.{js,ts,json}"
+    bump:
+      run: bun scripts/bumpVersion.ts {staged_files}
+      glob: "*.css"
       stage_fixed: true
-    prettier:
-      run: bun prettier --write --ignore-unknown {staged_files}
-      glob: "*.{yml,md}"
+    format:
+      run: bun oxlint {staged_files}
       stage_fixed: true
