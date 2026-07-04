@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Dictionary and Thesaurus Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.4
 @description Dark theme for Dictionary and Thesaurus.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -55,10 +55,7 @@
   .site-ftr .sec-wotd-card .hdr-headword,
   .site-ftr .sec-wotd-card .hdr-headword .lk-headword:hover,
   .trending-words-homepage .word-description,
-  .wrapper-site-hdr
-    .form-search-word-container
-    .form-search-word
-    .input-search-word,
+  .wrapper-site-hdr .form-search-word-container .form-search-word .input-search-word,
   .wrapper-site-hdr .nav-site .lk-site-nav,
   input::placeholder,
   .wrapper-site-hdr .search-input,
@@ -156,10 +153,7 @@
   .pg-dcom-entry .sec-list-notes h2,
   .pg-dcom-entry .sec-more-info h2,
   .pg-dcom-entry .sec-more-info h3,
-  .pg-tcom-entry
-    .synonym-antonym-section
-    .definition-block
-    .part-of-speech-label,
+  .pg-tcom-entry .synonym-antonym-section .definition-block .part-of-speech-label,
   .pg-tcom-entry .synonym-antonym-section .definition-block .definition,
   .pg-tcom-entry
     .synonym-antonym-section
@@ -171,11 +165,7 @@
   .pg-tcom-entry .sec-list-notes h2,
   .sec-example-sentences .box-examples .txt-example,
   .sec-example-sentences .txt-disclaimer,
-  .pg-dcom-entry
-    .sec-more-info
-    .list-other-word-forms
-    .other-word-form
-    .other-word-form-pos,
+  .pg-dcom-entry .sec-more-info .list-other-word-forms .other-word-form .other-word-form-pos,
   .pg-dcom-entry .sec-explanation .txt-item-notes,
   .pg-dcom-entry .sec-explanation h2,
   .pg-dcom-entry .sec-vocabulary-lists h2,
@@ -183,10 +173,7 @@
     color: var(--fg);
   }
 
-  .pg-tcom-entry
-    .wrapper-site-main
-    .box-content-primary
-    .box-headword-audio-pronunciation {
+  .pg-tcom-entry .wrapper-site-main .box-content-primary .box-headword-audio-pronunciation {
     box-shadow: 0 4px 16px #00000029;
   }
 
@@ -199,10 +186,7 @@
     background-color: var(--bg1);
   }
 
-  .pg-tcom-entry
-    .synonym-antonym-section
-    .definition-block
-    .synonym-antonym-panel {
+  .pg-tcom-entry .synonym-antonym-section .definition-block .synonym-antonym-panel {
     border-color: var(--bg);
   }
 
@@ -212,18 +196,14 @@
 }
 
 @-moz-document url-prefix("https://www.thesaurus.com/articles"), url-prefix("https://www.dictionary.com/culture"), url-prefix("https://www.dictionary.com/articles") {
-  :is(.pg-articles-category-page, .pg-articles-landing-page)
-    .list-article
-    .item-article
-    .hdr-title,
+  :is(.pg-articles-category-page, .pg-articles-landing-page) .list-article .item-article .hdr-title,
   .pg-articles-article-page .box-content-primary,
   .pg-articles-category-page,
   .pg-articles-landing-page {
     color: var(--fg);
   }
 
-  :is(.pg-articles-category-page, .pg-articles-landing-page)
-    .box-spotlight-article {
+  :is(.pg-articles-category-page, .pg-articles-landing-page) .box-spotlight-article {
     .hdr-article-title {
       color: var(--link-color);
     }
@@ -247,17 +227,11 @@
 @-moz-document url-prefix("https://www.dictionary.com/games") {
   .games-landing-page .dcom-games-header .subtitle,
   .games-landing-page .dcom-games-header .title,
-  .games-landing-page
-    .featured-quizzes-section
-    .featured-quizzes-header
-    .description,
+  .games-landing-page .featured-quizzes-section .featured-quizzes-header .description,
   .games-landing-page .featured-quizzes-section .featured-quizzes-header .title,
   .games-landing-page .featured-quizzes-section .featured-quiz-card,
   .games-landing-page .sec-arkadium-all-games,
-  .games-landing-page
-    .words-dot-com-section
-    .words-dot-com-header
-    .word-dot-come-title,
+  .games-landing-page .words-dot-com-section .words-dot-com-header .word-dot-come-title,
   .games-landing-page .words-dot-com-featured-game-card .content .description,
   .pg-dcom-games .below-game-headers .below-game-header,
   .pg-dcom-games .below-game-headers .below-game-subheader,
@@ -266,10 +240,7 @@
     color: var(--fg);
   }
 
-  .games-landing-page
-    .words-dot-com-featured-game-card:hover
-    .content
-    .game-name,
+  .games-landing-page .words-dot-com-featured-game-card:hover .content .game-name,
   .games-landing-page .words-dot-com-featured-game-card .content .game-name,
   .pg-dcom-games .below-game-crossword-links .crossword-link {
     color: var(--link-color);

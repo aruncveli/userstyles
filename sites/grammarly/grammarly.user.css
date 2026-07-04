@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.4
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -283,15 +283,11 @@
     --color-elevation-outline-default-1: #545454;
     --color-elevation-base-default-1: #1c1c1c;
     --elevation-low-border: 1px solid var(--color-elevation-outline-default-1);
-    --elevation-low-shadow: 0px 1px 4px 0.5px
-      var(--color-elevation-base-default-1);
-    --elevation-medium-border: 1px solid
-      var(--color-elevation-outline-default-1);
-    --elevation-medium-shadow: 0px 1px 8px 0.5px
-      var(--color-elevation-base-default-1);
+    --elevation-low-shadow: 0px 1px 4px 0.5px var(--color-elevation-base-default-1);
+    --elevation-medium-border: 1px solid var(--color-elevation-outline-default-1);
+    --elevation-medium-shadow: 0px 1px 8px 0.5px var(--color-elevation-base-default-1);
     --elevation-high-border: 1px solid var(--color-elevation-outline-default-1);
-    --elevation-high-shadow: 0px 2px 12px 0.5px
-      var(--color-elevation-base-default-1);
+    --elevation-high-shadow: 0px 2px 12px 0.5px var(--color-elevation-base-default-1);
     --button-primary-background-default: var(--green-30);
     --button-primary-background-hover: var(--green-20);
     --button-primary-background-active: var(--green-10);
@@ -354,9 +350,7 @@
     --button-critical-background-active: var(--red-10);
     --button-critical-text-default: var(--neutral-gray-100);
     --button-enterprise-text-default: var(--color-text-enterprise-default);
-    --button-enterprise-background-default: var(
-      --color-background-enterprise-default
-    );
+    --button-enterprise-background-default: var(--color-background-enterprise-default);
     --button-enterprise-background-hover: var(--purple-20);
     --button-enterprise-background-active: var(--purple-10);
 

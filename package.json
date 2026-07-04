@@ -1,14 +1,14 @@
 {
   "name": "userstyles",
   "description": "A collection of userstyles for simple and boring dark themes",
-  "author": "Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)",
-  "license": "MIT",
-  "type": "module",
   "keywords": [
-    "userstyles",
+    "dark-theme",
     "stylus",
-    "dark-theme"
+    "userstyles"
   ],
+  "license": "MIT",
+  "author": "Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)",
+  "type": "module",
   "scripts": {
     "check": "oxfmt --check",
     "fix": "oxfmt",

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.4
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -289,9 +289,7 @@
   .prescription.expired-prescription .toggle-element,
   .prescription.expired-prescription .toggle-element.visaMerInfo span,
   .prescription.expired-prescription .toggle-element.visaRecept span,
-  .prescription.expired-prescription
-    .prescription-toggle-optional-visibility
-    span {
+  .prescription.expired-prescription .prescription-toggle-optional-visibility span {
     color: var(--link);
   }
 

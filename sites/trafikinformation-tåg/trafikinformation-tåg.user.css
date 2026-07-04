@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Trafikinformation tåg Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.4
 @description    Official live status of Swedish trains
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -57,11 +57,7 @@
   .group-list.traffic-accordion .panel-heading a[aria-expanded="true"],
   .group-list.traffic-accordion .panel-heading a:hover,
   .group-list.traffic-accordion .panel-heading a[aria-expanded="true"]:hover,
-  .time-table.train.train-time-table
-    tr.station-passed
-    > td:first-child
-    .panel-heading
-    a {
+  .time-table.train.train-time-table tr.station-passed > td:first-child .panel-heading a {
     color: var(--fg);
   }
 
@@ -89,16 +85,8 @@
   .time-table.table-hover > tbody > tr:hover,
   .time-table th,
   .table-hover > tbody > tr:hover > *,
-  .time-table.train.train-time-table
-    tr.station-passed
-    > td:first-child
-    .panel-heading
-    a:focus,
-  .time-table.train.train-time-table
-    tr.station-passed
-    > td:first-child
-    .panel-heading
-    a:hover,
+  .time-table.train.train-time-table tr.station-passed > td:first-child .panel-heading a:focus,
+  .time-table.train.train-time-table tr.station-passed > td:first-child .panel-heading a:hover,
   .time-table.train.train-time-table tr.station-passed table tr {
     background-color: var(--bg1);
   }
@@ -119,11 +107,7 @@
     color: var(--bg);
   }
 
-  .time-table.train.train-time-table
-    tr.station-passed
-    > td:first-child
-    .panel-heading
-    a {
+  .time-table.train.train-time-table tr.station-passed > td:first-child .panel-heading a {
     --bs-btn-active-bg: var(--bg2);
     --bs-btn-border-color: var(--bg);
   }
@@ -137,21 +121,12 @@
 
   .group-list.traffic-accordion .panel-heading a:hover,
   .group-list.traffic-accordion .panel-heading a[aria-expanded="true"],
-  .time-table.train.train-time-table
-    tr.station-passed
-    > td:first-child
-    .panel-heading
-    a:focus,
-  .time-table.train.train-time-table
-    tr.station-passed
-    > td:first-child
-    .panel-heading
-    a:hover {
+  .time-table.train.train-time-table tr.station-passed > td:first-child .panel-heading a:focus,
+  .time-table.train.train-time-table tr.station-passed > td:first-child .panel-heading a:hover {
     border-color: var(--bg1);
   }
 
-  .group-list.traffic-accordion.station-messages
-    .traffic-message:not(:last-child),
+  .group-list.traffic-accordion.station-messages .traffic-message:not(:last-child),
   .ti-list-train .traffic-message:last-child {
     border-bottom-color: var(--bg1);
   }
