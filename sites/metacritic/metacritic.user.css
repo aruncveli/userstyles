@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.4
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -91,7 +91,8 @@
   div[title^="Metascore 0"],
   div[title^="Metascore null"],
   .where-to-watch__button,
-  .tv-seasons-modal__product-title {
+  .tv-seasons-modal__product-title,
+  button[data-testid="review-quote-read-more"] {
     color: var(--fg);
   }
 
@@ -152,7 +153,9 @@
   .score-count__text,
   .c-globalCarouselJustWatchLogo span,
   .c-search-item,
-  .c-navigation-pagination__item-content {
+  .c-navigation-pagination__item-content,
+  .review-read-more-modal__review-title,
+  .review-read-more-modal__quote {
     color: var(--fg) !important;
   }
 
@@ -171,7 +174,9 @@
   .c-movieDetails_sectionContainer,
   .global-header-menu__item--active:before,
   .global-button--secondary,
-  .where-to-watch__button {
+  .where-to-watch__button,
+  a[href$="reviews/"],
+  .bg-gray-800 {
     background-color: var(--bg);
   }
 
@@ -188,8 +193,7 @@
   }
 
   .c-tv-details__view-more-button:hover,
-  section.global-carousel_content[aria-label="New and Notable content"]
-    > *:hover,
+  section.global-carousel_content[aria-label="New and Notable content"] > *:hover,
   a.product-score-card:hover,
   .global-modal__wrapper,
   .g-bg-white,
@@ -209,7 +213,9 @@
   .global-header-title__link:hover,
   div[data-testid="filter-results"]:hover,
   .global-button--secondary:hover,
-  .where-to-watch__button:hover {
+  .where-to-watch__button:hover,
+  a[href$="reviews/"]:hover,
+  .bg-gray-800:hover {
     background-color: var(--bg1);
   }
 
@@ -255,19 +261,11 @@
   }
 
   .global-carousel__content-container.global-carousel_fade-right:before {
-    background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 0%,
-      var(--bg) 100%
-    ) !important;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--bg) 100%) !important;
   }
 
   .global-carousel__content-container.global-carousel_fade-left:after {
-    background-image: linear-gradient(
-      270deg,
-      rgba(0, 0, 0, 0) 0%,
-      var(--bg) 100%
-    ) !important;
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, var(--bg) 100%) !important;
   }
 
   .global-header-title,
@@ -330,7 +328,8 @@
   }
 
   .border-t,
-  .md\:border-t {
+  .md\:border-t,
+  .border-gray-600 {
     border-color: transparent;
   }
 
@@ -371,7 +370,8 @@
   #play-circle > path,
   .global-button__leading-icon,
   #whereToWatchIconHover > path,
-  #externalLink > path {
+  #externalLink > path,
+  #flag > path {
     stroke: var(--fg);
   }
 

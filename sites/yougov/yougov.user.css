@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.4
 @description    Dark mode for YouGov surveys
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -65,6 +65,11 @@
     background-color: var(--bg);
   }
 
+  .grid-cell-distinct,
+  textarea[readonly] {
+    background-color: var(--bg) !important;
+  }
+
   #rankingWidget #rankPlacementBlockSkinny .rankPlace .rank-selections {
     .rank-dropdown {
       &.diabledDropdown,
@@ -83,7 +88,7 @@
     }
   }
 
-  :root select,
+  /*:root select,
   body select {
     &.selected,
     &:focus:not(.focus) {
@@ -93,7 +98,7 @@
       border-color: #616e90;
       background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%2290gx9qw0ea%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22bcpp00x30c%22%20d%3D%22M9.414%2010.667%208%2012.08l-1.414-1.414-4.95-4.95L3.05%204.303%208%209.253l4.95-4.95%201.414%201.414z%22%2F%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23fff%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cmask%20id%3D%22st2uf5dhjb%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%2390gx9qw0ea%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%23st2uf5dhjb%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cmask%20id%3D%227xa1j14p5d%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20fill%3D%22%23fff%22%20xlink%3Ahref%3D%22%23bcpp00x30c%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20mask%3D%22url%28%237xa1j14p5d%29%22%20fill%3D%22%23fff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%200h16v16H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
     }
-  }
+  }*/
 
   .response-button:hover,
   .grid-layout tbody tr:hover > th,
@@ -126,8 +131,7 @@
     background-color: color-mix(in srgb, var(--bg), var(--fg));
   }
 
-  .grid-layout tbody tr:hover > td:hover,
-  textarea[readonly] {
+  .grid-layout tbody tr:hover > td:hover {
     background-color: var(--bg2);
   }
 
@@ -177,5 +181,13 @@
 
   .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: var(--bg1);
+  }
+
+  .grid-cell-distinct {
+    border-left-color: var(--bg);
+  }
+
+  .grid-header-distinct {
+    border-left-color: var(--bg1);
   }
 }

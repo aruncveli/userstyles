@@ -5,5 +5,5 @@ pre-commit:
       glob: "*.css"
       stage_fixed: true
     format:
-      run: bun oxlint {staged_files}
+      run: bun oxfmt {staged_files}
       stage_fixed: true
