@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.7.4
+@version 26.7.13
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -92,7 +92,9 @@
   div[title^="Metascore null"],
   .where-to-watch__button,
   .tv-seasons-modal__product-title,
-  button[data-testid="review-quote-read-more"] {
+  button[data-testid="review-quote-read-more"],
+  span.iconify,
+  span[data-testid="gallery-item-metascore-label"] {
     color: var(--fg);
   }
 
@@ -175,7 +177,6 @@
   .global-header-menu__item--active:before,
   .global-button--secondary,
   .where-to-watch__button,
-  a[href$="reviews/"],
   .bg-gray-800 {
     background-color: var(--bg);
   }
@@ -214,8 +215,8 @@
   div[data-testid="filter-results"]:hover,
   .global-button--secondary:hover,
   .where-to-watch__button:hover,
-  a[href$="reviews/"]:hover,
-  .bg-gray-800:hover {
+  .bg-gray-800:hover,
+  button[data-testid="review-quote-read-more"] {
     background-color: var(--bg1);
   }
 
@@ -244,7 +245,8 @@
   .c-navigationPagination_item.active .c-navigationPagination_itemButtonContent,
   button[data-testid="dropdown-v2-option"]:hover,
   .bg-\[\#f2f2f2\],
-  div[data-testid="product-card"]:hover .global-button--secondary:hover {
+  div[data-testid="product-card"]:hover .global-button--secondary:hover,
+  button[data-testid="review-quote-read-more"]:hover {
     background-color: var(--bg2);
   }
 
@@ -399,5 +401,9 @@
 
   .product-card-link__title {
     text-decoration-line: none !important;
+  }
+
+  button[data-state="checked"] {
+    --tw-ring-color: var(--bg) !important;
   }
 }
