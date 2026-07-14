@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Seedr Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.14
 @description Dark theme for Seedr
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -211,7 +211,8 @@
   .context-menu-theme-gloss,
   .item-buttons > span:hover,
   .swal2-popup,
-  .swal2-popup.swal2-toast {
+  .swal2-popup.swal2-toast,
+  .content-item.is_paused {
     background-color: var(--bg1);
   }
 
