@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Dictionary and Thesaurus Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.7.4
+@version 26.7.21
 @description Dark theme for Dictionary and Thesaurus.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -18,7 +18,7 @@
 @var color red-color "Red" #ff443a
 ==/UserStyle== */
 
-@-moz-document domain("thesaurus.com"), domain("dictionary.com") {
+@document domain("thesaurus.com"), domain("dictionary.com") {
   :root {
     color-scheme: dark;
   }
@@ -135,7 +135,7 @@
   }
 }
 
-@-moz-document url-prefix("https://www.thesaurus.com/browse"), url-prefix("https://www.dictionary.com/browse") {
+@document url-prefix("https://www.thesaurus.com/browse"), url-prefix("https://www.dictionary.com/browse") {
   :is(.pg-dcom-entry, .pg-tcom-entry) .copyright-txt,
   .box-entry-group-nav .lk-to-dcom-tcom,
   .box-entry-group-nav .lk-to-dcom-tcom:hover,
@@ -195,7 +195,7 @@
   }
 }
 
-@-moz-document url-prefix("https://www.thesaurus.com/articles"), url-prefix("https://www.dictionary.com/culture"), url-prefix("https://www.dictionary.com/articles") {
+@document url-prefix("https://www.thesaurus.com/articles"), url-prefix("https://www.dictionary.com/culture"), url-prefix("https://www.dictionary.com/articles") {
   :is(.pg-articles-category-page, .pg-articles-landing-page) .list-article .item-article .hdr-title,
   .pg-articles-article-page .box-content-primary,
   .pg-articles-category-page,
@@ -218,13 +218,13 @@
   }
 }
 
-@-moz-document domain("dictionary.com") {
+@document domain("dictionary.com") {
   .pg-dcom-home {
     background-color: var(--bg) !important;
   }
 }
 
-@-moz-document url-prefix("https://www.dictionary.com/games") {
+@document url-prefix("https://www.dictionary.com/games") {
   .games-landing-page .dcom-games-header .subtitle,
   .games-landing-page .dcom-games-header .title,
   .games-landing-page .featured-quizzes-section .featured-quizzes-header .description,

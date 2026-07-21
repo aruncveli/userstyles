@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.7.4
+@version 26.7.21
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -16,7 +16,7 @@
 @var color link        "Link color"              #eda3b9
 ==/UserStyle== */
 
-@-moz-document domain("www.apotea.se") {
+@document domain("www.apotea.se") {
   :root {
     --background-color: var(--bg);
     --bs-body-color: var(--fg);
@@ -212,7 +212,7 @@
   }
 }
 
-@-moz-document url-prefix("https://www.apotea.se/nyakassan") {
+@document url-prefix("https://www.apotea.se/nyakassan") {
   #checkout .checkout-form-title,
   #cart-item-container,
   input,
@@ -249,7 +249,7 @@
   }
 }
 
-@-moz-document url-prefix("https://www.apotea.se/recept/hamta-ut") {
+@document url-prefix("https://www.apotea.se/recept/hamta-ut") {
   .prescription-title {
     color: var(--fg) !important;
   }

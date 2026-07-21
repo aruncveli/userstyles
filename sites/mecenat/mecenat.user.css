@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Mecenat Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.21
 @description Dark theme for Mecenat.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -18,7 +18,7 @@
 @var color red-color "Red" #ff443a
 ==/UserStyle== */
 
-@-moz-document domain("mecenatalumni.com"), domain("mecenat.com") {
+@document domain("mecenatalumni.com"), domain("mecenat.com") {
   :root {
     color-scheme: dark;
   }

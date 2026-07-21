@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouGov Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.7.4
+@version 26.7.21
 @description    Dark mode for YouGov surveys
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -16,7 +16,7 @@
 @var color error "Red" #ff3b44
 @var color alert "Yellow" #ffd60a
 ==/UserStyle== */
-@-moz-document domain("survey2.yougov.com") {
+@document domain("survey2.yougov.com") {
   :root {
     color-scheme: dark;
     --color-grapefruit-300: var(--bg1);

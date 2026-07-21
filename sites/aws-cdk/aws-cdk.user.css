@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           AWS CDK Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.7.1
+@version 26.7.21
 @description    Dark mode only for the TypeScript docs of AWS CDK.
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -15,7 +15,7 @@
 @var color bg1 "Background lightened 1" #111
 @var color link-color "Link" #5cb8ff
 ==/UserStyle== */
-@-moz-document url-prefix("https://docs.aws.amazon.com/cdk/api/v2/docs/") {
+@document url-prefix("https://docs.aws.amazon.com/cdk/api/v2/docs/") {
   :root {
     color-scheme: dark;
     --color-background: var(--bg1);

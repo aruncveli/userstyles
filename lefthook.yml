@@ -1,7 +1,7 @@
 pre-commit:
   commands:
     bump:
-      run: bun scripts/bumpVersion.ts {staged_files}
+      run: bun scripts/bump-version.ts {staged_files}
       glob: "*.css"
       stage_fixed: true
     format:
