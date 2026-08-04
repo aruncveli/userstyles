@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.7.21
+@version 26.8.4
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -324,9 +324,9 @@
     --button-tertiary-border-default: #0000;
     --button-tertiary-border-hover: #0000;
     --button-tertiary-border-active: #0000;
-    --button-tertiary-text-default: var(--neutral-gray-30);
-    --button-tertiary-text-hover: var(--neutral-gray-30);
-    --button-tertiary-text-active: var(--neutral-gray-20);
+    --button-tertiary-text-default: var(--color-text-base-default);
+    --button-tertiary-text-hover: var(--color-text-base-default);
+    --button-tertiary-text-active: var(--color-text-base-default);
     --button-tertiary-shortcut-border-default: var(--neutral-gray-10);
     --button-tertiary-shortcut-border-hover: var(--neutral-gray-10);
     --button-tertiary-shortcut-border-active: var(--neutral-gray-10);
@@ -366,19 +366,443 @@
     --color-text-dark-default: var(--color-text-base-default);
   }
 
-  .navigation-item-activeLink_fe6dywx,
-  .navigation-item-activeLink_fe6dywx:hover,
-  .navigation-item-item_fgk0lu0:hover {
-    background-color: var(--color-background-base-subdued);
+  :host,
+  :root,
+  [data-origin-theme="grammarly"],
+  [data-origin-theme="grammarly"] [data-origin-mode="light"],
+  [data-origin-theme="grammarly"][data-origin-mode="light"],
+  [data-origin-mode="light"] {
+    --origin-color-fill-base-default: #1c1c1c;
+    --origin-color-fill-base-subdued: #2e2e2e;
+    --origin-color-fill-base-inverse: #fff;
+    --origin-color-text-base-default: #fff;
+    --origin-color-text-base-subdued: #bcbcbc;
+    --origin-color-text-base-inverse: #1c1c1c;
+    --origin-color-border-base-default: #7f7f7f;
+    --origin-color-border-base-subdued: #545454;
+    --origin-color-background-base-default: #1c1c1c;
+    --origin-color-background-base-subdued: #2e2e2e;
+    --origin-color-button-secondary-fill-default: #1c1c1c;
+    --origin-color-button-secondary-border-default: #545454;
+    --origin-color-button-secondary-content-default: #fff;
+    --origin-color-select-fill-default: #2e2e2e;
+    --origin-color-select-text-default: #fff;
+    --origin-color-select-icon-default: #fff;
+    --red-0: #ffeae9;
+    --red-10: #ffd1d0;
+    --red-20: #ffa8a8;
+    --red-30: #ff7a74;
+    --red-40: #ff4d45;
+    --red-60: #eb0a00;
+    --red-80: #cd0800;
+    --red-90: #8f0600;
+    --red-100: #510300;
+    --blue-0: #f3f6ff;
+    --blue-10: #d1dbfe;
+    --blue-20: #adbff9;
+    --blue-30: #7d99f0;
+    --blue-40: #3e6cf4;
+    --blue-60: #2551da;
+    --blue-80: #02379e;
+    --blue-90: #000a62;
+    --blue-100: #000a26;
+    --gold-0: #fff6e0;
+    --gold-10: #ffebb8;
+    --gold-20: #ffdc85;
+    --gold-30: #ffbf47;
+    --gold-40: #ffa10a;
+    --gold-60: #e57300;
+    --gold-80: #bd5200;
+    --gold-90: #7a3500;
+    --gold-100: #1a0b00;
+    --teal-0: #e6fdfd;
+    --teal-10: #ccfafa;
+    --teal-20: #b3f8f8;
+    --teal-30: #80f3f3;
+    --teal-40: #00e6e6;
+    --teal-60: #00c4c4;
+    --teal-80: #027d7d;
+    --teal-90: #005c5c;
+    --teal-100: #001f1f;
+    --green-0: #eafaf9;
+    --green-10: #b1f0e8;
+    --green-20: #73e1d4;
+    --green-30: #2cc9b6;
+    --green-40: #15a694;
+    --green-60: #027e6f;
+    --green-80: #016a5e;
+    --green-90: #014c43;
+    --green-100: #00231f;
+    --white-0: #fff;
+    --purple-0: #f7f6fe;
+    --purple-10: #ddd9f9;
+    --purple-20: #cac3f7;
+    --purple-30: #a598f0;
+    --purple-40: #8675eb;
+    --purple-60: #5e47e5;
+    --purple-80: #3d27c0;
+    --purple-90: #1b0d6f;
+    --purple-100: #0e073b;
+    --neutral-gray-0: #1c1c1c;
+    --neutral-gray-5: #242424;
+    --neutral-gray-10: #2e2e2e;
+    --neutral-gray-20: #383838;
+    --neutral-gray-30: #545454;
+    --neutral-gray-40: #707070;
+    --neutral-gray-60: #a8a8a8;
+    --neutral-gray-80: #d9d9d9;
+    --neutral-gray-90: #ebebeb;
+    --neutral-gray-100: #ffffff;
+
+    --neutralgray-0: var(--neutral-gray-0);
+    --neutralgray-10: var(--neutral-gray-10);
+    --neutralgray-20: var(--neutral-gray-20);
+    --neutralgray-30: var(--neutral-gray-30);
+    --neutralgray-40: var(--neutral-gray-40);
+    --neutralgray-60: var(--neutral-gray-60);
+    --neutralgray-80: var(--neutral-gray-80);
+    --neutralgray-90: var(--neutral-gray-90);
+    --neutralgray-100: var(--neutral-gray-100);
+    --transparent-0: hsla(0, 0%, 100%, 0);
+    --yellowgreen-0: #d5ff00;
+    --elevation-base-low:
+      0px 0px 2px 0px rgba(28, 28, 28, 0.5), 0px 1px 8px 0px rgba(28, 28, 28, 0.5);
+    --elevation-base-high:
+      0px 0px 2px 0px rgba(28, 28, 28, 0.5), 0px 6px 24px 0px rgba(28, 28, 28, 0.5);
+    --color-red-contrast-low: #eb0a00;
+    --color-red-contrast-high: #ff7a74;
+    --color-red-contrast-lower: #8f0600;
+    --color-red-contrast-higher: #ff7a74;
+    --color-red-contrast-lowest: #510300;
+    --color-red-contrast-highest: #ffeae9;
+    --color-tag-pro-icon-default: #1c1c1c;
+    --color-tag-pro-text-default: #1c1c1c;
+    --color-tag-pro-background-default: #ffbf47;
+    --color-tag-tip-background-default: #adbff9;
+    --color-tag-icon-default: #1c1c1c;
+    --color-tag-brand-background-default: #80f3f3;
+    --color-tag-inverse-background-default: #fff;
+    --color-tag-neutral-background-default: #d9d9d9;
+    --color-tag-premium-icon-default: #7a3500;
+    --color-tag-premium-text-default: #7a3500;
+    --color-tag-premium-background-default: #ffbf47;
+    --color-tag-success-background-default: #73e1d4;
+    --color-tag-warning-background-default: #ffdc85;
+    --color-tag-critical-background-default: #ffa8a8;
+    --color-blue-contrast-low: #2551da;
+    --color-blue-contrast-high: #7d99f0;
+    --color-blue-contrast-lower: #000a62;
+    --color-blue-contrast-higher: #7d99f0;
+    --color-blue-contrast-lowest: #000a26;
+    --color-blue-contrast-highest: #f3f6ff;
+    --color-fill-pro-default: #ffbf47;
+    --color-fill-pro-subdued: #2e2e2e;
+    --color-fill-base-default: #1c1c1c;
+    --color-fill-base-inverse: #fff;
+    --color-fill-base-subdued: #bcbcbc;
+    --color-fill-brand-default: #cac3f7;
+    --color-fill-hover-default: #545454;
+    --color-fill-light-default: #fff;
+    --color-fill-active-default: #707070;
+    --color-fill-clarity-default: #7d99f0;
+    --color-fill-clarity-subdued: #000a62;
+    --color-fill-premium-default: #ffbf47;
+    --color-fill-premium-subdued: #ffdc85;
+    --color-fill-success-default: #2cc9b6;
+    --color-fill-success-subdued: #014c43;
+    --color-fill-warning-default: #ffbf47;
+    --color-fill-warning-subdued: #7a3500;
+    --color-fill-critical-default: #ff7a74;
+    --color-fill-critical-subdued: #510300;
+    --color-fill-selected-default: #016a5e;
+    --color-fill-selected-secondary: #545454;
+    --color-fill-selected-transparent: rgba(2, 126, 111, 0.4);
+    --color-fill-correctness-default: #ff7a74;
+    --color-fill-correctness-subdued: #510300;
+    --color-fill-interactive-default: #2cc9b6;
+    --color-icon-pro-default: #1c1c1c;
+    --color-icon-base-default: #fff;
+    --color-icon-base-inverse: #707070;
+    --color-icon-base-subdued: #bcbcbc;
+    --color-icon-dark-default: #1c1c1c;
+    --color-icon-agent-default: #fff;
+    --color-icon-brand-default: #2cc9b6;
+    --color-icon-light-default: #fff;
+    --color-icon-rating-default: #e57300;
+    --color-icon-premium-default: #7a3500;
+    --color-icon-success-default: #2cc9b6;
+    --color-icon-warning-default: #ffbf47;
+    --color-icon-warning-inverse: #e57300;
+    --color-icon-business-default: #bcbcbc;
+    --color-icon-critical-default: #ff7a74;
+    --color-icon-critical-inverse: #cd0800;
+    --color-icon-selected-default: #73e1d4;
+    --color-icon-selected-secondary: #fff;
+    --color-icon-interactive-default: #2cc9b6;
+    --color-logo-coda-light: #fff;
+    --color-logo-coda-default: #fff;
+    --color-logo-coda-primary: #fff;
+    --color-logo-coda-secondary: #fff;
+    --color-logo-hero-dark: #421d24;
+    --color-logo-hero-default: #fff;
+    --color-logo-mail-light: #fff;
+    --color-logo-mail-default: #fff;
+    --color-logo-mail-primary: rgba(248, 217, 255, 0);
+    --color-logo-grammarly-dark: #1c1c1c;
+    --color-logo-grammarly-light: #fff;
+    --color-logo-grammarly-default: #fff;
+    --color-logo-grammarly-inverse: #1c1c1c;
+    --color-logo-grammarly-primary: #027e6f;
+    --color-logo-superhuman-light: #fff;
+    --color-logo-superhuman-default: #fff;
+    --color-logo-superhuman-primary: #d6d3fe;
+    --color-logo-superhuman-secondary: #fff;
+    --color-menu-icon-hover: #fff;
+    --color-menu-icon-default: #bcbcbc;
+    --color-text-edu-default: #1b0d6f;
+    --color-text-pro-default: #1c1c1c;
+    --color-text-base-default: #fff;
+    --color-text-base-inverse: #1c1c1c;
+    --color-text-base-subdued: #bcbcbc;
+    --color-text-dark-default: #1c1c1c;
+    --color-text-free-default: #1c1c1c;
+    --color-text-brand-default: #2cc9b6;
+    --color-text-light-default: #fff;
+    --color-text-premium-default: #7a3500;
+    --color-text-success-default: #2cc9b6;
+    --color-text-warning-default: #ffbf47;
+    --color-text-addition-default: #2cc9b6;
+    --color-text-business-default: #1c1c1c;
+    --color-text-critical-default: #ff7a74;
+    --color-text-deletion-default: #a8a8a8;
+    --color-text-selected-default: #73e1d4;
+    --color-text-selected-secondary: #fff;
+    --color-text-enterprise-default: #1b0d6f;
+    --color-vbar-line-hover: #a8a8a8;
+    --color-vbar-line-default: #707070;
+    --color-vbar-anchor-default: #7d99f0;
+    --color-green-contrast-low: #027e6f;
+    --color-green-contrast-high: #2cc9b6;
+    --color-green-contrast-lower: #016a5e;
+    --color-green-contrast-higher: #2cc9b6;
+    --color-green-contrast-lowest: #00231f;
+    --color-green-contrast-highest: #eafaf9;
+    --color-border-pro-default: #ffa10a;
+    --color-border-base-active: #adbff9;
+    --color-border-base-default: #7f7f7f;
+    --color-border-base-inverse: #1c1c1c;
+    --color-border-base-subdued: #545454;
+    --color-border-dark-subdued: #545454;
+    --color-border-brand-default: #2cc9b6;
+    --color-border-brand-subdued: #016a5e;
+    --color-border-focus-default: #2cc9b6;
+    --color-border-clarity-default: #3e6cf4;
+    --color-border-premium-default: #ffa10a;
+    --color-border-premium-subdued: #ffdc85;
+    --color-border-success-default: #2cc9b6;
+    --color-border-success-subdued: #016a5e;
+    --color-border-warning-default: #ffbf47;
+    --color-border-warning-subdued: #bd5200;
+    --color-border-addition-default: #2cc9b6;
+    --color-border-business-default: #bcbcbc;
+    --color-border-business-subdued: #707070;
+    --color-border-critical-default: #ff7a74;
+    --color-border-critical-subdued: #cd0800;
+    --color-border-deletion-default: #a8a8a8;
+    --color-border-elevated-default: #545454;
+    --color-border-selected-default: #027e6f;
+    --color-border-correctness-default: #f00c00;
+    --color-border-interactive-default: #2cc9b6;
+    --color-button-pro-fill-states: #2e2e2e;
+    --color-button-pro-fill-default: #ffbf47;
+    --color-button-pro-content-hover: #ffbf47;
+    --color-button-pro-content-active: #d9d9d9;
+    --color-button-pro-content-default: #1c1c1c;
+    --color-button-ghost-fill-hover: #00231f;
+    --color-button-ghost-fill-active: #014c43;
+    --color-button-ghost-fill-default: hsla(0, 0%, 100%, 0);
+    --color-button-ghost-content-states: #2cc9b6;
+    --color-button-ghost-content-default: #73e1d4;
+    --color-button-ghost-shortcut-border-default: rgba(2, 126, 111, 0.4);
+    --color-button-premium-fill-hover: #ffdc85;
+    --color-button-premium-fill-active: #ffebb8;
+    --color-button-premium-fill-default: #ffbf47;
+    --color-button-premium-content-default: #7a3500;
+    --color-button-primary-fill-hover: #73e1d4;
+    --color-button-primary-fill-active: #b1f0e8;
+    --color-button-primary-fill-default: #2cc9b6;
+    --color-button-primary-content-default: #1c1c1c;
+    --color-button-primary-shortcut-border-default: rgba(2, 126, 111, 0.4);
+    --color-button-critical-fill-hover: #ffa8a8;
+    --color-button-critical-fill-active: #ffd1d0;
+    --color-button-critical-fill-default: #ff7a74;
+    --color-button-critical-content-default: #1c1c1c;
+    --color-button-tertiary-fill-hover: #2e2e2e;
+    --color-button-tertiary-fill-active: #545454;
+    --color-button-tertiary-fill-default: hsla(0, 0%, 100%, 0);
+    --color-button-tertiary-border-default: hsla(0, 0%, 100%, 0);
+    --color-button-tertiary-content-states: #fff;
+    --color-button-tertiary-content-default: #bcbcbc;
+    --color-button-tertiary-shortcut-border-default: hsla(0, 0%, 44%, 0.5);
+    --color-button-secondary-fill-hover: #2e2e2e;
+    --color-button-secondary-fill-active: #545454;
+    --color-button-secondary-fill-default: hsla(0, 0%, 100%, 0);
+    --color-button-secondary-border-default: #545454;
+    --color-button-secondary-content-default: #fff;
+    --color-button-secondary-shortcut-border-default: hsla(0, 0%, 44%, 0.5);
+    --color-button-enterprise-fill-hover: #cac3f7;
+    --color-button-enterprise-fill-active: #ddd9f9;
+    --color-button-enterprise-fill-default: #fff;
+    --color-button-enterprise-content-default: #1b0d6f;
+    --color-orange-contrast-low: #e57300;
+    --color-orange-contrast-high: #ffbf47;
+    --color-orange-contrast-lower: #7a3500;
+    --color-orange-contrast-higher: #ffbf47;
+    --color-orange-contrast-lowest: #1a0b00;
+    --color-orange-contrast-highest: #fff6e0;
+    --color-purple-contrast-low: #5e47e5;
+    --color-purple-contrast-high: #a598f0;
+    --color-purple-contrast-lower: #1b0d6f;
+    --color-purple-contrast-higher: #a598f0;
+    --color-purple-contrast-lowest: #0e073b;
+    --color-purple-contrast-highest: #f7f6fe;
+    --color-select-fill-hover: #2551da;
+    --color-select-fill-default: #707070;
+    --color-select-icon-default: #ebebeb;
+    --color-select-icon-inverse: #ebebeb;
+    --color-select-text-default: #fff;
+    --color-select-text-inverse: #fff;
+    --color-select-border-inner: #707070;
+    --color-yellow-contrast-low: #ffa10a;
+    --color-yellow-contrast-high: #ffbf47;
+    --color-yellow-contrast-lower: #7a3500;
+    --color-yellow-contrast-higher: #ffbf47;
+    --color-yellow-contrast-lowest: #1a0b00;
+    --color-yellow-contrast-highest: #fff6e0;
+    --color-neutral-contrast-low: #707070;
+    --color-neutral-contrast-high: #bcbcbc;
+    --color-neutral-contrast-lower: #545454;
+    --color-neutral-contrast-higher: #bcbcbc;
+    --color-neutral-contrast-lowest: #1c1c1c;
+    --color-neutral-contrast-highest: #f5f5f5;
+    --color-mulberry-contrast-low: #707070;
+    --color-mulberry-contrast-high: #bcbcbc;
+    --color-mulberry-contrast-lower: #545454;
+    --color-mulberry-contrast-higher: #bcbcbc;
+    --color-mulberry-contrast-lowest: #1c1c1c;
+    --color-mulberry-contrast-highest: #f5f5f5;
+    --color-skeleton-fill-default: #2e2e2e;
+    --color-skeleton-shimmer: #545454;
+    --color-elevation-base-low: rgba(28, 28, 28, 0.5);
+    --color-highlight-pro-default: rgba(255, 161, 10, 0.2);
+    --color-highlight-addition-default: #014c43;
+    --color-highlight-critical-default: rgba(255, 77, 69, 0.2);
+    --color-highlight-deletion-default: #2e2e2e;
+    --color-highlight-noncritical-default: rgba(62, 108, 244, 0.2);
+    --color-underline-pro-default: #bd5200;
+    --color-underline-pro-subdued: #ffa10a;
+    --color-underline-critical-default: #ff4d45;
+    --color-underline-noncritical-default: #3e6cf4;
+    --color-background-edu-default: #fff;
+    --color-background-base-default: #1c1c1c;
+    --color-background-base-inverse: #fff;
+    --color-background-base-subdued: #2e2e2e;
+    --color-background-base-tertiary: #1c1c1c;
+    --color-background-base-transparent: rgba(28, 28, 28, 0);
+    --color-background-dark-subdued: #2e2e2e;
+    --color-background-free-default: #ebebeb;
+    --color-background-brand-default: #2cc9b6;
+    --color-background-brand-subdued: #014c43;
+    --color-background-neutral-default: #ebebeb;
+    --color-background-neutral-subdued: #bcbcbc;
+    --color-background-neutral-tertiary: #2e2e2e;
+    --color-background-overlay-default: rgba(46, 46, 46, 0.6);
+    --color-background-business-default: #ebebeb;
+    --color-background-business-subdued: #f5f5f5;
+    --color-background-enterprise-default: #fff;
+    --color-illustration-fill-1: #bcbcbc;
+    --color-illustration-fill-2: #ebebeb;
+    --color-illustration-fill-default: #545454;
+    --color-illustration-shadow-default: #545454;
+    --color-illustration-stroke-1: #a8a8a8;
+    --color-illustration-stroke-2: #fff;
+    --color-illustration-stroke-3: #ebebeb;
+    --color-illustration-stroke-default: #545454;
+    --white: #000;
   }
 
+  /* Sidebar tile navigation items */
+  .navigation-item-activeLink_fe6dywx,
+  .navigation-item-activeLink_fe6dywx:hover,
+  .navigation-item-item_fgk0lu0:hover,
+  [class*="_menuTileContainer_"] div:hover /* Sidebar menu tile hover */,
+  [class*="_expandedTileContainer_"] div /* Sidebar expanded/active tile icon background */,
+  [class*="_selectedMenuContainer_"] div /* Sidebar selected menu item background */ {
+    background-color: var(--color-background-base-subdued) !important;
+  }
+
+  /* Language settings preference cards */
+  [class*="_languageRow_"] /* Primary language preference row card */,
+  [class*="_autoDetectCard_"] /* Auto-detect language card */,
+  [class*="_item_t13a2"] /* Recent activity table row items */ {
+    background-color: var(--color-background-base-subdued) !important;
+    border-color: var(--color-border-base-subdued) !important;
+    color: var(--color-text-base-default) !important;
+  }
+
+  [class*="_item_t13a2"] * /* Recent activity table cell text */ {
+    color: var(--color-text-base-default) !important;
+  }
+
+  /* Section headers with hardcoded inline colors */
+  h1[style*="color"],
+  h2[style*="color"],
+  h3[style*="color"],
+  h4[style*="color"] {
+    color: var(--color-text-base-default) !important;
+  }
+
+  /* Status & device tags */
+  .gds-tag-neutral /* Neutral tag badges (e.g. "This Device") */ {
+    background-color: var(--color-background-base-subdued) !important;
+    color: var(--color-text-base-default) !important;
+    border: 1px solid var(--color-border-base-subdued) !important;
+  }
+
+  .gds-tag-neutral * {
+    color: var(--color-text-base-default) !important;
+  }
+
+  .gds-tag-success /* Success tag badges (e.g. "Verified") */ {
+    background-color: var(--green-90) !important;
+    color: var(--green-10) !important;
+  }
+
+  .gds-tag-success * {
+    color: var(--green-10) !important;
+  }
+
+  /* Device OS icon images */
+  img[class*="_osIcon_"] {
+    filter: invert(89%) hue-rotate(180deg);
+  }
+
+  /* Sidebar navigation tile icon stroke/fill colors */
   .navigation-item-activeLink_fe6dywx .gds-icon [stroke],
-  .navigation-item-item_fgk0lu0:hover .gds-icon [stroke] {
-    stroke: var(--color-illustration-stroke-1);
+  .navigation-item-item_fgk0lu0:hover .gds-icon [stroke],
+  [class*="_menuTileContainer_"]:hover svg path,
+  [class*="_expandedTileContainer_"] svg path,
+  [class*="_selectedMenuContainer_"] svg path {
+    stroke: var(--color-icon-base-default);
   }
 
   .navigation-item-item_fgk0lu0:hover .gds-icon [fill] {
     fill: var(--color-illustration-fill-1);
+  }
+
+  /* Security settings action status text (e.g. "Two-step verification off") */
+  [class*="_actionText_"] {
+    color: var(--color-text-base-default) !important;
   }
 
   .gds-menu-dropdown {
@@ -393,6 +817,28 @@
 
   .get-pro-button-getProButton_f1sxh398 {
     color: var(--button-pro-background-default);
+  }
+
+  /* Ensure the 'Try Pro' / 'Try for $0' button text is readable in dark mode
+     (non-hover state was showing dark text on a gold background). */
+  .yellow_f16pxtey span {
+    color: var(--color-text-light-default) !important;
+  }
+
+  /* More specific: target the actual Try Pro button used in the header */
+  .gds-button.gds-button-pro,
+  .gds-button.gds-button-pro *,
+  ._getProButton_7FJft_getProButton,
+  ._getProButton_7FJft_getProButton * {
+    color: var(--color-text-light-default) !important;
+  }
+
+  /* Hover: make Try Pro text dark for contrast against the gold background */
+  .gds-button.gds-button-pro:hover,
+  .gds-button.gds-button-pro:hover *,
+  ._getProButton_7FJft_getProButton:hover,
+  ._getProButton_7FJft_getProButton:hover * {
+    color: var(--color-text-dark-default) !important;
   }
 
   .gds-text-field-input {
@@ -705,11 +1151,252 @@
   .fqa53j6 /* Pro suggestion popover */ {
     background-color: var(--color-background-base-default);
   }
+
+  /* Fix: force suggestion card panels to dark background and readable text (coda scope) */
+  .SuggestionCard-module_root_hblmT {
+    background-color: var(--color-background-base-default) !important;
+    color: var(--color-text-base-default) !important;
+    border-color: var(--color-border-base-default) !important;
+  }
+
+  .SuggestionCard-module_root_hblmT * {
+    color: inherit !important;
+    background-color: transparent !important;
+  }
+
+  /* Fix: popover / suggestion bubble that appears on hover in the editor */
+  .origin-box.origin-box-elevation-low-subdued,
+  .origin-box.origin-box-elevation-low-subdued .origin-box-content {
+    background-color: var(--color-background-base-default) !important;
+    color: var(--color-text-base-default) !important;
+    border-color: var(--color-border-base-default) !important;
+  }
+
+  .origin-box.origin-box-elevation-low-subdued * {
+    color: inherit !important;
+    background-color: transparent !important;
+  }
+
+  ._bar_EEx5s_bar {
+    background-color: var(--color-background-base-subdued) !important;
+  }
 }
 
 @document url-prefix("https://app.grammarly.com/trash") {
   .f1rx9jzm /* Empty trash text */,
   .fal6plv {
     color: var(--color-text-base-default);
+  }
+}
+
+@document domain("account.grammarly.com") {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body,
+  #root {
+    background-color: var(--color-background-base-default) !important;
+    color: var(--color-text-base-default);
+    min-height: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+    background-image:
+      radial-gradient(circle at top, rgba(44, 201, 182, 0.08), transparent 35%),
+      linear-gradient(180deg, #171717 0%, #111 100%);
+  }
+
+  #root {
+    background-color: transparent !important;
+  }
+
+  [role="banner"],
+  [role="navigation"],
+  [role="main"],
+  [role="dialog"],
+  [role="menu"],
+  [role="listbox"],
+  [role="tooltip"] {
+    background-color: var(--color-background-base-default);
+    color: var(--color-text-base-default);
+  }
+
+  ._layoutTwoColumn_112di_7,
+  ._page_112di_32,
+  ._container_1cwta_3 {
+    background-color: transparent;
+  }
+
+  /* Primary icon sidebar nav and secondary sub-nav panels */
+  ._container_1bc82_3,
+  ._container_12rq4_3 {
+    background-color: var(--color-background-base-default) !important;
+    color: var(--color-text-base-default);
+    border-right: 1px solid var(--color-border-base-subdued);
+  }
+
+  ._menuTileContainer_1t4ql_1,
+  ._selectedMenuContainer_1t4ql_2 {
+    color: var(--color-text-base-default);
+  }
+
+  ._selectedMenuContainer_1t4ql_2,
+  ._menuTileContainer_1t4ql_1:hover {
+    background-color: var(--color-background-base-subdued) !important;
+  }
+
+  /* Left sidebar icon wrapper on hover. */
+  ._menuTileContainer_1t4ql_1:hover > div {
+    background-color: #383838 !important;
+    border-radius: 4px;
+  }
+
+  .gds-menu-container,
+  .gds-text-field-container {
+    background-color: var(--color-background-base-default);
+    border-color: var(--color-border-base-subdued);
+    color: var(--color-text-base-default);
+  }
+
+  .gds-text-field-input,
+  .gds-select-inner {
+    background-color: var(--color-background-base-default) !important;
+    color: var(--color-text-base-default) !important;
+    border-color: var(--color-border-base-subdued) !important;
+  }
+
+  .gds-link,
+  a {
+    color: var(--color-text-brand-default);
+  }
+
+  .gds-button-tertiary,
+  .gds-button-tertiary:hover,
+  .gds-button-tertiary:focus,
+  .gds-button-ghost,
+  .gds-button-ghost:hover {
+    color: var(--color-text-base-default) !important;
+  }
+
+  .gds-button-critical {
+    background-color: var(--color-background-critical-subdued) !important;
+    color: var(--color-text-base-inverse) !important;
+  }
+
+  .gds-button-critical,
+  .gds-button-critical * {
+    color: var(--color-text-base-default) !important;
+  }
+
+  .gds-button-critical [stroke] {
+    stroke: var(--color-text-base-default) !important;
+  }
+
+  .gds-button-critical [fill] {
+    fill: var(--color-text-base-default) !important;
+  }
+
+  div.gds-flex:has(> p.gds-text-medium) {
+    background-color: var(--color-background-base-default) !important;
+    color: var(--color-text-base-default) !important;
+    border: 1px solid var(--color-border-base-subdued);
+    border-radius: 12px;
+    box-shadow: var(--elevation-low-shadow);
+  }
+
+  /* Recovery-email banner wrapper with the mail icon and message row. */
+  div.gds-flex:has(> img):has(> .gds-flex) {
+    background-color: var(--color-background-base-default) !important;
+    color: var(--color-text-base-default) !important;
+    border: 1px solid var(--color-border-base-subdued);
+    border-radius: 12px;
+    box-shadow: var(--elevation-low-shadow);
+  }
+
+  div.gds-flex:has(> p.gds-text-medium) p.gds-text-medium {
+    color: var(--color-text-base-default) !important;
+  }
+
+  /* Delete-account section container. */
+  ._deleteAccountContainer_4zzzt_1 {
+    background-color: transparent !important;
+    color: var(--color-text-base-default) !important;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* Delete-account row that holds the warning text. */
+  ._deleteAccountContainer_4zzzt_1 > .gds-flex {
+    background-color: transparent !important;
+  }
+
+  /* Secondary warning copy inside the delete-account section. */
+  ._deleteAccountContainer_4zzzt_1 .gds-text-small {
+    color: var(--color-text-base-subdued) !important;
+  }
+
+  /* Account field labels that still use hashed utility classes on this page. */
+  ._small_booo3_110,
+  ._property_76rh6_1,
+  ._label_k4qiv_7 {
+    color: var(--color-text-base-default) !important;
+  }
+
+  /* Recovery-email value row, which is the third field group on the page. */
+  .gds-flex.gds-flex-direction-column
+    > div:nth-child(3)
+    > .gds-flex.gds-flex-direction-column
+    > .gds-flex {
+    background-color: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* Recovery-email info banner that Grammarly renders with inline teal styles. */
+  .gds-flex[style*="background-color: var(--teal-0)"] {
+    background-color: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Message row inside the recovery-email banner. */
+  .gds-flex[style*="background-color: var(--teal-0)"] > .gds-flex {
+    background-color: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Banner message text should stay readable on the dark page. */
+  .gds-flex[style*="background-color: var(--teal-0)"] > p {
+    color: var(--color-text-base-default) !important;
+  }
+
+  ::selection {
+    background-color: var(--color-background-brand-subdued);
+    color: var(--color-text-base-default);
+  }
+}
+
+/* Fix: force suggestion card panels to dark background and readable text */
+@document domain("grammarly.com") {
+  .SuggestionCard-module_root_hblmT {
+    background-color: var(--color-background-base-default) !important;
+    color: var(--color-text-base-default) !important;
+    border-color: var(--color-border-base-default) !important;
+  }
+
+  .SuggestionCard-module_root_hblmT * {
+    color: inherit !important;
+    background-color: transparent !important;
   }
 }

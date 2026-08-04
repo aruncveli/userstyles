@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "bunx",
+      "args": ["-y", "chrome-devtools-mcp", "--userDataDir", "user-data", "--categoryExtensions"]
+    }
+  }
+}
