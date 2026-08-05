@@ -18,7 +18,7 @@
 @var color red-color "Red" #ff443a
 ==/UserStyle== */
 
-@document domain("seriesreminder.com") {
+@-moz-document domain("seriesreminder.com") {
   :root {
     color-scheme: dark;
     --bs-secondary-color: var(--fg);
