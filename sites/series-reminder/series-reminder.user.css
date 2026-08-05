@@ -1,0 +1,135 @@
+/* ==UserStyle==
+@name Series Reminder Dark
+@namespace github.com/aruncveli/userstyles
+@version 26.8.5
+@description Dark theme for Series Reminder.
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/series-reminder/series-reminder.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" #fff
+@var color bg "Background" #000
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@document domain("seriesreminder.com") {
+  :root {
+    color-scheme: dark;
+    --bs-secondary-color: var(--fg);
+    --bs-emphasis-color: var(--fg);
+    --bs-body-color: var(--fg);
+    --bs-body-bg: var(--bg);
+    --bs-tertiary-bg: var(--bg1);
+    --bs-border-color: var(--bg);
+    --bs-dark-rgb: 255, 255, 255;
+  }
+
+  .accordion {
+    --bs-accordion-color: var(--fg);
+    --bs-accordion-active-color: var(--fg);
+    --bs-border-color: var(--bg);
+  }
+
+  .accordion-button {
+    --bs-accordion-btn-bg: var(--bg);
+    --bs-accordion-active-bg: var(--bg1);
+  }
+
+  .bg-light {
+    --bs-table-bg: var(--bg) !important;
+  }
+
+  .bg-light3 {
+    --bs-table-bg: var(--bg1);
+  }
+
+  .table {
+    --bs-table-border-color: var(--bg);
+  }
+
+  i,
+  .poster-card-title,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  input[type="text"],
+  #main-nav .navbar-nav .dropdown-menu > li > a,
+  .filter-label,
+  .sr-detail-block-title,
+  .sr-card-title,
+  blockquote,
+  .sr-editorial,
+  .slider-arrow-btn {
+    color: var(--fg);
+  }
+
+  h1[style*="color: #3E4555"],
+  h2[style*="color: #3E4555"],
+  h4[style*="color: #3E4555"],
+  h5[style*="color: #3E4555"],
+  strong[style*="color:#3e4555"],
+  li[style*="color: #86868b"],
+  div[style*="color: #3E4555"],
+  div[style*="color: #373a3c"] {
+    color: var(--fg) !important;
+  }
+
+  .bg-light2,
+  .bg-light3,
+  .hero-section,
+  body > .wrapper,
+  .light_border {
+    background-color: var(--bg);
+  }
+
+  .bg-light,
+  i[style*="background-color: #FFFFFF"],
+  section[style*="background-color: #ffffff"] {
+    background-color: var(--bg) !important;
+  }
+
+  #nameSearch,
+  .sr-card,
+  .select-light,
+  .trending-card,
+  .slider-arrow-btn {
+    background-color: var(--bg1);
+  }
+
+  div[style*="background: #ffffff"],
+  .config-btn-border {
+    background-color: var(--bg1) !important;
+  }
+
+  {
+    background-color: var(--bg) !important;
+  }
+
+  input[type="text"] {
+    border-color: var(--bg);
+  }
+
+  .light_border,
+  .config-btn-border {
+    border-color: var(--bg1);
+  }
+
+  div[style*="border: 1px solid #DFDFDF"] /* Cards */,
+  .sr-card {
+    border-color: var(--bg1) !important;
+  }
+
+  .hero-section {
+    border-bottom-color: var(--bg);
+  }
+}
