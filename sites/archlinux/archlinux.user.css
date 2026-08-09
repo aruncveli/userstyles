@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.8.5
+@version 26.8.9
 @description    Dark theme for the Arch Linux website
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -803,5 +803,106 @@
   .pun .checklist {
     background-color: var(--bg2);
     border-color: var(--bg1);
+  }
+}
+
+@-moz-document domain("lists.archlinux.org") {
+  :root {
+    color-scheme: dark;
+    --bs-body-color: var(--fg);
+    --bs-body-bg: var(--bg);
+  }
+
+  .table,
+  .page-item.disabled .page-link,
+  .all-lists table.lists .list-name,
+  .all-lists table.lists th,
+  .all-lists nav.sort-mode a,
+  .form-control,
+  .form-control:focus,
+  input::placeholder,
+  .btn-outline-secondary,
+  .dropdown-menu,
+  .dropdown-item,
+  .dropdown-item:focus,
+  .dropdown-item:hover,
+  .form-select,
+  .list-group-item,
+  .list-group-item-action:hover,
+  .list-group-item-action:focus,
+  .email-date .time span,
+  .thread-header .thread-titles,
+  .btn {
+    color: var(--fg);
+  }
+
+  .text-muted {
+    color: var(--fg1) !important;
+  }
+
+  .table {
+    --bs-table-striped-color: var(--fg);
+    --bs-table-bg: var(--bg);
+  }
+
+  a,
+  .page-link,
+  .page-link:hover {
+    color: var(--link-color);
+  }
+
+  body,
+  .footer,
+  .page-item.disabled .page-link,
+  .page-link,
+  .form-control:focus,
+  .list-group-item,
+  .replies .email .email-body,
+  .email-body blockquote,
+  .email-body blockquote blockquote,
+  .quoted-switch a {
+    background-color: var(--bg);
+  }
+
+  .page-link:hover,
+  .form-control,
+  .form-select,
+  .dropdown-menu,
+  .list-group-item-action:hover,
+  .list-group-item-action:focus,
+  #unreadnavbar > div {
+    background-color: var(--bg1);
+  }
+
+  .form-control:focus,
+  .form-select:focus,
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background-color: var(--bg2);
+  }
+
+  .table,
+  .page-item.disabled .page-link,
+  .page-link,
+  .page-link:hover,
+  .all-lists table.lists td:first-child,
+  .all-lists table.lists td,
+  .all-lists table.lists td:last-child,
+  .form-control,
+  .form-control:focus,
+  .btn-outline-secondary,
+  .form-select {
+    border-color: var(--bg);
+  }
+
+  .footer,
+  .table > :not(:first-child),
+  .replies .email {
+    border-top-color: var(--bg);
+  }
+
+  .page-header,
+  .all-lists .header {
+    border-bottom-color: var(--bg);
   }
 }
