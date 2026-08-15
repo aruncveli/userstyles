@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Series Reminder Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.8.5
+@version 26.8.15
 @description Dark theme for Series Reminder.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -28,6 +28,7 @@
     --bs-tertiary-bg: var(--bg1);
     --bs-border-color: var(--bg);
     --bs-dark-rgb: 255, 255, 255;
+    --bs-secondary-rgb: 255, 255, 255;
   }
 
   .accordion {
@@ -69,18 +70,26 @@
   .sr-card-title,
   blockquote,
   .sr-editorial,
-  .slider-arrow-btn {
+  .slider-arrow-btn,
+  .ui-widget-content,
+  .status-title,
+  .sr-editorial strong {
     color: var(--fg);
   }
 
-  h1[style*="color: #3E4555"],
-  h2[style*="color: #3E4555"],
-  h4[style*="color: #3E4555"],
-  h5[style*="color: #3E4555"],
-  strong[style*="color:#3e4555"],
-  li[style*="color: #86868b"],
-  div[style*="color: #3E4555"],
-  div[style*="color: #373a3c"] {
+  h1[style*="color: #3E4555" i],
+  h2[style*="color: #3E4555" i],
+  h4[style*="color: #3E4555" i],
+  h5[style*="color: #3E4555" i],
+  h6[style*="color: #3E4555" i],
+  strong[style*="color:#3e4555" i],
+  strong[style*="color: #3e4555" i],
+  li[style*="color: #86868b" i],
+  div[style*="color: #3E4555" i],
+  div[style*="color: #373a3c" i],
+  .searchbar li:hover,
+  .searchbar .ui-state-focus,
+  .searchbar .ui-state-active {
     color: var(--fg) !important;
   }
 
@@ -102,7 +111,8 @@
   .sr-card,
   .select-light,
   .trending-card,
-  .slider-arrow-btn {
+  .slider-arrow-btn,
+  .searchbar ul {
     background-color: var(--bg1);
   }
 
@@ -111,8 +121,13 @@
     background-color: var(--bg1) !important;
   }
 
-  {
-    background-color: var(--bg) !important;
+  .searchbar li:hover {
+    background-color: var(--bg2);
+  }
+
+  .searchbar .ui-state-focus,
+  .searchbar .ui-state-active {
+    background-color: inherit;
   }
 
   input[type="text"] {
@@ -120,7 +135,8 @@
   }
 
   .light_border,
-  .config-btn-border {
+  .config-btn-border,
+  .ui-widget.ui-widget-content {
     border-color: var(--bg1);
   }
 
