@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Series Reminder Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.8.15
+@version 26.8.28
 @description Dark theme for Series Reminder.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -27,8 +27,10 @@
     --bs-body-bg: var(--bg);
     --bs-tertiary-bg: var(--bg1);
     --bs-border-color: var(--bg);
+    --bs-white-rgb: 0, 0, 0;
     --bs-dark-rgb: 255, 255, 255;
     --bs-secondary-rgb: 255, 255, 255;
+    --bs-info-bg-subtle: var(--bg1);
   }
 
   .accordion {
@@ -54,6 +56,12 @@
     --bs-table-border-color: var(--bg);
   }
 
+  .table-light {
+    --bs-table-color: var(--fg);
+    --bs-table-bg: var(--bg1);
+    --bs-table-border-color: var(--bg);
+  }
+
   i,
   .poster-card-title,
   h1,
@@ -73,7 +81,9 @@
   .slider-arrow-btn,
   .ui-widget-content,
   .status-title,
-  .sr-editorial strong {
+  .sr-editorial strong,
+  .sr-toggle-desc,
+  .sr-toggle-title {
     color: var(--fg);
   }
 
@@ -89,7 +99,8 @@
   div[style*="color: #373a3c" i],
   .searchbar li:hover,
   .searchbar .ui-state-focus,
-  .searchbar .ui-state-active {
+  .searchbar .ui-state-active,
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: var(--fg) !important;
   }
 
@@ -97,7 +108,8 @@
   .bg-light3,
   .hero-section,
   body > .wrapper,
-  .light_border {
+  .light_border,
+  .select2-container--default .select2-selection--single {
     background-color: var(--bg);
   }
 
@@ -112,12 +124,15 @@
   .select-light,
   .trending-card,
   .slider-arrow-btn,
-  .searchbar ul {
+  .searchbar ul,
+  .coord-badge {
     background-color: var(--bg1);
   }
 
   div[style*="background: #ffffff"],
-  .config-btn-border {
+  .config-btn-border,
+  .fc-day-today,
+  .bg-secondary {
     background-color: var(--bg1) !important;
   }
 
@@ -136,7 +151,8 @@
 
   .light_border,
   .config-btn-border,
-  .ui-widget.ui-widget-content {
+  .ui-widget.ui-widget-content,
+  .coord-badge {
     border-color: var(--bg1);
   }
 
