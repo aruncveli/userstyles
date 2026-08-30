@@ -37,3 +37,4 @@ style.
 | [Gmail](sites/gmail)                                   | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css)                                 |
 | [Medium](sites/medium)                                 | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/medium/medium.user.css)                               |
 | [Series Reminder](sites/series-reminder)               | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/series-reminder/series-reminder.user.css)             |
+| [Pluralsight](sites/pluralsight)                       | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/pluralsight/pluralsight.user.css)                     |
