@@ -6,4 +6,5 @@ pre-commit:
       stage_fixed: true
     format:
       run: bun oxfmt {staged_files}
+      glob: "!*.png"
       stage_fixed: true
