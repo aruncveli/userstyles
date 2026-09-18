@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Medium Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.8.5
+@version 26.9.18
 @description Dark theme for Medium.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -23,38 +23,17 @@
     color-scheme: dark;
     --color-bg-neutral-primary: var(--bg);
     --color-fg-neutral-primary: var(--fg);
+    --color-border-neutral-primary: var(--bg);
+    --color-bg-neutral-secondary: var(--bg1);
+    --color-bg-neutral-tertiary: var(--bg1);
+    --color-bg-neutral-quaternary: var(--bg3);
+    --color-bg-neutral-elevated: var(--bg2);
+    --color-fg-neutral-secondary: var(--fg);
+    --color-fg-neutral-primary-hover: var(--fg);
+    --color-border-neutral-tertiary: var(--bg);
   }
 
-  input::placeholder,
-  .dz /* Join medium */,
-  .uq,
-  .aq:hover:not(:disabled) /* clap count */,
-  .lw:hover p /* comment count */,
-  .lz p /* Repost count */,
-  .mg:hover /* save */,
-  .mr:focus svg /* share */ {
-    color: var(--fg);
-  }
-
-  .i /* Header */ {
-    background-color: var(--bg);
-  }
-
-  .ay /* Search */,
-  .dc /* Enter your email */,
-  .agl /* popup */,
-  .agj::after /* popup */ {
-    background-color: var(--bg1);
-  }
-
-  .th /* Comments */ {
-    border-bottom-color: var(--bg);
-  }
-
-  .ld /* clap */,
-  .lf:hover /* clap hover */,
-  .fy /* comment */,
-  .lv:hover /* comment hover */ {
-    fill: var(--fg);
+  button[aria-label="Table of contents"] > span {
+    opacity: 1;
   }
 }
