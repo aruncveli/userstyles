@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Apotea Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.8.5
+@version 26.9.18
 @description    Dark theme for Apotea
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -22,6 +22,7 @@
     --bs-body-color: var(--fg);
     --bs-btn-hover-color: var(--fg);
     --bs-white-rgb: var(--bg);
+    --home-toplist-link-color: var(--link);
     color-scheme: dark;
   }
 
@@ -35,8 +36,6 @@
   }
 
   #header,
-  /*.header-container,
-  #toplinks,*/
   #popular-links-container,
   #brands-left,
   .general-form-item,
@@ -76,6 +75,25 @@
     background: var(--bg);
   }
 
+  #cart-items-table,
+  #cart-items-table th,
+  #cart-items-table td,
+  #cart-parent,
+  #cart-content .cart-cell-product,
+  #cart-content .product-image {
+    background-color: var(--bg) !important;
+    color: var(--fg);
+  }
+
+  #cart-items-table th {
+    color: var(--fg) !important;
+  }
+
+  #cart-content .cart-total-summary,
+  #cart-content #cart-header-sum {
+    color: var(--fg) !important;
+  }
+
   .facet-dropdown,
   .btn:hover,
   .checkout-field input,
@@ -85,7 +103,16 @@
   .filter-container,
   .filter-content,
   .bslabel-last,
-  .btn-disabled {
+  .btn-disabled,
+  #toplist-desktop,
+  #suggest-container .suggest-search-all,
+  #suggest-container .suggest-section-title,
+  #suggest-container .suggest-category-hit,
+  #suggest-container .suggest-brand-hit,
+  #suggest-container .suggest-article-hit,
+  .filter-content > .facet-main-btn,
+  .filter-items,
+  .filter-buttons {
     background: var(--bg1);
   }
 
@@ -105,8 +132,9 @@
 
   #last-sold,
   #home-right-banners,
-  #toplist.new-toplist-responsive {
-    background: var(--bg) !important;
+  #toplist.new-toplist-responsive,
+  #recommendation-0 {
+    background-color: var(--bg) !important;
   }
 
   div,
@@ -128,12 +156,10 @@
   #cart-content .ord-price,
   #cart-content .sum h4 #cart-header-sum,
   .form-control,
-  .form-control:focus,
   .product-block a:not(:hover),
   .product-block .is-med-div,
   #main-menu div li,
   #sidebar-categories .no-children a,
-  #sidebar-categories .no-children a:hover,
   #last-sold-heading,
   #toplist-header,
   .header-new-toplist-responsive,
@@ -144,17 +170,51 @@
   .main-container strong,
   .apotea-responsive-sub-social p,
   .rec-te,
-  #suggest-container .desc {
+  #suggest-container .desc,
+  #toplist-desktop .toplist-row::before,
+  #suggest-container .suggest-search-all a > div,
+  #suggest-container .suggest-section-title,
+  #suggest-container .suggest-category-name,
+  #suggest-container .suggest-brand-name,
+  .suggest-product-name,
+  #suggest-container .suggest-store-price,
+  .toggle-element.collapsed {
     color: var(--fg);
   }
 
   .apotea-responsive-footer {
+    h2,
     h4,
     a,
+    li,
     > div {
       background: var(--bg) !important;
       color: var(--fg) !important;
     }
+  }
+
+  .apotea-responsive-footer.footer-section,
+  .footer-static-session,
+  .settings-policy,
+  .cert-session,
+  #footer-bottom {
+    background-color: var(--bg);
+  }
+
+  .settings-policy,
+  .settings-policy a,
+  .cert-session,
+  #footer-bottom,
+  #footer-bottom a,
+  .footer-static-session,
+  .apotea-responsive-footer label,
+  .apotea-responsive-footer .separator {
+    color: var(--fg);
+  }
+
+  .input-group-addon {
+    background-color: var(--bg1) !important;
+    color: var(--fg) !important;
   }
 
   #cart-quantity-full,
@@ -198,17 +258,32 @@
     --bs-btn-color: var(--fg);
   }
 
+  .btn-success-checkout:hover,
+  #cart-header-to-checkout:active {
+    color: var(--fg) !important;
+  }
+
   a,
   #sidebar-categories .lvl-1:is(.collapsed):hover,
   .expand-pre-text,
   .collapse-pre-text,
-  #main-menu #popular-links-container a:hover {
+  #main-menu #popular-links-container a:hover,
+  .breadcrumb a,
+  .pagination > li > a {
     color: var(--link);
   }
 
   .description-expand svg,
   .description-collapse svg {
     stroke: var(--link);
+  }
+
+  .toggle-element.collapsed svg {
+    stroke: var(--fg);
+  }
+
+  .filter-content > .facet-main-btn {
+    box-shadow: none;
   }
 }
 

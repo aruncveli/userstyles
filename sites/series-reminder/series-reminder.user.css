@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Series Reminder Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.8.28
+@version 26.9.18
 @description Dark theme for Series Reminder.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -83,7 +83,8 @@
   .status-title,
   .sr-editorial strong,
   .sr-toggle-desc,
-  .sr-toggle-title {
+  .sr-toggle-title,
+  .sr-modal .modal-body {
     color: var(--fg);
   }
 
@@ -125,7 +126,9 @@
   .trending-card,
   .slider-arrow-btn,
   .searchbar ul,
-  .coord-badge {
+  .coord-badge,
+  .sr-modal .modal-body,
+  .sr-modal .modal-footer {
     background-color: var(--bg1);
   }
 
