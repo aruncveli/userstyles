@@ -3,11 +3,8 @@
     "chrome-devtools": {
       "command": "bunx",
       "args": [
-        "-y",
-        "chrome-devtools-mcp@1.8.0",
-        "--userDataDir",
-        "/home/aruncveli/code/userstyles/user-data",
-        "--categoryExtensions"
+        "chrome-devtools-mcp",
+       "--ws-endpoint=ws://127.0.0.1:9222/devtools/browser"
       ]
     }
   }

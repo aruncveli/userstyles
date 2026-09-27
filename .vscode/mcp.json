@@ -2,7 +2,7 @@
   "servers": {
     "io.github.ChromeDevTools/chrome-devtools-mcp": {
       "command": "bunx",
-      "args": ["-y", "chrome-devtools-mcp", "--userDataDir", "user-data", "--categoryExtensions"],
+      "args": ["chrome-devtools-mcp", "--ws-endpoint=ws://127.0.0.1:9222/devtools/browser"],
       "env": {},
       "type": "stdio"
     }

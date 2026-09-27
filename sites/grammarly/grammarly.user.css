@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Grammarly Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.8.5
+@version 26.9.27
 @description    Dark mode for Grammarly
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -1135,6 +1135,10 @@
     color: var(--color-background-base-default);
   }
 
+  ._secondaryCtaButtonText_YhKIY_secondaryCtaButtonText {
+    color: var(--color-background-base-default) !important;
+  }
+
   .feu4lv1 /* Spelling popover first item */,
   .secondary_f1u56jkx /* Spelling popover other items */ {
     color: var(--color-text-base-default);
@@ -1179,6 +1183,11 @@
 
   ._bar_EEx5s_bar {
     background-color: var(--color-background-base-subdued) !important;
+  }
+
+  /* Overall score control. */
+  .sqY1R4Er.QuZsUaXW.wEh8lZTS.dGQywJL5.eVb7DBLp {
+    background-color: rgb(var(--neutral0-rgb)) !important;
   }
 }
 

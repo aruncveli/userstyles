@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.9.18
+@version 26.9.27
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -113,6 +113,7 @@
   .score-header,
   .score-sentiment,
   .score-sentiment__texts--small,
+  .c-globalProductCardHorizontal_sentiment,
   .score-review-count a,
   .express-vpn__title,
   .express-vpn__subtitle,
@@ -363,6 +364,7 @@
   }
 
   #logoWordmark :nth-child(4),
+  [data-testid="logo"] path:nth-child(4),
   #logo_justwatch path,
   .global-header__nav-button--active svg,
   .c-siteFooter_socialLink svg,

@@ -1,0 +1,5 @@
+- When you edit a userstyle, the changes will be applied immediately to the page you are currently viewing. No need to refresh the page to see the changes.
+- When adding/modifying userstyles:
+  - If the selector is minified and not human-readable, add comments to explain what element the rule is targeting.
+  - Try to check if there are existing blocks of CSS where you can add a new selector. Likely, there are already existing rules for setting foreground color, various background colors, borders, etc.
+  - Avoid using !important in values unless absolutely required.
