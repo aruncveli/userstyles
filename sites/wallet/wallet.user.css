@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Wallet Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.9.27
+@version 26.9.29
 @description Dark theme for Wallet.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -152,12 +152,28 @@
     --mantine-color-orange-light-color: var(--mantine-color-orange-0);
     --mantine-color-orange-outline: var(--mantine-color-orange-4);
     --mantine-color-orange-outline-hover: rgba(255, 169, 77, 0.05);
+
+    /* Wallet's own palettes; the low indices are light surfaces */
+    --mantine-color-wallet-grey-0: var(--bg2);
+    --mantine-color-wallet-grey-1: var(--bg1);
+    --mantine-color-wallet-grey-2: var(--bg);
+    --mantine-color-wallet-grey-3: var(--bg3);
+    --mantine-color-wallet-grey-4: var(--mantine-color-dark-3);
+    --mantine-color-wallet-modal-0: var(--bg1);
+    --mantine-color-wallet-modal-1: var(--bg1);
+    --mantine-color-wallet-modal-2: var(--bg2);
+    --mantine-color-wallet-modal-4: var(--bg1);
+    --mantine-color-wallet-modal-5: var(--bg1);
+    --mantine-color-wallet-modal-6: var(--bg3);
+    /* Used as a text color on light modal surfaces */
+    --mantine-color-wallet-modal-8: var(--fg);
+    --mantine-color-app-colors-8: var(--bg1);
   }
 
   html,
   body,
   .mantine-AppShell-main {
-    background-color: var(--bg2) !important;
+    background-color: var(--bg) !important;
     color: var(--fg);
   }
 
@@ -171,8 +187,231 @@
     border-bottom-color: var(--bg1) !important;
   }
 
-  [class~="bg-white"] {
+  [class~="bg-white"],
+  [class~="!bg-white"] {
     color: var(--fg);
+  }
+
+  .mantine-Popover-dropdown,
+  .mantine-Menu-dropdown,
+  .mantine-Menu-arrow {
+    --popover-border-color: var(--bg3);
+    background-color: var(--bg2);
+    border-color: var(--bg3);
+    color: var(--fg);
+  }
+
+  /* Bulk action bar above record/import lists */
+  [class~="bg-wallet-grey-1"] {
+    background-color: var(--bg1);
+  }
+
+  /* Date group headers of record/import lists */
+  [class~="bg-wallet-grey-2"] {
+    background-color: var(--bg);
+  }
+
+  /* Cards and other raised surfaces */
+  .mantine-Card-root {
+    background-color: var(--bg1);
+  }
+
+  .mantine-Accordion-item {
+    --item-filled-color: var(--bg1);
+    --item-border-color: var(--bg2);
+  }
+
+  .mantine-Accordion-control:not(:disabled, [data-disabled]):hover {
+    background-color: var(--bg2);
+  }
+
+  .mantine-Dropzone-root {
+    background-color: var(--bg1);
+    border-color: var(--bg3);
+  }
+
+  /* Segmented control (e.g. the preset switcher in the date range picker) */
+  .mantine-SegmentedControl-root {
+    /* The pill marking the active segment, otherwise white */
+    --sc-color: var(--bg1);
+    --sc-label-color: var(--fg);
+    background-color: var(--bg3);
+  }
+
+  /* The record modal's type switcher sets its background inline */
+  .mantine-SegmentedControl-root[style*="background-color: white"] {
+    background-color: var(--bg2) !important;
+  }
+
+  /* Mantine declares --separator-color on the control itself, so setting it on the root
+     would be shadowed */
+  .mantine-SegmentedControl-control {
+    --separator-color: var(--mantine-color-dark-4);
+  }
+
+  .mantine-SegmentedControl-label {
+    color: var(--fg);
+  }
+
+  /* Mantine's hover darkens the label text instead; raise the segment's background */
+  .mantine-SegmentedControl-label:not([data-disabled], [data-active], [data-read-only]):hover {
+    color: var(--fg);
+    background-color: var(--bg3);
+  }
+
+  /* Day/month/year cells in the date pickers */
+  [class*="mantine-"][class*="pickerControl"]:hover:not([data-disabled], :disabled),
+  .mantine-Day-day:hover:not([data-disabled], :disabled) {
+    background-color: var(--bg3);
+  }
+
+  .mantine-Menu-item:where(:hover, :focus, [data-menu-active]):not(:disabled, [data-disabled]) {
+    --menu-item-hover: var(--bg3);
+  }
+
+  /* Progress bar tracks (e.g. the currency breakdown on Analytics) */
+  .mantine-Progress-root {
+    background-color: var(--bg1);
+  }
+
+  /* Close buttons (modals, inputs) are dark grey text that hover to a near-white background */
+  .mantine-CloseButton-root {
+    color: var(--mantine-color-dark-1);
+  }
+
+  .mantine-CloseButton-root:where(:not([data-disabled], :disabled)):is(:hover, :active) {
+    background-color: var(--bg3);
+    color: var(--fg);
+  }
+
+  /* Mantine's light-scheme rule has two classes/attributes worth of specificity */
+  [data-mantine-color-scheme] .mantine-Switch-track {
+    --switch-bg: var(--bg3);
+  }
+
+  /* Dashboard widget buttons and the percentage badge are styled inline */
+  .mantine-ActionIcon-root[style*="background-color: rgb(239, 240, 242)"] {
+    background-color: var(--bg3) !important;
+    color: var(--fg);
+  }
+
+  .mantine-Badge-root[style*="--badge-bg: #f1f3f5"] {
+    --badge-bg: var(--bg3) !important;
+  }
+
+  .mantine-ChartTooltip-tooltip {
+    border-color: var(--bg3);
+  }
+
+  /* Chips for selected multi-select values */
+  .mantine-Pill-root {
+    background-color: var(--bg3);
+    color: var(--fg);
+  }
+
+  .mantine-InputClearButton-root {
+    color: var(--fg);
+  }
+
+  /* Mantine renders dropdown options with a per-component class (Combobox / Select /
+     MultiSelect), so target the shared data attribute instead */
+  [data-combobox-option]:hover:not([data-combobox-selected], [data-combobox-disabled]) {
+    background-color: var(--bg3);
+  }
+
+  .mantine-Input-input,
+  .mantine-InputBase-input {
+    --input-bd: var(--bg1);
+    background-color: var(--bg1);
+    color: var(--fg);
+  }
+
+  /* The clear button paints itself with --input-bg via an inline style, so recolor the
+     variable on its container rather than fighting the inline value */
+  .mantine-Input-section {
+    --input-bg: var(--bg1);
+  }
+
+  .mantine-Checkbox-input:not(:checked) {
+    background-color: var(--bg3);
+    border-color: var(--bg3);
+  }
+
+  /* Chevron icon of the profile menu in the header */
+  .mantine-AppShell-header .mantine-ThemeIcon-root {
+    background-color: var(--bg3);
+    color: var(--fg);
+  }
+
+  .mantine-Tabs-tab {
+    --tab-hover-color: var(--bg2);
+  }
+
+  /* Sticky table header cells paint their own opaque background */
+  .mantine-Table-th {
+    background-color: var(--bg);
+  }
+
+  .mantine-Table-table {
+    --table-hover-color: var(--bg2);
+    --table-striped-color: var(--bg1);
+    --table-border-color: var(--bg);
+    /* Set as an inline style on the table, so it needs !important */
+    --table-highlight-on-hover-color: var(--bg2) !important;
+  }
+
+  /* Tailwind's preflight paints a light default border color on every element */
+  *,
+  ::before,
+  ::after {
+    border-color: var(--bg);
+  }
+
+  .mantine-Divider-root {
+    --divider-color: var(--bg);
+  }
+
+  /* Cards and their section separators sit on --bg1, so --bg is the darker neighbour.
+     Mantine's light-scheme rule has two classes/attributes worth of specificity */
+  [data-mantine-color-scheme] .mantine-Paper-root {
+    --paper-border-color: var(--bg);
+  }
+
+  .mantine-Card-section {
+    --border-color: var(--bg);
+  }
+
+  /* Elements inside the lightened side panel sit on --bg1 instead */
+  .mantine-AppShell-navbar,
+  .mantine-AppShell-navbar *,
+  [class~="bg-white"],
+  [class~="bg-white"] * {
+    --divider-color: var(--bg1);
+    --input-bd: var(--bg1);
+    border-color: var(--bg1);
+  }
+
+  /* Lift the filter inputs off the panel so they don't read as disabled */
+  [class~="bg-white"] .mantine-Input-section {
+    --input-bg: var(--bg2);
+  }
+
+  [class~="bg-white"] .mantine-Input-input,
+  [class~="bg-white"] .mantine-InputBase-input {
+    --input-bd: var(--bg3);
+    --input-placeholder-color: var(--mantine-color-dark-1);
+    background-color: var(--bg2);
+    border-color: var(--bg3);
+  }
+
+  /* Sticky tab bar */
+  div[style*="background: rgb(241, 243, 245)"] {
+    background-color: var(--bg1) !important;
+  }
+
+  /* Table header rows */
+  tr[style*="background: rgb(241, 243, 245)"] {
+    background-color: var(--bg) !important;
   }
 
   [style*="color: rgb(53, 64, 82)"],
@@ -200,19 +439,64 @@
     color: var(--fg) !important;
   }
 
+  /* The label is tinted green via an inline style, which is unreadable on the green
+     background of the active item */
+  .mantine-NavLink-root[data-active="true"] .mantine-NavLink-label {
+    color: var(--fg) !important;
+  }
+
   .mantine-NavLink-root:not([data-active="true"]):hover {
     --nl-hover: var(--bg2) !important;
     background-color: var(--bg2) !important;
     color: var(--fg) !important;
   }
 
-  .mantine-NavLink-root[class~="hover:!bg-wallet-grey-2"]:hover {
-    background-color: var(--bg2) !important;
-  }
-
   @layer utilities {
     .hover\:\!bg-wallet-grey-2:hover {
       background-color: var(--bg2) !important;
     }
+
+    .hover\:bg-wallet-grey-3:hover,
+    .focus-visible\:bg-wallet-grey-3:focus-visible {
+      background-color: var(--bg3);
+    }
+
+    .\!bg-white {
+      background-color: var(--bg1) !important;
+    }
+
+    .\!bg-app-colors-8,
+    .\!bg-wallet-grey-2 {
+      background-color: var(--bg2) !important;
+    }
+
+    .bg-app-colors-8,
+    .bg-wallet-grey-0,
+    .bg-wallet-modal-0,
+    .bg-wallet-modal-1 {
+      background-color: var(--bg1);
+    }
+
+    .border-wallet-modal-2 {
+      border-color: var(--bg2);
+    }
+
+    /* Mantine's gray-9 is a near-black text colour */
+    .text-gray-9,
+    .hover\:text-gray-9:hover {
+      color: var(--fg);
+    }
+
+    /* Inactive tab hover underline */
+    .hover\:border-gray-5:hover {
+      border-color: var(--bg3);
+    }
+  }
+}
+
+@-moz-document url-prefix("https://web.budgetbakers.com/records") {
+  /* Bulk action bar while records are selected */
+  [class~="bg-yellow-0"] {
+    background-color: var(--bg1) !important;
   }
 }

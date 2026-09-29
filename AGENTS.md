@@ -3,3 +3,4 @@
   - If the selector is minified and not human-readable, add comments to explain what element the rule is targeting.
   - Try to check if there are existing blocks of CSS where you can add a new selector. Likely, there are already existing rules for setting foreground color, various background colors, borders, etc.
   - Avoid using !important in values unless absolutely required.
+  - If an investigation shows that a rule currently scoped to a specific URL/sub-scope applies globally too, feel free to hoist it to the broader scope.
