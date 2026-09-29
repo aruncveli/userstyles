@@ -2,16 +2,14 @@
 
 A collection of simple and boring dark theme userstyles.
 
-No UX research was done behind picking the default colors. Background and
-foreground colors were just checked for sufficient constrast. But they are
-configurable.
+No UX research was done behind picking the default colors. Background and foreground colors were
+just checked for sufficient constrast. But they are configurable.
 
 ## Styles
 
-These styles are developed using and targeting the userstyles manager web
-extension [Stylus](https://github.com/openstyles/stylus). After installing the
-extension, click on any of the below links to install the corresponding user
-style.
+These styles are developed using and targeting the userstyles manager web extension
+[Stylus](https://github.com/openstyles/stylus). After installing the extension, click on any of the
+below links to install the corresponding user style.
 
 | Name                                                   | Install                                                                                                                                      |
 | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |

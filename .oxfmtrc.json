@@ -1,3 +1,4 @@
 {
-  "ignorePatterns": ["*.hbs"]
+  "ignorePatterns": ["*.hbs"],
+  "proseWrap": "always"
 }

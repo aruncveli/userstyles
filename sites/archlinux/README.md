@@ -4,8 +4,8 @@
 
 Dark theme for the Arch Linux website.
 
-For the AUR cgit, dark mode styles from
-[cgit homepage](https://git.zx2c4.com/cgit/) are copied as is.
+For the AUR cgit, dark mode styles from [cgit homepage](https://git.zx2c4.com/cgit/) are copied as
+is.
 
 For the Wiki turn on the built-in dark mode or
 [Wikipedia-Dark](https://github.com/StylishThemes/Wikipedia-Dark).
