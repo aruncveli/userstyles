@@ -17,10 +17,10 @@
   "devDependencies": {
     "@tsconfig/strictest": "2.0.8",
     "@types/bun": "1.4.2",
-    "@types/node": "26.6.1",
+    "@types/node": "26.6.4",
     "handlebars": "4.7.9",
-    "lefthook": "2.1.14",
-    "oxfmt": "0.68.0",
+    "lefthook": "2.1.16",
+    "oxfmt": "0.71.0",
     "typescript": "7.0.2"
   }
 }

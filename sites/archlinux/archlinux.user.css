@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.8.9
+@version 26.10.4
 @description    Dark theme for the Arch Linux website
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -803,6 +803,22 @@
   .pun .checklist {
     background-color: var(--bg2);
     border-color: var(--bg1);
+  }
+}
+
+@-moz-document url-prefix("https://bbs.archlinux.org/help.php") {
+  #punhelp .box {
+    background-color: var(--bg1);
+    border-color: var(--bg1);
+  }
+
+  #punhelp code,
+  #punhelp samp {
+    color: var(--fg);
+  }
+
+  #punhelp samp ins {
+    background-color: #ffa056;
   }
 }
 
