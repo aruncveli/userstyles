@@ -12,5 +12,6 @@ theme yet. And that you have to investigate and fix it.
     are already existing rules for setting foreground color, various background colors, borders,
     etc.
   - Avoid using !important in values unless absolutely required.
+  - Prefer direct colors or masks over filters when recoloring icons; use filters only when necessary.
   - If an investigation shows that a rule currently scoped to a specific URL/sub-scope applies
     globally too, feel free to hoist it to the broader scope.

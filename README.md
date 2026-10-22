@@ -31,8 +31,6 @@ below links to install the corresponding user style.
 | [Dictionary and Thesaurus](sites/dictionary-thesaurus) | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/dictionary-thesaurus/dictionary-thesaurus.user.css)   |
 | [AWS CLI](sites/aws-cli)                               | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/aws-cli/aws-cli.user.css)                             |
 | [Mecenat](sites/mecenat)                               | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/mecenat/mecenat.user.css)                             |
-| [Google Translate](sites/google-translate)             | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-translate/google-translate.user.css)           |
-| [Gmail](sites/gmail)                                   | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/gmail/gmail.user.css)                                 |
 | [Medium](sites/medium)                                 | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/medium/medium.user.css)                               |
 | [Series Reminder](sites/series-reminder)               | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/series-reminder/series-reminder.user.css)             |
 | [Pluralsight](sites/pluralsight)                       | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/pluralsight/pluralsight.user.css)                     |

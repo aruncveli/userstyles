@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SMHI Dark (Ten day forecast)
 @namespace      github.com/aruncveli/userstyles
-@version 26.8.5
+@version 26.10.22
 @description    Dark theme for SMHI's ten day forecast page
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -20,108 +20,340 @@
     color-scheme: dark;
   }
 
-  .smhi-header-logo img,
-  .sv-marketplace-sitevision-sub-menu button:after,
-  ._windDirection_1cjv5_1._icon_tnsbo_29 > img,
-  ._windDirection_1cjv5_1._icon_1jxgj_105 > img,
-  ._windDirection_1cjv5_1 > img,
-  .highcharts-root image[width="16"] {
-    filter: invert(1);
+  body {
+    background: var(--bg);
   }
 
   .sv-theme-standardtema {
-    --header-background-color: var(--bg);
+    --header-background-color: var(--bg1);
     --main-background-color: var(--bg);
     --color-sky-80: var(--fg);
-    --color-sky-10: var(--bg1);
-    --color-cloud-10: var(--bg);
-    --color-cloud-30: var(--bg);
+    --color-sky-10: var(--bg2);
+    --color-cloud-10: var(--bg1);
+    --color-cloud-30: var(--bg1);
     --color-cloud-100: var(--fg);
     --env-font-color: var(--fg);
     --env-element-font-color: var(--fg);
-    --env-focus-outline-color: var(--bg1);
+    --env-link-font-color: #7db8ff;
+    --env-link-hover-font-color: var(--fg);
+    --env-link-secondary-font-color: #7db8ff;
+    --env-focus-outline-color: #7db8ff;
     --env-section-background-color: var(--bg);
   }
 
-  .sv-nestedlistmenu-portlet a,
-  .sv-nestedlistmenu-portlet a:hover,
-  .sv-marketplace-sitevision-sub-menu a:hover,
-  ._eosMenuItem_g6j51_129,
-  a._warningTextContainer_2n9on_1._warningTextContainer_2n9on_1 span {
+  .smhi-page-header,
+  .smhi-page-footer {
+    color: var(--fg);
+    background: var(--bg1);
+  }
+
+  .smhi-page-header img[alt="En"] {
+    filter: invert(1);
+  }
+
+  .smhi-page-header a,
+  .smhi-page-header button,
+  nav[aria-label="Breadcrumb"] {
     color: var(--fg);
   }
 
-  ._autocomplete_yykhz_205 {
-    background-color: var(--bg);
+  body a:link,
+  body a:visited {
+    color: #7db8ff;
   }
 
-  .lbDkoyRdUHp4p3jqVNPO.NiNr7k2boEzl1t49Ahj1 /* tabs on top */,
-  .smhi-main-nav .smhi-main-nav__link:hover,
-  ._autocomplete_yykhz_205:focus-within,
-  ._eosMenuItem_g6j51_129,
-  ._list_yykhz_331 ._favoritesHeader_yykhz_334,
-  ._tooltip_spxyq_206 > span {
-    background-color: var(--bg1);
+  .smhi-social-sharing__item a,
+  .smhi-page-footer a {
+    color: #7db8ff !important;
   }
 
-  .lbDkoyRdUHp4p3jqVNPO.NiNr7k2boEzl1t49Ahj1:hover,
-  ._eosMenuItem_g6j51_129:hover:not(._noHover_g6j51_130),
-  ._eosMenuItem_g6j51_129._active_g6j51_141 {
-    background-color: var(--bg2);
+  .smhi-social-sharing__item,
+  .smhi-page-header a span,
+  .smhi-page-footer,
+  .smhi-page-footer * {
+    color: var(--fg);
   }
 
-  ._root_14vw9_129,
-  .aurora-root-module_root__QHlfl {
-    --colorCloud10: var(--bg1);
-    --colorCloud20: var(--bg1);
-    --colorCloud30: var(--bg);
-    --colorCloud60: var(--fg);
-    --colorCloud70: var(--fg);
-    --colorCloud100: var(--fg);
-    --colorSky10: var(--bg1);
-    --colorSky20: var(--bg1);
-    --colorSky30: var(--bg);
-    --colorSky40: var(--bg);
-    --colorSky50: var(--bg);
-    --colorHorizon10: var(--bg);
-    --colorZenith: var(--bg);
-    --hoverFillColor: var(--bg1);
-    --selectedHoverFillColor: var(--bg1);
-    --activeFillColor: var(--bg1);
-    --selectedActiveFillColor: var(--bg1);
-    --colorNadir: var(--fg);
-    --borderColor: var(--bg);
-    --borderColorSecondary: var(--bg);
+  body .smhi-page-header a span[class] {
+    color: var(--fg);
   }
 
-  .highcharts-background {
-    fill: var(--bg);
+  .smhi-page-header a svg {
+    filter: invert(1);
   }
 
-  ._forecastContainer_4olyg_1 ._markerContent_4olyg_18 ._weatherSymbol_4olyg_45,
-  ._forecastContainer_4olyg_1 ._markerContent_4olyg_18 ._weatherSymbol_4olyg_45._selected_4olyg_71 {
-    background-color: var(--fg);
-    border-color: var(--fg);
+  main nav {
+    color: var(--fg);
+    background: var(--bg1);
+    border-color: var(--bg2);
   }
 
-  @media (hover: hover) {
-    ._forecastContainer_4olyg_1 ._markerContent_4olyg_18 ._weatherSymbol_4olyg_45:hover {
-      background-color: var(--fg);
-      border-color: var(--fg);
-    }
+  main nav a,
+  main nav button {
+    color: var(--fg);
+    border-color: var(--bg2);
   }
 
-  ._forecastContainer_1ha49_1 ._markerContent_1ha49_18 ._markerLabel_1ha49_30 {
-    color: var(--bg);
-    text-shadow: none;
+  main nav button::after {
+    background-image: none !important;
+    background-color: var(--fg) !important;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13.41 15.15 12 16.56l-1.41-1.41-6.3-6.3.71-.7.71-.71L12 13.73l6.29-6.29.71.71.71.7z'/%3E%3C/svg%3E") center / 24px auto no-repeat;
   }
 
-  ._tooltip_spxyq_206 span,
-  ._tooltip_y73h5_221 span {
+  body .sv-nestedlistmenu-portlet a,
+  body .sv-nestedlistmenu-portlet a:link,
+  body .sv-nestedlistmenu-portlet a:visited,
+  body main nav a,
+  body main nav a:link,
+  body main nav a:visited {
+    color: var(--fg);
+  }
+
+  main nav a:hover,
+  main nav a:focus-visible,
+  main nav button:hover,
+  main nav button:focus-visible {
+    color: var(--fg);
+    background: var(--bg2);
+  }
+
+  .sv-nestedlistmenu-portlet a:hover,
+  .sv-nestedlistmenu-portlet a:focus-visible,
+  body main nav a:hover,
+  body main nav a:focus-visible {
     color: var(--fg) !important;
   }
 
-  path.highcharts-grid-line {
+  main nav a {
+    background: var(--bg1);
+  }
+
+  main nav a[aria-current="page"] {
+    background: var(--bg2);
+    border-left-color: #7db8ff;
+  }
+
+  /* Reuse SMHI's dark-palette tokens with black/gray surfaces. */
+  .B2wDDG_app {
+    color-scheme: dark;
+    --lightningcss-light: ;
+    --lightningcss-dark: initial;
+    --colorZenith: var(--bg);
+    --colorNadir: var(--fg);
+    --colorHorizon10: var(--bg1);
+    --colorHorizon100: var(--fg);
+    --colorCloudBase: var(--bg1);
+    --colorCloud10: var(--bg2);
+    --colorCloud20: var(--bg1);
+    --colorCloud30: var(--bg2);
+    --colorCloud40: #48535c;
+    --colorCloud50: #647078;
+    --colorCloud60: var(--fg5);
+    --colorCloud70: #a6b1ba;
+    --colorCloud80: #d0d6db;
+    --colorCloud90: #ebeef0;
+    --colorCloud100: var(--fg);
+    --colorSkyBase: var(--bg1);
+    --colorSky10: var(--bg2);
+    --colorSky20: var(--bg2);
+    --colorSky30: var(--bg2);
+    --colorSky40: #0054a6;
+    --colorSky50: #0c6bc4;
+    --colorSky60: #7db8ff;
+    --colorSky70: #99d6ff;
+    --colorSky80: var(--fg);
+    --colorSky90: #b3dfff;
+    --colorSky100: #def1ff;
+    --fillColor: var(--bg1);
+    --textColor: var(--fg);
+    --borderColor: var(--bg2);
+    --borderColorSecondary: var(--bg2);
+    --focusOutlineColor: #7db8ff;
+    --modal-background-color: rgb(18 33 43 / 50%);
+    background-color: var(--bg);
+  }
+
+  /* Diagram series and legends use SMHI's brighter dark-palette colors. */
+  .B2wDDG_app [class*="_charts"],
+  .highcharts-tooltip-container .highcharts-tooltip {
+    --colorHeatwave60: #f82b37;
+    --colorHeatwave70: #fc5f6a;
+    --colorCloud40: var(--fg5);
+    --colorCloud70: #a6b1ba;
+  }
+
+  /* Keep the diagram's horizontal-scroll fades dark. */
+  .B2wDDG_app [class*="_charts"] [class*="_shadow"] {
+    --shadowStart: var(--bg2);
+    --shadowEnd: rgb(0 0 0 / 0%);
+  }
+
+  /* Highcharts retains light-theme surfaces outside the forecast's theme tokens. */
+  .B2wDDG_app .highcharts-background,
+  .B2wDDG_app .highcharts-scrollable-mask {
+    fill: var(--bg);
+  }
+
+  .B2wDDG_app .highcharts-plot-border,
+  .B2wDDG_app .highcharts-grid-line {
+    stroke: var(--bg2);
+  }
+
+  .B2wDDG_app .highcharts-axis-line,
+  .B2wDDG_app .highcharts-tick {
+    stroke: var(--fg5);
+  }
+
+  /* Highcharts sets label fills inline, so these need priority. */
+  .B2wDDG_app .highcharts-root text {
+    fill: var(--fg) !important;
+  }
+
+  .B2wDDG_app .highcharts-text-outline {
+    fill: var(--bg);
     stroke: var(--bg);
+  }
+
+  /* Embedded SVG chart arrows cannot inherit fill; inversion preserves each direction. */
+  .B2wDDG_app .highcharts-root image[*|href*="width='16'"],
+  .B2wDDG_app img[class*="_legendSwatch"][src*="width='16'"] {
+    filter: invert(1);
+  }
+
+  /* Chart tooltips are rendered outside the forecast app and reset its palette. */
+  .highcharts-tooltip-container .highcharts-tooltip {
+    color-scheme: dark;
+    --colorCloud100: var(--fg);
+    --colorCloud60: var(--fg5);
+    --colorSky60: #7db8ff;
+    --colorSky70: #99d6ff;
+    --fillColor: var(--bg1);
+  }
+
+  .highcharts-tooltip-container .highcharts-tooltip > span {
+    color: var(--fg) !important;
+    background-color: var(--bg1);
+    border-color: var(--bg2);
+  }
+
+  /* Map location labels: dark outlines keep white text readable over map layers. */
+  .B2wDDG_app .leaflet-container [class*="_markerLabel"] {
+    color: var(--fg);
+    text-shadow:
+      -1px -1px var(--bg), 0 -1px var(--bg), 1px -1px var(--bg),
+      -1px 0 var(--bg), 1px 0 var(--bg),
+      -1px 1px var(--bg), 0 1px var(--bg), 1px 1px var(--bg);
+  }
+
+  /* Advisory card icons. */
+  .B2wDDG_app svg[class*="_warningIcon"] {
+    fill: var(--fg);
+  }
+
+  /* Advisory cards are links, but retain the forecast's primary text color. */
+  body .B2wDDG_app a[class*="_card"] {
+    color: var(--textColorCloud);
+  }
+
+  /* Keep secondary control borders neutral, including the selected view. */
+  .B2wDDG_app button[class*="_secondary"] {
+    --colorSky60: var(--bg2);
+  }
+
+  /* Hourly table headers inside expanded forecast days. */
+  .B2wDDG_app [class*="_forecastDayTable"] th {
+    background-color: var(--bg1);
+  }
+
+  /* The search widget hardcodes light colors rather than using theme tokens. */
+  .B2wDDG_app [class*="_autocomplete"],
+  .B2wDDG_app [class*="_favoritesHeader"],
+  .B2wDDG_app [class*="_eosMenuItem"] {
+    color: var(--fg);
+    background-color: var(--bg1);
+  }
+
+  /* Search-result municipality and location-type subtitles hardcode a dark color. */
+  .B2wDDG_app [class*="_eosMenuItem"] [class*="_typeText"] {
+    color: var(--fg);
+  }
+
+  .B2wDDG_app [class*="_eosMenuItem"]:hover,
+  .B2wDDG_app [class*="_eosMenuItem"][class*="_active"],
+  .B2wDDG_app [class*="_autocomplete"]:focus-within {
+    background-color: var(--bg2);
+  }
+
+  /* Replace the embedded dark wind arrow without changing its direction. */
+  .B2wDDG_app [class*="_windDirection"] > img {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M12 22.5 16.5 15h-3V1.5h-3V15h-3Z'/%3E%3C/svg%3E");
+  }
+
+  /* Centered daytime light-rain-shower symbol: yellow rays and blue rain. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/8.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M16.863 8.02a6.08 6.08 0 0 0-6.074 6.074 6.08 6.08 0 0 0 6.074 6.074c3.348 0 6.07-2.727 6.07-6.074s-2.722-6.074-6.07-6.074'/%3E%3Cpath fill='%23ffea00' d='M10.79 14.094a6.08 6.08 0 0 1 6.073-6.074c3.348 0 6.07 2.726 6.07 6.074s-2.722 6.074-6.07 6.074a6.08 6.08 0 0 1-6.074-6.074m6.074-7.473c-4.12 0-7.472 3.352-7.472 7.473 0 4.12 3.351 7.472 7.472 7.472s7.473-3.351 7.473-7.472-3.352-7.473-7.473-7.473M16.863 4.926a.7.7 0 0 1-.703-.7V1.189a.702.702 0 0 1 1.402 0v3.039c0 .386-.312.699-.699.699M23.84 7.816a.701.701 0 0 1-.496-1.195l2.148-2.148a.703.703 0 0 1 .992 0 .71.71 0 0 1 0 .992l-2.148 2.144a.7.7 0 0 1-.496.207M9.883 7.816a.7.7 0 0 1-.496-.207L7.242 5.465a.703.703 0 0 1 0-.992.7.7 0 0 1 .988 0L10.38 6.62a.701.701 0 0 1-.496 1.195M6.992 14.793H3.957a.699.699 0 1 1 0-1.398h3.035a.699.699 0 1 1 0 1.398'/%3E%3Cpath fill='%23cfd6dc' d='M23.027 10.863a6.32 6.32 0 0 0-6.238 5.32 3.9 3.9 0 0 0-2.074-.585 3.984 3.984 0 0 0-3.992 3.988 3.95 3.95 0 0 0 2.582 3.727h11.21a6.31 6.31 0 0 0 4.829-6.133 6.32 6.32 0 0 0-6.317-6.317'/%3E%3Cpath fill='%232c404b' d='M13.305 23.313a3.95 3.95 0 0 1-2.582-3.727 3.986 3.986 0 0 1 6.066-3.402 6.32 6.32 0 0 1 6.238-5.32 6.32 6.32 0 0 1 6.317 6.316 6.31 6.31 0 0 1-4.828 6.133ZM23.027 9.46a7.675 7.675 0 0 0-7.172 4.86 5.396 5.396 0 0 0-6.531 5.266c0 2.241 1.406 4.268 3.496 5.038l.235.086h11.629l.16-.04a7.68 7.68 0 0 0 5.898-7.491c0-4.254-3.46-7.72-7.715-7.72'/%3E%3Cpath fill='%237db8ff' d='M16.7 33.512a.7.7 0 0 1-.352-.098.697.697 0 0 1-.254-.957l3.5-6a.7.7 0 1 1 1.21.707l-3.5 6a.7.7 0 0 1-.605.348'/%3E%3C/svg%3E");
+  }
+
+  /* Centered day/night light-rain symbol: brighten rain, preserve the cloud. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/18.svg"],
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/night/18.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%237db8ff' d='M14.25 29.023a.699.699 0 0 1-.605-1.05l3.5-6a.7.7 0 0 1 .957-.254c.335.195.449.625.253.957l-3.5 6a.7.7 0 0 1-.605.347'/%3E%3Cpath fill='%23cfd6dc' d='M19.992 6.375c-3.152 0-5.758 2.316-6.238 5.32a3.986 3.986 0 0 0-6.063 3.406 3.95 3.95 0 0 0 2.579 3.723h11.214a6.306 6.306 0 0 0 4.828-6.129 6.326 6.326 0 0 0-6.32-6.32'/%3E%3Cpath fill='%232c404b' d='M10.27 18.824a3.95 3.95 0 0 1-2.579-3.722 3.986 3.986 0 0 1 6.063-3.407c.48-3.004 3.086-5.32 6.238-5.32a6.32 6.32 0 0 1 6.317 6.32 6.3 6.3 0 0 1-4.829 6.13Zm9.722-13.847a7.68 7.68 0 0 0-7.172 4.855 5.396 5.396 0 0 0-6.531 5.27 5.39 5.39 0 0 0 3.496 5.039l.235.086h11.628l.16-.04a7.68 7.68 0 0 0 5.903-7.492c0-4.257-3.461-7.718-7.719-7.718'/%3E%3C/svg%3E");
+  }
+
+  /* Centered daytime rain-shower symbol: yellow rays and two blue rain marks. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/9.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M16.863 8.02a6.08 6.08 0 0 0-6.074 6.074 6.08 6.08 0 0 0 6.074 6.074c3.348 0 6.07-2.727 6.07-6.074s-2.722-6.074-6.07-6.074'/%3E%3Cpath fill='%23ffea00' d='M10.79 14.094a6.08 6.08 0 0 1 6.073-6.074c3.348 0 6.07 2.726 6.07 6.074s-2.722 6.074-6.07 6.074a6.08 6.08 0 0 1-6.074-6.074m6.074-7.473c-4.12 0-7.472 3.352-7.472 7.473 0 4.12 3.351 7.472 7.472 7.472s7.473-3.351 7.473-7.472-3.352-7.473-7.473-7.473M16.863 4.926a.7.7 0 0 1-.703-.7V1.189a.702.702 0 0 1 1.402 0v3.039c0 .386-.312.699-.699.699M23.84 7.816a.701.701 0 0 1-.496-1.195l2.148-2.148a.703.703 0 0 1 .992 0 .71.71 0 0 1 0 .992l-2.148 2.144a.7.7 0 0 1-.496.207M9.883 7.816a.7.7 0 0 1-.496-.207L7.242 5.465a.703.703 0 0 1 0-.992.7.7 0 0 1 .988 0L10.38 6.62a.701.701 0 0 1-.496 1.195M6.992 14.793H3.957a.699.699 0 1 1 0-1.398h3.035a.699.699 0 1 1 0 1.398'/%3E%3Cpath fill='%23cfd6dc' d='M23.027 10.863a6.32 6.32 0 0 0-6.238 5.32 3.9 3.9 0 0 0-2.074-.585 3.984 3.984 0 0 0-3.992 3.988 3.95 3.95 0 0 0 2.582 3.727h11.21a6.31 6.31 0 0 0 4.829-6.133 6.32 6.32 0 0 0-6.317-6.317'/%3E%3Cpath fill='%232c404b' d='M13.305 23.313a3.95 3.95 0 0 1-2.582-3.727 3.986 3.986 0 0 1 6.066-3.402 6.32 6.32 0 0 1 6.238-5.32 6.32 6.32 0 0 1 6.317 6.316 6.31 6.31 0 0 1-4.828 6.133ZM23.027 9.46a7.675 7.675 0 0 0-7.172 4.86 5.396 5.396 0 0 0-6.531 5.266c0 2.241 1.406 4.268 3.496 5.038l.235.086h11.629l.16-.04a7.68 7.68 0 0 0 5.898-7.491c0-4.254-3.46-7.72-7.715-7.72'/%3E%3Cpath fill='%237db8ff' d='M15.7 33.512a.7.7 0 0 1-.352-.098.697.697 0 0 1-.254-.957l3.5-6a.7.7 0 1 1 1.21.707l-3.5 6a.7.7 0 0 1-.605.348M20.598 33.512a.699.699 0 0 1-.602-1.055l3.5-6a.7.7 0 0 1 .957-.25c.332.195.45.621.25.957l-3.5 6a.7.7 0 0 1-.605.348'/%3E%3C/svg%3E");
+  }
+
+  /* Centered daytime partly-cloudy symbol: brighten the sun rays. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/3.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M16.863 12.418a6.08 6.08 0 0 0-6.074 6.074 6.077 6.077 0 0 0 6.074 6.07 6.077 6.077 0 0 0 6.07-6.07 6.077 6.077 0 0 0-6.07-6.074'/%3E%3Cpath fill='%23ffea00' d='M10.79 18.492a6.08 6.08 0 0 1 6.073-6.074 6.077 6.077 0 0 1 6.07 6.074 6.077 6.077 0 0 1-6.07 6.07 6.077 6.077 0 0 1-6.074-6.07m6.074-7.472c-4.12 0-7.472 3.351-7.472 7.472s3.351 7.473 7.472 7.473 7.473-3.352 7.473-7.473c0-4.12-3.352-7.472-7.473-7.472M16.863 9.324a.705.705 0 0 1-.703-.703V5.586a.702.702 0 0 1 1.402 0V8.62a.7.7 0 0 1-.699.703M23.84 12.215a.701.701 0 0 1-.496-1.195l2.148-2.149a.703.703 0 0 1 .992 0c.27.274.27.719 0 .988l-2.148 2.149a.7.7 0 0 1-.496.207M9.883 12.215a.7.7 0 0 1-.496-.207L7.242 9.859a.698.698 0 1 1 .988-.988l2.149 2.149a.701.701 0 0 1-.496 1.195M6.992 19.191H3.957a.699.699 0 1 1 0-1.398h3.035a.699.699 0 1 1 0 1.398'/%3E%3Cpath fill='%23f5f6f7' d='M23.027 15.266a6.32 6.32 0 0 0-6.238 5.32A3.9 3.9 0 0 0 14.715 20a3.984 3.984 0 0 0-3.992 3.988 3.95 3.95 0 0 0 2.582 3.727h11.21a6.31 6.31 0 0 0 4.829-6.133 6.32 6.32 0 0 0-6.317-6.316'/%3E%3Cpath fill='%232c404b' d='M13.305 27.715a3.95 3.95 0 0 1-2.582-3.727A3.986 3.986 0 0 1 14.715 20c.758 0 1.476.21 2.074.586a6.32 6.32 0 0 1 6.238-5.32 6.32 6.32 0 0 1 6.317 6.316 6.31 6.31 0 0 1-4.828 6.133Zm9.722-13.852a7.675 7.675 0 0 0-7.172 4.86 5.396 5.396 0 0 0-6.531 5.266c0 2.241 1.406 4.269 3.496 5.038l.235.086h11.629l.16-.039a7.68 7.68 0 0 0 5.898-7.492c0-4.254-3.46-7.719-7.715-7.719'/%3E%3C/svg%3E");
+  }
+
+  /* Centered daytime cloudy symbol: brighten rays behind both clouds. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/4.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M15.89 10.969a6.083 6.083 0 0 0-6.074 6.074 6.083 6.083 0 0 0 6.075 6.074 6.083 6.083 0 0 0 6.074-6.074 6.083 6.083 0 0 0-6.074-6.074'/%3E%3Cpath fill='%23ffea00' d='M9.816 17.043a6.083 6.083 0 0 1 6.075-6.074 6.083 6.083 0 0 1 6.074 6.074 6.083 6.083 0 0 1-6.074 6.074 6.083 6.083 0 0 1-6.075-6.074m6.075-7.473c-4.121 0-7.473 3.352-7.473 7.473s3.352 7.473 7.473 7.473c4.12 0 7.472-3.352 7.472-7.473S20.012 9.57 15.891 9.57M15.89 7.875a.7.7 0 0 1-.699-.7V4.138a.699.699 0 1 1 1.399 0v3.039c0 .386-.313.699-.7.699M22.867 10.766a.7.7 0 0 1-.492-.207.7.7 0 0 1 0-.989l2.145-2.148a.703.703 0 0 1 .992.992l-2.149 2.145a.7.7 0 0 1-.496.207M8.914 10.766c-.18 0-.36-.07-.496-.207L6.27 8.414a.703.703 0 0 1 .992-.992L9.406 9.57a.69.69 0 0 1 0 .989.7.7 0 0 1-.492.207M6.023 17.742H2.984a.699.699 0 1 1 0-1.398h3.04a.699.699 0 1 1 0 1.398'/%3E%3Cpath fill='%23f5f6f7' d='M21.352 13.816c-3.149 0-5.758 2.313-6.239 5.32a3.984 3.984 0 0 0-6.062 3.406 3.94 3.94 0 0 0 2.582 3.724h11.21a6.31 6.31 0 0 0 4.829-6.133 6.32 6.32 0 0 0-6.32-6.317'/%3E%3Cpath fill='%232c404b' d='M11.629 26.266a3.95 3.95 0 0 1-2.578-3.723 3.984 3.984 0 0 1 6.066-3.406 6.32 6.32 0 0 1 6.235-5.32c3.484 0 6.32 2.831 6.32 6.316a6.31 6.31 0 0 1-4.828 6.133Zm9.723-13.848a7.67 7.67 0 0 0-7.168 4.855 5.396 5.396 0 0 0-6.531 5.27c0 2.242 1.402 4.266 3.495 5.035l.23.086h11.63l.16-.039a7.675 7.675 0 0 0 5.902-7.492c0-4.254-3.46-7.715-7.718-7.715'/%3E%3Cpath fill='%23f5f6f7' d='M26.426 21.5a3.89 3.89 0 0 0-3.836 3.273 2.456 2.456 0 0 0-3.735 2.098c0 1.055.657 1.945 1.59 2.29h6.899a3.876 3.876 0 0 0 2.972-3.77 3.894 3.894 0 0 0-3.89-3.891'/%3E%3Cpath fill='%232c404b' d='M20.445 29.16a2.43 2.43 0 0 1-1.59-2.289 2.454 2.454 0 0 1 3.73-2.098 3.9 3.9 0 0 1 3.84-3.273 3.894 3.894 0 0 1 3.891 3.89 3.876 3.876 0 0 1-2.972 3.77Zm5.98-9.058a5.27 5.27 0 0 0-4.738 2.93 3.858 3.858 0 0 0-4.23 3.84 3.85 3.85 0 0 0 2.504 3.605l.234.085h7.317l.16-.039a5.266 5.266 0 0 0 4.043-5.132 5.293 5.293 0 0 0-5.29-5.29'/%3E%3C/svg%3E");
+  }
+
+  /* Centered nighttime rain-shower symbol: blue rain, original moon and cloud. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/night/9.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M14.414 5.621c.066-.773.219-1.52.434-2.242a8.84 8.84 0 0 0-5.989 7.617c-.421 4.844 3.172 9.11 8.036 9.535q.392.036.785.035a8.75 8.75 0 0 0 7.093-3.617c-.285-.012-.574-.02-.84-.043-5.75-.5-10.019-5.554-9.519-11.285'/%3E%3Cpath fill='%232c404b' d='M16.895 20.531c-4.864-.426-8.457-4.691-8.036-9.535a8.84 8.84 0 0 1 5.989-7.621 11.3 11.3 0 0 0-.434 2.246c-.5 5.73 3.77 10.781 9.52 11.285.265.024.554.032.84.04a8.74 8.74 0 0 1-7.88 3.585m9.137-4.203c-.23-.465-.699-.765-1.218-.781-.258-.008-.516-.012-.758-.035a9.03 9.03 0 0 1-6.157-3.192 8.9 8.9 0 0 1-2.09-6.578c.06-.648.184-1.308.38-1.965.152-.5.007-1.043-.368-1.406a1.4 1.4 0 0 0-1.418-.32 10.24 10.24 0 0 0-6.937 8.82 10.11 10.11 0 0 0 2.36 7.45 10.18 10.18 0 0 0 6.945 3.605q.457.04.91.039c3.285 0 6.285-1.527 8.226-4.192.305-.421.352-.976.125-1.445'/%3E%3Cpath fill='%23cfd6dc' d='M19.992 9.375c-3.152 0-5.758 2.313-6.238 5.32a3.9 3.9 0 0 0-2.074-.586 3.983 3.983 0 0 0-3.989 3.989 3.95 3.95 0 0 0 2.579 3.726h11.214a6.31 6.31 0 0 0 4.828-6.133c0-3.484-2.835-6.316-6.32-6.316'/%3E%3Cpath fill='%232c404b' d='M10.27 21.824a3.95 3.95 0 0 1-2.579-3.726 3.983 3.983 0 0 1 6.063-3.403c.48-3.008 3.086-5.32 6.238-5.32a6.32 6.32 0 0 1 6.317 6.316 6.3 6.3 0 0 1-4.829 6.133Zm9.722-13.851a7.68 7.68 0 0 0-7.172 4.859 5.396 5.396 0 0 0-6.531 5.266c0 2.242 1.406 4.27 3.496 5.039l.235.086h11.628l.16-.04a7.68 7.68 0 0 0 5.903-7.492c0-4.254-3.461-7.718-7.719-7.718'/%3E%3Cpath fill='%237db8ff' d='M12.664 32.023a.699.699 0 0 1-.602-1.055l3.5-6a.7.7 0 0 1 1.207.707l-3.5 6a.7.7 0 0 1-.605.348M17.566 32.023a.7.7 0 0 1-.351-.097.697.697 0 0 1-.254-.957l3.5-6a.7.7 0 0 1 1.21.707l-3.5 6a.7.7 0 0 1-.605.347'/%3E%3C/svg%3E");
+  }
+
+  /* Aligned nighttime light-rain shower: brighten rain, preserve moon and cloud. */
+  .B2wDDG_app img[src*="/weathersymbols/aligned/stroke/night/8.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M14.414 6.598c.066-.774.219-1.52.434-2.243a8.84 8.84 0 0 0-5.989 7.618c-.421 4.843 3.172 9.109 8.036 9.535q.392.035.785.035a8.75 8.75 0 0 0 7.093-3.617c-.285-.012-.574-.02-.84-.043-5.75-.5-10.019-5.555-9.519-11.285'/%3E%3Cpath fill='%232c404b' d='M16.895 21.508c-4.864-.426-8.457-4.692-8.036-9.535a8.84 8.84 0 0 1 5.989-7.618 11.2 11.2 0 0 0-.434 2.243c-.5 5.73 3.77 10.785 9.52 11.285.265.023.554.031.84.043a8.75 8.75 0 0 1-7.88 3.582m9.137-4.2c-.23-.468-.699-.769-1.218-.785a10 10 0 0 1-.758-.035 9.05 9.05 0 0 1-6.157-3.187 8.93 8.93 0 0 1-2.09-6.582c.06-.649.184-1.309.38-1.965.152-.5.007-1.043-.368-1.406a1.4 1.4 0 0 0-1.418-.32 10.24 10.24 0 0 0-6.937 8.824 10.12 10.12 0 0 0 2.36 7.449 10.18 10.18 0 0 0 6.945 3.601q.457.041.91.04c3.285 0 6.285-1.528 8.226-4.192a1.41 1.41 0 0 0 .125-1.441'/%3E%3Cpath fill='%23cfd6dc' d='M19.992 10.352c-3.152 0-5.758 2.312-6.238 5.32a3.984 3.984 0 0 0-6.063 3.406 3.95 3.95 0 0 0 2.579 3.723h11.214a6.31 6.31 0 0 0 4.828-6.133c0-3.484-2.835-6.316-6.32-6.316'/%3E%3Cpath fill='%232c404b' d='M10.27 22.8a3.95 3.95 0 0 1-2.579-3.722 3.984 3.984 0 0 1 6.063-3.406c.48-3.008 3.086-5.32 6.238-5.32a6.32 6.32 0 0 1 6.317 6.316 6.3 6.3 0 0 1-4.829 6.133Zm9.722-13.847a7.675 7.675 0 0 0-7.172 4.856 5.396 5.396 0 0 0-6.531 5.27 5.38 5.38 0 0 0 3.496 5.034l.235.086h11.628l.16-.039a7.675 7.675 0 0 0 5.903-7.492c0-4.254-3.461-7.715-7.719-7.715'/%3E%3Cpath fill='%237db8ff' d='M13.664 33a.699.699 0 0 1-.602-1.055l3.5-6a.7.7 0 0 1 1.207.707l-3.5 6a.7.7 0 0 1-.605.348'/%3E%3C/svg%3E");
+  }
+
+  /* Aligned daytime light-rain symbol: brighten rain, preserve the cloud. */
+  .B2wDDG_app img[src*="/weathersymbols/aligned/stroke/day/18.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%237db8ff' d='M14.25 33.023a.699.699 0 0 1-.605-1.05l3.5-6a.7.7 0 0 1 .957-.254c.335.195.449.625.253.957l-3.5 6a.7.7 0 0 1-.605.347'/%3E%3Cpath fill='%23cfd6dc' d='M19.992 10.375c-3.152 0-5.758 2.316-6.238 5.32a3.986 3.986 0 0 0-6.063 3.406 3.95 3.95 0 0 0 2.579 3.723h11.214a6.306 6.306 0 0 0 4.828-6.129 6.326 6.326 0 0 0-6.32-6.32'/%3E%3Cpath fill='%232c404b' d='M10.27 22.824a3.95 3.95 0 0 1-2.579-3.722 3.986 3.986 0 0 1 6.063-3.407c.48-3.004 3.086-5.32 6.238-5.32a6.32 6.32 0 0 1 6.317 6.32 6.3 6.3 0 0 1-4.829 6.13Zm9.722-13.847a7.68 7.68 0 0 0-7.172 4.855 5.396 5.396 0 0 0-6.531 5.27 5.39 5.39 0 0 0 3.496 5.039l.235.086h11.628l.16-.04a7.68 7.68 0 0 0 5.903-7.492c0-4.257-3.461-7.718-7.719-7.718'/%3E%3C/svg%3E");
+  }
+
+  /* Aligned daytime partly-cloudy symbol: brighten the sun rays. */
+  .B2wDDG_app img[src*="/weathersymbols/aligned/stroke/day/3.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M16.863 7.531a6.08 6.08 0 0 0-6.074 6.074 6.08 6.08 0 0 0 6.074 6.075c3.348 0 6.07-2.727 6.07-6.075 0-3.347-2.722-6.074-6.07-6.074'/%3E%3Cpath fill='%23ffea00' d='M10.79 13.605a6.08 6.08 0 0 1 6.073-6.074c3.348 0 6.07 2.727 6.07 6.074s-2.722 6.075-6.07 6.075a6.08 6.08 0 0 1-6.074-6.075m6.074-7.472c-4.12 0-7.472 3.351-7.472 7.472s3.351 7.473 7.472 7.473 7.473-3.351 7.473-7.473c0-4.12-3.352-7.472-7.473-7.472M16.863 4.438a.7.7 0 0 1-.703-.7V.7a.702.702 0 0 1 1.402 0v3.04c0 .386-.312.699-.699.699M23.84 7.328a.701.701 0 0 1-.496-1.195l2.148-2.149a.703.703 0 0 1 .992 0 .71.71 0 0 1 0 .993L24.336 7.12a.7.7 0 0 1-.496.207M9.883 7.328a.7.7 0 0 1-.496-.207L7.242 4.977a.703.703 0 0 1 0-.993.7.7 0 0 1 .988 0l2.149 2.149a.701.701 0 0 1-.496 1.195M6.992 14.305H3.957a.699.699 0 1 1 0-1.399h3.035a.699.699 0 1 1 0 1.399'/%3E%3Cpath fill='%23f5f6f7' d='M23.027 10.379a6.32 6.32 0 0 0-6.238 5.32 3.94 3.94 0 0 0-2.074-.586 3.984 3.984 0 0 0-3.992 3.992 3.95 3.95 0 0 0 2.582 3.723h11.21a6.31 6.31 0 0 0 4.829-6.133 6.32 6.32 0 0 0-6.317-6.316'/%3E%3Cpath fill='%232c404b' d='M13.305 22.828a3.95 3.95 0 0 1-2.582-3.723 3.987 3.987 0 0 1 6.066-3.406 6.32 6.32 0 0 1 6.238-5.32 6.32 6.32 0 0 1 6.317 6.316 6.31 6.31 0 0 1-4.828 6.133ZM23.027 8.98a7.67 7.67 0 0 0-7.172 4.856 5.396 5.396 0 0 0-6.531 5.27c0 2.238 1.406 4.265 3.496 5.035l.235.086h11.629l.16-.04a7.676 7.676 0 0 0 5.898-7.492c0-4.254-3.46-7.715-7.715-7.715'/%3E%3C/svg%3E");
+  }
+
+  /* Centered day/night rain symbol: brighten both rain marks, preserve the cloud. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/19.svg"],
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/night/19.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%237db8ff' d='M11.797 29.023a.73.73 0 0 1-.352-.093.7.7 0 0 1-.25-.957l3.5-6a.697.697 0 1 1 1.207.703l-3.5 6a.7.7 0 0 1-.605.347M16.7 29.023a.699.699 0 0 1-.605-1.05l3.499-6a.706.706 0 0 1 .96-.254.7.7 0 0 1 .25.957l-3.5 6a.7.7 0 0 1-.605.347'/%3E%3Cpath fill='%23cfd6dc' d='M19.992 6.375c-3.152 0-5.758 2.316-6.238 5.32a3.986 3.986 0 0 0-6.063 3.406 3.95 3.95 0 0 0 2.579 3.723h11.214a6.306 6.306 0 0 0 4.828-6.129 6.326 6.326 0 0 0-6.32-6.32'/%3E%3Cpath fill='%232c404b' d='M10.27 18.824a3.95 3.95 0 0 1-2.579-3.722 3.986 3.986 0 0 1 6.063-3.407c.48-3.004 3.086-5.32 6.238-5.32a6.32 6.32 0 0 1 6.317 6.32 6.3 6.3 0 0 1-4.829 6.13Zm9.722-13.847a7.68 7.68 0 0 0-7.172 4.855 5.396 5.396 0 0 0-6.531 5.27 5.39 5.39 0 0 0 3.496 5.039l.235.086h11.628l.16-.04a7.68 7.68 0 0 0 5.903-7.492c0-4.257-3.461-7.718-7.719-7.718'/%3E%3C/svg%3E");
+  }
+
+  /* Centered nighttime light-rain shower: blue rain, original moon and cloud. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/night/8.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M14.414 5.621c.066-.773.219-1.52.434-2.242a8.84 8.84 0 0 0-5.989 7.617c-.421 4.844 3.172 9.11 8.036 9.535q.392.036.785.035a8.75 8.75 0 0 0 7.093-3.617c-.285-.012-.574-.02-.84-.043-5.75-.5-10.019-5.554-9.519-11.285'/%3E%3Cpath fill='%232c404b' d='M16.895 20.531c-4.864-.426-8.457-4.691-8.036-9.535a8.84 8.84 0 0 1 5.989-7.621 11.3 11.3 0 0 0-.434 2.246c-.5 5.73 3.77 10.781 9.52 11.285.265.024.554.032.84.04a8.74 8.74 0 0 1-7.88 3.585m9.137-4.203c-.23-.465-.699-.765-1.218-.781-.258-.008-.516-.012-.758-.035a9.03 9.03 0 0 1-6.157-3.192 8.9 8.9 0 0 1-2.09-6.578c.06-.648.184-1.308.38-1.965.152-.5.007-1.043-.368-1.406a1.4 1.4 0 0 0-1.418-.32 10.24 10.24 0 0 0-6.937 8.82 10.11 10.11 0 0 0 2.36 7.45 10.18 10.18 0 0 0 6.945 3.605q.457.04.91.039c3.285 0 6.285-1.527 8.226-4.192.305-.421.352-.976.125-1.445'/%3E%3Cpath fill='%23cfd6dc' d='M19.992 9.375c-3.152 0-5.758 2.313-6.238 5.32a3.9 3.9 0 0 0-2.074-.586 3.983 3.983 0 0 0-3.989 3.989 3.95 3.95 0 0 0 2.579 3.726h11.214a6.31 6.31 0 0 0 4.828-6.133c0-3.484-2.835-6.316-6.32-6.316'/%3E%3Cpath fill='%232c404b' d='M10.27 21.824a3.95 3.95 0 0 1-2.579-3.726 3.983 3.983 0 0 1 6.063-3.403c.48-3.008 3.086-5.32 6.238-5.32a6.32 6.32 0 0 1 6.317 6.316 6.3 6.3 0 0 1-4.829 6.133Zm9.722-13.851a7.68 7.68 0 0 0-7.172 4.859 5.396 5.396 0 0 0-6.531 5.266c0 2.242 1.406 4.27 3.496 5.039l.235.086h11.628l.16-.04a7.68 7.68 0 0 0 5.903-7.492c0-4.254-3.461-7.718-7.719-7.718'/%3E%3Cpath fill='%237db8ff' d='M13.664 32.023a.699.699 0 0 1-.602-1.055l3.5-6a.7.7 0 0 1 1.207.707l-3.5 6a.7.7 0 0 1-.605.348'/%3E%3C/svg%3E");
+  }
+
+  input,
+  select,
+  textarea {
+    color: var(--fg);
+    background: var(--bg1);
+  }
+
+  .B2wDDG_app input::placeholder {
+    color: var(--fg5);
   }
 }
