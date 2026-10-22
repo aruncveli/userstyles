@@ -57,35 +57,28 @@
     color: var(--fg);
   }
 
-  body a:link,
-  body a:visited {
+  body a:any-link {
     color: #7db8ff;
   }
 
-  .smhi-social-sharing__item a,
+  body .smhi-social-sharing__item a:any-link {
+    color: #7db8ff;
+  }
+
+  /* Footer typography sets link colors with priority in the site's stylesheet. */
   .smhi-page-footer a {
     color: #7db8ff !important;
   }
 
   .smhi-social-sharing__item,
-  .smhi-page-header a span,
-  .smhi-page-footer,
+  body .smhi-page-header a span[class],
   .smhi-page-footer * {
     color: var(--fg);
   }
 
-  body .smhi-page-header a span[class] {
-    color: var(--fg);
-  }
-
-  .smhi-page-header a svg {
-    filter: invert(1);
-  }
-
-  main nav {
-    color: var(--fg);
-    background: var(--bg1);
-    border-color: var(--bg2);
+  /* Recolor only monochrome search icons; preserve warning severity colors. */
+  .smhi-page-header .smhi-header-search__toggle svg {
+    fill: var(--fg);
   }
 
   main nav a,
@@ -94,18 +87,21 @@
     border-color: var(--bg2);
   }
 
+  main nav {
+    color: var(--fg);
+    background: var(--bg1);
+    border-color: var(--bg2);
+  }
+
   main nav button::after {
     background-image: none !important;
     background-color: var(--fg) !important;
-    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13.41 15.15 12 16.56l-1.41-1.41-6.3-6.3.71-.7.71-.71L12 13.73l6.29-6.29.71.71.71.7z'/%3E%3C/svg%3E") center / 24px auto no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13.41 15.15 12 16.56l-1.41-1.41-6.3-6.3.71-.7.71-.71L12 13.73l6.29-6.29.71.71.71.7z'/%3E%3C/svg%3E")
+      center / 24px auto no-repeat;
   }
 
-  body .sv-nestedlistmenu-portlet a,
-  body .sv-nestedlistmenu-portlet a:link,
-  body .sv-nestedlistmenu-portlet a:visited,
-  body main nav a,
-  body main nav a:link,
-  body main nav a:visited {
+  body .sv-nestedlistmenu-portlet a:any-link,
+  body main nav a:any-link {
     color: var(--fg);
   }
 
@@ -179,7 +175,6 @@
     --colorHeatwave60: #f82b37;
     --colorHeatwave70: #fc5f6a;
     --colorCloud40: var(--fg5);
-    --colorCloud70: #a6b1ba;
   }
 
   /* Keep the diagram's horizontal-scroll fades dark. */
@@ -225,6 +220,7 @@
     color-scheme: dark;
     --colorCloud100: var(--fg);
     --colorCloud60: var(--fg5);
+    --colorCloud70: #a6b1ba;
     --colorSky60: #7db8ff;
     --colorSky70: #99d6ff;
     --fillColor: var(--bg1);
@@ -240,9 +236,14 @@
   .B2wDDG_app .leaflet-container [class*="_markerLabel"] {
     color: var(--fg);
     text-shadow:
-      -1px -1px var(--bg), 0 -1px var(--bg), 1px -1px var(--bg),
-      -1px 0 var(--bg), 1px 0 var(--bg),
-      -1px 1px var(--bg), 0 1px var(--bg), 1px 1px var(--bg);
+      -1px -1px var(--bg),
+      0 -1px var(--bg),
+      1px -1px var(--bg),
+      -1px 0 var(--bg),
+      1px 0 var(--bg),
+      -1px 1px var(--bg),
+      0 1px var(--bg),
+      1px 1px var(--bg);
   }
 
   /* Advisory card icons. */
