@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Arch Linux Dark
 @namespace      github.com/aruncveli/userstyles
-@version 26.10.4
+@version 26.10.24
 @description    Dark theme for the Arch Linux website
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -21,7 +21,8 @@
 @var text font-size-forum "Forum font size" 1.2em
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org"), url-prefix("https://security.archlinux.org") {
+@-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org"), url-prefix("https://security.archlinux.org")
+{
   :root {
     color-scheme: dark;
   }
@@ -60,7 +61,8 @@
   }
 }
 
-@-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org") {
+@-moz-document url-prefix("https://archlinux.org"), url-prefix("https://aur.archlinux.org")
+{
   dl dt,
   #pkgsearch input,
   .pkgsearch-typeahead li a {
@@ -150,7 +152,8 @@
   }
 }
 
-@-moz-document url-prefix("https://archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages"), url-prefix("https://aur.archlinux.org/pkgbase") {
+@-moz-document url-prefix("https://archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages"), url-prefix("https://aur.archlinux.org/pkgbase")
+{
   #pkglist-results tr:hover,
   #pkgdetails #metadata h3,
   #pkgdetails #detailslinks > div {
@@ -180,14 +183,16 @@
   }
 }
 
-@-moz-document url-prefix("https://aur.archlinux.org") {
+@-moz-document url-prefix("https://aur.archlinux.org")
+{
   form.link button,
   #archdev-navbar li a {
     color: var(--link-color);
   }
 }
 
-@-moz-document url-prefix("https://aur.archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages") {
+@-moz-document url-prefix("https://aur.archlinux.org/packages"), url-prefix("https://aur.archlinux.org/packages")
+{
   .text-button,
   .text-button:hover {
     color: var(--link-color);
@@ -208,7 +213,8 @@
   }
 }
 
-@-moz-document url-prefix("https://aur.archlinux.org/cgit") {
+@-moz-document url-prefix("https://aur.archlinux.org/cgit")
+{
   div#cgit {
     color: #eee;
     background: #171717;
@@ -594,7 +600,8 @@
   }
 }
 
-@-moz-document url-prefix("https://archlinux.org/groups") {
+@-moz-document url-prefix("https://archlinux.org/groups")
+{
   .results {
     tr:nth-child(odd),
     tr:nth-child(even) {
@@ -611,7 +618,8 @@
   }
 }
 
-@-moz-document url-prefix("https://archlinux.org/todo") {
+@-moz-document url-prefix("https://archlinux.org/todo")
+{
   #dev-todo-lists,
   #dev-todo-pkglist {
     tr:hover {
@@ -629,7 +637,8 @@
   }
 }
 
-@-moz-document url-prefix("https://archlinux.org/news") {
+@-moz-document url-prefix("https://archlinux.org/news")
+{
   .results tr:nth-child(odd of :not([hidden])),
   #article-list tr:nth-child(odd),
   .results tr:nth-child(even of :not([hidden])),
@@ -642,19 +651,22 @@
   }
 }
 
-@-moz-document url-prefix("https://archlinux.org/download") {
+@-moz-document url-prefix("https://archlinux.org/download")
+{
   #arch-downloads h3 {
     border-bottom-color: var(--bg1);
   }
 }
 
-@-moz-document url-prefix("https://security.archlinux.org") {
+@-moz-document url-prefix("https://security.archlinux.org")
+{
   hr {
     border-top-color: var(--bg);
   }
 }
 
-@-moz-document url-prefix("https://archlinux.org/people") {
+@-moz-document url-prefix("https://archlinux.org/people")
+{
   .arch-bio-entry {
     table.bio th {
       color: var(--fg1);
@@ -670,7 +682,8 @@
   }
 }
 
-@-moz-document url-prefix("https://archlinux.org/master-keys"), url-prefix("https://archlinux.org/feeds") {
+@-moz-document url-prefix("https://archlinux.org/master-keys"), url-prefix("https://archlinux.org/feeds")
+{
   table.pretty2,
   .pretty2 td {
     border-color: var(--bg1);
@@ -773,7 +786,8 @@
     border-color: var(--bg1);
   }
 }
-@-moz-document url-prefix("https://bbs.archlinux.org/profile.php") {
+@-moz-document url-prefix("https://bbs.archlinux.org/profile.php")
+{
   .pun .blockmenu .isactive a:visited,
   .pun a:hover,
   #brdmain a:hover {
@@ -786,27 +800,31 @@
   }
 }
 
-@-moz-document url-prefix("https://bbs.archlinux.org/misc.php") {
+@-moz-document url-prefix("https://bbs.archlinux.org/misc.php")
+{
   #punmisc #rules .box {
     background-color: var(--bg);
     border-color: var(--bg);
   }
 }
 
-@-moz-document url-prefix("https://bbs.archlinux.org/userlist.php") {
+@-moz-document url-prefix("https://bbs.archlinux.org/userlist.php")
+{
   .pun #users1 h2 {
     background-color: var(--bg1);
   }
 }
 
-@-moz-document url-prefix("https://bbs.archlinux.org/search.php") {
+@-moz-document url-prefix("https://bbs.archlinux.org/search.php")
+{
   .pun .checklist {
     background-color: var(--bg2);
     border-color: var(--bg1);
   }
 }
 
-@-moz-document url-prefix("https://bbs.archlinux.org/help.php") {
+@-moz-document url-prefix("https://bbs.archlinux.org/help.php")
+{
   #punhelp .box {
     background-color: var(--bg1);
     border-color: var(--bg1);

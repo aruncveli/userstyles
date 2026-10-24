@@ -5,6 +5,6 @@ pre-commit:
       glob: "*.css"
       stage_fixed: true
     format:
-      run: bun oxfmt {staged_files}
+      run: bun fmt {staged_files}
       glob: "!*.png"
       stage_fixed: true

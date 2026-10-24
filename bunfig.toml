@@ -1,3 +1,7 @@
 [install]
 exact = true
 linker = "isolated"
+globalStore = true
+
+[fmt]
+ignorePatterns = ["*.hbs"]

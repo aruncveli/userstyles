@@ -31,7 +31,10 @@ console.log(`Writing sites/${smallName}/README.md`);
 await Bun.write(`sites/${smallName}/README.md`, readme!({ name, smallName }));
 
 console.log(`Writing sites/${smallName}/${smallName}.user.css`);
-await Bun.write(`sites/${smallName}/${smallName}.user.css`, userCss!({ name, smallName, version }));
+await Bun.write(
+  `sites/${smallName}/${smallName}.user.css`,
+  userCss!({ name, smallName, version }),
+);
 
 console.log("Adding entry to root README.md table");
 appendFileSync("README.md", rootEntry!({ name, smallName }));
