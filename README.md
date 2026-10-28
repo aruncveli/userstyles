@@ -35,3 +35,4 @@ below links to install the corresponding user style.
 | [Series Reminder](sites/series-reminder)               | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/series-reminder/series-reminder.user.css)             |
 | [Pluralsight](sites/pluralsight)                       | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/pluralsight/pluralsight.user.css)                     |
 | [Wallet](sites/wallet)                                 | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/wallet/wallet.user.css)                               |
+| [Google Input Tools](sites/google-input-tools)         | [Install](https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-input-tools/google-input-tools.user.css)       |

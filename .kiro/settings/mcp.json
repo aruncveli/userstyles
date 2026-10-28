@@ -6,7 +6,15 @@
         "chrome-devtools-mcp",
         "--ws-endpoint=ws://127.0.0.1:9222/devtools/browser"
       ],
-      "autoApprove": ["*"]
+      "autoApprove": ["*"],
+      "disabledTools": [
+        "performance_analyze_insight",
+        "performance_start_trace",
+        "performance_stop_trace",
+        "get_network_request",
+        "list_network_requests",
+        "lighthouse_audit"
+      ]
     }
   }
 }

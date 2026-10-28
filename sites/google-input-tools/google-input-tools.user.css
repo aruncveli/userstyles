@@ -1,0 +1,499 @@
+/* ==UserStyle==
+@name Google Input Tools Dark
+@namespace github.com/aruncveli/userstyles
+@version 26.10.28
+@description Dark theme for Google Input Tools.
+@author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
+@homepageURL https://github.com/aruncveli/userstyles
+@supportURL https://github.com/aruncveli/userstyles/issues
+@updateURL https://raw.githubusercontent.com/aruncveli/userstyles/refs/heads/main/sites/google-input-tools/google-input-tools.user.css
+@license MIT
+@preprocessor default
+@var color fg "Foreground" #fff
+@var color bg "Background" #000
+@var color bg1 "Background lightened 1" #111
+@var color bg2 "Background lightened 2" #222
+@var color bg3 "Background lightened 3" #333
+@var color link-color "Link" #0b84ff
+@var color red-color "Red" #ff443a
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.google.com/inputtools/")
+{
+  :root {
+    color-scheme: dark;
+  }
+
+  /* Base page background and foreground */
+  html,
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+  }
+
+  /* Headings and generic text */
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  span,
+  label {
+    color: var(--fg);
+  }
+
+  /* Hero text sits on top of the untouched light background photo, so keep
+     it dark (original colors) to preserve contrast. */
+  .hero .hero-text h1,
+  .hero .hero-text h2,
+  .hero .hero-text h3,
+  .hero .hero-text p,
+  .hero .hero-text span,
+  .hero .hero-text label {
+    color: var(--bg);
+  }
+
+  .hero .hero-text h2 {
+    color: var(--bg3);
+  }
+
+  /* Top brand header (light gradient by default) */
+  #maia-header,
+  .maia-header {
+    background: var(--bg1);
+    border-color: var(--bg3);
+  }
+
+  /* Primary blue navigation bar — keep the link color readable on the darker bar */
+  #maia-nav-x,
+  .maia-nav {
+    background: var(--bg1);
+    border-color: var(--bg3);
+  }
+
+  .maia-nav a,
+  .maia-nav .maia-nav-selected {
+    color: var(--fg);
+  }
+
+  /* maia.css uses ID-based selectors (e.g. "#maia-nav-y li a") that set a
+     dark blue (#245dc1) on the horizontal and the left-hand vertical table
+     of contents. That dark blue is unreadable on the dark page, so match the
+     same specificity to restore a legible link color. */
+  #maia-nav-x li a,
+  #maia-nav-x li li a,
+  #maia-nav-x li.active li a,
+  #maia-nav-y li a,
+  #maia-nav-y li.active li a,
+  #maia-nav-y li.active a {
+    color: var(--link-color);
+  }
+
+  /* Call-to-action buttons (blue gradient by default) */
+  .maia-button {
+    background: var(--link-color);
+    border-color: var(--link-color);
+    color: var(--fg);
+  }
+
+  /* Secondary buttons are light gray (#f5f5f5) with #444 text — keep them a
+     neutral dark so they stay distinct from the blue primary button. maia.css
+     paints a light gradient via a 2-class+tag selector and forces the text
+     color with !important, so match that specificity and clear the gradient. */
+  a.maia-button.maia-button-secondary {
+    background: var(--bg2);
+    background-image: none;
+    border-color: var(--bg3);
+    color: var(--fg) !important;
+    text-shadow: none;
+  }
+
+  /* maia.css paints a light gradient (#f9f9f9 → #f5f5f5) on hover/focus/active
+     via a ".maia-button-secondary:hover" rule, which left white text on a
+     near-white fill. Keep the fill dark (slightly lighter than rest for
+     feedback) and clear the gradient. */
+  a.maia-button.maia-button-secondary:hover,
+  a.maia-button.maia-button-secondary:focus,
+  a.maia-button.maia-button-secondary:active {
+    background: var(--bg3);
+    background-image: none;
+    border-color: var(--bg3);
+    color: var(--fg) !important;
+    text-shadow: none;
+  }
+
+  /* Light side/promo boxes: the ".maia-aside" video box (#f9f9f9) and the
+     ".maia-promo.maia-button-box" download box (#f6f9ff) default to near-white. */
+  .maia-aside,
+  .maia-promo,
+  .maia-button-box {
+    background: var(--bg1);
+    border-color: var(--bg3);
+    color: var(--fg);
+  }
+
+  /* Footers (light gray by default) */
+  #maia-footer,
+  .maia-footer,
+  #maia-footer-local {
+    background: var(--bg1);
+    border-color: var(--bg3);
+    color: var(--fg);
+  }
+
+  #maia-footer a,
+  #maia-footer-local a {
+    color: var(--link-color);
+  }
+
+  /* Language selector dropdown */
+  select,
+  #maia-footer select {
+    background: var(--bg2);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  /* --- "Try it out" page (/inputtools/try/) --- */
+
+  /* The editor wrapper and its text box. The textarea (#demobox.editor-box)
+     is already dark; just fix the light wrapper border. */
+  .editor {
+    border-color: var(--bg3);
+  }
+
+  .editor-box {
+    background: var(--bg1);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  /* Toolbar above the editor (light gray #f1f1f1 with a light bottom border
+     and white — invisible — text). */
+  .editor-toolbar {
+    background: var(--bg1);
+    color: var(--fg);
+    border-bottom-color: var(--bg3);
+  }
+
+  /* Language selector button (#gt-sl.editor-langs) and its caption default to
+     black text, which disappears on the darkened toolbar. */
+  .editor-langs,
+  .editor-langs .goog-menu-button-caption,
+  .editor-methods {
+    color: var(--fg);
+  }
+
+  /* Flat menu buttons in the toolbar (e.g. the input-method / char-picker
+     "editor-cp-button"), light #f5f5f5 with #444 text and a #ccc border.
+     Blend the border into the background so the button appears borderless. */
+  .goog-flat-menu-button {
+    background: var(--bg2);
+    color: var(--fg);
+    border-color: var(--bg2);
+  }
+
+  .goog-flat-menu-button .goog-flat-menu-button-caption {
+    color: var(--fg);
+  }
+
+  /* Hover/open/active get a slightly lighter fill for feedback; the char-picker
+     button sits permanently in the "focus" state, so keep that at the resting
+     background to match the language button. try.css sets these with the
+     "border" shorthand, so clear it (border-color alone would be overridden). */
+  .goog-flat-menu-button.goog-flat-menu-button-hover,
+  .goog-flat-menu-button.goog-flat-menu-button-open,
+  .goog-flat-menu-button.goog-flat-menu-button-active {
+    background: var(--bg3);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  .goog-flat-menu-button.goog-flag-menu-button-focus {
+    background: var(--bg2);
+    color: var(--fg);
+    border: 1px solid var(--bg2);
+  }
+
+  /* The special characters button (#editor-cp-button) sits permanently in the
+     focus state, where try.css applies a #ccc border via an equal-specificity
+     selector. Use the ID to win and blend its border into the background so it
+     matches the (borderless) language button. */
+  #editor-cp-button.goog-flat-menu-button {
+    border-color: var(--bg2);
+  }
+
+  /* Toolbar icons are dark glyphs on a transparent region of a Google sprite
+     sheet (the "Special Characters" Ω via jfk_sprite89.png, and the
+     input-method icon/caret via ita_sprite8.png), so they're invisible on the
+     dark toolbar. There's no non-sprite color to set, so invert them to show
+     as light glyphs. */
+  .editor-cp-img,
+  .ita-kd-img {
+    filter: invert(1);
+  }
+
+  /* try.css dims the input-method button glyph (".ita-kd-icon-span",
+     opacity 0.26) and its dropdown chevron (".ita-kd-arrow", 0.54) to look
+     subtle on a light bar. On the dark bar they end up too faint, so restore
+     full opacity. (Google's own dark mode does the same via ".ita-ff-black-
+     enabled".) */
+  .ita-kd-icon-span,
+  .ita-kd-arrow.ita-kd-icon-span {
+    opacity: 1;
+  }
+
+  /* Language button (#gt-sl, a .goog-menu-button) is transparent by default and
+     draws its light #aaa border via the inner/outer boxes. try.css forces
+     "background: none" with a 3-class selector, so match that specificity to
+     give it the same background as the flat buttons, and blend the box borders
+     away. */
+  .editor-langs.goog-inline-block.goog-menu-button {
+    background: var(--bg2);
+  }
+
+  .goog-menu-button-outer-box,
+  .goog-menu-button-inner-box {
+    border-color: var(--bg2);
+  }
+
+  /* The caret (dropdown triangle) is drawn with borders; retint to foreground. */
+  .goog-flat-menu-button-dropdown {
+    border-top-color: var(--fg);
+  }
+
+  /* Dropdown menus (language list, character picker, input-method menu). */
+  .goog-menu {
+    background: var(--bg1);
+    border-color: var(--bg3);
+  }
+
+  .goog-menuitem,
+  .goog-menuitem .goog-menuitem-content,
+  .goog-menuitem-highlight .goog-menuitem-content,
+  .goog-menuitem-hover .goog-menuitem-content,
+  .goog-option-selected .goog-menuitem-content {
+    color: var(--fg);
+  }
+
+  .goog-menuitem-highlight,
+  .goog-menuitem-hover,
+  .goog-char-picker-menu .goog-menuitem-highlight {
+    background: var(--bg3);
+    border-color: var(--bg3);
+  }
+
+  .goog-menuseparator {
+    border-top-color: var(--bg3);
+  }
+
+  /* The language picker (#gt-sl-menu) renders its items inside a <table>, and
+     try.css paints every row white via "#gt-sl-menu tr" — a selector more
+     specific than ".goog-menu", so the themed container was being covered by
+     white rows. Clear the row background and recolor the (light gray)
+     selected/emphasized item states, which are also set with ID/compound
+     selectors that outrank the base .goog-menuitem rules. */
+  #gt-sl-menu tr {
+    background: transparent;
+  }
+
+  #gt-sl-menu .goog-menuitem-group .goog-option-selected,
+  .goog-menuitem-emphasize-highlight {
+    background: var(--bg3);
+    color: var(--fg);
+  }
+
+  /* Input-method dropdown (".ita-kd-dropdown-menu"), a separate white menu with
+     its own light hover state. */
+  .ita-kd-dropdown-menu {
+    background: var(--bg1);
+    border-color: var(--bg3);
+    color: var(--fg);
+  }
+
+  /* Menu items default to dark #333 text, unreadable on the dark menu. */
+  .ita-kd-menuitem {
+    color: var(--fg);
+  }
+
+  /* try.css paints the hovered item light (#f1f1f1 bg, #222 text) with
+     "!important", so match that with "!important" to keep it dark. */
+  .ita-kd-menuitem-hover {
+    background: var(--bg3) !important;
+    color: var(--fg) !important;
+  }
+
+  /* On-screen virtual keyboard: container (#kbd.vk-box, white) and keys
+     (.vk-btn, light #f5f5f5 with #444 text). The key caption (.vk-cap) is
+     already white, which reads well on dark keys. */
+  .vk-box {
+    background: var(--bg1);
+    border-color: var(--bg3);
+  }
+
+  .vk-btn {
+    background: var(--bg2);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  .vk-btn.vk-sf-h,
+  .vk-btn.vk-sf-a,
+  .vk-btn.vk-sf-s {
+    background: var(--bg3);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  /* Keyboard title/hint text defaults to light gray #888. */
+  .vk-t {
+    color: var(--fg);
+  }
+
+  /* Character-picker popup (the "Special Characters" dialog, which also hosts
+     the handwriting pad). It is a modal dialog (".modal-dialog"/
+     ".goog-modalpopup"), white by default, containing a char grid and search. */
+  .goog-modalpopup,
+  .modal-dialog,
+  .goog-modalpopup-bg,
+  .modal-dialog-bg,
+  .modal-dialog-title,
+  .modal-dialog-content {
+    background: var(--bg1);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  /* Char grid, recents strip and handwriting pad inside the dialog. */
+  .goog-char-picker,
+  .goog-char-picker-grid-container,
+  .goog-char-picker-recents,
+  .goog-char-picker-menu,
+  .ita-cp-hwt {
+    background: var(--bg2);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  /* Char-picker category sub-header (dark gray by default). */
+  .goog-char-picker-menu .goog-subtitle {
+    background: var(--bg3);
+    color: var(--fg);
+  }
+
+  /* Char-picker menu items. */
+  .goog-char-picker-menu .goog-menuitem,
+  .goog-char-picker-menu2 .goog-menuitem {
+    color: var(--fg);
+  }
+
+  /* Search box inside the char-picker dialog. */
+  .ita-cp-search {
+    border-color: var(--bg3);
+  }
+
+  /* The dialog's close (×) and search (lens) glyphs — and the handwriting-pad
+     clear button — are black SVGs from fonts.gstatic.com, invisible on the
+     dark dialog. Invert them to white, mirroring Google's own high-contrast
+     rule for these same icons. */
+  .ita-cp-whole-pad .modal-dialog-title-close::after,
+  .ita-cp-lens,
+  .ita-cp-clear-img {
+    filter: invert(1);
+  }
+
+  .ita-cp-input {
+    background: var(--bg2);
+    color: var(--fg);
+  }
+
+  /* Dialog action buttons (light gray by default). */
+  .modal-dialog-buttons button {
+    background: var(--bg2);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  .modal-dialog-buttons button:hover,
+  .modal-dialog-buttons button:active {
+    background: var(--bg3);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  /* Generic links */
+  a {
+    color: var(--link-color);
+  }
+
+  /* Error messages */
+  .error-msg {
+    color: var(--red-color);
+  }
+
+  /* "Watch the video" lightbox popup (white by default) */
+  .gweb-lightbox,
+  #gweb-lightbox-lb,
+  .gweb-lightbox-title,
+  #gweb-lightbox-lb-iframe {
+    background: var(--bg1);
+    color: var(--fg);
+  }
+
+  .gweb-lightbox-title {
+    border-color: var(--bg3);
+  }
+
+  /* At-cursor transliteration suggestion popup (".ita-ppe-*"), shown while
+     typing in a non-Latin language. The box is white with black text; most
+     inner parts use "background-color: inherit", so theming the box cascades
+     to them. */
+  .ita-ppe-box {
+    background: var(--bg1);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  /* Candidate list items (white with black text). */
+  .ita-ppe-can {
+    color: var(--fg);
+  }
+
+  /* Highlighted candidate (light gray #f1f1f1 with #222 text). */
+  .ita-ppe-hlt {
+    background: var(--bg3);
+    color: var(--fg);
+    border-color: var(--bg3);
+  }
+
+  /* Page up/down navigation buttons (light #f5f5f5 with gray border). Their
+     arrow glyphs are black sprites from ".ita-kd-img", which is inverted
+     elsewhere (filter: invert(1)). That filter inverts the WHOLE element —
+     background and border included — so every color below is the INVERSE of
+     how it renders (rendered = #fff minus the set value). Setting the
+     background shorthand would wipe the sprite image and hide the arrows, so
+     only the longhands are set. try.css also dims them to opacity 0.55, too
+     faint on the dark popup, so the (enabled) chevrons get full opacity. */
+  .ita-ppe-pgu,
+  .ita-ppe-pgd {
+    /* #eee -> renders --bg1 (#111), blending the border into the popup box. */
+    border-color: #eee;
+    opacity: 1;
+  }
+
+  /* Enabled: --fg (#fff) -> renders --bg (#000), darkest so the white arrow
+     has the most contrast. */
+  .ita-ppe-pgu,
+  .ita-ppe-pgd {
+    background-color: var(--fg);
+  }
+
+  /* Disabled (".ita-ppe-dis", e.g. page-up on the first page): #eee -> renders
+     --bg1 (#111) so the button blends into the box and reads as inactive, plus
+     a dimmed opacity. */
+  .ita-ppe-pgu.ita-ppe-dis,
+  .ita-ppe-pgd.ita-ppe-dis {
+    background-color: #eee;
+    opacity: 0.4;
+  }
+}
