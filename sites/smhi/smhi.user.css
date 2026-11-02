@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SMHI Dark (Ten day forecast)
 @namespace      github.com/aruncveli/userstyles
-@version 26.10.28
+@version 26.11.2
 @description    Dark theme for SMHI's ten day forecast page
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -83,9 +83,16 @@
     color: var(--fg);
   }
 
-  /* Recolor only monochrome search icons; preserve warning severity colors. */
+  /* Search toggle icon: the external sprite hardcodes a dark fill that CSS can't reach,
+     so hide it and paint the magnifier shape via a mask in the foreground color. */
   .smhi-page-header .smhi-header-search__toggle svg {
-    fill: var(--fg);
+    background-color: var(--fg);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m20.71 19.29-5.07-5.07a6.96 6.96 0 0 0 1.41-4.2c0-3.88-3.14-7.02-7.02-7.02s-7.02 3.14-7.02 7.02 3.14 7.02 7.02 7.02c1.58 0 3.03-.53 4.2-1.41l5.07 5.07 1.41-1.41Zm-10.69-4.25C7.25 15.04 5 12.79 5 10.02S7.25 5 10.02 5s5.02 2.25 5.02 5.02-2.25 5.02-5.02 5.02Z'/%3E%3C/svg%3E")
+      center / contain no-repeat;
+  }
+
+  .smhi-page-header .smhi-header-search__toggle svg use {
+    visibility: hidden;
   }
 
   main nav a,
@@ -376,8 +383,20 @@
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M14.414 6.598c.066-.774.219-1.52.434-2.243a8.84 8.84 0 0 0-5.989 7.618c-.421 4.843 3.172 9.109 8.036 9.535q.392.035.785.035a8.75 8.75 0 0 0 7.093-3.617c-.285-.012-.574-.02-.84-.043-5.75-.5-10.019-5.555-9.519-11.285'/%3E%3Cpath fill='%232c404b' d='M16.895 21.508c-4.864-.426-8.457-4.692-8.036-9.535a8.84 8.84 0 0 1 5.989-7.618 11.2 11.2 0 0 0-.434 2.243c-.5 5.73 3.77 10.785 9.52 11.285.265.023.554.031.84.043a8.75 8.75 0 0 1-7.88 3.582m9.137-4.2c-.23-.468-.699-.769-1.218-.785a10 10 0 0 1-.758-.035 9.05 9.05 0 0 1-6.157-3.187 8.93 8.93 0 0 1-2.09-6.582c.06-.649.184-1.309.38-1.965.152-.5.007-1.043-.368-1.406a1.4 1.4 0 0 0-1.418-.32 10.24 10.24 0 0 0-6.937 8.824 10.12 10.12 0 0 0 2.36 7.449 10.18 10.18 0 0 0 6.945 3.601q.457.041.91.04c3.285 0 6.285-1.528 8.226-4.192a1.41 1.41 0 0 0 .125-1.441'/%3E%3Cpath fill='%23cfd6dc' d='M19.992 10.352c-3.152 0-5.758 2.312-6.238 5.32a3.984 3.984 0 0 0-6.063 3.406 3.95 3.95 0 0 0 2.579 3.723h11.214a6.31 6.31 0 0 0 4.828-6.133c0-3.484-2.835-6.316-6.32-6.316'/%3E%3Cpath fill='%232c404b' d='M10.27 22.8a3.95 3.95 0 0 1-2.579-3.722 3.984 3.984 0 0 1 6.063-3.406c.48-3.008 3.086-5.32 6.238-5.32a6.32 6.32 0 0 1 6.317 6.316 6.3 6.3 0 0 1-4.829 6.133Zm9.722-13.847a7.675 7.675 0 0 0-7.172 4.856 5.396 5.396 0 0 0-6.531 5.27 5.38 5.38 0 0 0 3.496 5.034l.235.086h11.628l.16-.039a7.675 7.675 0 0 0 5.903-7.492c0-4.254-3.461-7.715-7.719-7.715'/%3E%3Cpath fill='%237db8ff' d='M12.664 33a.699.699 0 0 1-.602-1.055l3.5-6a.7.7 0 0 1 1.207.707l-3.5 6a.7.7 0 0 1-.605.348M17.566 33a.7.7 0 0 1-.351-.098.697.697 0 0 1-.254-.957l3.5-6a.704.704 0 0 1 .957-.25c.336.196.45.621.254.957l-3.5 6a.7.7 0 0 1-.606.348'/%3E%3C/svg%3E");
   }
 
-  /* Centered daytime clear-sky symbol (10-day Oct 30): brighten sun rays. */
-  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/1.svg"] {
+  /* Aligned daytime fog symbol (6h AM col): all stripes are dark; recolor them like clouds. */
+  .B2wDDG_app img[src*="/weathersymbols/aligned/stroke/day/7.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23cfd6dc' d='M5.902 22.703H26.2c-.926.684-2.031 1.2-3.34 1.488l-.164.032H8.832l-.184-.047c-1.093-.274-2.02-.774-2.746-1.473M4.156 19.363h24.809c-.258.532-.547 1.051-.91 1.52H4.594c-.18-.395-.301-.805-.39-1.246ZM25.914 7.523h-10.25a9.1 9.1 0 0 1 5.055-1.52h.031c.105 0 .2 0 .29.017a12 12 0 0 1 2.019.273 8.6 8.6 0 0 1 2.855 1.23M28.86 10.863H12.565c.29-.547.637-1.05 1.032-1.52h14.304c.38.47.7.989.957 1.52M29.828 14.203H5.508c.347-.488.773-.91 1.258-1.277.12-.09.242-.164.367-.242h22.422c.136.5.23 1.02.273 1.52M29.86 16.023c-.047.5-.122 1.016-.243 1.52H4.141a6.4 6.4 0 0 1 .379-1.52Zm0 0'/%3E%3C/svg%3E");
+  }
+
+  /* Centered day/night fog symbol (hourly tables): all stripes are dark; recolor them like clouds. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/7.svg"],
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/night/7.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23cfd6dc' d='M5.902 24.59H26.2c-.926.683-2.031 1.2-3.34 1.488l-.164.031H8.832l-.184-.047c-1.093-.273-2.02-.773-2.746-1.472M4.156 21.25h24.809c-.258.531-.547 1.05-.91 1.52H4.594c-.18-.395-.301-.805-.39-1.247ZM25.914 9.41h-10.25a9.1 9.1 0 0 1 5.055-1.52h.031c.105 0 .2 0 .29.016.651.032 1.304.121 2.019.274a8.6 8.6 0 0 1 2.855 1.23M28.86 12.75H12.565c.29-.547.637-1.05 1.032-1.52h14.304c.38.47.7.989.957 1.52M29.828 16.09H5.508c.347-.488.773-.91 1.258-1.277.12-.09.242-.165.367-.243h22.422c.136.5.23 1.02.273 1.52M29.86 17.91c-.047.5-.122 1.02-.243 1.52H4.141a6.4 6.4 0 0 1 .379-1.52Zm0 0'/%3E%3C/svg%3E");
+  }
+
+  /* Centered/aligned daytime clear-sky symbol: brighten sun rays. */
+  .B2wDDG_app img[src*="/weathersymbols/centered/stroke/day/1.svg"],
+  .B2wDDG_app img[src*="/weathersymbols/aligned/stroke/day/1.svg"] {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23ffea00' d='M17 10.21c-3.742 0-6.79 3.048-6.79 6.79s3.048 6.79 6.79 6.79 6.79-3.048 6.79-6.79-3.048-6.79-6.79-6.79'/%3E%3Cpath fill='%23ffea00' d='M17 23.79c-3.742 0-6.79-3.048-6.79-6.79s3.048-6.79 6.79-6.79 6.79 3.048 6.79 6.79-3.048 6.79-6.79 6.79m0-14.977c-4.516 0-8.187 3.671-8.187 8.187s3.671 8.188 8.187 8.188 8.188-3.672 8.188-8.188S21.516 8.813 17 8.813M17 6.672a.7.7 0 0 1-.7-.703v-3.39a.7.7 0 1 1 1.4 0v3.39a.7.7 0 0 1-.7.703M17 32.125a.7.7 0 0 1-.7-.7v-3.394c0-.386.313-.703.7-.703s.7.317.7.703v3.395c0 .387-.313.699-.7.699M24.8 9.902a.701.701 0 0 1-.495-1.195l2.398-2.402a.703.703 0 0 1 .992.992l-2.402 2.398a.7.7 0 0 1-.492.207M6.8 27.898a.7.7 0 0 1-.495-.203.703.703 0 0 1 0-.992l2.402-2.398a.698.698 0 1 1 .988.988l-2.398 2.402a.7.7 0 0 1-.496.203M9.2 9.902a.7.7 0 0 1-.493-.207L6.305 7.297a.703.703 0 0 1 .992-.992l2.398 2.402A.701.701 0 0 1 9.2 9.902M27.2 27.898a.7.7 0 0 1-.497-.203l-2.398-2.402a.698.698 0 1 1 .988-.988l2.402 2.398a.703.703 0 0 1 0 .992.7.7 0 0 1-.496.203M5.969 17.7h-3.39a.7.7 0 1 1 0-1.4h3.39c.386 0 .703.313.703.7s-.317.7-.703.7M31.422 17.7h-3.39a.7.7 0 0 1-.704-.7c0-.387.317-.7.703-.7h3.39a.7.7 0 1 1 0 1.4'/%3E%3C/svg%3E");
   }
 
