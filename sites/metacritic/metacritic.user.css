@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.10.24
+@version 26.11.4
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -102,7 +102,10 @@
   span.iconify,
   span[data-testid="gallery-item-metascore-label"],
   button[data-testid="year-mode-single"],
-  button[data-testid="year-mode-range"] {
+  button[data-testid="year-mode-range"],
+  .text-black,
+  h1.text-\[\#333\],
+  .bg-gray-800.text-white {
     color: var(--fg);
   }
 
@@ -267,8 +270,13 @@
   .bg-\[\#f2f2f2\],
   div[data-testid="product-card"]:hover .global-button--secondary:hover,
   button[data-testid="review-quote-read-more"]:hover,
-  div[data-testid="year-grid-picker"] > div > span:hover {
+  div[data-testid="year-grid-picker"] > div > span:hover,
+  .c-genreList > li > a {
     background-color: var(--bg2);
+  }
+
+  .c-genreList > li > a:hover {
+    background-color: var(--bg3);
   }
 
   .c-global-search__dropdown-item:hover,
@@ -283,20 +291,22 @@
     background-color: var(--fg);
   }
 
-  .global-carousel__content-container.global-carousel_fade-right:before {
+  /* Carousel right edge fade (Tailwind arbitrary white gradient) */
+  [class*="before:bg-[linear-gradient(to_right,rgba(255,255,255,0)"]::before {
     background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 0%,
-      var(--bg) 100%
-    ) !important;
+      to right,
+      rgba(0, 0, 0, 0) 0,
+      var(--bg) 28px 100%
+    );
   }
 
-  .global-carousel__content-container.global-carousel_fade-left:after {
+  /* Carousel left edge fade, shown after scrolling (Tailwind arbitrary white gradient) */
+  [class*="after:bg-[linear-gradient(to_left,rgba(255,255,255,0)"]::after {
     background-image: linear-gradient(
-      270deg,
-      rgba(0, 0, 0, 0) 0%,
-      var(--bg) 100%
-    ) !important;
+      to left,
+      rgba(0, 0, 0, 0) 0,
+      var(--bg) 28px 100%
+    );
   }
 
   .global-header-title,
@@ -354,8 +364,13 @@
     border-color: var(--bg1) !important;
   }
 
-  .c-globalCheckbox:hover .c-globalCheckbox_icon {
+  .c-globalCheckbox:hover .c-globalCheckbox_icon,
+  .c-genreList > li > a {
     border-color: var(--bg2);
+  }
+
+  .c-genreList > li > a:hover {
+    border-color: var(--bg3);
   }
 
   .border-t,

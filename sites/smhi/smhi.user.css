@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SMHI Dark (Ten day forecast)
 @namespace      github.com/aruncveli/userstyles
-@version 26.11.2
+@version 26.11.4
 @description    Dark theme for SMHI's ten day forecast page
 @author         Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL    https://github.com/aruncveli/userstyles
@@ -386,6 +386,11 @@
   /* Aligned daytime fog symbol (6h AM col): all stripes are dark; recolor them like clouds. */
   .B2wDDG_app img[src*="/weathersymbols/aligned/stroke/day/7.svg"] {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23cfd6dc' d='M5.902 22.703H26.2c-.926.684-2.031 1.2-3.34 1.488l-.164.032H8.832l-.184-.047c-1.093-.274-2.02-.774-2.746-1.473M4.156 19.363h24.809c-.258.532-.547 1.051-.91 1.52H4.594c-.18-.395-.301-.805-.39-1.246ZM25.914 7.523h-10.25a9.1 9.1 0 0 1 5.055-1.52h.031c.105 0 .2 0 .29.017a12 12 0 0 1 2.019.273 8.6 8.6 0 0 1 2.855 1.23M28.86 10.863H12.565c.29-.547.637-1.05 1.032-1.52h14.304c.38.47.7.989.957 1.52M29.828 14.203H5.508c.347-.488.773-.91 1.258-1.277.12-.09.242-.164.367-.242h22.422c.136.5.23 1.02.273 1.52M29.86 16.023c-.047.5-.122 1.016-.243 1.52H4.141a6.4 6.4 0 0 1 .379-1.52Zm0 0'/%3E%3C/svg%3E");
+  }
+
+  /* Aligned nighttime fog symbol (6h Eve/Night cols): all stripes are dark; recolor them like clouds. */
+  .B2wDDG_app img[src*="/weathersymbols/aligned/stroke/night/7.svg"] {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34pt' height='34pt' viewBox='0 0 34 34'%3E%3Cpath fill='%23cfd6dc' d='M5.902 25.605H26.2c-.926.684-2.031 1.2-3.34 1.489l-.164.031H8.832l-.184-.047c-1.093-.273-2.02-.773-2.746-1.473M4.156 22.266h24.809a8.7 8.7 0 0 1-.91 1.52H4.594c-.18-.395-.301-.806-.39-1.247ZM25.914 10.422h-10.25a9.08 9.08 0 0 1 5.055-1.516h.031c.105 0 .2 0 .29.016.651.027 1.304.117 2.019.27a8.6 8.6 0 0 1 2.855 1.23M28.86 13.762H12.565a8.6 8.6 0 0 1 1.032-1.516h14.304c.38.469.7.984.957 1.516M29.828 17.102H5.508a5.9 5.9 0 0 1 1.258-1.274q.18-.133.367-.242h22.422c.136.5.23 1.016.273 1.516M29.86 18.926c-.047.5-.122 1.015-.243 1.515H4.141a6.3 6.3 0 0 1 .379-1.515Zm0 0'/%3E%3C/svg%3E");
   }
 
   /* Centered day/night fog symbol (hourly tables): all stripes are dark; recolor them like clouds. */
