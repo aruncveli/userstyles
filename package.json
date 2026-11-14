@@ -13,7 +13,7 @@
     "generate": "bun scripts/generate.ts"
   },
   "devDependencies": {
-    "@tsconfig/strictest": "2.0.8",
+    "@tsconfig/strictest": "2.0.9",
     "@types/bun": "1.4.4",
     "@types/node": "26.6.6",
     "handlebars": "4.7.10",
