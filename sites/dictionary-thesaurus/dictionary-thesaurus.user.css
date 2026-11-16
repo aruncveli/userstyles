@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Dictionary and Thesaurus Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.10.24
+@version 26.11.16
 @description Dark theme for Dictionary and Thesaurus.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -27,6 +27,8 @@
     --search-suggestions-container-shadow-color: #00000029;
     --common-lk-chip-bg-color: var(--bg1);
     --common-lk-chip-bg-color-hover: var(--bg2);
+    --common-lk-chip-lk-color: var(--link-color);
+    --common-lk-chip-lk-color-hover: var(--link-color);
     --browse-entry-2nd-nav-lk-bg-hover: var(--bg2);
     --game-promo-background-color: var(--bg1);
     --dialog-background-color: var(--bg1);
@@ -54,6 +56,7 @@
   .site-ftr .sec-wotd-card .btn-common-cta,
   .site-ftr .sec-wotd-card .hdr-headword,
   .site-ftr .sec-wotd-card .hdr-headword .lk-headword:hover,
+  .site-ftr .sec-wotd-card .hdr-wotd,
   .trending-words-homepage .word-description,
   .wrapper-site-hdr
     .form-search-word-container
@@ -78,8 +81,13 @@
     background-color: var(--bg1) !important;
   }
 
+  .wrapper-site-hdr .search-input {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='white' stroke-width='1.66667' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9.074' cy='9.074' r='7.407'/%3E%3Cpath d='m14.306 14.306 4.027 4.027'/%3E%3C/svg%3E");
+  }
+
   .featured-articles-homepage .lk-primary-article .txt-content .hdr-title,
   .featured-articles-homepage .lk-secondary-article .hdr-article,
+  .jump-to-tcom .section .chip-row .chip a,
   .site-ftr .internal-links a:hover,
   a,
   a:hover {
@@ -97,6 +105,7 @@
 
   .featured-articles-homepage .lk-primary-article,
   .featured-articles-homepage .lk-secondary-article,
+  .jump-to-tcom .section.pos-filters .chip,
   .sec-wotd-card,
   .site-ftr .sec-wotd-card .btn-common-cta,
   .trending-words-homepage .word-container,
@@ -108,6 +117,7 @@
 
   .featured-articles-homepage .lk-primary-article:hover,
   .featured-articles-homepage .lk-secondary-article:hover,
+  .jump-to-tcom .section.pos-filters .chip:hover,
   .site-ftr .sec-wotd-card .btn-common-cta:hover,
   .trending-words-homepage .word-container:hover,
   .wrapper-site-hdr .site-hdr #search-suggestions,
@@ -115,6 +125,7 @@
     background-color: var(--bg2);
   }
 
+  .common-btn-headword-audio,
   .site-ftr .sec-wotd-card .common-btn-headword-audio {
     background-color: var(--fg);
   }
@@ -140,7 +151,86 @@
 
 @-moz-document url-prefix("https://www.thesaurus.com/browse"), url-prefix("https://www.dictionary.com/browse")
 {
+  /* Trivia card - dark theme */
+  .sec-trivia-card {
+    background-color: var(--bg1) !important;
+  }
+
+  .sec-trivia-card .header {
+    color: var(--fg) !important;
+  }
+
+  .sec-trivia-card .btn-common-cta {
+    background-color: var(--bg3) !important;
+    color: var(--fg) !important;
+  }
+
+  .sec-trivia-card .btn-common-cta:hover {
+    background-color: var(--bg2) !important;
+  }
+
+  /* Vocabulary.com logo images - invert for dark theme */
+  .sec-explanation img,
+  .sec-vocabulary-lists img {
+    filter: invert(1);
+  }
+
+  /* Word of the Day card - remove light background image */
+  .sec-wotd-card {
+    background-image: none !important;
+    background-color: var(--bg1) !important;
+  }
+
+  /* Additional content boxes - dark backgrounds */
+  .box-additional {
+    background-color: var(--bg1) !important;
+  }
+
+  /* Vocabulary trainer modal dialog - dark theme */
+  .dlg-vocab-trainer-modal {
+    background-color: var(--bg1) !important;
+    color: var(--fg);
+  }
+
+  :is(.pg-dcom-entry, .pg-tcom-entry)
+    .sec-vocabulary-lists
+    .lk-vocabulary-lists-card,
+  :is(.pg-dcom-entry, .pg-tcom-entry)
+    :is(.sec-example-sentences, .sec-vocabulary-lists),
+  .box-posb-content .box-examples .txt-example,
+  .box-posb-content
+    .box-inflected-form-sets
+    .item-inflected-form-and-tooltip
+    .inflected-form-form,
+  .sec-example-sentences .box-examples .txt-example,
+  .jump-to-tcom,
+  .jump-to-tcom .section .chip-row .chip,
+  .jump-to-tcom .section .chip-row .chip:hover,
+  .line-sec-bottom {
+    border-color: var(--bg);
+  }
+
+  .line-sec-bottom {
+    background-color: var(--bg);
+  }
+
+  .jump-to-tcom .section.pos-filters .chip {
+    border-color: var(--bg1);
+  }
+
+  .jump-to-tcom .section.pos-filters .chip:hover {
+    border-color: var(--bg2);
+  }
+
+  .jump-to-tcom .section.pos-filters input:checked + .chip {
+    background-color: var(--bg3);
+    border-color: var(--bg3);
+  }
+
   :is(.pg-dcom-entry, .pg-tcom-entry) .copyright-txt,
+  :is(.pg-dcom-entry, .pg-tcom-entry) .box-content-primary .h2-entry-sec,
+  :is(.pg-dcom-entry, .pg-tcom-entry) .box-content-primary .h3-entry-sec,
+  :is(.pg-dcom-entry, .pg-tcom-entry) .sec-random-word p,
   .box-entry-group-nav .lk-to-dcom-tcom,
   .box-entry-group-nav .lk-to-dcom-tcom:hover,
   .box-entry-group-nav .menu-entry-group .lk-entry-group,
@@ -148,15 +238,20 @@
   .box-headword-audio-pronunciation .box-audio-pronunciation .txt-phonetic,
   .box-headword-audio-pronunciation .box-headword-type .hdr-headword,
   .box-headword-audio-pronunciation .box-headword-type .txt-entry-group-type,
-  .box-posb-verb-phrase .box-examples .txt-example,
-  .box-posb-verb-phrase .box-posb .ftr-british-group,
-  .box-posb-verb-phrase .box-posb h2,
-  .box-posb-verb-phrase .list-definition .item-definition,
+  .box-posb-content .box-examples .txt-example,
+  .box-posb-content .box-posb .ftr-british-group,
+  .box-posb-content .box-posb h2,
+  .box-posb-content .inflected-form-form,
+  .box-posb-content .list-definition .item-definition,
   .init-secondary-nav .more-menu-btn,
   .init-secondary-nav.wrapper-nav-entry-group .menu-more .lk-more-menu,
+  .jump-to-tcom .section .section-label,
+  .jump-to-tcom .section.pos-filters .count,
+  .jump-to-tcom .pos,
   .pg-dcom-entry .sec-list-notes h2,
   .pg-dcom-entry .sec-more-info h2,
   .pg-dcom-entry .sec-more-info h3,
+  .pg-dcom-entry .sec-other-word-forms .other-word-form-subheader-label,
   .pg-tcom-entry
     .synonym-antonym-section
     .definition-block
@@ -171,20 +266,25 @@
   .pg-tcom-entry .related-words-section h3,
   .pg-tcom-entry .sec-list-notes h2,
   .sec-example-sentences .box-examples .txt-example,
+  .sec-example-sentences .box-examples .txt-source,
+  .sec-example-sentences .example-word-selectors-title,
   .sec-example-sentences .txt-disclaimer,
   .pg-dcom-entry
-    .sec-more-info
+    .sec-other-word-forms
     .list-other-word-forms
     .other-word-form
     .other-word-form-pos,
   .pg-dcom-entry .sec-explanation .txt-item-notes,
   .pg-dcom-entry .sec-explanation h2,
   .pg-dcom-entry .sec-vocabulary-lists h2,
-  .pg-dcom-entry .sec-vocabulary-lists .lk-vocabulary-lists-card p {
+  :is(.pg-dcom-entry, .pg-tcom-entry)
+    .sec-vocabulary-lists
+    .lk-vocabulary-lists-card
+    p {
     color: var(--fg);
   }
 
-  .pg-tcom-entry
+  :is(.pg-dcom-entry, .pg-tcom-entry)
     .wrapper-site-main
     .box-content-primary
     .box-headword-audio-pronunciation {
@@ -198,6 +298,15 @@
   .box-entry-group-nav,
   .init-secondary-nav.wrapper-nav-entry-group .menu-more {
     background-color: var(--bg1);
+  }
+
+  .box-entry-group-nav
+    .menu-entry-group
+    .item-entry-group:first-child
+    .lk-entry-group::before {
+    background: var(--fg);
+    mask: url("https://cdn.dictionary.com/arrow-up-CBOIxcn7.svg") center / 16px
+      16px no-repeat;
   }
 
   .pg-tcom-entry

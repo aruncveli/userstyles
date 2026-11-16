@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": "bunx",
+      "args": [
+        "chrome-devtools-mcp",
+        "--ws-endpoint=ws://127.0.0.1:9222/devtools/browser"
+      ],
+      "tools": [
+        "click",
+        "click_at",
+        "close_page",
+        "drag",
+        "evaluate_script",
+        "fill",
+        "fill_form",
+        "get_console_message",
+        "get_css_styles",
+        "handle_dialog",
+        "hover",
+        "list_console_messages",
+        "list_pages",
+        "navigate_page",
+        "new_page",
+        "press_key",
+        "screencast_start",
+        "screencast_stop",
+        "select_page",
+        "set_logpoints",
+        "take_screenshot",
+        "take_snapshot",
+        "type_text",
+        "upload_file",
+        "wait_for"
+      ]
+    }
+  }
+}
