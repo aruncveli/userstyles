@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Dictionary and Thesaurus Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.11.16
+@version 26.11.17
 @description Dark theme for Dictionary and Thesaurus.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -197,17 +197,20 @@
     .lk-vocabulary-lists-card,
   :is(.pg-dcom-entry, .pg-tcom-entry)
     :is(.sec-example-sentences, .sec-vocabulary-lists),
-  .box-posb-content .box-examples .txt-example,
   .box-posb-content
     .box-inflected-form-sets
     .item-inflected-form-and-tooltip
     .inflected-form-form,
-  .sec-example-sentences .box-examples .txt-example,
   .jump-to-tcom,
   .jump-to-tcom .section .chip-row .chip,
   .jump-to-tcom .section .chip-row .chip:hover,
   .line-sec-bottom {
     border-color: var(--bg);
+  }
+
+  .box-posb-content .box-examples .txt-example,
+  .sec-example-sentences .box-examples .txt-example {
+    border-color: var(--bg3);
   }
 
   .line-sec-bottom {
@@ -243,6 +246,8 @@
   .box-posb-content .box-posb h2,
   .box-posb-content .inflected-form-form,
   .box-posb-content .list-definition .item-definition,
+  .box-posb-content .list-definition .item-definition::before,
+  .box-posb-content .list-sub-definition .item-sub-definition,
   .init-secondary-nav .more-menu-btn,
   .init-secondary-nav.wrapper-nav-entry-group .menu-more .lk-more-menu,
   .jump-to-tcom .section .section-label,
