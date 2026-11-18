@@ -1,5 +1,4 @@
 import { appendFileSync, mkdirSync } from "node:fs";
-import { argv } from "node:process";
 
 import { compile } from "handlebars";
 
@@ -9,7 +8,7 @@ import version from "./calver.js";
  * Usage: bun generate Style Name
  */
 
-const args = argv.slice(2);
+const args = Bun.argv.slice(2);
 if (!args.length) {
   throw new Error("Name is required");
 }

@@ -1,5 +1,5 @@
-const date = new Date();
-const year = date.getFullYear().toString().substring(2);
-const month = date.getMonth() + 1;
-const day = date.getDate();
-export default `${year}.${month.toString()}.${day.toString()}`;
+const date = Temporal.Now.plainDateISO();
+const year = date.year.toString().slice(2);
+const { month, day } = date;
+
+export default `${year}.${month}.${day}`;
