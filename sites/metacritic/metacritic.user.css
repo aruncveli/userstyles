@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Metacritic Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.11.4
+@version 26.11.18
 @description Dark theme for Metacritic
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -277,6 +277,7 @@
 
   .c-genreList > li > a:hover {
     background-color: var(--bg3);
+    border-color: var(--bg3);
   }
 
   .c-global-search__dropdown-item:hover,
@@ -367,10 +368,6 @@
   .c-globalCheckbox:hover .c-globalCheckbox_icon,
   .c-genreList > li > a {
     border-color: var(--bg2);
-  }
-
-  .c-genreList > li > a:hover {
-    border-color: var(--bg3);
   }
 
   .border-t,

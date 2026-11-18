@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Google Input Tools Dark
 @namespace github.com/aruncveli/userstyles
-@version 26.10.28
+@version 26.11.18
 @description Dark theme for Google Input Tools.
 @author Arun Chandanaveli <aruncveli@gmail.com> (https://github.com/aruncveli)
 @homepageURL https://github.com/aruncveli/userstyles
@@ -479,12 +479,8 @@
     /* #eee -> renders --bg1 (#111), blending the border into the popup box. */
     border-color: #eee;
     opacity: 1;
-  }
-
-  /* Enabled: --fg (#fff) -> renders --bg (#000), darkest so the white arrow
-     has the most contrast. */
-  .ita-ppe-pgu,
-  .ita-ppe-pgd {
+    /* Enabled: --fg (#fff) -> renders --bg (#000), darkest so the white arrow
+       has the most contrast. */
     background-color: var(--fg);
   }
 
